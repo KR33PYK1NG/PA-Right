@@ -1,6 +1,6 @@
 
 # Кусок из каталога SEVA ######################################################################################################
-if quest_book_yozef = "got" && run_aryantown_aryanwest_aryanguardpierced = 0
+if run_aryantown_aryanwest_aryanguardpierced = 0
 set run_aryantown_aryanwest_aryanguardpierced = 1
 run aryantown_aryanwest_aryanguardpierced
 endif
