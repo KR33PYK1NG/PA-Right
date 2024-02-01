@@ -78,7 +78,7 @@ TERM Terminator.30,"add_money Boar, -1000
 run sex_Sullen_and_bich_k_01"
 LABL Loop limit.106,"compl_chek0"
 LINK Decision.107
-TEST Decision.107,"global_kruger_sex_chek = 1"
+TEST Decision.107,"global_kruger_sex_chek = 3"
 LINK Terminator.111
 LINK Terminator.110
 OPTN Loop limit.106,,Decision.107
