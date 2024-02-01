@@ -1,0 +1,2095 @@
+BEGN 0
+TEST Decision.41,"quest_kompromat_on_wolf = \"completed\""
+LINK Terminator.49
+LINK Decision.22
+OPTN Decision.41,0,Decision.22
+OPTN Decision.41,1,Terminator.49
+TERM Terminator.49,"Dialog 5z"
+TERM Terminator.13,"Dialog 9"
+TEST Decision.22,"quest_kompromat_on_wolf = \"got\""
+LINK Terminator.13
+LINK Decision.1
+OPTN Decision.22,0,Decision.1
+OPTN Decision.22,1,Terminator.13
+TERM Terminator.21,"Dialog 2b"
+TEST Decision.1,"Done_Guver8"
+LINK Terminator.11
+LINK Decision.31
+OPTN Decision.1,0,Decision.31
+OPTN Decision.1,1,Terminator.11
+TERM Terminator.11,"Dialog 8a"
+TEST Decision.31,"Global_Fur_revealed2a"
+LINK Terminator.21
+LINK Decision.40
+OPTN Decision.31,1,Terminator.21
+OPTN Decision.31,0,Decision.40
+TERM Terminator.27,"Dialog 2a"
+TEST Decision.11,"quest_going_to_rough_workshop != 0 || quest_become_electrician = \"got\" || quest_become_electrician = \"completed\""
+LINK Terminator.27
+LINK Decision
+OPTN Decision.11,1,Terminator.27
+OPTN Decision.11,0,Decision
+LABL Loop limit,"init"
+LINK Decision.32
+TEST Decision.32,"quest_secure_ammo = \"got\""
+LINK Terminator.35
+LINK Decision.41
+NODE Sheet.33,0
+OPTN Decision.32,1,Terminator.35
+TERM Terminator.35,"Dialog 14a"
+TEST Decision.40,"quest_rats = \"got\""
+LINK Terminator.42
+LINK Decision.11
+OPTN Decision.40,1,Terminator.42
+TERM Terminator.42,"dialog 1b"
+OPTN Decision.40,0,Decision.11
+TEST Decision,"Done_guver4_going_into_carbon_mine"
+LINK Terminator.39
+LINK Terminator
+OPTN Decision,0,Terminator
+OPTN Decision,1,Terminator.39
+TERM Terminator.39,"Dialog 5z"
+TERM Terminator,"Dialog 3"
+BEGN 1
+NODE Process,4
+LINK Loop limit.194
+NODE Process.5,4
+LINK Loop limit
+NODE Process.6,0
+LINK Process.16
+NODE Process.8,0
+LINK Process.122
+NODE Process.10,0
+LINK Process.50
+LABL Loop limit,"change1"
+LINK Process.6
+LINK Process.10
+LINK Process.8
+NODE Process.16,4
+LINK Loop limit.24
+NODE Process.18,0
+LINK Decision.220
+NODE Process.20,0
+LINK Process.48
+TERM Terminator.47,"Goto change1"
+NODE Process.48,4
+LINK Terminator.47
+NODE Process.50,4
+LINK Process.52
+LINK Process.55
+NODE Process.52,0
+LINK Process.53
+NODE Process.53,4
+LINK Terminator.61
+NODE Process.55,0
+LINK Process.57
+NODE Process.57,4
+LINK Process.63
+LINK Process.64
+TERM Terminator.59,"Goto change1"
+TERM Terminator.61,"Goto change1"
+NODE Process.63,0
+LINK Process.67
+NODE Process.64,0
+LINK Decision
+NODE Process.67,4
+LINK Terminator.59
+TEST Decision,"reaction > 5"
+LINK Process.73
+LINK Process.106
+OPTN Decision,0,Process.73
+OPTN Decision,1,Process.106
+NODE Process.73,4
+LINK Process.74
+LINK Process.77
+NODE Process.74,0
+LINK Decision.80
+NODE Process.77,0
+LINK Terminator.79
+TEST Decision.80,"reaction > 2"
+LINK Process.84
+LINK Process.95
+OPTN Decision.80,0,Process.84
+OPTN Decision.80,1,Process.95
+NODE Process.84,4
+LINK Process.85
+LINK Process.89
+NODE Process.85,0
+LINK Terminator.88
+NODE Process.89,0
+LINK Process.91
+NODE Process.91,4
+LINK Terminator.94
+TERM Terminator.94,"Goto change1"
+NODE Process.95,4
+LINK Process.96
+LINK Process.100
+NODE Process.96,0
+LINK Terminator.99
+NODE Process.100,0
+LINK Process.91
+NODE Process.106,4
+LINK Process.112
+LINK Process.109
+NODE Process.109,0
+LINK Process.111
+NODE Process.111,4
+LINK Process.112
+LINK Process.116
+NODE Process.112,0
+LINK Terminator.115
+NODE Process.116,0
+LINK Process.118
+NODE Process.118,4
+LINK Terminator.121
+TERM Terminator.121,"Goto change1"
+NODE Process.122,4
+LINK Process.127
+LINK Process.130
+NODE Process.127,0
+LINK Process.154
+NODE Process.130,0
+LINK Decision.132
+TEST Decision.132,"reaction > 4"
+LINK Process.136
+LINK Process.135
+OPTN Decision.132,0,Process.136
+OPTN Decision.132,1,Process.135
+NODE Process.135,4
+LINK Loop limit.137
+NODE Process.136,4
+LINK Loop limit.137
+LABL Loop limit.137,"Electrician"
+LINK Process.143
+LINK Process.142
+NODE Process.142,0
+LINK Process.148
+NODE Process.143,0
+LINK Process.144
+NODE Process.144,4
+LINK Terminator.147
+TERM Terminator.147,"Goto change1"
+NODE Process.148,4
+LINK Process.152
+NODE Process.152,0
+LINK Terminator.128
+NODE Process.154,4
+LINK Process.157
+TERM Terminator.156,"run convoy_to_toljan"
+NODE Process.157,0
+LINK Terminator.156
+NODE Process.175,0
+LINK Loop limit.197
+NODE Process.4,0
+LINK Process.184
+NODE Process.7,0
+LINK Process.180
+NODE Process.180,4
+LINK Process.192
+LINK Process.11
+NODE Process.11,0
+LINK Process.184
+NODE Process.184,4
+LINK Loop limit.189
+NODE Process.19,0
+LINK Terminator.191
+NODE Process.188,0
+LINK Process.5
+TERM Terminator.191,"run sale_to_cannibals"
+NODE Process.192,0
+LINK Loop limit.197
+LABL Loop limit.194,"Name1"
+LINK Process.175
+LINK Process.4
+LINK Process.7
+OPTN Process.4,,Process.184
+TERM Terminator.199,"Goto Decision2a"
+NODE Sheet.217,0
+OPTN Loop limit.194,,Process.175
+OPTN Loop limit.194,,Process.4
+OPTN Process.180,,Process.192
+OPTN Process.180,,Process.11
+OPTN Loop limit,,Process.10
+OPTN Process.122,,Process.127
+OPTN Process.122,,Process.130
+OPTN Process.192,,Loop limit.197
+LABL Loop limit.197,""
+LINK Process.5
+LABL Loop limit.189,""
+LINK Process.188
+LINK Process.19
+LABL Loop limit.87,"init"
+LINK Process
+OPTN Process.106,,Process.112
+NODE Process.23,4
+LINK Terminator
+LABL Loop limit.24,""
+LINK Process.18
+LINK Process.20
+LABL Loop limit.28,"rat1"
+LINK Process.30
+LINK Process.108
+NODE Process.30,0
+LINK Process.33
+TERM Terminator,"create_item boar,club
+goto rat1"
+NODE Process.33,4
+LINK Loop limit.36
+NODE Process.35,0
+LINK Loop limit.41
+LABL Loop limit.36,""
+LINK Process.35
+LINK Process.45
+TERM Terminator.40,"Set quest_rats = \"got\"
+end"
+LABL Loop limit.41,"quest_rats1"
+LINK Preparation
+ADDQ Preparation
+LINK Terminator.40
+NODE Process.45,0
+LINK Terminator.105
+NODE Process.108,0
+LINK Terminator.126
+TERM Terminator.126,"goto quest_rats1"
+TERM Terminator.105,"run sale_to_cannibals"
+TERM Terminator.79,"run sale_to_cannibals"
+TERM Terminator.115,"run sale_to_cannibals"
+TERM Terminator.88,"run sale_to_cannibals"
+TERM Terminator.99,"run sale_to_cannibals"
+TERM Terminator.128,"run convoy_to_toljan"
+TEST Decision.220,"global_prodzone_rats_killed"
+LINK Terminator.223
+LINK Process.23
+OPTN Decision.220,0,Process.23
+OPTN Decision.220,1,Terminator.223
+TERM Terminator.223,"Goto security1b"
+BEGN 1a
+NODE Process,4
+LINK Terminator
+TERM Terminator,"Goto Name1"
+NODE Sheet.4,0
+BEGN 1b
+NODE Process.23,4
+LINK Terminator.64
+NODE Process.25,0
+LINK Loop limit.160
+NODE Process.26,0
+LINK Process.42
+NODE Process.7,4
+LINK Process.9
+LINK Process.33
+NODE Process.9,0
+LINK Document
+NODE Process.33,0
+LINK Decision.162
+TERM Terminator.39,"Goto change1"
+TERM Terminator.41,"Goto change1"
+NODE Process.42,4
+LINK Terminator.41
+NODE Process.44,4
+LINK Terminator.39
+LABL Loop limit.160,"GuardQuest1b"
+LINK Process.7
+TEST Decision.162,"global_guard_quest2"
+LINK Process.165
+LINK Process.44
+OPTN Decision.162,1,Process.165
+OPTN Decision.162,0,Process.44
+NODE Process.165,4
+LINK Process.167
+LINK Process.170
+NODE Process.167,0
+LINK Terminator.65
+TERM Terminator.65,"Goto GuardQuest1b"
+NODE Process.170,0
+LINK Terminator.191
+ADDI Document
+LINK Terminator.90
+LABL Loop limit,"init"
+LINK Process
+TEST Decision,"global_prodzone_rats_killed"
+LINK Process.59
+LINK Process.56
+OPTN Decision,1,Process.59
+OPTN Decision,0,Process.56
+NODE Process,4
+LINK Decision
+NODE Process.56,0
+LINK Terminator.58
+TERM Terminator.58,"end"
+NODE Process.59,0
+LINK Loop limit.65
+LABL Loop limit.62,"begin1b"
+LINK Process.25
+LINK Process.26
+TERM Terminator.64,"Set quest_rats = \"completed\"
+goto begin1b"
+TERM Terminator.191,"run sale_to_cannibals"
+LABL Loop limit.65,"security1b"
+LINK Process.23
+TERM Terminator.90,"run quest_become_electrician_failed"
+BEGN 2
+NODE Process,4
+LINK Process.2
+LINK Process.3
+NODE Process.2,0
+LINK Process.60
+NODE Process.3,0
+LINK Decision
+NODE Process.6,4
+LINK Process.81
+LINK Process.8
+LINK Process.13
+NODE Process.8,0
+LINK Process.57
+TEST Decision,"reaction > 5"
+LINK Process.15
+LINK Process.6
+OPTN Decision,1,Process.15
+OPTN Decision,0,Process.6
+NODE Process.13,0
+LINK Process.51
+NODE Process.15,4
+LINK Loop limit.53
+NODE Process.16,0
+LINK Process.18
+NODE Process.18,4
+LINK Loop limit
+NODE Process.21,0
+LINK Process.22
+NODE Process.22,4
+LINK Loop limit
+NODE Process.25,0
+LINK Process.66
+NODE Process.26,0
+LINK Process.66
+LABL Loop limit,""
+LINK Process.25
+LINK Process.33
+LINK Process.26
+NODE Process.31,0
+LINK Process.35
+NODE Process.33,0
+LINK Process.71
+NODE Process.35,4
+LINK Process.38
+LINK Process.40
+NODE Process.38,0
+LINK Process.43
+NODE Process.40,0
+LINK Process.43
+NODE Process.43,4
+LINK Process.45
+LINK Process.47
+NODE Process.45,0
+LINK Terminator
+NODE Process.47,0
+LINK Terminator
+TERM Terminator,"Run boar_the_gay"
+NODE Process.51,4
+LINK Terminator.56
+LABL Loop limit.53,"CrimPage2"
+LINK Process.16
+LINK Process.31
+LINK Process.21
+TERM Terminator.56,"Goto CrimPage2"
+NODE Process.57,4
+LINK Terminator.56
+NODE Process.60,4
+LINK Terminator.62
+TERM Terminator.62,"Goto CrimPage2"
+NODE Process.66,4
+LINK Process.69
+NODE Process.69,0
+LINK Terminator.80
+NODE Process.71,4
+LINK Process.74
+LINK Process.78
+NODE Process.74,0
+LINK Terminator.76
+NODE Process.78,0
+LINK Terminator.80
+TERM Terminator.80,"Set global_guard_quest2 = 1
+Goto GuardQuest1b"
+OPTN Process.78,,Terminator.80
+OPTN Process.69,,Terminator.80
+NODE Process.81,0
+LINK Process.83
+NODE Process.83,4
+LINK Process.87
+NODE Process.87,0
+LINK Terminator.191
+NODE Sheet.89,0
+TERM Terminator.191,"run sale_to_cannibals"
+TERM Terminator.76,"run sale_to_cannibals"
+BEGN 2a
+NODE Process,4
+LINK Loop limit.18
+TEST Decision.14,"reaction > 5"
+LINK Process.17
+LINK Process
+OPTN Decision.14,1,Process
+OPTN Decision.14,0,Process.17
+NODE Process.17,4
+LINK Loop limit.18
+LABL Loop limit.18,""
+LINK Process.11
+LINK Loop limit.267
+NODE Process.22,0
+LINK Terminator.316
+NODE Process.23,4
+LINK Decision.25
+OPTN Decision.27,1,Process.22
+TEST Decision,"Quest_give_ammo = 0"
+LINK Loop limit.201
+LINK Process.200
+OPTN Decision,1,Process.200
+TEST Decision.25,"Done_Kid1_convoy_to_guver"
+LINK Process.197
+LINK Process.34
+OPTN Decision.25,1,Process.197
+OPTN Decision.25,0,Process.34
+NODE Process.33,0
+LINK Loop limit.278
+NODE Process.34,0
+LINK Process.35
+NODE Process.35,4
+LINK Decision.37
+TEST Decision.27,"Global_Fur_Tell_About_Escape = 1"
+LINK Process.22
+TEST Decision.37,"global_inf_about_cable_rec = 0"
+LINK Loop limit.226
+LINK Process.40
+OPTN Decision.37,1,Process.40
+OPTN Decision.37,0,Loop limit.226
+NODE Process.40,0
+LINK Process.231
+TEST Decision.5,"Quest_become_electrician = 0"
+LINK Loop limit.207
+LINK Process.213
+OPTN Decision.5,0,Loop limit.207
+NODE Process.29,0
+LINK Process.46
+NODE Process.42,0
+LINK Process.43
+NODE Process.43,4
+LINK Terminator.240
+NODE Process.46,4
+LINK Terminator.236
+OPTN Decision,0,Loop limit.201
+TEST Decision.3,"Quest_give_electroscheme = 0"
+LINK Loop limit.51
+LINK Process.164
+OPTN Decision.3,1,Process.164
+OPTN Decision.3,0,Loop limit.51
+NODE Process.8,0
+LINK Process.56
+TEST Decision.10,"Has_item(boar,electroscheme)"
+LINK Decision.58
+LINK Process.141
+OPTN Decision.10,1,Process.141
+OPTN Decision.10,0,Decision.58
+NODE Process.56,4
+LINK Decision.10
+LINK Process.149
+TEST Decision.58,"global_boar_take_electroscheme"
+LINK Process.61
+LINK Process.65
+OPTN Decision.58,1,Process.65
+OPTN Decision.58,0,Process.61
+NODE Process.61,0
+LINK Loop limit.139
+NODE Process.65,0
+LINK Process.68
+NODE Process.68,4
+LINK Process.135
+NODE Process.63,4
+LINK Terminator.270
+NODE Process.66,0
+LINK Process.71
+NODE Process.69,0
+LINK Process.99
+NODE Process.71,4
+LINK Loop limit.93
+LABL Loop limit,"change2a"
+LINK Process.78
+LINK Process.66
+LINK Process.76
+NODE Process.76,0
+LINK Terminator.91
+NODE Process.78,0
+LINK Process.80
+NODE Process.80,4
+LINK Process.81
+LINK Process.88
+OPTN Loop limit,,Process.78
+OPTN Loop limit,,Process.66
+NODE Process.81,0
+LINK Process.85
+TERM Terminator,"Goto Change2a"
+NODE Process.85,4
+LINK Terminator
+NODE Process.88,0
+LINK Decision.264
+TERM Terminator.89,"Set From_2b = 0
+End"
+TERM Terminator.91,"Dialog 8"
+LABL Loop limit.93,"Questions2a"
+LINK Process.69
+LINK Decision.290
+LINK Process.96
+NODE Process.96,0
+LINK Process.113
+NODE Process.97,0
+LINK Process.118
+NODE Process.99,4
+LINK Process.102
+LINK Process.108
+NODE Process.102,0
+LINK Process.104
+NODE Process.104,4
+LINK Terminator.105
+TERM Terminator.105,"Goto Questions2a"
+NODE Process.108,0
+LINK Process.110
+NODE Process.110,4
+LINK Terminator.111
+TERM Terminator.111,"Goto Change2a"
+NODE Process.113,4
+LINK Process.117
+LINK Process.221
+NODE Process.118,4
+LINK Loop limit.259
+LINK Process.119
+NODE Process.119,0
+LINK Process.121
+NODE Process.121,4
+LINK Loop limit.259
+NODE Process.124,0
+LINK Process.126
+NODE Process.126,4
+LINK Terminator.127
+TERM Terminator.127,"Goto Questions2a"
+NODE Process.130,0
+LINK Process.132
+NODE Process.132,4
+LINK Terminator.133
+TERM Terminator.133,"Goto Change2a"
+NODE Process.135,0
+LINK Terminator.138
+LABL Loop limit.139,"Offer2a"
+LINK Process.63
+NODE Process.141,0
+LINK Process.143
+NODE Process.143,4
+LINK Process.145
+NODE Process.145,0
+LINK Terminator.146
+TERM Terminator.146,"Goto Offer2a"
+NODE Process.149,0
+LINK Process.150
+NODE Process.150,4
+LINK Process.152
+NODE Process.152,0
+LINK Terminator.191
+NODE Process.26,0
+LINK Process.160
+OPTN Loop limit.51,,Loop limit.202
+TERM Terminator.163,"Goto Offer2a"
+NODE Process.164,0
+LINK Terminator.163
+LABL Loop limit.51,""
+LINK Process.8
+LINK Loop limit.202
+NODE Process.157,4
+LINK Terminator.185
+NODE Process.160,4
+LINK Process.162
+LINK Process.179
+NODE Process.162,0
+LINK Process.167
+NODE Process.167,4
+LINK Process.169
+LINK Process.175
+NODE Process.169,0
+LINK Process.171
+NODE Process.171,4
+LINK Loop limit.194
+TERM Terminator.174,"Goto z2a_step4"
+NODE Process.175,0
+LINK Terminator.178
+NODE Process.179,0
+LINK Process.181
+NODE Process.181,4
+LINK Loop limit.194
+LABL Loop limit.184,"z2a_step4"
+LINK Decision.3
+TERM Terminator.185,"set zz2a_step4_trigger = 1
+Goto z2a_step4"
+TEST Decision.186,"zz2a_step4_trigger"
+LINK Terminator.174
+LINK Decision.190
+OPTN Decision.186,1,Terminator.174
+OPTN Decision.186,0,Decision.190
+TERM Terminator.189,"Goto z2a_step3"
+TEST Decision.190,"zz2a_step3_trigger"
+LINK Terminator.189
+LINK Terminator.193
+OPTN Decision.190,1,Terminator.189
+OPTN Decision.190,0,Terminator.193
+TERM Terminator.193,"Goto z2a_step2"
+TERM Terminator.199,"Goto Offer2a"
+NODE Process.200,0
+LINK Terminator.199
+LABL Loop limit.202,"BadMemory2a"
+LINK Process.26
+LABL Loop limit.201,""
+LINK Decision.273
+LINK Terminator.206
+TERM Terminator.206,"Goto BadMemory2a"
+LABL Loop limit.207,""
+LINK Process.29
+LINK Terminator.210
+TERM Terminator.210,"Goto BadMemory2a"
+NODE Process.213,0
+LINK Process.212
+NODE Process.212,4
+LINK Terminator.215
+NODE Process.117,0
+LINK Process.217
+NODE Process.217,4
+LINK Terminator.218
+TERM Terminator.218,"Goto Change2a"
+NODE Process.221,0
+LINK Process.223
+NODE Process.223,4
+LINK Terminator.224
+TERM Terminator.224,"Goto Questions2a"
+LABL Loop limit.226,""
+LINK Decision.241
+LINK Terminator.229
+TERM Terminator.229,"Goto BadMemory2a"
+NODE Process.231,4
+LINK Terminator.233
+LABL Loop limit.235,"z2a_step3"
+LINK Decision
+TERM Terminator.236,"set zz2a_step3_trigger = 1
+Goto z2a_step3"
+LABL Loop limit.238,"z2a_step2"
+LINK Decision.5
+TERM Terminator.240,"Goto z2a_step2"
+LABL Loop limit.194,""
+LINK Decision.186
+OPTN Process.181,,Loop limit.194
+NODE Process.197,0
+LINK Process.35
+OPTN Process.197,,Process.35
+TEST Decision.241,"Done_Kid1_convoy_to_guver"
+LINK Decision.284
+LINK Process.244
+OPTN Decision.241,1,Process.244
+OPTN Decision.241,0,Decision.284
+NODE Process.244,0
+LINK Process.245
+NODE Process.245,4
+LINK Terminator.248
+TERM Terminator.248,"Goto z2a_step3"
+NODE Process.11,0
+LINK Terminator.254
+TERM Terminator.254,"End"
+LABL Loop limit.259,""
+LINK Process.124
+LINK Process.130
+OPTN Process.118,,Loop limit.259
+ADDI Document
+LINK Terminator.89
+TEST Decision.264,"From_2b"
+LINK Terminator.89
+LINK Document
+OPTN Decision.264,0,Document
+OPTN Decision.264,1,Terminator.89
+LABL Loop limit.267,"Decision2a"
+LINK Decision.27
+TERM Terminator.270,"Set Global_Fur_revealed2a = 1
+destroy_item boar,ELECTROSCHEME
+Goto qbe2a"
+LABL Loop limit.87,"init"
+LINK Decision.14
+TERM Terminator.191,"run sale_to_cannibals"
+TERM Terminator.138,"run sale_to_cannibals"
+TERM Terminator.178,"run sale_to_cannibals"
+TEST Decision.273,"Done_Kid1_convoy_to_guver"
+LINK Decision.287
+LINK Process.276
+OPTN Decision.273,1,Process.276
+OPTN Decision.273,0,Decision.287
+NODE Process.276,0
+LINK Terminator.280
+LABL Loop limit.278,"ammo2a"
+LINK Process.157
+TERM Terminator.280,"Goto ammo2a"
+TEST Decision.284,"Global_quest_become_electrician"
+LINK Decision.292
+LINK Process.244
+OPTN Decision.284,0,Decision.292
+OPTN Decision.284,1,Process.244
+OPTN Decision.5,1,Process.213
+TEST Decision.287,"Global_quest_become_electrician"
+LINK Process.33
+LINK Process.276
+OPTN Decision.287,0,Process.33
+OPTN Decision.287,1,Process.276
+TEST Decision.290,"Done_toljan1"
+LINK Process.97
+OPTN Decision.290,1,Process.97
+TEST Decision.292,"quest_going_to_rough_workshop = 0"
+LINK Process.42
+LINK Process.244
+OPTN Decision.292,1,Process.42
+OPTN Decision.292,0,Process.244
+TEST Decision.295,"quest_become_electrician = \"got\""
+LINK Terminator.311
+LINK Terminator.299
+TEST Decision.296,"quest_give_ammo = \"got\""
+LINK Terminator.313
+LINK Terminator.305
+TEST Decision.297,"quest_give_electroscheme = \"got\""
+LINK Terminator.315
+LINK Terminator.309
+OPTN Decision.295,1,Terminator.299
+TERM Terminator.299,"set quest_become_electrician = 0
+goto qga2a"
+LABL Loop limit.300,"qga2a"
+LINK Decision.296
+LABL Loop limit.302,"qbe2a"
+LINK Decision.295
+OPTN Decision.296,1,Terminator.305
+TERM Terminator.305,"set quest_give_ammo = 0
+goto qge2a"
+LABL Loop limit.306,"qge2a"
+LINK Decision.297
+OPTN Decision.297,1,Terminator.309
+TERM Terminator.309,"set quest_give_electroscheme = 0
+goto change2a"
+OPTN Decision.295,0,Terminator.311
+TERM Terminator.311,"goto qga2a"
+OPTN Decision.296,0,Terminator.313
+TERM Terminator.313,"goto qge2a"
+OPTN Decision.297,0,Terminator.315
+TERM Terminator.315,"goto change2a"
+TERM Terminator.316,"set quest_recover_fur = \"completed\"
+goto recover_fur2a"
+LABL Loop limit.317,"recover_fur2a"
+LINK Process.23
+TERM Terminator.233,"Set Global_Fur_revealed2a = 1
+destroy_item boar,ELECTROSCHEME
+Goto qbe2a"
+TERM Terminator.215,"Set Global_Fur_revealed2a = 1
+destroy_item boar,ELECTROSCHEME
+Goto qbe2a"
+BEGN 2b
+NODE Process,4
+LINK Terminator
+TERM Terminator,"Set From_2b = 1
+Goto Change2a"
+BEGN 2c
+NODE Process,4
+LINK Loop limit.60
+NODE Process.3,0
+LINK Decision.66
+NODE Process.20,4
+LINK Terminator.5
+NODE Process.25,4
+LINK Loop limit.30
+NODE Process.28,0
+LINK Decision.33
+LABL Loop limit.30,"Speak2c"
+LINK Terminator.54
+LINK Process.28
+TEST Decision.33,"reaction > 8"
+LINK Terminator.53
+LINK Process.36
+OPTN Decision.33,0,Terminator.53
+OPTN Decision.33,1,Process.36
+NODE Process.36,4
+LINK Process.38
+LINK Loop limit.40
+NODE Process.38,0
+LINK Terminator.39
+TERM Terminator.54,"Goto Get_quest2c"
+TERM Terminator.58,"Goto Get_quest2c"
+LABL Loop limit.60,"Begin2c"
+LINK Terminator.58
+LINK Decision.82
+LINK Process.3
+TEST Decision.66,"Global_T22c"
+LINK Terminator.18
+LINK Decision.69
+OPTN Decision.66,0,Decision.69
+OPTN Decision.66,1,Terminator.18
+TEST Decision.69,"Global_T12c"
+LINK Process.20
+LINK Decision
+OPTN Decision.69,0,Decision
+OPTN Decision.69,1,Process.20
+NODE Process.4,4
+LINK Terminator.12
+TEST Decision,"reaction > 8"
+LINK Process.9
+LINK Process.4
+OPTN Decision,0,Process.9
+OPTN Decision,1,Process.4
+NODE Process.9,4
+LINK Terminator.12
+OPTN Process.9,,Terminator.12
+OPTN Process.4,,Terminator.12
+TERM Terminator.12,"Set Global_T12c = 1
+Goto Begin2c"
+TERM Terminator.5,"Set Global_T22c = 1
+Goto Begin2c"
+TERM Terminator.75,"Set global_smoked = 1
+goto Logic2c"
+LABL Loop limit.77,"Start2c_1"
+LINK Process
+TERM Terminator.81,"Set global_billybob = 1
+goto Logic2c"
+TEST Decision.82,"Global_billybob"
+LINK Process.43
+LINK Decision.84
+OPTN Decision.82,0,Decision.84
+TEST Decision.84,"Global_smoked"
+LINK Process.23
+LINK Decision.120
+OPTN Decision.84,0,Decision.120
+OPTN Decision.82,1,Process.43
+OPTN Decision.84,1,Process.23
+NODE Process.23,0
+LINK Terminator.64
+LABL Loop limit,"Talk2c"
+LINK Process.25
+NODE Process.8,4
+LINK Process.10
+NODE Process.10,0
+LINK Preparation
+ADDQ Preparation
+LINK Terminator.49
+TERM Terminator.49,"Set quest_bring_otto = \"got\"
+Set global_smoked = 0
+run going_to_otto"
+TEST Decision.88,"Global_billybob"
+LINK Process.116
+LINK Decision.90
+OPTN Decision.88,0,Decision.90
+TEST Decision.90,"Global_smoked"
+LINK Process.8
+LINK Decision.138
+OPTN Decision.90,0,Decision.138
+OPTN Decision.88,1,Process.116
+OPTN Decision.90,1,Process.8
+LABL Loop limit.40,"Get_quest2c"
+LINK Process.42
+TERM Terminator.105,"Set global_guver2c_1 = 1
+Goto Start2c_1"
+TEST Decision.106,"Global_guver2c_1"
+LINK Terminator.109
+LINK Terminator.105
+OPTN Decision.106,0,Terminator.105
+OPTN Decision.106,1,Terminator.109
+TERM Terminator.109,"Set global_guver2c_2 = 1
+Goto Start2c_2"
+TEST Decision.110,"Global_guver2c_2"
+LINK Terminator.113
+LINK Decision.106
+OPTN Decision.110,0,Decision.106
+OPTN Decision.110,1,Terminator.113
+TERM Terminator.113,"Goto Start2c_3"
+NODE Process.43,0
+LINK Terminator.96
+TERM Terminator.96,"Goto Crossroad2c"
+LABL Loop limit.98,"Logic2c"
+LINK Decision.110
+TERM Terminator.102,"Set global_tcatckes = 1
+goto Logic2c"
+TEST Decision.120,"Global_tcatckes"
+LINK Process.129
+LINK Decision.167
+OPTN Decision.167,1,Process.135
+OPTN Decision.120,1,Process.129
+NODE Process.129,0
+LINK Terminator.131
+NODE Process.135,0
+LINK Terminator.137
+TEST Decision.138,"Global_tcatckes"
+LINK Process.126
+LINK Decision.173
+OPTN Decision.138,0,Decision.173
+OPTN Decision.138,1,Process.126
+OPTN Loop limit.60,,Decision.82
+OPTN Loop limit.60,,Terminator.58
+NODE Process.116,4
+LINK Process.117
+NODE Process.117,0
+LINK Preparation.119
+ADDQ Preparation.119
+LINK Terminator.123
+TERM Terminator.123,"Set quest_fight_with_horse = \"got\"
+Set global_billybob = 0
+run skip_time_before_horse"
+NODE Process.126,4
+LINK Process.127
+NODE Process.127,0
+LINK Preparation.132
+ADDQ Preparation.132
+LINK Terminator.134
+TERM Terminator.134,"Set quest_bring_vodka = \"got\"
+Set global_tcatckes = 0
+End"
+NODE Process.141,4
+LINK Process.143
+NODE Process.143,0
+LINK Preparation.145
+ADDQ Preparation.145
+LINK Terminator.140
+NODE Sheet.10,4
+LINK Terminator.42
+LABL Loop limit.15,"Start2c_2"
+LINK Decision.16
+TEST Decision.16,"reaction > 5"
+LINK Process.149
+LINK Sheet.10
+OPTN Decision.16,1,Sheet.10
+OPTN Decision.16,0,Process.149
+NODE Process.149,4
+LINK Process.152
+NODE Process.152,0
+LINK Terminator.191
+NODE Process.42,0
+LINK Decision.88
+TERM Terminator.42,"Goto Begin2c"
+LABL Loop limit.57,"Crossroad2c"
+LINK Decision.154
+TERM Terminator.59,"Goto Talk2c "
+TEST Decision.154,"Global_guver2c_2"
+LINK Terminator.78
+LINK Terminator.59
+OPTN Decision.154,0,Terminator.59
+OPTN Decision.154,1,Terminator.78
+TERM Terminator.64,"Goto Crossroad2c"
+TERM Terminator.131,"Goto Crossroad2c"
+TERM Terminator.137,"Goto Crossroad2c"
+LABL Loop limit.160,"Start2c_3"
+LINK Process.161
+NODE Process.161,4
+LINK Process.164
+NODE Process.164,0
+LINK Terminator.163
+NODE Sheet.166,0
+NODE Sheet.72,0
+NODE Sheet.73,0
+NODE Sheet.74,0
+TERM Terminator.140,"Set quest_get_promzone_finger = \"got\"
+Set global_homemade = 0
+create_item boar,serv_spoon
+End"
+TEST Decision.167,"Global_homemade"
+LINK Process.135
+LINK Process.169
+OPTN Decision.120,0,Decision.167
+OPTN Decision.167,0,Process.169
+NODE Process.169,0
+LINK Terminator.172
+TERM Terminator.172,"Goto Crossroad2c"
+TEST Decision.173,"Global_homemade"
+LINK Process.141
+LINK Process.176
+OPTN Decision.173,1,Process.141
+OPTN Decision.173,0,Process.176
+NODE Process.176,4
+LINK Process.177
+NODE Process.177,0
+LINK Preparation.179
+ADDQ Preparation.179
+LINK Terminator.182
+TERM Terminator.182,"Set quest_get_back_components = \"got\"
+End"
+TERM Terminator.183,"goto Logic2c"
+LABL Loop limit.186,"init"
+LINK Loop limit.98
+TERM Terminator.191,"run sale_to_cannibals"
+TERM Terminator.163,"run sale_to_cannibals"
+TERM Terminator.18,"run sale_to_cannibals"
+TERM Terminator.78,"run sale_to_cannibals"
+TERM Terminator.53,"run sale_to_cannibals"
+TERM Terminator.39,"run sale_to_cannibals"
+BEGN 3
+NODE Process,4
+LINK Decision.7
+LINK Decision.20
+LINK Process.6
+TEST Decision,"Has_item(boar,bottle_vodka_for_Guver)"
+LINK Process.9
+OPTN Decision,1,Process.9
+NODE Process.6,0
+LINK Terminator
+TERM Terminator,"End"
+NODE Process.9,0
+LINK Process.10
+NODE Process.10,4
+LINK Process.13
+NODE Process.13,0
+LINK Terminator.15
+TERM Terminator.15,"Set quest_bring_vodka = \"completed\"
+End"
+TEST Decision.7,"quest_register_billybob = \"completed\" &&
+quest_register_tcatckes = \"completed\" &&
+quest_register_kurt = \"completed\" &&
+quest_register_homemade = \"completed\" &&
+quest_register_smoked = \"completed\""
+LINK Terminator.10
+OPTN Decision.7,1,Terminator.10
+TERM Terminator.10,"Dialog 4"
+TEST Decision.20,"quest_register_tcatckes = \"got\""
+LINK Decision
+OPTN Decision.20,1,Decision
+LABL Loop limit,"init"
+LINK Process
+BEGN 4
+NODE Process,0
+LINK Process.3
+NODE Sheet.2,0
+NODE Process.3,4
+LINK Terminator
+NODE Process.9,0
+LINK Process.5
+TERM Terminator,"Give_item boar,register,guver
+create_item boar,robe_black.g
+set quest_register = \"completed\"
+goto start4"
+LABL Loop limit,"start4"
+LINK Process.9
+NODE Process.5,4
+LINK Loop limit.86
+NODE Process.14,0
+LINK Process.16
+NODE Process.16,4
+LINK Process.13
+LINK Process.18
+NODE Process.18,0
+LINK Process.21
+NODE Process.21,4
+LINK Process.13
+LINK Process.22
+NODE Process.22,0
+LINK Process.25
+NODE Process.25,4
+LINK Process.13
+LINK Process.26
+NODE Process.26,0
+LINK Process.32
+NODE Process.32,4
+LINK Process.13
+LINK Process.36
+NODE Process.35,4
+LINK Process.13
+LINK Process.38
+NODE Process.36,0
+LINK Process.35
+NODE Process.38,0
+LINK Terminator.191
+NODE Process.44,4
+LINK Process.46
+NODE Process.46,0
+LINK Process.48
+NODE Process.48,4
+LINK Process.50
+NODE Process.50,0
+LINK Process.51
+NODE Process.51,4
+LINK Loop limit.76
+NODE Process.54,0
+LINK Loop limit.103
+TERM Terminator.55,"Set quest_bluehelmet = \"got\"
+Run going_into_carbon_mine"
+NODE Process.58,0
+LINK Process.59
+NODE Process.59,4
+LINK Process.62
+LINK Process.65
+NODE Process.62,0
+LINK Terminator.105
+NODE Process.65,0
+LINK Process.66
+NODE Process.66,4
+LINK Process.73
+LINK Process.70
+NODE Process.70,0
+LINK Terminator.72
+TERM Terminator.72,"run boar_die_by_guver"
+NODE Process.73,0
+LINK Terminator.105
+LABL Loop limit.76,"quest4"
+LINK Terminator.78
+LINK Process.54
+LINK Process.58
+ADDQ Preparation
+LINK Terminator.55
+TERM Terminator.78,"Goto startQ"
+TEST Decision,"from_guver5"
+LINK Terminator.85
+LINK Decision.88
+NODE Process.13,0
+LINK Decision
+OPTN Decision,1,Terminator.85
+OPTN Decision,0,Decision.88
+LABL Loop limit.83,"work4"
+LINK Process.44
+TERM Terminator.85,"Set from_guver5 = 0
+Goto work5"
+LABL Loop limit.86,"conception4"
+LINK Process.13
+LINK Process.14
+TERM Terminator.84,"Goto work4"
+TEST Decision.88,"from_guver14"
+LINK Terminator.91
+LINK Terminator.84
+OPTN Decision.88,1,Terminator.91
+OPTN Decision.88,0,Terminator.84
+TERM Terminator.91,"Set from_guver14 = 0
+Goto work14"
+TERM Terminator.191,"run sale_to_cannibals"
+LABL Loop limit.103,"bluehelmet4"
+LINK Preparation
+TERM Terminator.105,"goto bluehelmet4"
+BEGN 5
+NODE Process,4
+LINK Process.3
+NODE Sheet.2,0
+NODE Process.3,RGB(0; 204; 255)
+LINK Process.8
+CHAR Manual operation,RGB(0; 204; 255),"goodwin"
+LINK Loop limit.140
+NODE Process.8,4
+LINK Process.9
+NODE Process.9,RGB(0; 204; 255)
+LINK Process.12
+NODE Process.12,4
+LINK Process.14
+NODE Process.14,RGB(0; 204; 255)
+LINK Preparation.205
+NODE Process.17,4
+LINK Loop limit
+LABL Loop limit,""
+LINK Process.20
+LINK Process.25
+LINK Process.19
+NODE Process.25,0
+LINK Process.27
+NODE Process.27,RGB(0; 204; 255)
+LINK Process.30
+OPTN Process.19,,Process.27
+NODE Process.30,4
+LINK Process.32
+NODE Process.32,RGB(0; 204; 255)
+LINK Process.33
+OPTN Loop limit,,Process.20
+OPTN Loop limit,,Process.19
+NODE Process.49,0
+LINK Decision.99
+LABL Loop limit.43,"agreement5"
+LINK Process.49
+LINK Decision
+LINK Decision.175
+NODE Process.5,4
+LINK Terminator.68
+NODE Process.60,4
+LINK Loop limit.104
+NODE Process.61,0
+LINK Loop limit.160
+NODE Process.64,0
+LINK Terminator.67
+TERM Terminator.67,"End"
+TERM Terminator.68,"Set from_guver5 = 1
+Goto conception4"
+LABL Loop limit.70,"work5"
+LINK Process.73
+NODE Process.73,4
+LINK Process.72
+NODE Process.72,0
+LINK Preparation
+NODE Process.19,0
+LINK Process.27
+NODE Process.20,0
+LINK Process.77
+NODE Process.80,0
+LINK Process.84
+NODE Process.84,4
+LINK Process.47
+NODE Process.47,RGB(0; 204; 255)
+LINK Process.86
+NODE Process.86,4
+LINK Process.87
+NODE Process.87,RGB(0; 204; 255)
+LINK Process.81
+TERM Terminator.97,"Run goodwin_die_by_guver"
+LABL Loop limit.140,"start5"
+LINK Process
+TEST Decision.16,"from_guver5b"
+LINK Terminator.144
+LINK Decision.147
+OPTN Decision.16,0,Decision.147
+OPTN Decision.16,1,Terminator.144
+TERM Terminator.144,"Goto begin5b"
+LABL Loop limit.145,"After_scripts5"
+LINK Decision.163
+TEST Decision.147,"from_guver5c"
+LINK Terminator.150
+LINK Decision.151
+OPTN Decision.147,0,Decision.151
+OPTN Decision.147,1,Terminator.150
+TERM Terminator.150,"Goto begin5c"
+TEST Decision.151,"from_guver5d"
+LINK Terminator.154
+LINK Loop limit.145
+OPTN Decision.151,0,Loop limit.145
+OPTN Decision.151,1,Terminator.154
+TERM Terminator.154,"Goto begin5d"
+ADDQ Preparation
+LINK Document
+ADDI Document
+LINK Terminator.201
+LABL Loop limit.41,"Signature1_5"
+LINK Process.60
+LABL Loop limit.160,"Signature2_5"
+LINK Process.5
+OPTN Loop limit.43,,Process.49
+TEST Decision.163,"global_from_guver6"
+LINK Terminator.166
+LINK Decision.167
+OPTN Decision.163,0,Decision.167
+OPTN Decision.163,1,Terminator.166
+TERM Terminator.166,"Set global_from_guver6 = 0
+dialog 5g"
+TEST Decision.167,"global_from_guver6a"
+LINK Terminator.170
+LINK Decision.171
+OPTN Decision.167,0,Decision.171
+OPTN Decision.167,1,Terminator.170
+TERM Terminator.170,"Set global_from_guver6a = 0
+Set quest_bluehelmet = \"failed\"
+Goto Signature1_5"
+TEST Decision.171,"global_from_guver6b"
+LINK Terminator.174
+LINK Loop limit.182
+OPTN Decision.171,0,Loop limit.182
+OPTN Decision.171,1,Terminator.174
+TERM Terminator.174,"Set global_from_guver6b = 0
+Set quest_bluehelmet = \"failed\"
+Goto final6b"
+NODE Process.39,0
+LINK Terminator.58
+TERM Terminator.58,"End"
+TEST Decision.175,"global_from_guver5z"
+LINK Process.179
+LINK Process.39
+OPTN Decision.175,0,Process.39
+OPTN Decision.175,1,Process.179
+NODE Process.179,0
+LINK Terminator.181
+TERM Terminator.181,"End"
+LABL Loop limit.182,"begin5"
+LINK Process.17
+LABL Loop limit.188,"init"
+LINK Manual operation
+TERM Terminator.200,"Teleport_to_level goodwin,75,31,0
+keep_distance goodwin,dandelion,1
+run start_guver_dialog5f"
+NODE Process.33,0
+LINK Terminator.200
+NODE Process.77,RGB(0; 204; 255)
+LINK Process.44
+NODE Process.44,0
+LINK Process.78
+NODE Process.78,RGB(0; 204; 255)
+LINK Process.80
+NODE Process.81,0
+LINK Terminator.97
+TERM Terminator.201,"Set quest_secure_perimeter = \"got\"
+create_item boar,robe_black.g 
+create_item boar,robe_trousers.b 
+create_item boar,SMG_RAT_PROMZONE
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+End"
+LABL Loop limit.202,"after_gquest5"
+LINK Decision.16
+TERM Terminator.204,"set quest_find_goodwin = \"got\"
+set quest_find_goodwin = \"completed\"
+goto after_gquest5"
+ADDQ Preparation.205
+LINK Terminator.204
+NODE Process.50,0
+LINK Process.53
+NODE Process.53,4
+LINK Terminator
+TERM Terminator,"Goto agreement5"
+TEST Decision,"quest_register != 0"
+LINK Process.91
+LINK Process.50
+OPTN Decision,1,Process.50
+NODE Process.91,0
+LINK Process.95
+OPTN Decision,0,Process.91
+NODE Sheet.93,0
+NODE Process.95,4
+LINK Terminator.98
+TERM Terminator.98,"Goto agreement5"
+TEST Decision.99,"quest_register != 0"
+LINK Process.102
+LINK Loop limit.41
+OPTN Decision.99,1,Loop limit.41
+OPTN Decision.99,0,Process.102
+NODE Process.102,4
+LINK Loop limit.104
+LABL Loop limit.104,""
+LINK Process.64
+LINK Process.61
+OPTN Process.102,,Loop limit.104
+BEGN 5a
+LABL Loop limit,"init"
+LINK Terminator
+NODE Sheet.12,0
+TERM Terminator,"Goto After_scripts5"
+BEGN 5b
+NODE Process,4
+LINK Process.18
+LABL Loop limit,"begin5b"
+LINK Process
+NODE Sheet.4,0
+TERM Terminator,"Set from_guver5b = 1
+Goto start5"
+NODE Process.7,RGB(153; 51; 0)
+LINK Decision
+CHAR Manual operation,RGB(153; 51; 0),"snowball"
+LINK Terminator
+NODE Process.10,4
+LINK Process.13
+NODE Process.13,RGB(153; 51; 0)
+LINK Process.15
+NODE Process.15,4
+LINK Process.24
+TERM Terminator.16,"Run take_away_snowball_from_guver"
+NODE Process.18,0
+LINK Process.7
+TEST Decision,"global_from_guver6"
+LINK Terminator.22
+LINK Process.10
+OPTN Decision,1,Terminator.22
+TERM Terminator.22,"Goto begin6"
+OPTN Decision,0,Process.10
+NODE Process.24,0
+LINK Terminator.16
+LABL Loop limit.26,"init"
+LINK Manual operation
+NODE Sheet.28,0
+BEGN 5c
+NODE Sheet.1,0
+TERM Terminator,"Set from_guver5c = 1
+Goto start5"
+CHAR Manual operation,RGB(255; 102; 0),"zvongendaba"
+LINK Terminator
+NODE Process,4
+LINK Process.18
+LABL Loop limit,"begin5c"
+LINK Process
+NODE Process.7,RGB(255; 102; 0)
+LINK Decision
+NODE Process.10,4
+LINK Process.13
+NODE Process.13,RGB(255; 102; 0)
+LINK Process.15
+NODE Process.15,4
+LINK Process.20
+TERM Terminator.16,"Run take_away_zvongendaba_from_guver"
+NODE Process.18,0
+LINK Process.7
+NODE Process.20,0
+LINK Process.42
+NODE Process.21,4
+LINK Loop limit.36
+NODE Process.24,0
+LINK Terminator.16
+TEST Decision,"global_from_guver6a"
+LINK Terminator.22
+LINK Loop limit.30
+OPTN Decision,1,Terminator.22
+TERM Terminator.22,"Goto begin6a"
+OPTN Decision,0,Loop limit.30
+LABL Loop limit.30,"continue5c"
+LINK Process.10
+TEST Decision.32,"global_from_guver6a"
+LINK Terminator.34
+LINK Process.21
+OPTN Decision.32,1,Terminator.34
+TERM Terminator.34,"Goto continue6a"
+OPTN Decision.32,0,Process.21
+LABL Loop limit.36,"final5c"
+LINK Process.24
+LABL Loop limit.26,"init"
+LINK Manual operation
+NODE Process.40,0
+LINK Decision.32
+NODE Process.42,4
+LINK Process.40
+BEGN 5d
+NODE Sheet.1,0
+TERM Terminator,"Set from_guver5d = 1
+Goto start5"
+CHAR Manual operation,RGB(255; 102; 0),"zvongendaba"
+LINK Terminator
+NODE Process,4
+LINK Process.18
+LABL Loop limit,"begin5d"
+LINK Process
+NODE Process.7,RGB(255; 102; 0)
+LINK Process.26
+NODE Process.10,4
+LINK Process.13
+NODE Process.13,RGB(255; 102; 0)
+LINK Process.29
+NODE Process.15,4
+LINK Process.20
+TERM Terminator.16,"Run take_away_snowball_and_zvongendaba_from_guver"
+NODE Process.18,0
+LINK Process.7
+NODE Process.20,0
+LINK Process.43
+NODE Process.21,4
+LINK Loop limit.33
+CHAR Manual operation.24,RGB(153; 51; 0),"snowball"
+LINK Manual operation
+NODE Process.26,RGB(153; 51; 0)
+LINK Decision.32
+NODE Process.29,RGB(153; 51; 0)
+LINK Process.15
+NODE Process.24,0
+LINK Terminator.16
+TEST Decision.32,"global_from_guver6b"
+LINK Terminator.34
+LINK Process.10
+OPTN Decision.32,1,Terminator.34
+TERM Terminator.34,"Goto continue6b"
+OPTN Decision.32,0,Process.10
+LABL Loop limit.33,"final5d"
+LINK Process.24
+LABL Loop limit.26,"init"
+LINK Manual operation.24
+NODE Process.41,0
+LINK Process.21
+NODE Process.43,4
+LINK Process.41
+BEGN 5f
+NODE Process.34,4
+LINK Process.36
+NODE Process.36,0
+LINK Terminator
+TEST Decision.128,"Done_zvongendaba3_liberation_goodwin"
+LINK Process.136
+LINK Process.34
+OPTN Decision.128,0,Process.34
+OPTN Decision.128,1,Process.136
+NODE Process.136,4
+LINK Process.138
+NODE Process.138,0
+LINK Terminator
+OPTN Process.138,,Terminator
+LABL Loop limit.22,"init"
+LINK Decision.128
+TERM Terminator,"set global_goodwin_gone = 0
+dialog 5g"
+TERM Terminator.200,"start_guver_dialog5f"
+BEGN 5g
+NODE Process.38,4
+LINK Decision.184
+TERM Terminator.59,"Set quest_bluehelmet = \"completed\"
+Goto agreement5"
+LABL Loop limit.95,"init"
+LINK Process.38
+TEST Decision.184,"Quest_bluehelmet = \"got\""
+LINK Terminator.187
+LINK Terminator.59
+OPTN Decision.184,1,Terminator.59
+OPTN Decision.184,0,Terminator.187
+TERM Terminator.187,"Set quest_find_wolf = \"completed\"
+Goto agreement5"
+NODE Sheet.10,0
+NODE Sheet.11,0
+NODE Sheet.12,0
+TERM Terminator.97,"goodwin_die_by_guver"
+TERM Terminator.166,"start_guver_dialog5g"
+BEGN 5z
+NODE Process,4
+LINK Terminator.9
+TEST Decision.11,"quest_secure_perimeter = \"got\" || quest_secure_perimeter = \"completed\""
+LINK Process
+LINK Decision
+OPTN Decision.11,0,Process
+OPTN Decision.11,1,Decision
+TERM Terminator.9,"Set global_from_guver5z = 1
+goto agreement5"
+NODE Process.17,4
+LINK Decision.14
+OPTN Process.17,,Decision.14
+NODE Process.19,0
+LINK Terminator.18
+TERM Terminator.18,"End"
+TEST Decision.14,"Done_rusk2"
+LINK Process.19
+LINK Terminator.21
+OPTN Decision.14,1,Terminator.21
+TERM Terminator.21,"Dialog 13"
+LABL Loop limit.26,"init"
+LINK Decision.11
+TERM Terminator.30,"Dialog 14"
+TEST Decision,"quest_steal_ammo = \"got\""
+LINK Process.17
+LINK Terminator.30
+OPTN Decision,0,Process.17
+OPTN Decision,1,Terminator.30
+OPTN Decision.14,0,Process.19
+BEGN 6
+NODE Sheet.1,0
+CHAR Manual operation.24,RGB(153; 51; 0),"snowball"
+LINK Process
+NODE Process,4
+LINK Process.6
+NODE Process.6,0
+LINK Terminator
+TERM Terminator,"Set global_from_guver6 = 1
+Goto begin5b"
+LABL Loop limit,"begin6"
+LINK Process.10
+NODE Process.10,4
+LINK Process.13
+NODE Process.13,RGB(153; 51; 0)
+LINK Process.15
+NODE Process.15,4
+LINK Process.24
+TERM Terminator.16,"Run take_away_snowball_from_guver"
+NODE Process.24,0
+LINK Terminator.16
+LABL Loop limit.26,"init"
+LINK Manual operation.24
+BEGN 6a
+NODE Sheet.1,0
+CHAR Manual operation,RGB(255; 102; 0),"zvongendaba"
+LINK Process
+NODE Process,4
+LINK Process.6
+NODE Process.6,0
+LINK Terminator
+TERM Terminator,"Set global_from_guver6a = 1
+Goto begin5c"
+LABL Loop limit,"begin6a"
+LINK Process.10
+NODE Process.10,4
+LINK Process.20
+NODE Process.20,RGB(255; 102; 0)
+LINK Terminator.13
+TERM Terminator.13,"Goto continue5c"
+LABL Loop limit.21,"continue6a"
+LINK Process.21
+NODE Process.21,4
+LINK Process.13
+NODE Process.13,RGB(255; 102; 0)
+LINK Process.19
+NODE Process.19,4
+LINK Terminator.24
+TERM Terminator.24,"Goto final5c"
+LABL Loop limit.26,"init"
+LINK Manual operation
+BEGN 6b
+NODE Sheet.1,0
+CHAR Manual operation,RGB(255; 102; 0),"zvongendaba"
+LINK Process
+NODE Process,4
+LINK Process.6
+NODE Process.6,0
+LINK Terminator
+TERM Terminator,"Set global_from_guver6b = 1
+Goto begin5d"
+CHAR Manual operation.24,RGB(153; 51; 0),"snowball"
+LINK Manual operation
+LABL Loop limit,"continue6b"
+LINK Process.13
+NODE Process.13,4
+LINK Process.29
+NODE Process.29,RGB(153; 51; 0)
+LINK Process.17
+NODE Process.17,4
+LINK Process.19
+NODE Process.19,RGB(153; 51; 0)
+LINK Process.21
+NODE Process.21,4
+LINK Terminator.23
+TERM Terminator.23,"Set global_from_guver6b = 1
+Goto final5d"
+NODE Process.24,4
+LINK Process.27
+LABL Loop limit.25,"final6b"
+LINK Process.24
+NODE Process.27,0
+LINK Terminator.29
+TERM Terminator.29,"Goto Signature1_5"
+LABL Loop limit.26,"init"
+LINK Manual operation.24
+BEGN 8
+NODE Process,4
+LINK Process.3
+LINK Process.5
+NODE Process.3,0
+LINK Process.7
+NODE Process.5,0
+LINK Loop limit
+NODE Process.7,4
+LINK Process.5
+OPTN Process,,Process.3
+OPTN Process,,Process.5
+OPTN Process.7,,Process.5
+NODE Process.11,4
+LINK Process.13
+OPTN Loop limit,,Process.11
+NODE Process.13,0
+LINK Process.16
+OPTN Process.11,,Process.13
+OPTN Process.13,,Process.16
+NODE Process.16,4
+LINK Loop limit.19
+OPTN Loop limit.19,,Process.20
+OPTN Process.16,,Loop limit.19
+LABL Loop limit.19,"change8"
+LINK Process.37
+LINK Process.20
+NODE Process.20,0
+LINK Process.22
+OPTN Process.20,,Process.22
+NODE Process.22,4
+LINK Process.23
+LINK Process.27
+NODE Process.23,0
+LINK Terminator
+TERM Terminator,"End"
+OPTN Process.23,,Terminator
+NODE Process.27,0
+LINK Loop limit.34
+OPTN Process.27,,Loop limit.34
+ADDQ Preparation
+LINK Terminator.32
+OPTN Preparation,,Terminator.32
+TERM Terminator.32,"Set quest_kompromat_on_wolf = \"got\"
+Run become_wolf_security"
+OPTN Process.22,,Process.27
+OPTN Process.22,,Process.23
+NODE Sheet.33,0
+LABL Loop limit.34,"final8"
+LINK Preparation
+OPTN Loop limit.34,,Preparation
+OPTN Loop limit.19,,Process.37
+NODE Process.37,0
+LINK Terminator.38
+TERM Terminator.38,"Goto final8"
+OPTN Process.37,,Terminator.38
+LABL Loop limit,"begin8"
+LINK Process.11
+OPTN Process.5,,Loop limit
+BEGN 8a
+NODE Process,4
+LINK Process.2
+LINK Terminator.15
+NODE Process.2,0
+LINK Process.5
+OPTN Process,,Process.2
+OPTN Process.2,,Process.5
+NODE Process.5,4
+LINK Process.7
+LINK Process.10
+OPTN Process.5,,Process.7
+NODE Process.7,0
+LINK Terminator
+OPTN Process.7,,Terminator
+TERM Terminator,"Goto begin8"
+NODE Process.10,0
+LINK Process.12
+OPTN Process.5,,Process.10
+NODE Process.12,4
+LINK Terminator.17
+OPTN Process.10,,Process.12
+OPTN Process,,Terminator.15
+TERM Terminator.15,"Goto change8"
+OPTN Process.12,,Terminator.17
+TERM Terminator.17,"Goto change8"
+BEGN 9
+NODE Process,4
+LINK Loop limit
+NODE Process.3,0
+LINK Terminator
+LABL Loop limit,"begin9"
+LINK Decision.47
+LINK Process.3
+TERM Terminator,"end"
+TEST Decision,"Has_item(boar,key_guver)"
+LINK Process.20
+LINK Decision.12
+OPTN Loop limit,,Decision.47
+OPTN Decision,1,Process.20
+OPTN Decision,0,Decision.12
+TEST Decision.12,"Has_item(boar,poison_guver)"
+LINK Process.24
+LINK Process.14
+OPTN Decision.12,1,Process.14
+NODE Process.14,0
+LINK Process.21
+NODE Process.21,4
+LINK Process.38
+OPTN Decision.12,0,Process.24
+NODE Process.24,0
+LINK Process.26
+NODE Process.26,4
+LINK Process.58
+LINK Process.27
+NODE Process.27,0
+LINK Process.30
+NODE Process.30,4
+LINK Process.32
+NODE Process.32,0
+LINK Document
+TERM Terminator.34,"end"
+ADDI Document
+LINK Terminator.34
+NODE Process.38,0
+LINK Process.42
+NODE Process.17,4
+LINK Terminator.40
+NODE Process.42,4
+LINK Terminator.43
+NODE Process.20,0
+LINK Process.17
+TEST Decision.47,"Has_item(boar,key_guver) && Has_item(boar,poison_guver)"
+LINK Process.15
+LINK Decision
+OPTN Decision.47,1,Process.15
+OPTN Decision.47,0,Decision
+NODE Process.15,0
+LINK Process.18
+NODE Process.18,4
+LINK Terminator.51
+TERM Terminator.40,"Goto final9"
+TERM Terminator.52,"destroy_item boar,key_guver
+destroy_item boar,poison_guver
+Set quest_poison_guver = \"failed\"
+Set quest_kompromat_on_wolf = \"completed\"
+Run going_to_wolf_with_guver"
+LABL Loop limit.53,"final9"
+LINK Process.61
+TERM Terminator.51,"Goto final9"
+TERM Terminator.43,"Goto final9"
+LABL Loop limit.26,"init"
+LINK Process
+NODE Process.58,0
+LINK Terminator.60
+TERM Terminator.60,"end"
+NODE Process.61,0
+LINK Terminator.52
+BEGN 10
+NODE Process,4
+LINK Terminator.30
+NODE Sheet.2,0
+LABL Loop limit,"Begin10"
+LINK Process.12
+LINK Loop limit.28
+OPTN Loop limit.28,,Process.7
+NODE Process.7,0
+LINK Preparation
+TERM Terminator,"Set quest_find_wolf = \"got\"
+run goto_powerst"
+ADDQ Preparation
+LINK Terminator
+OPTN Loop limit,,Process.12
+NODE Process.12,0
+LINK Process.13
+NODE Process.13,4
+LINK Terminator.16
+LINK Process.18
+OPTN Process.12,,Process.13
+OPTN Process.13,,Terminator.16
+TERM Terminator.16,"Goto quest10"
+OPTN Process.13,,Process.18
+NODE Process.18,0
+LINK Process.20
+OPTN Process.18,,Process.20
+NODE Process.20,4
+LINK Terminator.22
+LINK Process.24
+OPTN Process.20,,Terminator.22
+TERM Terminator.22,"Goto quest10"
+OPTN Process.20,,Process.24
+NODE Process.24,0
+LINK Terminator.25
+TERM Terminator.25,"Run boar_die_by_guver"
+NODE Sheet.27,0
+LABL Loop limit.28,"quest10"
+LINK Process.7
+OPTN Loop limit,,Loop limit.28
+TERM Terminator.30,"Create_item boar,pistol_stupid
+Create_item boar,ammo_6mm
+Create_item boar,ammo_6mm
+goto begin10"
+LABL Loop limit.32,"init"
+LINK Process
+BEGN 11
+NODE Process,4
+LINK Decision
+TEST Decision,"dead_wolf"
+LINK Process.6
+LINK Process.13
+OPTN Decision,1,Process.13
+OPTN Decision,0,Process.6
+NODE Process.6,0
+LINK Process.8
+NODE Process.8,4
+LINK Process.9
+NODE Process.9,0
+LINK Terminator
+TERM Terminator,"End"
+NODE Process.13,0
+LINK Loop limit
+NODE Process.19,4
+LINK Process.34
+TERM Terminator.166,"leave_party hamster
+leave_party gabriel
+Run start_guver_dialog5g"
+CHAR Manual operation.24,RGB(153; 51; 0),"snowball"
+LINK Process
+NODE Process.26,RGB(153; 51; 0)
+LINK Process.32
+NODE Process.15,RGB(153; 51; 0)
+LINK Process.30
+LABL Loop limit,"snowball11"
+LINK Process.26
+NODE Process.30,0
+LINK Terminator.166
+NODE Process.32,0
+LINK Process.19
+NODE Process.34,0
+LINK Process.15
+BEGN 12
+LABL Loop limit,"init"
+LINK Process
+NODE Process,4
+LINK Process.5
+NODE Process.5,0
+LINK Process.6
+NODE Process.6,4
+LINK Loop limit.9
+LABL Loop limit.9,"begin12"
+LINK Loop limit.41
+LINK Loop limit.49
+LINK Loop limit.24
+NODE Process.12,0
+LINK Process.13
+NODE Process.13,4
+LINK Loop limit.20
+TERM Terminator.16,"Goto offer12"
+LABL Loop limit.20,""
+LINK Terminator.16
+LINK Terminator.24
+LINK Terminator.51
+TERM Terminator.24,"Goto fight12"
+NODE Process.22,0
+LINK Process.26
+LABL Loop limit.24,"offer12"
+LINK Process.22
+NODE Process.26,4
+LINK Loop limit.64
+LABL Loop limit.28,""
+LINK Terminator.34
+LINK Process.30
+NODE Process.30,0
+LINK Terminator
+TERM Terminator,"run boar_die_by_guver_aryannor"
+NODE Process.8,0
+LINK Terminator.38
+TERM Terminator.38,"set global_on_attack_guver = \"\"
+attack_target $195,$0
+declare_war $195
+end"
+LABL Loop limit.22,"fight12"
+LINK Process.8
+LABL Loop limit.41,""
+LINK Loop limit.52
+LINK Loop limit.22
+TERM Terminator.34,"Goto fight12"
+NODE Process.45,0
+LINK Process.47
+NODE Process.47,4
+LINK Loop limit.55
+LABL Loop limit.49,"z1question12"
+LINK Process.12
+TERM Terminator.51,"Goto z2question12"
+LABL Loop limit.52,"z2question12"
+LINK Process.45
+TERM Terminator.54,"Goto offer12"
+LABL Loop limit.55,""
+LINK Terminator.54
+LINK Terminator.57
+LINK Terminator.60
+TERM Terminator.57,"Goto fight12"
+TERM Terminator.60,"Goto z1question12"
+TERM Terminator.63,"Goto z1question12"
+LABL Loop limit.64,""
+LINK Terminator.63
+LINK Terminator.66
+LINK Loop limit.28
+TERM Terminator.66,"Goto z2question12"
+NODE Sheet.68,0
+BEGN 13
+LABL Loop limit,"init"
+LINK Process
+NODE Process,0
+LINK Process.6
+NODE Sheet.5,0
+NODE Process.6,4
+LINK Loop limit.9
+NODE Process.8,0
+LINK Preparation
+LABL Loop limit.9,""
+LINK Process.15
+LINK Loop limit.12
+LABL Loop limit.12,"ok13"
+LINK Process.8
+NODE Process.15,0
+LINK Process.59
+NODE Process.59,4
+LINK Loop limit.19
+LABL Loop limit.19,""
+LINK Process.22
+LINK Terminator.26
+NODE Process.22,0
+LINK Terminator
+TERM Terminator,"run boar_the_gay"
+TERM Terminator.26,"Goto ok13"
+ADDQ Preparation
+LINK Terminator.29
+TERM Terminator.29,"Set quest_steal_ammo = \"got\"
+destroy_char wolf
+end"
+BEGN 14
+NODE Process.35,0
+LINK Terminator.37
+TERM Terminator.37,"End"
+TEST Decision,"Dead_pimple"
+LINK Process.31
+LINK Process.30
+OPTN Decision,0,Process.30
+OPTN Decision,1,Process.31
+NODE Process.30,4
+LINK Process.35
+NODE Process.31,4
+LINK Terminator.68
+TERM Terminator.68,"Set from_guver14 = 1
+Goto conception4"
+LABL Loop limit.41,"work14"
+LINK Process.43
+NODE Process.43,4
+LINK Document.39
+TERM Terminator,"Set quest_steal_ammo = \"completed\"
+Set quest_steal_ammo_2 = \"completed\"
+goto begin14"
+NODE Process.46,0
+LINK Terminator
+LABL Loop limit,"init"
+LINK Decision
+NODE Sheet.23,0
+LABL Loop limit.8,"begin14"
+LINK Process.11
+NODE Process.11,4
+LINK Process.13
+NODE Process.13,0
+LINK Document
+ADDI Document
+LINK Preparation
+TERM Terminator.34,"Set quest_secure_ammo = \"got\"
+Set global_info_parovoz = 1
+end"
+ADDI Document.39
+LINK Process.46
+ADDQ Preparation
+LINK Terminator.34
+BEGN 14a
+LABL Loop limit.8,"init"
+LINK Process
+NODE Process,4
+LINK Process.5
+NODE Process.5,0
+LINK Terminator
+TERM Terminator,"end"
+BEGN Q
+NODE Process.78,0
+LINK Process.79
+NODE Process.79,4
+LINK Process.81
+NODE Process.81,0
+LINK Process.83
+NODE Process.83,4
+LINK Process.86
+NODE Process.86,0
+LINK Process.87
+NODE Process.87,4
+LINK Process.90
+NODE Process.90,0
+LINK Process.91
+NODE Process.91,4
+LINK Process.94
+NODE Process.94,0
+LINK Process.96
+NODE Process.96,4
+LINK Process.27
+TERM Terminator.97,"Goto quest4"
+ADDI Document
+LINK Document.31
+LABL Loop limit,"StartQ"
+LINK Process.78
+NODE Process.27,0
+LINK Process.29
+NODE Process.29,4
+LINK Document
+ADDI Document.31
+LINK Terminator.97
+NODE Sheet.32,0

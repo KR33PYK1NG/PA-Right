@@ -1,0 +1,12 @@
+set global_on_attack_demon = ""
+
+set quest_demon_fights = "got"
+quest_log Boar,quest_demon_fights
+open_location fight12
+open_location fight13
+open_location fight14
+open_location fight15
+open_location monster12
+open_location monster13
+open_location monster14
+open_location monster15

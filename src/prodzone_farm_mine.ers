@@ -1,0 +1,79 @@
+
+# Кусок из каталога SEVA ######################################################################################################
+#if dead_horn = 1
+#run prodzone_farm_mine_dead_horn
+#endif
+
+if has_item(Boar,bruise) && quest_chucha_1 = "got"
+set quest_chucha_1 = "completed"
+endif
+
+if quest_chucha = "got" && dead_chucha = 1
+set quest_chucha = ""
+endif
+
+if distance(boar,32,35) < 10 && done_yoke1_going_to_locomotive = 0 && dead_yoke = 0 && global_yoke_fight = 0 && global_yoke_pass = 0
+run prodzone_farm_mine_1        
+endif
+
+if done_horn2 = 1 && global_farm_mine_att = 0
+set global_farm_mine_att = 1
+run prodzone_farm_mine_leva
+endif
+
+if global_farm_mine_att = 1 && dead_yoke = 1 && dead_locomotive_Guard1 = 1 && global_farm_mine_att2 = 0 && dead_leva = 1
+set global_farm_mine_att2 = 1
+create_char locomotive_Guard2,32,21,0,5
+create_char locomotive_Guard3,21,33,0,5
+declare_war $5
+attack_target $5,Boar
+endif
+
+if global_farm_mine_att2 = 1 && dead_locomotive_Guard2 = 1 && dead_locomotive_Guard3 = 1 && global_farm_mine_att3 = 0
+set global_farm_mine_att3 = 1
+create_char locomotive_Guard4,23,20,0,6
+create_char locomotive_Guard5,32,20,0,6
+create_char locomotive_Guard6,53,26,0,6
+declare_war $6
+attack_target $6,Boar
+endif
+
+if dead_locomotive_Guard4 = 1 && dead_locomotive_Guard5 = 1 && dead_locomotive_Guard6 = 1 && run_prodzone_farm_mine_tutu = 0
+set run_prodzone_farm_mine_tutu = 1
+run prodzone_farm_mine_tutu
+endif
+
+if distance(Boar,$90) < 5 && global_farm_mine_90_attack = 0
+set global_farm_mine_90_attack = 1
+declare_war $90
+attack_target $90,Boar
+endif
+
+#quest secure perimeter
+if distance(boar,16,64)<3 && quest_secure_perimeter_3 = "got"
+set quest_secure_perimeter_3 = "completed"
+endif
+
+if quest_secure_perimeter_1 = "completed" && quest_secure_perimeter_2 = "completed" && quest_secure_perimeter_3 = "completed" && quest_secure_perimeter_4 = "completed" && quest_secure_perimeter = "got"
+set quest_secure_perimeter = "completed"
+endif
+# Кусок из каталога LENA ######################################################################################################
+
+# Кусок из каталога ALEX ######################################################################################################
+
+# Кусок из каталога VIT #######################################################################################################
+# Гудок просит Кабана подойти.
+if !run_prodzone_farm_mine_before_tutu && quest_secure_ammo = "got" && distance(Boar, 36, 31) < 5 && (!in_war($4) || distance($4, $0) > 150)
+run prodzone_farm_mine_before_tutu
+endif
+
+#отнять у кабана оружие из квеста варгана
+if (quest_wargun = "completed" || quest_wargun = "failed" ) && ( has_item(boar,rifle_knacker) || item_weared(boar,rifle_knacker) )
+run boar_die_by_guver
+endif
+if (quest_wargun = "completed" || quest_wargun = "failed" ) && ( has_item(boar,revolver_butcher) || item_weared(boar,revolver_butcher) )
+run boar_die_by_guver
+endif
+if (quest_wargun = "completed" || quest_wargun = "failed" ) && ( has_item(boar,shotgun_pencil) || item_weared(boar,shotgun_pencil) )
+run boar_die_by_guver
+endif

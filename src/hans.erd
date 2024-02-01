@@ -1,0 +1,1053 @@
+BEGN 0
+TEST Decision.106,"done_hans1"
+LINK Terminator.103
+LINK Terminator.101
+OPTN Decision.106,0,Terminator.101
+TERM Terminator.101,"dialog 1"
+OPTN Decision.106,1,Terminator.103
+TERM Terminator.103,"dialog 1a"
+OPTN Decision.105,0,Decision.106
+TEST Decision.105,"quest_return_marta = \"got\""
+LINK Terminator.108
+LINK Decision.106
+OPTN Decision.105,1,Terminator.108
+TERM Terminator.108,"dialog 2"
+OPTN Decision,0,Decision.113
+TEST Decision.113,"done_hans2"
+LINK Terminator.116
+LINK Decision.105
+OPTN Decision.113,0,Decision.105
+OPTN Decision.113,1,Terminator.116
+TERM Terminator.116,"dialog 2x"
+TEST Decision.118,"quest_arrive_at_cannibals = \"completed\""
+LINK Terminator.120
+LINK Decision
+OPTN Decision.118,1,Terminator.120
+TERM Terminator.120,"dialog 2z"
+TEST Decision.122,"Done_marta2 = 1 || done_arbi1a = 1"
+LINK Terminator.121
+LINK Decision.118
+OPTN Decision.122,1,Terminator.121
+OPTN Decision.122,0,Decision.118
+TERM Terminator.121,"dialog 2a"
+OPTN Decision.126,0,Decision.122
+TEST Decision.126,"quest_buy_marta = \"got\""
+LINK Terminator.129
+LINK Decision.122
+OPTN Decision.126,1,Terminator.129
+OPTN Decision.130,0,Decision.126
+TERM Terminator.129,"dialog 2b1"
+TEST Decision.130,"In_party(kruger)"
+LINK Decision.136
+LINK Decision.126
+OPTN Decision.130,1,Decision.136
+OPTN Decision.133,0,Decision.130
+TEST Decision.133,"In_party(marta) || global_marta_salv = 1"
+LINK Decision.142
+LINK Decision.130
+OPTN Decision.133,1,Decision.142
+OPTN Decision.136,0,Terminator.138
+TEST Decision.136,"quest_buy_marta = \"got\""
+LINK Terminator.139
+LINK Terminator.138
+OPTN Decision.136,1,Terminator.139
+TERM Terminator.138,"dialog 3a"
+TERM Terminator.139,"dialog 7a"
+TEST Decision.142,"done_hans7a1 = 1 || done_hans7a2 = 1"
+LINK Decision.165
+LINK Terminator.145
+OPTN Decision.142,0,Decision.165
+OPTN Decision.142,1,Terminator.145
+TERM Terminator.145,"dialog 8a"
+OPTN Decision.150,0,Decision.147
+TEST Decision.150,"done_hans8b"
+LINK Decision.189
+LINK Decision.147
+OPTN Decision.150,1,Decision.189
+OPTN Decision.154,0,Decision.150
+TEST Decision.154,"quest_kill_mamed = \"got\""
+LINK Decision.185
+LINK Decision.150
+OPTN Decision.154,1,Decision.185
+TEST Decision.156,"Done_hans7a2"
+LINK Decision.197
+LINK Decision.133
+OPTN Decision.156,1,Decision.197
+OPTN Decision.156,0,Decision.133
+OPTN Decision.162,0,Decision.154
+TEST Decision.162,"quest_kill_mamed = \"completed\""
+LINK Decision.181
+LINK Decision.154
+OPTN Decision.162,1,Decision.181
+TERM Terminator.140,"dialog 11"
+TEST Decision.165,"done_hans11"
+LINK Terminator.168
+LINK Terminator.140
+OPTN Decision.165,0,Terminator.140
+OPTN Decision.165,1,Terminator.168
+TERM Terminator.168,"dialog 11a"
+LABL Loop limit,"init"
+LINK Decision.212
+TEST Decision,"quest_arrive_at_cannibals = \"got\""
+LINK Terminator
+LINK Decision.113
+OPTN Decision,1,Terminator
+TERM Terminator,"dialog 2y"
+OPTN Decision.118,0,Decision
+OPTN Decision.147,0,Decision.156
+TEST Decision.147,"quest_investigation_steal_marta = \"got\""
+LINK Decision.193
+LINK Decision.156
+OPTN Decision.147,1,Decision.193
+OPTN Decision.181,0,Terminator.164
+TEST Decision.181,"In_party(marta) || global_marta_salv = 1"
+LINK Terminator.183
+LINK Terminator.164
+OPTN Decision.181,1,Terminator.183
+TERM Terminator.164,"dialog 11a"
+TERM Terminator.183,"dialog 8a"
+TERM Terminator.160,"dialog 9"
+OPTN Decision.185,0,Terminator.160
+TEST Decision.185,"In_party(marta) || global_marta_salv = 1"
+LINK Terminator.188
+LINK Terminator.160
+OPTN Decision.185,1,Terminator.188
+TERM Terminator.188,"dialog 8a"
+TERM Terminator.152,"dialog 8b2"
+OPTN Decision.189,0,Terminator.152
+TEST Decision.189,"In_party(marta) || global_marta_salv = 1"
+LINK Terminator.191
+LINK Terminator.152
+OPTN Decision.189,1,Terminator.191
+TERM Terminator.191,"dialog 8a"
+TERM Terminator.148,"set quest_investigation_steal_marta = 0
+dialog 7a2b"
+OPTN Decision.193,0,Terminator.148
+TEST Decision.193,"In_party(marta) || global_marta_salv = 1"
+LINK Terminator.195
+LINK Terminator.148
+OPTN Decision.193,1,Terminator.195
+TERM Terminator.195,"dialog 8a"
+TERM Terminator.159,"dialog 7a2a"
+OPTN Decision.197,0,Terminator.159
+TEST Decision.197,"In_party(marta) || global_marta_salv = 1"
+LINK Terminator.199
+LINK Terminator.159
+OPTN Decision.197,1,Terminator.199
+TERM Terminator.199,"dialog 8a"
+TEST Decision.200,"global_fatherwindigo_money"
+LINK Terminator.203
+LINK Decision.162
+OPTN Decision.200,0,Decision.162
+OPTN Decision.200,1,Terminator.203
+TERM Terminator.203,"dialog 12"
+TEST Decision.204,"quest_buy_kruger = \"got\""
+LINK Terminator.207
+LINK Decision.200
+OPTN Decision.204,0,Decision.200
+OPTN Decision.204,1,Terminator.207
+TERM Terminator.207,"dialog 13"
+TEST Decision.208,"run_going_to_northtown_with_hans_and_marta"
+LINK Terminator.211
+LINK Decision.204
+OPTN Decision.208,0,Decision.204
+OPTN Decision.208,1,Terminator.211
+TERM Terminator.211,"Dialog 5c"
+TEST Decision.212,"global_we_at_monster06"
+LINK Terminator.214
+LINK Decision.208
+OPTN Decision.212,1,Terminator.214
+TERM Terminator.214,"Dialog 14"
+OPTN Decision.212,0,Decision.208
+BEGN 1
+NODE Process,4
+LINK Loop limit
+LABL Loop limit,"first1"
+LINK Process.9
+LINK Process.5
+LINK Loop limit.31
+NODE Process.5,0
+LINK Terminator
+TERM Terminator,"Set global_hans1 = 1
+End"
+NODE Process.9,0
+LINK Process.13
+NODE Process.11,0
+LINK Decision
+NODE Process.13,4
+LINK Process.15
+NODE Process.15,0
+LINK Process.17
+NODE Process.17,4
+LINK Document
+ADDI Document
+LINK Process.21
+NODE Process.21,0
+LINK Process.23
+NODE Process.23,4
+LINK Document.25
+ADDI Document.25
+LINK Process.27
+NODE Process.27,0
+LINK Process.29
+NODE Process.29,4
+LINK Terminator.33
+LABL Loop limit.31,"strojka1"
+LINK Process.11
+TERM Terminator.33,"Set global_story_about_marta1 = 1
+Goto strojka1"
+TEST Decision,"global_story_about_marta1"
+LINK Process.73
+LINK Process.38
+OPTN Decision,0,Process.73
+OPTN Decision,1,Process.38
+NODE Process.38,4
+LINK Loop limit.40
+LABL Loop limit.40,"continue1"
+LINK Loop limit.82
+LINK Process.50
+NODE Process.43,0
+LINK Process.45
+NODE Process.45,4
+LINK Process.47
+NODE Process.47,0
+LINK Terminator.49
+TERM Terminator.49,"Attack_target hans,boar
+declare_war hans
+end"
+NODE Process.50,0
+LINK Process.52
+NODE Process.52,4
+LINK Document.60
+LABL Loop limit.54,"final1"
+LINK Process.56
+LINK Process.68
+LINK Process.62
+NODE Process.56,0
+LINK Terminator.58
+TERM Terminator.58,"Set global_hans1 = 0
+End"
+ADDI Document.60
+LINK Loop limit.54
+NODE Process.62,0
+LINK Process.64
+NODE Process.64,4
+LINK Terminator.66
+TERM Terminator.66,"Goto final1"
+NODE Process.68,0
+LINK Preparation
+ADDQ Preparation
+LINK Terminator.72
+TERM Terminator.72,"Set quest_return_marta = \"got\"
+set quest_talk_hans = \"completed\"
+set done_hans1 = 1
+run think_about_blackskin4"
+NODE Process.73,4
+LINK Loop limit.75
+LABL Loop limit.75,""
+LINK Terminator.77
+LINK Process.79
+TERM Terminator.77,"Goto first1"
+NODE Process.79,0
+LINK Terminator.81
+TERM Terminator.81,"Attack_target hans,boar
+declare_war hans
+end"
+LABL Loop limit.82,"blackskin1"
+LINK Process.43
+LABL Loop limit.85,"init"
+LINK Process
+BEGN 1a
+TEST Decision,"global_hans1"
+LINK Process
+LINK Process.5
+OPTN Decision,1,Process
+OPTN Decision,0,Process.5
+NODE Process,4
+LINK Terminator
+NODE Process.5,4
+LINK Terminator.9
+TERM Terminator,"Goto first1"
+TERM Terminator.9,"Goto final1"
+LABL Loop limit.44,"init"
+LINK Decision
+BEGN 2
+TEST Decision.3,"Done_blackskin5"
+LINK Process
+LINK Process.5
+OPTN Decision.3,1,Process
+OPTN Decision.3,0,Process.5
+NODE Process,0
+LINK Process.14
+NODE Process.5,0
+LINK Terminator.9
+TERM Terminator.9,"Set global_hans2 = 0
+End"
+NODE Process.2,4
+LINK Decision.3
+LABL Loop limit,"begin2"
+LINK Process.17
+LINK Terminator
+NODE Process.14,4
+LINK Loop limit
+TERM Terminator,"Goto blackskin1"
+NODE Process.17,0
+LINK Process.19
+NODE Process.19,4
+LINK Loop limit.21
+LABL Loop limit.21,"final2"
+LINK Process.26
+LINK Process.29
+NODE Process.26,0
+LINK Preparation
+TERM Terminator.25,"set quest_arrive_at_cannibals = \"got\"
+set quest_talk_hans2 = \"completed\"
+join_party hans
+set done_hans2 = 1
+run switch_monster06_monster06"
+ADDQ Preparation
+LINK Terminator.25
+NODE Process.29,0
+LINK Terminator.31
+TERM Terminator.31,"Set global_hans2 = 1
+End"
+LABL Loop limit.44,"init"
+LINK Process.2
+BEGN 2x
+TEST Decision,"global_hans2"
+LINK Process
+LINK Terminator.7
+OPTN Decision,1,Process
+OPTN Decision,0,Terminator.7
+NODE Process,4
+LINK Terminator.31
+TERM Terminator.31,"Goto final2"
+TERM Terminator.7,"Dialog 2"
+LABL Loop limit.44,"init"
+LINK Decision
+BEGN 2y
+LABL Loop limit.44,"init"
+LINK Process.9
+NODE Process.9,4
+LINK Process
+NODE Process,0
+LINK Terminator
+TERM Terminator,"end"
+BEGN 2z
+NODE Process,4
+LINK Process.6
+NODE Process.6,0
+LINK Terminator.8
+TERM Terminator.8,"End"
+TEST Decision,"Done_chief1"
+LINK Process
+LINK Process.12
+OPTN Decision,0,Process
+OPTN Decision,1,Process.12
+NODE Process.12,4
+LINK Process.14
+NODE Process.14,0
+LINK Terminator.16
+TERM Terminator.16,"End"
+LABL Loop limit.87,"init"
+LINK Decision
+BEGN 2a
+NODE Process.24,0
+LINK Terminator.26
+TERM Terminator.26,"Dialog 2c"
+OPTN Loop limit.48,,Decision.59
+NODE Process.28,0
+LINK Terminator.30
+TERM Terminator.30,"Dialog 2d"
+LABL Loop limit.40,"init"
+LINK Decision.13
+TERM Terminator.51,"end"
+NODE Process.52,0
+LINK Terminator.51
+NODE Process,4
+LINK Terminator.12
+TERM Terminator.12,"goto begin2a"
+TEST Decision.13,"done_hans2a"
+LINK Process
+LINK Process.16
+OPTN Decision.13,0,Process
+OPTN Decision.13,1,Process.16
+NODE Process.16,4
+LINK Terminator.18
+TERM Terminator.18,"goto begin2a"
+LABL Loop limit,"begin2a"
+LINK Decision
+TEST Decision,"done_arbi1a"
+LINK Loop limit.49
+LINK Loop limit.48
+OPTN Decision,1,Loop limit.48
+OPTN Decision,0,Loop limit.49
+LABL Loop limit.48,""
+LINK Decision.59
+LINK Loop limit.37
+LINK Decision.57
+LABL Loop limit.49,""
+LINK Decision.56
+LINK Decision.46
+LINK Process.36
+OPTN Loop limit.48,,Decision.57
+OPTN Loop limit.49,,Decision.46
+NODE Process.19,0
+LINK Terminator.22
+TERM Terminator.22,"Dialog 2e"
+OPTN Loop limit.48,,Loop limit.37
+NODE Process.44,0
+LINK Terminator.46
+TERM Terminator.46,"end"
+OPTN Loop limit.49,,Process.36
+TERM Terminator.34,"end"
+NODE Process.36,0
+LINK Terminator.34
+TERM Terminator,"Dialog 2b"
+NODE Process.4,0
+LINK Terminator
+LABL Loop limit.37,""
+LINK Process.4
+LINK Decision.61
+OPTN Loop limit.37,,Process.4
+OPTN Loop limit.37,,Decision.61
+OPTN Loop limit.49,,Decision.56
+TEST Decision.56,"done_kruger1_teleport_gazdrubal"
+LINK Process.52
+OPTN Decision.56,1,Process.52
+TEST Decision.46,"done_kruger1_teleport_gazdrubal"
+LINK Process.44
+OPTN Decision.46,1,Process.44
+TEST Decision.57,"done_kruger1_teleport_gazdrubal"
+LINK Process.19
+OPTN Decision.57,1,Process.19
+TEST Decision.59,"done_kruger1_teleport_gazdrubal"
+LINK Process.28
+OPTN Decision.59,1,Process.28
+TEST Decision.61,"done_kruger1_teleport_gazdrubal"
+LINK Process.24
+OPTN Decision.61,1,Process.24
+BEGN 2b
+NODE Process.11,4
+LINK Terminator.14
+TERM Terminator,"add_money boar,2500
+create_item boar,REVOLVER_LAVRENTIY_B
+set quest_buy_marta = \"got\"
+end"
+ADDQ Preparation
+LINK Terminator
+NODE Sheet.11,0
+NODE Process.12,0
+LINK Preparation
+LABL Loop limit.15,"final2b"
+LINK Process.12
+TERM Terminator.14,"Goto begin2d"
+NODE Sheet.15,0
+LABL Loop limit.87,"init"
+LINK Process.11
+BEGN 2b1
+NODE Process,4
+LINK Process.3
+NODE Process.3,0
+LINK Terminator
+TERM Terminator,"End"
+LABL Loop limit,"init"
+LINK Process
+BEGN 2c
+NODE Process,4
+LINK Process.3
+LINK Process.4
+OPTN Process,,Process.3
+NODE Process.3,0
+LINK Terminator.26
+NODE Process.4,0
+LINK Terminator.8
+OPTN Process,,Process.4
+TERM Terminator.26,"Dialog 2c1"
+TERM Terminator.8,"Dialog 2c2"
+NODE Sheet.10,0
+BEGN 2c1
+NODE Process.11,4
+LINK Terminator
+TERM Terminator,"add_money boar,1000
+goto final2b"
+NODE Sheet.6,0
+BEGN 2c2
+TEST Decision,"Reaction > 5"
+LINK Terminator
+LINK Process
+OPTN Decision,1,Terminator
+TERM Terminator,"Dialog 2c1"
+OPTN Decision,0,Process
+NODE Process,4
+LINK Process.9
+NODE Sheet.8,0
+TERM Terminator.4,"End"
+NODE Process.9,0
+LINK Terminator.4
+BEGN 2d
+NODE Process,4
+LINK Loop limit
+NODE Sheet.2,0
+OPTN Loop limit,,Terminator.4
+OPTN Loop limit,,Process.10
+NODE Process.10,0
+LINK Terminator.12
+TERM Terminator.12,"Dialog 2d1"
+LABL Loop limit,"begin2d"
+LINK Terminator.4
+LINK Process.10
+TERM Terminator.4,"goto final2b"
+BEGN 2d1
+NODE Sheet.1,0
+NODE Process,4
+LINK Terminator
+TERM Terminator,"Goto begin2d"
+BEGN 2e
+NODE Process,4
+LINK Terminator
+NODE Sheet.2,0
+TERM Terminator,"Goto begin2d"
+BEGN 3a
+NODE Process,4
+LINK Process.5
+CHAR Manual operation,3,"Kruger"
+LINK Process
+NODE Process.5,3
+LINK Process.7
+NODE Process.7,0
+LINK Process.8
+NODE Process.8,4
+LINK Process.10
+NODE Process.10,0
+LINK Terminator
+TERM Terminator,"Dialog 2b"
+LABL Loop limit,"init"
+LINK Manual operation
+BEGN 5b
+TERM Terminator,"Going_to_northtown_with_hans_and_marta2"
+TERM Terminator.11,"Going_to_northtown_with_hans"
+BEGN 5c
+NODE Process,4
+LINK Loop limit
+OPTN Process,,Loop limit
+LABL Loop limit.12,"init"
+LINK Manual operation
+NODE Process.5,0
+LINK Terminator
+TERM Terminator,"End"
+TEST Decision,"quest_kruger_fights = \"completed\""
+LINK Process.2
+OPTN Decision,1,Process.2
+NODE Process.2,0
+LINK Process.16
+LABL Loop limit,""
+LINK Decision
+LINK Process.5
+OPTN Loop limit,,Decision
+OPTN Loop limit,,Process.5
+OPTN Process.2,,Process.16
+NODE Process.16,4
+LINK Decision.23
+CHAR Manual operation,2,"marta"
+LINK Process
+NODE Process.19,2
+LINK Process.7
+NODE Process.7,0
+LINK Terminator.15
+TEST Decision.23,"distance($0,marta) < 200"
+LINK Process.7
+LINK Process.19
+OPTN Decision.23,1,Process.19
+OPTN Decision.23,0,Process.7
+TERM Terminator.15,"create_item boar,hans_letter
+run going_to_forest"
+BEGN 7a
+NODE Process,4
+LINK Process.5
+CHAR Manual operation,3,"Kruger"
+LINK Process
+NODE Process.5,3
+LINK Process.7
+LINK Process.15
+NODE Process.7,0
+LINK Process.9
+OPTN Process.5,,Process.7
+OPTN Process.5,,Process.15
+NODE Process.9,4
+LINK Process.11
+NODE Process.11,3
+LINK Terminator
+TERM Terminator,"Dialog 7a1"
+NODE Process.15,0
+LINK Process.17
+NODE Process.17,4
+LINK Process.18
+NODE Process.18,3
+LINK Terminator.21
+TERM Terminator.21,"Dialog 7a2"
+BEGN 7a1
+NODE Process,4
+LINK Process.3
+LINK Process.7
+OPTN Process,,Process.3
+NODE Process.3,0
+LINK Terminator
+TERM Terminator,"Attack_target hans,boar
+declare_war hans
+end"
+OPTN Process,,Process.7
+NODE Process.7,0
+LINK Decision.12
+TEST Decision,"Reaction > 5"
+LINK Terminator.47
+LINK Terminator.48
+OPTN Decision,0,Terminator.48
+TEST Decision.12,"Reaction > 8"
+LINK Terminator.15
+LINK Process.17
+OPTN Decision.12,1,Terminator.15
+TERM Terminator.15,"Dialog 7a2"
+OPTN Decision.12,0,Process.17
+NODE Process.17,4
+LINK Terminator.27
+LINK Process.18
+NODE Process.18,0
+LINK Decision.21
+TEST Decision.21,"Reaction > 7"
+LINK Terminator.13
+LINK Process.24
+OPTN Decision.21,1,Terminator.13
+OPTN Decision.21,0,Process.24
+TERM Terminator.13,"Dialog 7a2"
+NODE Process.24,4
+LINK Terminator.33
+LINK Process.34
+TERM Terminator.27,"Goto go_away7a1"
+TERM Terminator.33,"Goto go_away7a1"
+NODE Process.34,0
+LINK Decision.37
+TEST Decision.37,"Reaction > 6"
+LINK Terminator.40
+LINK Process.41
+OPTN Decision.37,1,Terminator.40
+OPTN Decision.37,0,Process.41
+TERM Terminator.40,"Dialog 7a2"
+NODE Process.41,4
+LINK Terminator.43
+LINK Process.45
+TERM Terminator.43,"Goto go_away7a1"
+NODE Process.45,0
+LINK Decision
+OPTN Decision,1,Terminator.47
+TERM Terminator.47,"Dialog 7a2"
+TERM Terminator.48,"Attack_target hans,boar
+declare_war hans
+end"
+NODE Process.26,0
+LINK Terminator.31
+LABL Loop limit,"go_away7a1"
+LINK Process.26
+TERM Terminator.31,"End"
+NODE Sheet.49,0
+LABL Loop limit.87,"init"
+LINK Process
+BEGN 7a2
+NODE Process,4
+LINK Decision
+LABL Loop limit,"begin7a2"
+LINK Decision.48
+OPTN Loop limit,,Decision.48
+NODE Process.11,0
+LINK Terminator.13
+TERM Terminator.13,"end"
+NODE Sheet.14,0
+TERM Terminator.5,"set quest_buy_marta = \"failed\"
+goto begin7a2"
+TEST Decision.48,"Done_marta2"
+LINK Process.3
+LINK Terminator.51
+OPTN Decision.48,1,Terminator.51
+TERM Terminator.51,"Dialog 8b"
+OPTN Decision.48,0,Process.3
+NODE Process.3,0
+LINK Preparation
+ADDQ Preparation
+LINK Terminator
+TERM Terminator,"set quest_investigation_steal_marta = \"got\"
+end"
+TEST Decision,"quest_return_marta = \"got\""
+LINK Terminator.21
+LINK Loop limit.23
+OPTN Decision,1,Terminator.21
+TERM Terminator.21,"set quest_return_marta = \"failed\"
+goto start7a2"
+OPTN Decision,0,Loop limit.23
+LABL Loop limit.23,"start7a2"
+LINK Decision.25
+TEST Decision.25,"quest_buy_marta = \"got\""
+LINK Terminator.5
+LINK Loop limit
+OPTN Decision.25,1,Terminator.5
+OPTN Decision.25,0,Loop limit
+LABL Loop limit.28,"init"
+LINK Process
+BEGN 7a2a
+NODE Process,4
+LINK Terminator
+TERM Terminator,"Goto begin7a2"
+LABL Loop limit,"init"
+LINK Process
+BEGN 7a2b
+NODE Process,4
+LINK Loop limit
+LABL Loop limit,"begin7a2b"
+LINK Process.5
+LINK Decision.48
+OPTN Loop limit,,Process.5
+NODE Process.5,0
+LINK Terminator
+TERM Terminator,"End"
+TEST Decision.48,"Done_marta2"
+LINK Terminator.51
+OPTN Decision.48,1,Terminator.51
+OPTN Loop limit,,Decision.48
+TERM Terminator.51,"Dialog 8b"
+LABL Loop limit.13,"init"
+LINK Process
+BEGN 8a
+NODE Process,4
+LINK Terminator.81
+NODE Process.3,0
+LINK Process.34
+NODE Process.5,0
+LINK Decision
+TEST Decision,"Reaction > 5"
+LINK Process.18
+LINK Process.26
+OPTN Decision,0,Process.18
+OPTN Decision,1,Process.26
+TERM Terminator,"Goto start11"
+TEST Decision.13,"Reaction > 2"
+LINK Loop limit
+LINK Process.28
+OPTN Decision.13,0,Loop limit
+OPTN Decision.13,1,Process.28
+TERM Terminator.16,"Attack_target hans,boar
+declare_war hans
+Set quest_investigation_steal_marta = \"0\"
+end"
+NODE Sheet.17,0
+NODE Process.20,0
+LINK Process.25
+OPTN Loop limit,,Process.20
+OPTN Loop limit,,Process.22
+NODE Process.22,0
+LINK Terminator.16
+NODE Process.18,4
+LINK Decision.13
+NODE Process.28,2
+LINK Process.25
+CHAR Manual operation,2,"marta"
+LINK Process.41
+NODE Process.25,4
+LINK Terminator
+LABL Loop limit,""
+LINK Process.22
+LINK Process.20
+NODE Process.26,4
+LINK Terminator.33
+TERM Terminator.33,"Goto start11"
+NODE Process.34,4
+LINK Terminator.38
+TERM Terminator.38,"Goto start11"
+LABL Loop limit.39,"start8a"
+LINK Process.3
+LINK Process.5
+NODE Process.41,4
+LINK Process
+LABL Loop limit.44,"init"
+LINK Manual operation
+TERM Terminator.81,"set global_disabled_global_map = 1
+goto start8a"
+BEGN 8b
+NODE Process,0
+LINK Process.4
+NODE Process.4,4
+LINK Process.12
+NODE Sheet.5,0
+OPTN Process.4,,Process.12
+NODE Process.12,0
+LINK Process.14
+NODE Process.14,4
+LINK Decision
+OPTN Process.12,,Process.14
+OPTN Process.14,,Decision
+LABL Loop limit,"final8b"
+LINK Process.10
+NODE Process.10,0
+LINK Preparation
+OPTN Loop limit,,Process.10
+ADDQ Preparation
+LINK Terminator.24
+NODE Process.18,0
+LINK Terminator.20
+TERM Terminator.20,"end"
+LABL Loop limit.87,"init"
+LINK Process
+TERM Terminator.24,"Set quest_kill_mamed = \"got\"
+open_location highland
+end"
+TEST Decision,"quest_investigation_steal_marta = \"got\""
+LINK Terminator.28
+LINK Loop limit
+OPTN Decision,0,Loop limit
+OPTN Decision,1,Terminator.28
+TERM Terminator.28,"set quest_investigation_steal_marta = \"completed\"
+goto final8b"
+BEGN 8b2
+NODE Process,4
+LINK Terminator
+TERM Terminator,"Goto final8b"
+BEGN 9
+NODE Process.3,4
+LINK Decision
+LINK Process.1
+OPTN Process.3,,Decision
+OPTN Process.3,,Process.1
+TEST Decision,"Has_item(boar,mamed_head)"
+LINK Process
+OPTN Decision,1,Process
+NODE Process,0
+LINK Terminator.11
+NODE Process.1,0
+LINK Terminator
+TERM Terminator,"end"
+TERM Terminator.11,"Give_item boar,mamed_head,hans
+set quest_kill_mamed = \"completed\"
+goto begin9"
+LABL Loop limit,"begin9"
+LINK Process.14
+NODE Process.14,4
+LINK Terminator.16
+TERM Terminator.16,"goto start11"
+LABL Loop limit.87,"init"
+LINK Process.3
+BEGN 11
+NODE Process,4
+LINK Terminator.81
+NODE Process.3,0
+LINK Process.5
+NODE Process.5,4
+LINK Decision.50
+NODE Process.7,0
+LINK Document
+ADDI Document
+LINK Decision
+LABL Loop limit,"final11"
+LINK Process.7
+LINK Process.55
+LINK Decision.8
+OPTN Loop limit,,Process.7
+NODE Process.15,0
+LINK Terminator.17
+TERM Terminator.17,"leave_party marta
+set global_marta_salv = 1
+End"
+TEST Decision.22,"quest_buy_marta = \"got\""
+LINK Process.13
+LINK Loop limit
+OPTN Decision.22,1,Loop limit
+OPTN Decision.22,0,Process.13
+NODE Process.13,0
+LINK Process.25
+NODE Process.25,4
+LINK Terminator.30
+TERM Terminator.30,"add_money boar,2500
+create_item boar,REVOLVER_LAVRENTIY_B
+goto final11"
+TEST Decision.8,"done_arbi1a_join_kruger = 1 ||
+done_arbi1a_join_marta_and_kruger = 1"
+LINK Process.32
+OPTN Decision.8,0,Process.32
+NODE Process.32,0
+LINK Process.39
+TEST Decision.36,"Has_money(boar,1000)"
+LINK Process.35
+LINK Process.42
+OPTN Decision.36,1,Process.35
+NODE Process.39,4
+LINK Decision.36
+OPTN Decision.36,0,Process.42
+NODE Process.42,0
+LINK Process.44
+NODE Process.44,4
+LINK Terminator.46
+TERM Terminator.46,"Goto final11"
+LABL Loop limit.47,"start11"
+LINK Process.3
+TEST Decision.50,"In_party(marta)"
+LINK Terminator.53
+LINK Decision.22
+OPTN Decision.50,1,Decision.22
+OPTN Decision.50,0,Terminator.53
+TERM Terminator.53,"goto final11"
+OPTN Loop limit,,Process.55
+NODE Process.55,0
+LINK Decision.56
+TEST Decision.56,"In_party(marta) || global_marta_salv = 1"
+LINK Process.59
+LINK Process.61
+OPTN Decision.56,1,Process.59
+OPTN Decision.56,0,Process.61
+NODE Process.59,4
+LINK Process.62
+NODE Process.61,4
+LINK Process.62
+NODE Process.62,0
+LINK Process.79
+OPTN Process.59,,Process.62
+OPTN Process.61,,Process.62
+TEST Decision.67,"In_party(marta)"
+LINK Terminator.70
+LINK Decision.71
+OPTN Decision.67,0,Terminator.70
+OPTN Decision.67,1,Decision.71
+TERM Terminator.70,"Run Going_to_northtown_with_hans_and_marta"
+TERM Terminator,"Run Going_to_northtown_with_hans_and_marta"
+TEST Decision.71,"quest_return_marta = \"got\""
+LINK Terminator
+LINK Decision.27
+OPTN Decision.71,1,Decision.27
+OPTN Decision.71,0,Terminator
+TEST Decision.27,"quest_buy_marta = \"got\""
+LINK Terminator.49
+LINK Terminator.74
+OPTN Decision.27,1,Terminator.74
+OPTN Decision.27,0,Terminator.49
+TERM Terminator.49,"set quest_return_marta = \"completed\"
+Run Going_to_northtown_with_hans_and_marta"
+TERM Terminator.74,"set quest_return_marta = \"completed\"
+set quest_buy_marta = \"completed\"
+Run Going_to_northtown_with_hans_and_marta"
+TERM Terminator.34,"End"
+NODE Process.35,0
+LINK Terminator.34
+NODE Process.41,4
+LINK Process
+LABL Loop limit.77,"init"
+LINK Process.41
+TERM Terminator.66,"goto final11"
+NODE Process.79,4
+LINK Terminator.66
+TERM Terminator.81,"set global_disabled_global_map = 1
+goto start11"
+TEST Decision,"quest_investigation_steal_marta = 0"
+LINK Terminator.86
+LINK Loop limit.84
+OPTN Decision,1,Loop limit.84
+LABL Loop limit.84,"dddd11"
+LINK Decision.67
+TERM Terminator.86,"Set quest_investigation_steal_marta = \"0\"
+goto dddd11"
+OPTN Decision,0,Terminator.86
+BEGN 11a
+NODE Process,4
+LINK Terminator
+TERM Terminator,"Goto final11"
+NODE Process.4,4
+LINK Terminator
+OPTN Process,,Terminator
+OPTN Process.4,,Terminator
+TEST Decision,"In_party(marta) || global_marta_salv = 1"
+LINK Process
+LINK Process.4
+OPTN Decision,0,Process.4
+OPTN Decision,1,Process
+BEGN 12
+LABL Loop limit,"init"
+LINK Decision
+NODE Process,4
+LINK Terminator
+TEST Decision,"quest_buy_marta = \"got\""
+LINK Process
+LINK Decision.26
+OPTN Decision,1,Process
+LABL Loop limit.7,"buy_marta_failed12"
+LINK Decision.6
+LINK Process.15
+TEST Decision.6,"has_money(boar,2500) && has_item(boar,REVOLVER_LAVRENTIY_B)"
+LINK Process.12
+LINK Decision.19
+OPTN Decision.6,1,Process.12
+NODE Process.12,0
+LINK Terminator.18
+TERM Terminator,"set quest_buy_marta = \"failed\"
+goto buy_marta_failed12"
+NODE Process.15,0
+LINK Terminator.17
+TERM Terminator.17,"declare_war hans
+attack_target hans,boar
+end"
+TERM Terminator.18,"run hans_disapp"
+TEST Decision.19,"has_money(boar,2500) && item_weared(boar,REVOLVER_LAVRENTIY_B)"
+LINK Process.21
+OPTN Decision.19,1,Process.21
+NODE Process.21,0
+LINK Terminator.23
+TERM Terminator.23,"run hans_disapp"
+OPTN Decision.6,0,Decision.19
+OPTN Decision,0,Decision.26
+TEST Decision.26,"quest_buy_kruger = \"got\""
+LINK Process.34
+LINK Process.28
+OPTN Decision.26,0,Process.28
+NODE Process.28,4
+LINK Process.30
+NODE Process.30,0
+LINK Terminator.32
+TERM Terminator.32,"run hans_disapp"
+OPTN Decision.26,1,Process.34
+NODE Process.34,4
+LINK Terminator.36
+TERM Terminator.36,"set quest_buy_kruger = \"failed\"
+goto buy_kruger_failed12"
+LABL Loop limit.37,"buy_kruger_failed12"
+LINK Decision.39
+LINK Process.44
+TEST Decision.39,"has_money(boar,1000)"
+LINK Process.42
+OPTN Decision.39,1,Process.42
+NODE Process.42,0
+LINK Terminator.47
+NODE Process.44,0
+LINK Terminator.46
+TERM Terminator.46,"declare_war hans
+attack_target hans,boar
+end"
+TERM Terminator.47,"run hans_disapp"
+BEGN 13
+LABL Loop limit,"init"
+LINK Process
+NODE Process.27,0
+LINK Terminator.29
+TERM Terminator.29,"end"
+NODE Process,4
+LINK Process.27
+BEGN 14
+LABL Loop limit,"init"
+LINK Process
+NODE Process,4
+LINK Loop limit.5
+LABL Loop limit.5,"begin14"
+LINK Process.7
+LINK Process.12
+NODE Process.7,0
+LINK Terminator
+TERM Terminator,"set global_disabled_global_map = 0
+run switch_monster06_can_entr"
+NODE Sheet.10,0
+NODE Process.12,0
+LINK Terminator.14
+TERM Terminator.14,"set global_disabled_global_map = 1
+end"

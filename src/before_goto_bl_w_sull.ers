@@ -1,0 +1,9 @@
+set global_disabled_norcity_ycenter = 0
+set global_disabled_norcity_yharbor = 0
+set global_disabled_norcity_ynorth = 0
+set quest_sullen_fights = "completed"
+set quest_goto_bl_w_sull = "got"
+#
+quest_log Boar, quest_goto_bl_w_sull
+#
+popup_multi Boar, a

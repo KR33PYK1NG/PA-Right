@@ -1,0 +1,458 @@
+
+# Кусок из каталога SEVA ######################################################################################################
+if quest_book_yozef = "got" && run_aryantown_aryanwest_aryanguardpierced = 0
+set run_aryantown_aryanwest_aryanguardpierced = 1
+run aryantown_aryanwest_aryanguardpierced
+endif
+
+if global_talk_with_validol != "got" && in_marker($0,drop_east) && global_disabled_aryantown_aryaneast1 = 1
+set global_disabled_aryantown_aryancent = 0
+endif
+
+if global_talk_with_validol = "got" && in_marker($0,drop_east) && global_disabled_aryantown_aryannor = 1
+set global_disabled_aryantown_aryancent = 0
+endif
+
+if in_marker($0,drop_east) && quest_goto_aryancent = "got"
+set quest_goto_aryancent = "completed"
+endif
+
+if quest_lester_chet = "got" && global_chet_app = 0
+set global_chet_app = 1
+create_char chet,73,14
+create_char manu,71,15
+turn manu,130
+endif
+# Кусок из каталога LENA ######################################################################################################
+
+# Кусок из каталога ALEX ######################################################################################################
+
+#	NA кидаются на игрока если атаковать одного из них. 
+if  in_war($42) && global_aryanwest_inwar_check=0
+set global_aryanwest_inwar_check=1
+attack_target($42,$0)
+endif
+
+if quest_aryanwest_NA_trader="got" && dead_aryanwest_q_black_na_glavaw =1
+set quest_aryanwest_NA_trader=0
+endif
+
+if quest_aryancent_ytrader_isDEAD_say="got" && dead_aryanwest_q_black_na_glavaw =1
+set quest_aryancent_ytrader_isDEAD_say=0
+endif
+
+
+if quest_aryancent_ytrader_isDEAD="got" && dead_aryanwest_q_yellow_torgash=1
+set quest_aryancent_ytrader_isDEAD="completed"
+set quest_aryancent_ytrader_isDEAD_say="got"
+quest_log Boar,q1
+endif
+
+#	 комплит квеста по факту смерти aryawes_q_yellow_torgash (при наличии квеста на его смерть)
+if global_aryanwest_yellow_torgash_dead = "got" && dead_aryanwest_q_yellow_torgash =1
+set global_aryanwest_yellow_torgash_dead = "completed"
+endif
+
+if dead_aryanwest_q_black_NA_glavaW = 1 && quest_aryancent_killNA = "got"
+set quest_aryancent_killNA_2 = "completed"
+endif
+#	Базарнй скрипт отслеживанеие смертей для групп черных и желтых торговцев. 
+#	Черные
+set global_aryanwest_dB = dead_aryanwest_q_black_hi_torgash+dead_aryanwest_black_torgash1+dead_aryanwest_black_torgash2+dead_aryanwest_black_torgash3
+if global_aryanwest_dB =4 &&  quest_aryancent_killblack_1 = "got"
+set quest_aryancent_killBlack_1 = "completed"
+endif
+#	Желтые
+set global_aryanwest_dY = dead_aryanwest_q_yellow_hi_torgash+dead_aryanwest_yellow_torgash1+dead_aryanwest_yellow_torgash2+dead_aryanwest_yellow_torgash3
+if  global_aryanwest_dy =4 && quest_aryancent_killyellow_1 = "got"
+set quest_aryancent_killyellow_1 = "completed"
+endif
+# Запуск драки черных и желтых
+if  global_aryanwest_y_vs_b =1 && global_aryanwest_shtopsel = 0
+set global_aryanwest_shtopsel = 1
+set global_aryanw_K4647 = 1
+set global_aryanw_ReflectorRun = 1
+endif
+
+#	Отследивание провалов квестов из за смерти определнных персчонажей. 
+if quest_aryanwest_yellow_vs_black = "got" && distance($0,$46)>150
+set quest_aryanwest_yellow_vs_black_2 = "failed"
+set quest_aryanwest_yellow_vs_black = "failed"
+endif 
+if quest_aryanwest_black_vs_yellow = "got" && distance($0,$47)>150
+set quest_aryanwest_black_vs_yellow_2 = "failed"
+set quest_aryanwest_black_vs_yellow = "failed"
+endif 
+if dead_aryanwest_q_yellow_messenger=1 && quest_aryancent_findNA = "got" && quest_aryanwest_NAshpick != "got"
+set quest_aryancent_findNA = "failed"
+endif
+
+# Кусок из каталога VIT #######################################################################################################
+#
+# aryanw. Основной скрипт, запускается каждую секунду.
+#
+#####################################################################################################################################################
+#
+#     Сценарные события.
+#
+#####################################################################################################################################################
+#
+# Надо вызвать рефлектор.
+if global_aryanw_ReflectorRun
+set global_aryanw_ReflectorRun = 0
+run aryantown_aryanwest_reflector
+endif
+# Кабан выжил еще одну секунду.
+set global_aryanw_time_from_start = global_aryanw_time_from_start + 1
+#
+#####################################################################################################################################################
+#
+# Бой на aryanwest. Повстанцы нападают на игрока. Четыре волны. Первая волна (группа $15) изначально целиком находится на карте, последующие создаются.
+# Созданные персонажи добавляются к изначально существующему персонажу (группы $16, $17, $18).
+# Все волны (враги) выбегают из изначально запертых домов. Первая волна после run_aryantown_aryanwest_aryanguardpierced = 1.
+# Последующие волны атакуют после уничтожения предыдущей (по истечению 60 секунд или при заходе игрока в маркеры). 
+#
+# Первая волна атакующих повстанцев (группа $15).
+# aryanwest_f_black_Fight01 (существует)
+# aryanwest_f_black_EliteFight01 (существует)
+# aryanwest_f_black_Shot01 (существует)
+# aryanwest_f_black_Shot02 (существует)
+if global_aryanwest_goto_aryancent  = 1 && !global_aryanw_Attack
+set global_disabled_global_map = 1
+set global_disabled_map_movement = 1
+set global_aryanw_Attack = 1
+open_door 0, 22, 51
+open_door 0, 13, 59
+open_door 0, 17, 27
+force_scan aryanwest_f_black_Fight01, 1
+force_scan aryanwest_f_black_EliteFight01, 1
+force_scan aryanwest_f_black_Shot01, 1
+force_scan aryanwest_f_black_Shot02, 1
+declare_war $15
+attack_target $15, $0
+endif
+# Группа $15 убита.
+if global_aryanw_Attack = 1 && distance($0, $15) > 150
+set global_aryanw_Attack = 11
+set global_aryanw_Attack_Time = global_aryanw_time_from_start
+endif
+# Вторая волна атакующих повстанцев (группа $16).
+# aryanwest_f_yellow_Fight01 (существует)
+# aryanwest_f_yellow_EliteFight01 (создается)
+# aryanwest_f_yellow_Saboteur01 (создается)
+# aryanwest_f_yellow_Shot01 (создается)
+# aryanwest_f_yellow_EliteShot01 (создается)
+if global_aryanw_Attack = 11 && (in_marker($0, aryanwest_attack2) || global_aryanw_Attack_Time + 60 < global_aryanw_time_from_start)
+set global_aryanw_Attack = 2
+create_char aryanwest_f_yellow_EliteFight01, 50, 6, 0, 16
+create_char aryanwest_f_yellow_Saboteur01, 53, 7, 0, 16
+create_char aryanwest_f_yellow_Shot01, 53, 9, 0, 16
+create_char aryanwest_f_yellow_EliteShot01, 52, 10, 0, 16
+open_door 0, 51, 11
+open_door 0, 47, 7
+force_scan aryanwest_f_yellow_Fight01, 1
+force_scan aryanwest_f_yellow_EliteFight01, 1
+force_scan aryanwest_f_yellow_Saboteur01, 1
+force_scan aryanwest_f_yellow_Shot01, 1
+force_scan aryanwest_f_yellow_EliteShot01, 1
+declare_war $16
+attack_target $16, $0
+endif
+# Группа $16 убита.
+if global_aryanw_Attack = 2 && distance($0, $16) > 150
+set global_aryanw_Attack = 21
+set global_aryanw_Attack_Time = global_aryanw_time_from_start
+endif
+# Третья волна атакующих повстанцев (группа $17).
+# aryanwest_f_black_EliteFight02 (существует)
+# aryanwest_f_black_Shot03 (создается)
+# aryanwest_f_black_Shot04 (создается)
+# aryanwest_f_black_EliteShot01 (создается)
+# aryanwest_f_black_EliteShot02 (создается)
+if global_aryanw_Attack = 21 && (in_marker($0, aryanwest_attack3) || global_aryanw_Attack_Time + 60 < global_aryanw_time_from_start)
+set global_aryanw_Attack = 3
+create_char aryanwest_f_black_Shot03, 82, 87, 0, 17
+create_char aryanwest_f_black_Shot04, 71, 88, 0, 17
+create_char aryanwest_f_black_EliteShot01, 88, 77, 0, 17
+create_char aryanwest_f_black_EliteShot02, 90, 77, 0, 17
+open_door 0, 70, 82
+open_door 0, 82, 86
+open_door 0, 85, 75
+force_scan aryanwest_f_black_EliteFight02, 1
+force_scan aryanwest_f_black_Shot03, 1
+force_scan aryanwest_f_black_Shot04, 1
+force_scan aryanwest_f_black_EliteShot01, 1
+force_scan aryanwest_f_black_EliteShot02, 1
+declare_war $17
+attack_target $17, $0
+endif
+# Группа $17 убита.
+if global_aryanw_Attack = 3 && distance($0, $17) > 150
+set global_aryanw_Attack = 31
+set global_aryanw_Attack_Time = global_aryanw_time_from_start
+endif
+# Четвертая волна атакующих повстанцев (группа $18).
+# aryanwest_f_yellow_Fight02 (существует)
+# aryanwest_f_yellow_EliteFight02 (создается)
+# aryanwest_f_yellow_Saboteur02 (создается)
+# aryanwest_f_yellow_Shot02 (создается)
+# aryanwest_f_yellow_EliteShot02 (создается)
+# aryanwest_f_yellow_Sniper01 (создается)
+if global_aryanw_Attack = 31 && (in_marker($0, aryanwest_attack4) || global_aryanw_Attack_Time + 60 < global_aryanw_time_from_start)
+set global_aryanw_Attack = 41
+create_char aryanwest_f_yellow_EliteFight02, 82, 69, 0, 18
+create_char aryanwest_f_yellow_Saboteur02, 87, 66, 0, 18
+create_char aryanwest_f_yellow_Shot02, 87, 68, 0, 18
+create_char aryanwest_f_yellow_EliteShot02, 88, 11, 0, 18
+create_char aryanwest_f_yellow_Sniper01, 86, 12, 0, 18
+open_door 0, 79, 67
+open_door 0, 86, 64
+open_door 0, 87, 13
+force_scan aryanwest_f_yellow_Fight02, 1
+force_scan aryanwest_f_yellow_EliteFight02, 1
+force_scan aryanwest_f_yellow_Saboteur02, 1
+force_scan aryanwest_f_yellow_Shot02, 1
+force_scan aryanwest_f_yellow_EliteShot02, 1
+force_scan aryanwest_f_yellow_Sniper01, 1
+declare_war $18
+attack_target $18, $0
+endif
+#
+if global_aryanw_Attack = 41 && distance($0, $18) > 150
+set global_aryanw_Attack = -1
+set global_disabled_global_map = 0
+set global_disabled_map_movement = 0
+endif
+# Ромео и Джульета.
+#
+# Игрок нашел Рому у Капулянов.
+# Игрок заходит к Монте-Кам после того как нашел Рому.
+if run_aryantown_aryanwest_roma_fight
+elseif !run_aryantown_aryanwest_roma
+elseif door_state(44, 73, 0) = 1 && !in_war($23) && !in_war($24) && !in_war($25) && distance($23, $0) < 150 && distance($24, $0) < 150 && distance($25, $0) < 150
+run aryantown_aryanwest_roma_fight
+endif
+# Игрок напал на Капулянов.
+if quest_ayanwest_roma != "completed" && (in_war($23) || in_war($24) || in_war($25))
+declare_war $23
+declare_war $24
+declare_war $25
+attack_target $23, $0
+attack_target $24, $0
+attack_target $25, $0
+endif
+# Игрок напал на Капулянов, отменяем квест про убить всех Манте-Ки.
+if quest_ayanwest_roma = "got" &&  (in_war($23) || in_war($24) || in_war($25))
+set quest_ayanwest_roma = "failed"
+endif
+# Игрок убил всех Монте-Ков, мульт про Джулю, Рому и Капулянов.
+if quest_ayanwest_roma != "got"
+elseif run_aryantown_aryanwest_roma_final
+elseif !run_aryantown_aryanwest_roma_fight
+elseif distance($20, $0)>150 && distance($21, $0)>150 && !in_war($23) && !in_war($24) && !in_war($25) && distance($23, $0)<150 && distance($24, $0)<150 && distance($25, $0)<150
+run aryantown_aryanwest_roma_final
+endif
+# Игрок убил всех.
+if run_aryantown_aryanwest_roma_end
+elseif !run_aryantown_aryanwest_roma_final
+elseif distance($23, $0) > 150 && distance($24, $0) > 150 && distance($25, $0) > 150
+run aryantown_aryanwest_roma_end
+endif
+#####################################################################################################################################################
+#
+#     Боевое поведение.
+#
+###############################################################################################################################
+# Отслеживание смертей смотрящих NPC aryan_f_overseer07.
+if distance(aryan_f_overseer07, $0) > 150
+set dead_aryan_f_overseer07 = 1
+else
+set dead_aryan_f_overseer07 = 0
+endif
+# Отслеживание смертей смотрящих NPC aryan_f_overseer08.
+if distance(aryan_f_overseer08, $0) > 150
+set dead_aryan_f_overseer08 = 1
+else
+set dead_aryan_f_overseer08 = 0
+endif
+# Отслеживание смертей смотрящих NPC aryan_f_overseer02.
+if distance(aryan_f_overseer02, $0) > 150
+set dead_aryan_f_overseer02 = 1
+else
+set dead_aryan_f_overseer02 = 0
+endif
+# Группа смотрящих $5 увидела "правонарушение" игрока и атакует его.
+if !global_aryanw_G5 && (in_war($5) || ((is_aryan($0) || is_terrorist($0) || is_violator($0)) && is_group_visible($5, $0)))
+set global_aryanw_G5 = 1
+set global_aryanw_ReflectorRun = 1
+endif
+# Группа $5 мертва.
+if global_aryanw_G5 = -1
+elseif distance($5, $0) > 150
+set global_aryanw_G5 = -1
+endif
+# Группа $5 больше не воюет.
+if global_aryanw_G5 = 2 && !map_in_war
+set global_aryanw_G5 = 0
+change_pose aryan_f_overseer07, 0
+change_pose aryan_f_overseer08, 0
+change_pose aryan_f_overseer02, 0
+set global_aryanw_I5_1 = 0
+set global_aryanw_I5_2 = 0
+set global_aryanw_I5_3 = 0
+switch_action aryan_f_overseer07, 0
+switch_action aryan_f_overseer08, 0
+switch_action aryan_f_overseer02, 0
+clear_offenders $5
+endif
+# Предварительные вычисления. Слежение за смертями в группе.
+set DeadCounter = dead_aryan_f_overseer07 + dead_aryan_f_overseer08 + dead_aryan_f_overseer02
+# В группе $5 есть один или несколько новых погибших.
+if !global_aryanw_I5 && global_aryanw_I5_Dead != DeadCounter
+set global_aryanw_I5_Dead = DeadCounter
+set global_aryanw_I5 = 1
+set global_aryanw_ReflectorRun = 1
+endif
+###############################################################################################################################
+# Cражение двух групп: $46 и $47
+# Отслеживание смертей NPC.
+if global_aryanw_K4647 > 0
+set DeadCounter46 = dead_aryanwest_q_yellow_hi_torgash + dead_aryanwest_yellow_torgash1 + dead_aryanwest_yellow_torgash3 + dead_aryanwest_yellow_torgash2
+set DeadCounter47 = dead_aryanwest_black_torgash1 + dead_aryanwest_q_black_hi_torgash + dead_aryanwest_black_torgash3 + dead_aryanwest_black_torgash2
+endif
+# Одна из групп убита, прекращаем воевать.
+if global_aryanw_K4647 <= 0
+elseif distance($46, $0) > 150 || distance($47, $0) > 150
+set global_aryanw_K4647 = -1
+clear_offenders $46
+clear_offenders $47
+switch_action aryanwest_q_yellow_hi_torgash, -1
+switch_action aryanwest_yellow_torgash1, -1
+switch_action aryanwest_yellow_torgash3, -1
+switch_action aryanwest_yellow_torgash2, -1
+switch_action aryanwest_black_torgash1, -1
+switch_action aryanwest_q_black_hi_torgash, -1
+switch_action aryanwest_black_torgash3, -1
+switch_action aryanwest_black_torgash2, -1
+endif
+# Кто-то из NPC погиб или прошло больше 10 секунд со времени последней команды attack_target.
+if global_aryanw_K4647 != 2
+elseif global_aryanw_K46_Dead != DeadCounter46 || global_aryanw_K47_Dead != DeadCounter47 || global_aryanw_K4647_Time <= global_aryanw_time_from_start
+set global_aryanw_K4647 = 3
+set global_aryanw_K46_Dead = DeadCounter46
+set global_aryanw_K47_Dead = DeadCounter47
+set global_aryanw_ReflectorRun = 1
+endif
+###############################################################################################################################
+# NPC группы $46 комментирую в бою смерти друг друга.
+# Предварительные вычисления. Слежение за смертями в группе.
+set global_aryanw_I46_DeadCounter = dead_aryanwest_q_yellow_hi_torgash + dead_aryanwest_yellow_torgash1 + dead_aryanwest_yellow_torgash3
+set global_aryanw_I46_DeadCounter = dead_aryanwest_yellow_torgash2 + global_aryanw_I46_DeadCounter
+# Определение вероятности и говорящего.
+set global_aryanw_I46_Counter = global_aryanw_I46_Counter + 1
+if global_aryanw_I46_Counter > (4 - global_aryanw_I46_DeadCounter) * 1
+set global_aryanw_I46_Counter = 1
+endif
+# В группе $46 есть один или несколько новых погибших.
+if !global_aryanw_I46 && global_aryanw_I46_Dead != global_aryanw_I46_DeadCounter
+set global_aryanw_I46_Dead = global_aryanw_I46_DeadCounter
+set global_aryanw_I46 = 1
+set global_aryanw_ReflectorRun = 1
+endif
+###############################################################################################################################
+# NPC группы $47 комментирую в бою смерти друг друга.
+# Предварительные вычисления. Слежение за смертями в группе.
+set global_aryanw_I47_DeadCounter = dead_aryanwest_black_torgash1 + dead_aryanwest_q_black_hi_torgash + dead_aryanwest_black_torgash3
+set global_aryanw_I47_DeadCounter = dead_aryanwest_black_torgash2 + global_aryanw_I47_DeadCounter
+# Определение вероятности и говорящего.
+set global_aryanw_I47_Counter = global_aryanw_I47_Counter + 1
+if global_aryanw_I47_Counter > (4 - global_aryanw_I47_DeadCounter) * 1
+set global_aryanw_I47_Counter = 1
+endif
+# В группе $47 есть один или несколько новых погибших.
+if !global_aryanw_I47 && global_aryanw_I47_Dead != global_aryanw_I47_DeadCounter
+set global_aryanw_I47_Dead = global_aryanw_I47_DeadCounter
+set global_aryanw_I47 = 1
+set global_aryanw_ReflectorRun = 1
+endif
+###############################################################################################################################
+# NPC группы $20 комментирую в бою смерти друг друга.
+# Предварительные вычисления. Слежение за смертями в группе.
+set global_aryanw_I20_DeadCounter = dead_aryanwest_f_yellow_montek01 + dead_aryanwest_f_yellow_montek02 + dead_aryanwest_f_yellow_montek03
+set global_aryanw_I20_DeadCounter = dead_aryanwest_f_yellow_montek04 + dead_aryanwest_f_yellow_montek05 + global_aryanw_I20_DeadCounter
+# Определение вероятности и говорящего.
+set global_aryanw_I20_Counter = global_aryanw_I20_Counter + 1
+if global_aryanw_I20_Counter > (5 - global_aryanw_I20_DeadCounter) * 1
+set global_aryanw_I20_Counter = 1
+endif
+# В группе $20 есть один или несколько новых погибших.
+if !global_aryanw_I20 && global_aryanw_I20_Dead != global_aryanw_I20_DeadCounter
+set global_aryanw_I20_Dead = global_aryanw_I20_DeadCounter
+set global_aryanw_I20 = 1
+set global_aryanw_ReflectorRun = 1
+endif
+###############################################################################################################################
+# NPC группы $21 комментирую в бою смерти друг друга.
+# Предварительные вычисления. Слежение за смертями в группе.
+set global_aryanw_I21_DeadCounter = dead_aryanwest_f_yellow_montek06 + dead_aryanwest_f_yellow_montek07
+# Определение вероятности и говорящего.
+set global_aryanw_I21_Counter = global_aryanw_I21_Counter + 1
+if global_aryanw_I21_Counter > (2 - global_aryanw_I21_DeadCounter) * 1
+set global_aryanw_I21_Counter = 1
+endif
+# В группе $21 есть один или несколько новых погибших.
+if !global_aryanw_I21 && global_aryanw_I21_Dead != global_aryanw_I21_DeadCounter
+set global_aryanw_I21_Dead = global_aryanw_I21_DeadCounter
+set global_aryanw_I21 = 1
+set global_aryanw_ReflectorRun = 1
+endif
+###############################################################################################################################
+# Пора произносить фразу.
+if !global_aryanw_prasearyanwest_f_yellow_Julia && global_aryanw_prasearyanwest_f_yellow_Julia_time < global_aryanw_time_from_start
+set  global_aryanw_prasearyanwest_f_yellow_Julia = 1
+set global_aryanw_ReflectorRun = 1
+endif
+###############################################################################################################################
+# Пора произносить фразу.
+if !global_aryanw_prasearyanwest_f_black_Kapulane01 && global_aryanw_prasearyanwest_f_black_Kapulane01_time < global_aryanw_time_from_start
+set  global_aryanw_prasearyanwest_f_black_Kapulane01 = 1
+set global_aryanw_ReflectorRun = 1
+endif
+###############################################################################################################################
+# Пора произносить фразу.
+if !global_aryanw_prasearyanwest_f_black_Kapulane02 && global_aryanw_prasearyanwest_f_black_Kapulane02_time < global_aryanw_time_from_start
+set  global_aryanw_prasearyanwest_f_black_Kapulane02 = 1
+set global_aryanw_ReflectorRun = 1
+endif
+###############################################################################################################################
+# Пора произносить фразу.
+if !global_aryanw_prasearyanwest_f_black_Kapulane03 && global_aryanw_prasearyanwest_f_black_Kapulane03_time < global_aryanw_time_from_start
+set  global_aryanw_prasearyanwest_f_black_Kapulane03 = 1
+set global_aryanw_ReflectorRun = 1
+endif
+###############################################################################################################################
+# Пора произносить фразу.
+if !global_aryanw_prasearyanwest_f_black_Kapulane04 && global_aryanw_prasearyanwest_f_black_Kapulane04_time < global_aryanw_time_from_start
+set  global_aryanw_prasearyanwest_f_black_Kapulane04 = 1
+set global_aryanw_ReflectorRun = 1
+endif
+###############################################################################################################################
+# Пора произносить фразу.
+if !global_aryanw_prasearyanwest_f_black_Kapulane05 && global_aryanw_prasearyanwest_f_black_Kapulane05_time < global_aryanw_time_from_start
+set  global_aryanw_prasearyanwest_f_black_Kapulane05 = 1
+set global_aryanw_ReflectorRun = 1
+endif
+#####################################################################################################################################################
+#
+#     Коррекция боевого поведения.
+#
+#####################################################################################################################################################
+#####################################################################################################################################################
+#
+# Надо вызвать рефлектор.
+if global_aryanw_ReflectorRun
+set global_aryanw_ReflectorRun = 0
+run aryantown_aryanwest_reflector
+endif
+#
+# Конец aryanw

@@ -1,0 +1,19 @@
+set global_disabled_aryantown_aryancent = 0
+set global_disabled_aryantown_aryaneast = 0
+#open_location blvill
+popup Boar,a
+set quest_demon_fights = "completed"
+
+if global_talk_with_validol = "got"
+set quest_talk_with_validol2 = "got"
+quest_log Boar,quest_talk_with_validol2
+endif
+
+if global_talk_with_validol != "got" && done_skinny12_sullen_exploring = 0
+set quest_book_yozef2 = "got"
+quest_log Boar,quest_book_yozef2
+endif
+
+if done_skinny12_sullen_exploring = 1
+set quest_goto_yoganvayce = "got"
+endif

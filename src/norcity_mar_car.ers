@@ -1,0 +1,254 @@
+
+# Кусок из каталога SEVA ######################################################################################################
+#if distance(Boar,mammoth) < 2
+#run norcity_mar_car_mammoth
+#endif
+
+if done_hans11_going_to_northtown_with_hans_and_marta = 1 && run_going_to_northtown_with_hans_and_marta2 = 0
+set run_going_to_northtown_with_hans_and_marta2 = 1
+run going_to_northtown_with_hans_and_marta2
+endif
+
+if quest_check_sullen = "got" && global_create_sullen = 0
+set global_create_sullen = 1
+create_char Sullen,5,12
+create_char Mirza,7,13
+turn_to Sullen,Marta
+turn_to Mirza,Marta
+endif
+
+if (done_mirza1 = 1 || done_mirza1_exit_sullen = 1) && global_open_norcity_bl = 0
+set global_open_norcity_bl = 1
+set global_disabled_norcity_bldance = 0
+set global_disabled_norcity_ungan = 0
+set global_disabled_norcity_blnorth = 0
+endif
+
+if in_party(Sullen) && done_abubakar1_join_ibragim = 0
+set done_abubakar1_join_ibragim = -1
+destroy_char abubakar
+destroy_char Ibragim
+endif
+
+if global_norcity_mar_car_rotation = 0
+set global_norcity_mar_car_rotation = 1
+random_rotation Marta,0
+random_rotation mar_car_druggist,0
+random_rotation mar_car_armor,0
+random_rotation mar_car_coldsteel,0
+random_rotation mar_car_dress,0
+random_rotation mar_car_dress_gay,0
+random_rotation mar_car_druggist,0
+random_rotation mar_car_eat,0
+random_rotation mar_car_overseer1,0
+random_rotation mar_car_townsguard1,0
+random_rotation mar_car_townsguard2,0
+random_rotation makaron,0
+random_rotation ahmad,0
+endif
+
+if distance($0, $6) < 5 && !in_war($6) && !dead_Marta_Guard2 && !dead_Marta_Guard3 && (global_mar_ca_time_from_start % 5 = 0)
+turn_to Marta_Guard2, $0
+turn_to Marta_Guard3, $0
+endif
+
+if distance(Boar,fatheralexander) < 2 && quest_meet_blackskin != "completed" && map_in_war = 0 && !run_norcity_mar_car_meeting_fatheralexander
+run norcity_mar_car_meeting_fatheralexander
+endif
+
+if distance($0,Hans) < 10 && global_hans_talking_with_lookers = 0 && map_in_war = 0
+set global_hans_talking_with_lookers = 1
+run hans_talking_with_lookers
+endif
+
+if run_release_marta_and_kruger = 1 && global_marta_return = 0
+set global_marta_return = 1
+create_char Marta,20,20,0,6
+turn Marta,160
+endif
+
+if in_war(Hans) && run_boar_stroibat = 0
+set run_boar_stroibat = 1
+run boar_stroibat
+endif
+
+if quest_sullen_fights = "got" && (door_state(36,73,0) = 0 || door_state(36,73,0) = 1)
+lock_door 0,36,73
+endif
+
+if quest_sullen_fights = "completed" && door_state(36,73,0) = -1
+close_door 0,36,73
+endif
+
+if distance_dead($0,$150) > 200 && run_norcity_mar_car_robbing_of_boar = 0
+create_char mar_car_dead_body,78,75,0,150
+take_damage mar_car_dead_body,1000
+endif
+
+if item_weared(mar_car_dead_body,DOLLAR) = 0 && in_party(Sullen) = 0 && in_party(Kruger) = 0 && in_party(Demon) = 0 && run_norcity_mar_car_robbing_of_boar = 0
+set run_norcity_mar_car_robbing_of_boar = 1
+run norcity_mar_car_robbing_of_boar
+endif
+
+if quest_descriptions_1 = "completed" && quest_descriptions_2 = "completed" && quest_descriptions_3 = "completed" && quest_descriptions = "got"
+set quest_descriptions = "completed"
+set quest_goto_edge = "got"
+quest_log Boar,quest_goto_edge
+endif
+
+if quest_descriptions = "failed" && door_state(30,78,0) != -1
+destroy_char edge
+destroy_char edge_man1
+destroy_char edge_man2
+lock_door 0,30,78
+endif
+
+if quest_buy_sullen = "completed" && quest_buy_sullen_1 = "got"
+set quest_buy_sullen_1 = 0
+endif
+
+if quest_buy_sullen = "completed" && quest_buy_sullen_2 = "got"
+set quest_buy_sullen_2 = 0
+endif
+
+if dead_shraga = 1 && quest_descriptions = "got" && quest_descriptions_1 != "completed"
+set quest_descriptions = "failed"
+set quest_descriptions_1 = "failed"
+endif
+
+if dead_tulup = 1 && quest_descriptions = "got" && quest_descriptions_2 != "completed"
+set quest_descriptions = "failed"
+set quest_descriptions_2 = "failed"
+endif
+
+if dead_dried = 1 && quest_descriptions = "got" && quest_descriptions_3 != "completed"
+set quest_descriptions = "failed"
+set quest_descriptions_3 = "failed"
+endif
+
+if quest_barabulkin_message = "got" && done_barabulkin1_killer_coming = 0 && dead_barabulkin = 1
+set quest_barabulkin_message = "failed"
+destroy_char makaron
+endif
+
+if run_shipcave_consgrou_destroy_4elnok = 1 && run_shipcave_consgrou_destroy_4elnok_rezid = 0 && quest_shipcave_maze_rezid != 0
+set run_shipcave_consgrou_destroy_4elnok_rezid = 1
+run shipcave_consgrou_destroy_4elnok_rezid
+endif
+# Кусок из каталога LENA ######################################################################################################
+
+# Кусок из каталога ALEX ######################################################################################################
+
+# Кусок из каталога VIT #######################################################################################################
+#
+# Затычка. Удаляем раба Ибрагима из партии.
+if in_party(Sullen) && in_party(Ibragim)
+leave_party Ibragim
+destroy_char Ibragim
+endif
+#
+# mar_ca. Основной скрипт, запускается каждую секунду.
+#
+#####################################################################################################################################################
+#
+#     Сценарные события.
+#
+#####################################################################################################################################################
+#
+# Надо вызвать рефлектор.
+if global_mar_ca_ReflectorRun
+set global_mar_ca_ReflectorRun = 0
+run norcity_mar_car_reflector
+endif
+# Кабан выжил еще одну секунду.
+set global_mar_ca_time_from_start = global_mar_ca_time_from_start + 1
+#
+#####################################################################################################################################################
+#
+# У смотрящих война с игроком - стройбат.
+if in_war($5) && !run_boar_stroibat
+run boar_stroibat
+endif
+#####################################################################################################################################################
+#
+#     Боевое поведение.
+#
+###############################################################################################################################
+# Отслеживание смертей смотрящих NPC nor_f_overseer01.
+if distance(nor_f_overseer01, $0) > 150
+set dead_nor_f_overseer01 = 1
+else
+set dead_nor_f_overseer01 = 0
+endif
+# Отслеживание смертей смотрящих NPC nor_f_overseer03.
+if distance(nor_f_overseer03, $0) > 150
+set dead_nor_f_overseer03 = 1
+else
+set dead_nor_f_overseer03 = 0
+endif
+# Отслеживание смертей смотрящих NPC nor_f_overseer09.
+if distance(nor_f_overseer09, $0) > 150
+set dead_nor_f_overseer09 = 1
+else
+set dead_nor_f_overseer09 = 0
+endif
+# Отслеживание смертей смотрящих NPC nor_f_overseer08.
+if distance(nor_f_overseer08, $0) > 150
+set dead_nor_f_overseer08 = 1
+else
+set dead_nor_f_overseer08 = 0
+endif
+# Кабана заметили в промзоновской одежде.
+if !global_mar_ca_G5 && is_fugitive(Boar) && is_group_visible($5, $0) && !in_war($5)
+set global_mar_ca_G5 = 5
+set global_mar_ca_ReflectorRun = 1
+endif
+# Группа смотрящих $5 увидела "правонарушение" игрока и атакует его.
+if !global_mar_ca_G5 && (in_war($5) || ((is_aryan($0) || is_terrorist($0) || is_violator($0)) && is_group_visible($5, $0)))
+set global_mar_ca_G5 = 1
+set global_mar_ca_ReflectorRun = 1
+endif
+# Группа $5 мертва.
+if global_mar_ca_G5 = -1
+elseif distance($5, $0) > 150
+set global_mar_ca_G5 = -1
+endif
+# Группа $5 больше не воюет.
+if global_mar_ca_G5 = 2 && !map_in_war
+set global_mar_ca_G5 = 0
+change_pose nor_f_overseer01, 0
+change_pose nor_f_overseer03, 0
+change_pose nor_f_overseer09, 0
+change_pose nor_f_overseer08, 0
+set global_mar_ca_I5_1 = 0
+set global_mar_ca_I5_2 = 0
+set global_mar_ca_I5_3 = 0
+set global_mar_ca_I5_4 = 0
+switch_action nor_f_overseer01, 0
+switch_action nor_f_overseer03, 0
+switch_action nor_f_overseer09, 0
+switch_action nor_f_overseer08, 0
+clear_offenders $5
+endif
+# Предварительные вычисления. Слежение за смертями в группе.
+set DeadCounter = dead_nor_f_overseer01 + dead_nor_f_overseer03 + dead_nor_f_overseer09 + dead_nor_f_overseer08
+# В группе $5 есть один или несколько новых погибших.
+if !global_mar_ca_I5 && global_mar_ca_I5_Dead != DeadCounter
+set global_mar_ca_I5_Dead = DeadCounter
+set global_mar_ca_I5 = 1
+set global_mar_ca_ReflectorRun = 1
+endif
+#####################################################################################################################################################
+#
+#     Коррекция боевого поведения.
+#
+#####################################################################################################################################################
+#####################################################################################################################################################
+#
+# Надо вызвать рефлектор.
+if global_mar_ca_ReflectorRun
+set global_mar_ca_ReflectorRun = 0
+run norcity_mar_car_reflector
+endif
+#
+# Конец mar_ca

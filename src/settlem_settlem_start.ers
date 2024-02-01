@@ -1,0 +1,1259 @@
+user_control off
+
+# Кусок из каталога ACTION #################################################################################################
+define_actions nor_f_overseer09
+# Поведение смотрящего (ведомого). Следование за nor_f_overseer02. ActionNumber: 0
+keep_distance nor_f_overseer09, nor_f_overseer02, 3
+switch_action nor_f_overseer09, 0
+# Поведение смотрящего (ведомого). Разговор 1. ActionNumber: 2
+none nor_f_overseer09, 1
+turn_to nor_f_overseer09, nor_f_overseer07
+switch_action nor_f_overseer09, 2
+come_to_distance nor_f_overseer09, nor_f_overseer07, 3
+turn_to nor_f_overseer09, nor_f_overseer07
+unwear_item nor_f_overseer09, SHOTGUN_PREDATOR
+none nor_f_overseer09, 1
+play_anim nor_f_overseer09, misc_44
+none nor_f_overseer09, 1
+play_anim nor_f_overseer09, idle_10
+none nor_f_overseer09, 1
+play_anim nor_f_overseer09, misc_27
+none nor_f_overseer09, 1
+play_anim nor_f_overseer09, misc_44
+none nor_f_overseer09, 4
+turn_to nor_f_overseer09, nor_f_overseer02
+wear_item nor_f_overseer09, SHOTGUN_PREDATOR
+come_to_distance nor_f_overseer09, nor_f_overseer02, 2
+none nor_f_overseer09, 1
+switch_action nor_f_overseer09, 20
+# Поведение смотрящего (ведомого). Разговор 2. ActionNumber: 22
+none nor_f_overseer09, 1
+turn_to nor_f_overseer09, nor_f_overseer07
+switch_action nor_f_overseer09, 22
+come_to_distance nor_f_overseer09, nor_f_overseer07, 3
+turn_to nor_f_overseer09, nor_f_overseer07
+unwear_item nor_f_overseer09, SHOTGUN_PREDATOR
+play_anim nor_f_overseer09, misc_44
+none nor_f_overseer09, 4
+play_anim nor_f_overseer09, misc_27
+none nor_f_overseer09, 4
+play_anim nor_f_overseer09, misc_26
+none nor_f_overseer09, 4
+play_anim nor_f_overseer09, idle_06
+none nor_f_overseer09, 2
+turn_to nor_f_overseer09, nor_f_overseer02
+wear_item nor_f_overseer09, SHOTGUN_PREDATOR
+come_to_distance nor_f_overseer09, nor_f_overseer02, 2
+none nor_f_overseer09, 1
+switch_action nor_f_overseer09, 39
+# Поведение смотрящего (ведомого). Разговор 3. ActionNumber: 41
+none nor_f_overseer09, 1
+turn_to nor_f_overseer09, nor_f_overseer07
+switch_action nor_f_overseer09, 41
+come_to_distance nor_f_overseer09, nor_f_overseer07, 3
+turn_to nor_f_overseer09, nor_f_overseer07
+unwear_item nor_f_overseer09, SHOTGUN_PREDATOR
+none nor_f_overseer09, 2
+play_anim nor_f_overseer09, misc_44
+none nor_f_overseer09, 1
+play_anim nor_f_overseer09, idle_21
+none nor_f_overseer09, 3
+play_anim nor_f_overseer09, misc_71
+none nor_f_overseer09, 3
+play_anim nor_f_overseer09, misc_71
+none nor_f_overseer09, 4
+play_anim nor_f_overseer09, idle_04
+none nor_f_overseer09, 1
+turn_to nor_f_overseer09, nor_f_overseer02
+wear_item nor_f_overseer09, SHOTGUN_PREDATOR
+come_to_distance nor_f_overseer09, nor_f_overseer02, 2
+none nor_f_overseer09, 1
+switch_action nor_f_overseer09, 61
+# Поведение смотрящего (ведомого). Разговор 4. ActionNumber: 63
+none nor_f_overseer09, 1
+turn_to nor_f_overseer09, nor_f_overseer07
+switch_action nor_f_overseer09, 63
+come_to_distance nor_f_overseer09, nor_f_overseer07, 3
+turn_to nor_f_overseer09, nor_f_overseer07
+unwear_item nor_f_overseer09, SHOTGUN_PREDATOR
+none nor_f_overseer09, 2
+play_anim nor_f_overseer09, misc_27
+play_anim nor_f_overseer09, misc_43
+none nor_f_overseer09, 3
+play_anim nor_f_overseer09, misc_44
+none nor_f_overseer09, 2
+turn_to nor_f_overseer09, nor_f_overseer02
+wear_item nor_f_overseer09, SHOTGUN_PREDATOR
+come_to_distance nor_f_overseer09, nor_f_overseer02, 2
+none nor_f_overseer09, 1
+switch_action nor_f_overseer09, 78
+enddef
+################################################################################################################################
+define_actions nor_f_overseer07
+# Поведение смотрящего (ведомого). Следование за nor_f_overseer02. ActionNumber: 0
+keep_distance nor_f_overseer07, nor_f_overseer02, 3
+switch_action nor_f_overseer07, 0
+# Поведение смотрящего (ведомого). Разговор 1. ActionNumber: 2
+none nor_f_overseer07, 1
+turn_to nor_f_overseer07, nor_f_overseer09
+switch_action nor_f_overseer07, 2
+come_to_distance nor_f_overseer07, nor_f_overseer09, 3
+turn_to nor_f_overseer07, nor_f_overseer09
+unwear_item nor_f_overseer07, SHOTGUN_PREDATOR
+none nor_f_overseer07, 2
+play_anim nor_f_overseer07, misc_71
+none nor_f_overseer07, 2
+play_anim nor_f_overseer07, misc_27
+none nor_f_overseer07, 3
+play_anim nor_f_overseer07, misc_71
+none nor_f_overseer07, 3
+play_anim nor_f_overseer07, idle_21
+none nor_f_overseer07, 3
+play_anim nor_f_overseer07, misc_27
+none nor_f_overseer07, 2
+play_anim nor_f_overseer07, idle_08
+turn_to nor_f_overseer07, nor_f_overseer02
+wear_item nor_f_overseer07, SHOTGUN_PREDATOR
+come_to_distance nor_f_overseer07, nor_f_overseer02, 2
+none nor_f_overseer07, 1
+switch_action nor_f_overseer07, 23
+# Поведение смотрящего (ведомого). Разговор 2. ActionNumber: 25
+none nor_f_overseer07, 1
+turn_to nor_f_overseer07, nor_f_overseer09
+switch_action nor_f_overseer07, 25
+come_to_distance nor_f_overseer07, nor_f_overseer09, 3
+turn_to nor_f_overseer07, nor_f_overseer09
+unwear_item nor_f_overseer07, SHOTGUN_PREDATOR
+play_anim nor_f_overseer07, misc_43
+none nor_f_overseer07, 3
+play_anim nor_f_overseer07, misc_27
+play_anim nor_f_overseer07, misc_43
+none nor_f_overseer07, 5
+turn_to nor_f_overseer07, nor_f_overseer02
+wear_item nor_f_overseer07, SHOTGUN_PREDATOR
+come_to_distance nor_f_overseer07, nor_f_overseer02, 2
+none nor_f_overseer07, 1
+switch_action nor_f_overseer07, 39
+# Поведение смотрящего (ведомого). Разговор 3. ActionNumber: 41
+none nor_f_overseer07, 1
+turn_to nor_f_overseer07, nor_f_overseer09
+switch_action nor_f_overseer07, 41
+come_to_distance nor_f_overseer07, nor_f_overseer09, 3
+turn_to nor_f_overseer07, nor_f_overseer09
+unwear_item nor_f_overseer07, SHOTGUN_PREDATOR
+none nor_f_overseer07, 1
+play_anim nor_f_overseer07, misc_44
+none nor_f_overseer07, 4
+play_anim nor_f_overseer07, misc_71
+play_anim nor_f_overseer07, misc_71
+none nor_f_overseer07, 3
+play_anim nor_f_overseer07, misc_43
+none nor_f_overseer07, 1
+turn_to nor_f_overseer07, nor_f_overseer02
+wear_item nor_f_overseer07, SHOTGUN_PREDATOR
+come_to_distance nor_f_overseer07, nor_f_overseer02, 2
+none nor_f_overseer07, 1
+switch_action nor_f_overseer07, 58
+# Поведение смотрящего (ведомого). Разговор 4. ActionNumber: 60
+none nor_f_overseer07, 1
+turn_to nor_f_overseer07, nor_f_overseer09
+switch_action nor_f_overseer07, 60
+come_to_distance nor_f_overseer07, nor_f_overseer09, 3
+turn_to nor_f_overseer07, nor_f_overseer09
+unwear_item nor_f_overseer07, SHOTGUN_PREDATOR
+none nor_f_overseer07, 4
+play_anim nor_f_overseer07, idle_17
+none nor_f_overseer07, 4
+play_anim nor_f_overseer07, misc_26
+none nor_f_overseer07, 3
+play_anim nor_f_overseer07, misc_43
+play_anim nor_f_overseer07, misc_44
+turn_to nor_f_overseer07, nor_f_overseer02
+wear_item nor_f_overseer07, SHOTGUN_PREDATOR
+come_to_distance nor_f_overseer07, nor_f_overseer02, 2
+none nor_f_overseer07, 1
+switch_action nor_f_overseer07, 76
+enddef
+################################################################################################################################
+define_actions nor_f_overseer02
+move_to nor_f_overseer02, 12, 65
+turn nor_f_overseer02, 20
+none nor_f_overseer02, 3
+play_anim nor_f_overseer02, idle_23
+none nor_f_overseer02, 3
+play_anim nor_f_overseer02, idle_17
+none nor_f_overseer02, 1
+switch_action nor_f_overseer02, 6
+move_to nor_f_overseer02, 26, 80
+turn nor_f_overseer02, 40
+none nor_f_overseer02, 4
+play_anim nor_f_overseer02, idle_12
+none nor_f_overseer02, 4
+play_anim nor_f_overseer02, idle_14
+none nor_f_overseer02, 2
+play_anim nor_f_overseer02, idle_08
+none nor_f_overseer02, 3
+play_anim nor_f_overseer02, idle_10
+none nor_f_overseer02, 3
+play_anim nor_f_overseer02, idle_14
+none nor_f_overseer02, 3
+play_anim nor_f_overseer02, idle_17
+none nor_f_overseer02, 1
+switch_action nor_f_overseer02, 22
+move_to nor_f_overseer02, 79, 71
+turn nor_f_overseer02, 130
+none nor_f_overseer02, 4
+play_anim nor_f_overseer02, idle_24
+none nor_f_overseer02, 2
+play_anim nor_f_overseer02, idle_14
+none nor_f_overseer02, 4
+play_anim nor_f_overseer02, idle_21
+none nor_f_overseer02, 2
+play_anim nor_f_overseer02, idle_24
+none nor_f_overseer02, 3
+play_anim nor_f_overseer02, idle_17
+none nor_f_overseer02, 3
+none nor_f_overseer02, 1
+switch_action nor_f_overseer02, 37
+move_to nor_f_overseer02, 48, 57
+turn nor_f_overseer02, 170
+none nor_f_overseer02, 3
+play_anim nor_f_overseer02, idle_23
+none nor_f_overseer02, 3
+play_anim nor_f_overseer02, idle_21
+none nor_f_overseer02, 6
+none nor_f_overseer02, 1
+switch_action nor_f_overseer02, 46
+enddef
+################################################################################################################################
+define_actions nor_f_overseer05
+# Block: "Охранник:"Group004":"015205851"", ActionNumber: 0
+move_to nor_f_overseer05, 79, 55
+turn nor_f_overseer05, 250
+popup_clothes nor_f_overseer05
+none nor_f_overseer05, 3
+play_anim nor_f_overseer05, idle_17
+popup_clothes nor_f_overseer05
+none nor_f_overseer05, 2
+play_anim nor_f_overseer05, idle_24
+popup_clothes nor_f_overseer05
+none nor_f_overseer05, 1
+play_anim nor_f_overseer05, idle_14
+popup_clothes nor_f_overseer05
+none nor_f_overseer05, 3
+play_anim nor_f_overseer05, idle_21
+popup_clothes nor_f_overseer05
+none nor_f_overseer05, 3
+play_anim nor_f_overseer05, idle_08
+popup_clothes nor_f_overseer05
+none nor_f_overseer05, 2
+play_anim nor_f_overseer05, idle_10
+# Block: "Охранник:"Group004":"015205875"", ActionNumber: 20
+move_to nor_f_overseer05, 50, 68
+turn nor_f_overseer05, 250
+popup_clothes nor_f_overseer05
+none nor_f_overseer05, 4
+play_anim nor_f_overseer05, idle_23
+# Block: "Охранник:"Group004":"015205935"", ActionNumber: 25
+move_to nor_f_overseer05, 32, 61
+turn nor_f_overseer05, 310
+popup_clothes nor_f_overseer05
+none nor_f_overseer05, 4
+play_anim nor_f_overseer05, idle_08
+popup_clothes nor_f_overseer05
+none nor_f_overseer05, 2
+play_anim nor_f_overseer05, idle_12
+popup_clothes nor_f_overseer05
+none nor_f_overseer05, 5
+play_anim nor_f_overseer05, idle_17
+popup_clothes nor_f_overseer05
+none nor_f_overseer05, 1
+# Block: "Охранник:"Group004":"015206010"", ActionNumber: 38
+move_to nor_f_overseer05, 62, 54
+turn nor_f_overseer05, 70
+popup_clothes nor_f_overseer05
+none nor_f_overseer05, 5
+play_anim nor_f_overseer05, idle_14
+popup_clothes nor_f_overseer05
+none nor_f_overseer05, 4
+play_anim nor_f_overseer05, idle_10
+popup_clothes nor_f_overseer05
+none nor_f_overseer05, 4
+# Block: "Переход на Охранник:"Group004":"015205851"", ActionNumber: 48
+switch_action nor_f_overseer05, 0
+# Разговор "Group004":"015206010"-"Group000":"015205050" (nor_f_overseer05 с nor_a_broom01), ActionNumber: 49
+turn_to nor_f_overseer05, nor_a_broom01
+none nor_f_overseer05, 3
+play_anim nor_f_overseer05, misc_71
+none nor_f_overseer05, 4
+play_anim nor_f_overseer05, misc_26
+none nor_f_overseer05, 3
+play_anim nor_f_overseer05, misc_62
+none nor_f_overseer05, 5
+switch_action nor_f_overseer05, 48
+enddef
+################################################################################################################################
+define_actions nor_a_Walker12
+# Block: "Пьяница:"Group013":"015217017"", ActionNumber: 0
+move_to nor_a_Walker12, 35, 69
+turn nor_a_Walker12, 250
+play_anim nor_a_Walker12, idle_22
+popup_clothes nor_a_Walker12
+none nor_a_Walker12, 4
+play_anim nor_a_Walker12, misc_70
+popup_clothes nor_a_Walker12
+none nor_a_Walker12, 3
+play_anim nor_a_Walker12, idle_08
+popup_clothes nor_a_Walker12
+none nor_a_Walker12, 4
+play_anim nor_a_Walker12, idle_24
+popup_clothes nor_a_Walker12
+none nor_a_Walker12, 1
+play_anim nor_a_Walker12, idle_22
+# Block: "Бездельник:"Group013":"015217041"", ActionNumber: 15
+move_to nor_a_Walker12, 16, 41
+turn nor_a_Walker12, 30
+popup_clothes nor_a_Walker12
+none nor_a_Walker12, 2
+play_anim nor_a_Walker12, misc_44
+popup_clothes nor_a_Walker12
+none nor_a_Walker12, 2
+play_anim nor_a_Walker12, misc_78
+# Block: "Курильщик:"Group013":"015217209"", ActionNumber: 23
+move_to nor_a_Walker12, 43, 33
+turn nor_a_Walker12, 70
+popup_clothes nor_a_Walker12
+none nor_a_Walker12, 2
+play_anim nor_a_Walker12, idle_23
+popup_clothes nor_a_Walker12
+none nor_a_Walker12, 2
+play_anim nor_a_Walker12, idle_08
+popup_clothes nor_a_Walker12
+none nor_a_Walker12, 1
+play_anim nor_a_Walker12, idle_23
+# Block: "Нищий:"Group013":"015217269"", ActionNumber: 34
+move_to nor_a_Walker12, 50, 44
+turn nor_a_Walker12, 360
+play_anim nor_a_Walker12, misc_42
+# Block: "Отдыхающий:"Group013":"015217305"", ActionNumber: 37
+move_to nor_a_Walker12, 57, 59
+turn nor_a_Walker12, 40
+popup_clothes nor_a_Walker12
+none nor_a_Walker12, 5
+play_anim nor_a_Walker12, idle_23
+popup_clothes nor_a_Walker12
+none nor_a_Walker12, 5
+# Block: "Обжора:"Group013":"015217365"", ActionNumber: 44
+move_to nor_a_Walker12, 66, 49
+turn nor_a_Walker12, 260
+popup_clothes nor_a_Walker12
+none nor_a_Walker12, 2
+play_anim nor_a_Walker12, misc_77
+popup_clothes nor_a_Walker12
+none nor_a_Walker12, 3
+# Block: "Переход на Пьяница:"Group013":"015217017"", ActionNumber: 51
+switch_action nor_a_Walker12, 0
+# Разговор "Group013":"015217305"-"Group006":"015209283" (nor_a_Walker12 с nor_a_poor_walker09), ActionNumber: 52
+turn_to nor_a_Walker12, nor_a_poor_walker09
+none nor_a_Walker12, 2
+play_anim nor_a_Walker12, misc_26
+none nor_a_Walker12, 3
+play_anim nor_a_Walker12, misc_71
+none nor_a_Walker12, 3
+play_anim nor_a_Walker12, misc_44
+none nor_a_Walker12, 4
+play_anim nor_a_Walker12, misc_71
+none nor_a_Walker12, 4
+switch_action nor_a_Walker12, 44
+# Драка nor_a_Walker12 с nor_a_Walker05, ActionNumber: 63
+come_to_distance nor_a_Walker12, nor_a_Walker05, 1
+turn_to nor_a_Walker12, nor_a_Walker05
+play_anim nor_a_Walker12, misc_49
+return_smart nor_a_Walker12
+# Драка nor_a_Walker12 с nor_a_Walker15, ActionNumber: 67
+come_to_distance nor_a_Walker12, nor_a_Walker15, 1
+turn_to nor_a_Walker12, nor_a_Walker15
+play_anim nor_a_Walker12, misc_50
+return_smart nor_a_Walker12
+# Драка nor_a_Walker12 с nor_a_Walker20, ActionNumber: 71
+come_to_distance nor_a_Walker12, nor_a_Walker20, 1
+turn_to nor_a_Walker12, nor_a_Walker20
+play_anim nor_a_Walker12, misc_50
+return_smart nor_a_Walker12
+enddef
+################################################################################################################################
+define_actions nor_a_Walker05
+# Block: "Обжора:"Group011":"015216309"", ActionNumber: 0
+move_to nor_a_Walker05, 54, 63
+turn nor_a_Walker05, 240
+play_anim nor_a_Walker05, idle_06
+popup_clothes nor_a_Walker05
+none nor_a_Walker05, 4
+play_anim nor_a_Walker05, idle_04
+popup_clothes nor_a_Walker05
+none nor_a_Walker05, 6
+play_anim nor_a_Walker05, misc_77
+# Block: "Бездельник:"Group011":"015216336"", ActionNumber: 9
+move_to nor_a_Walker05, 86, 53
+turn nor_a_Walker05, 280
+popup_clothes nor_a_Walker05
+none nor_a_Walker05, 3
+play_anim nor_a_Walker05, misc_43
+popup_clothes nor_a_Walker05
+none nor_a_Walker05, 1
+play_anim nor_a_Walker05, idle_21
+popup_clothes nor_a_Walker05
+none nor_a_Walker05, 2
+play_anim nor_a_Walker05, misc_78
+# Block: "Курильщик:"Group011":"015216453"", ActionNumber: 20
+move_to nor_a_Walker05, 71, 30
+turn nor_a_Walker05, 300
+popup_clothes nor_a_Walker05
+none nor_a_Walker05, 4
+play_anim nor_a_Walker05, idle_14
+popup_clothes nor_a_Walker05
+none nor_a_Walker05, 2
+play_anim nor_a_Walker05, idle_23
+# Block: "Стучать:"Group011":"015216543"", ActionNumber: 28
+move_to nor_a_Walker05, 67, 28
+turn nor_a_Walker05, 320
+wear_item nor_a_Walker05, AXE2H
+play_anim nor_a_Walker05, idle_85
+play_anim nor_a_Walker05, idle_85
+unwear_item nor_a_Walker05, AXE2H
+# Block: "Курильщик:"Group011":"015216567"", ActionNumber: 34
+move_to nor_a_Walker05, 46, 49
+turn nor_a_Walker05, 40
+popup_clothes nor_a_Walker05
+none nor_a_Walker05, 2
+play_anim nor_a_Walker05, idle_12
+popup_clothes nor_a_Walker05
+none nor_a_Walker05, 4
+play_anim nor_a_Walker05, idle_06
+popup_clothes nor_a_Walker05
+none nor_a_Walker05, 5
+play_anim nor_a_Walker05, idle_23
+# Block: "Переход на Обжора:"Group011":"015216309"", ActionNumber: 45
+switch_action nor_a_Walker05, 0
+# Драка nor_a_Walker05 с nor_a_Walker12, ActionNumber: 46
+come_to_distance nor_a_Walker05, nor_a_Walker12, 1
+turn_to nor_a_Walker05, nor_a_Walker12
+play_anim nor_a_Walker05, misc_50
+return_smart nor_a_Walker05
+# Драка nor_a_Walker05 с nor_a_Walker20, ActionNumber: 50
+come_to_distance nor_a_Walker05, nor_a_Walker20, 1
+turn_to nor_a_Walker05, nor_a_Walker20
+play_anim nor_a_Walker05, misc_49
+return_smart nor_a_Walker05
+# Драка nor_a_Walker05 с nor_a_Walker17, ActionNumber: 54
+come_to_distance nor_a_Walker05, nor_a_Walker17, 1
+turn_to nor_a_Walker05, nor_a_Walker17
+play_anim nor_a_Walker05, misc_50
+return_smart nor_a_Walker05
+enddef
+################################################################################################################################
+define_actions nor_a_poor_Walker08
+# Block: "Писающий:"Group010":"015215832"", ActionNumber: 0
+move_to nor_a_poor_Walker08, 74, 75
+turn nor_a_poor_Walker08, 70
+play_anim nor_a_poor_Walker08, misc_100
+# Block: "Бездельник:"Group010":"015215865"", ActionNumber: 3
+move_to nor_a_poor_Walker08, 51, 56
+turn nor_a_poor_Walker08, 180
+popup_clothes nor_a_poor_Walker08
+none nor_a_poor_Walker08, 5
+play_anim nor_a_poor_Walker08, idle_08
+popup_clothes nor_a_poor_Walker08
+none nor_a_poor_Walker08, 2
+play_anim nor_a_poor_Walker08, idle_21
+popup_clothes nor_a_poor_Walker08
+none nor_a_poor_Walker08, 1
+play_anim nor_a_poor_Walker08, idle_17
+# Block: "Курильщик:"Group010":"015215913"", ActionNumber: 14
+move_to nor_a_poor_Walker08, 44, 40
+turn nor_a_poor_Walker08, 50
+popup_clothes nor_a_poor_Walker08
+none nor_a_poor_Walker08, 4
+play_anim nor_a_poor_Walker08, idle_23
+# Block: "Пьяница:"Group010":"015215955"", ActionNumber: 19
+move_to nor_a_poor_Walker08, 52, 44
+turn nor_a_poor_Walker08, 40
+popup_clothes nor_a_poor_Walker08
+none nor_a_poor_Walker08, 4
+play_anim nor_a_poor_Walker08, idle_24
+popup_clothes nor_a_poor_Walker08
+none nor_a_poor_Walker08, 2
+play_anim nor_a_poor_Walker08, idle_22
+popup_clothes nor_a_poor_Walker08
+none nor_a_poor_Walker08, 3
+play_anim nor_a_poor_Walker08, idle_14
+popup_clothes nor_a_poor_Walker08
+none nor_a_poor_Walker08, 4
+play_anim nor_a_poor_Walker08, misc_62
+popup_clothes nor_a_poor_Walker08
+none nor_a_poor_Walker08, 1
+play_anim nor_a_poor_Walker08, misc_71
+# Block: "Станок кран:"Group010":"015216012"", ActionNumber: 36
+move_to nor_a_poor_Walker08, 61, 50
+turn nor_a_poor_Walker08, 330
+play_anim nor_a_poor_Walker08, misc_37
+play_anim nor_a_poor_Walker08, misc_37
+# Block: "Переход на Писающий:"Group010":"015215832"", ActionNumber: 40
+switch_action nor_a_poor_Walker08, 0
+# Разговор "Group010":"015215955"-"Group012":"015216759" (nor_a_poor_Walker08 с nor_a_walker17), ActionNumber: 41
+turn_to nor_a_poor_Walker08, nor_a_walker17
+none nor_a_poor_Walker08, 5
+play_anim nor_a_poor_Walker08, misc_44
+none nor_a_poor_Walker08, 3
+play_anim nor_a_poor_Walker08, misc_44
+switch_action nor_a_poor_Walker08, 36
+enddef
+################################################################################################################################
+define_actions nor_a_Broom05
+# Block: "Подметание:"Group001":"015205206"", ActionNumber: 0
+move_to nor_a_Broom05, 78, 65
+turn nor_a_Broom05, 130
+play_anim nor_a_Broom05, misc_39
+play_anim nor_a_Broom05, misc_39
+# Block: "Подметание:"Group001":"015205236"", ActionNumber: 4
+move_to nor_a_Broom05, 79, 69
+turn nor_a_Broom05, 290
+play_anim nor_a_Broom05, misc_39
+play_anim nor_a_Broom05, misc_39
+play_anim nor_a_Broom05, misc_39
+# Block: "Подметание:"Group001":"015205266"", ActionNumber: 9
+move_to nor_a_Broom05, 76, 66
+turn nor_a_Broom05, 310
+play_anim nor_a_Broom05, misc_39
+play_anim nor_a_Broom05, misc_39
+# Block: "Переход на Подметание:"Group001":"015205206"", ActionNumber: 13
+switch_action nor_a_Broom05, 0
+enddef
+################################################################################################################################
+define_actions nor_a_Walker20
+# Block: "Стучать:"Group007":"015209832"", ActionNumber: 0
+move_to nor_a_Walker20, 79, 52
+turn nor_a_Walker20, 250
+wear_item nor_a_Walker20, AXE2H
+play_anim nor_a_Walker20, idle_85
+play_anim nor_a_Walker20, idle_85
+unwear_item nor_a_Walker20, AXE2H
+# Block: "Станок пресс:"Group007":"015209853"", ActionNumber: 6
+move_to nor_a_Walker20, 80, 45
+turn nor_a_Walker20, 150
+play_anim nor_a_Walker20, misc_38
+play_anim nor_a_Walker20, misc_38
+# Block: "Отдыхающий:"Group007":"015210024"", ActionNumber: 10
+move_to nor_a_Walker20, 62, 43
+turn nor_a_Walker20, 150
+popup_clothes nor_a_Walker20
+none nor_a_Walker20, 3
+play_anim nor_a_Walker20, misc_70
+popup_clothes nor_a_Walker20
+none nor_a_Walker20, 2
+play_anim nor_a_Walker20, idle_21
+popup_clothes nor_a_Walker20
+none nor_a_Walker20, 2
+play_anim nor_a_Walker20, idle_10
+popup_clothes nor_a_Walker20
+none nor_a_Walker20, 4
+play_anim nor_a_Walker20, idle_21
+popup_clothes nor_a_Walker20
+none nor_a_Walker20, 1
+play_anim nor_a_Walker20, idle_17
+# Block: "Переход на Стучать:"Group007":"015209832"", ActionNumber: 27
+switch_action nor_a_Walker20, 0
+# Драка nor_a_Walker20 с nor_a_Walker05, ActionNumber: 28
+come_to_distance nor_a_Walker20, nor_a_Walker05, 1
+turn_to nor_a_Walker20, nor_a_Walker05
+play_anim nor_a_Walker20, misc_50
+return_smart nor_a_Walker20
+# Драка nor_a_Walker20 с nor_a_Walker12, ActionNumber: 32
+come_to_distance nor_a_Walker20, nor_a_Walker12, 1
+turn_to nor_a_Walker20, nor_a_Walker12
+play_anim nor_a_Walker20, misc_49
+return_smart nor_a_Walker20
+enddef
+################################################################################################################################
+define_actions nor_a_Walker01
+# Block: "Стучать:"Group005":"015208743"", ActionNumber: 0
+move_to nor_a_Walker01, 67, 22
+turn nor_a_Walker01, 30
+wear_item nor_a_Walker01, AXE2H
+play_anim nor_a_Walker01, idle_85
+play_anim nor_a_Walker01, idle_85
+# Block: "Стучать:"Group005":"015208794"", ActionNumber: 5
+move_to nor_a_Walker01, 55, 36
+turn nor_a_Walker01, 180
+play_anim nor_a_Walker01, idle_85
+play_anim nor_a_Walker01, idle_85
+unwear_item nor_a_Walker01, AXE2H
+# Block: "Станок кран:"Group005":"015208914"", ActionNumber: 10
+move_to nor_a_Walker01, 28, 70
+turn nor_a_Walker01, 80
+play_anim nor_a_Walker01, misc_37
+# Block: "Стучать:"Group005":"015208962"", ActionNumber: 13
+move_to nor_a_Walker01, 76, 40
+turn nor_a_Walker01, 90
+wear_item nor_a_Walker01, AXE2H
+play_anim nor_a_Walker01, idle_85
+play_anim nor_a_Walker01, idle_85
+# Block: "Стучать:"Group005":"015209019"", ActionNumber: 18
+move_to nor_a_Walker01, 69, 50
+turn nor_a_Walker01, 70
+play_anim nor_a_Walker01, idle_85
+play_anim nor_a_Walker01, idle_85
+unwear_item nor_a_Walker01, AXE2H
+# Block: "Переход на Стучать:"Group005":"015208743"", ActionNumber: 23
+switch_action nor_a_Walker01, 0
+enddef
+################################################################################################################################
+define_actions nor_a_poor_Walker09
+# Block: "Станок кран:"Group006":"015209076"", ActionNumber: 0
+move_to nor_a_poor_Walker09, 68, 36
+turn nor_a_poor_Walker09, 100
+play_anim nor_a_poor_Walker09, misc_37
+# Block: "Нищий:"Group006":"015209145"", ActionNumber: 3
+move_to nor_a_poor_Walker09, 74, 48
+turn nor_a_poor_Walker09, 80
+play_anim nor_a_poor_Walker09, misc_42
+# Block: "Станок кран:"Group006":"015209184"", ActionNumber: 6
+move_to nor_a_poor_Walker09, 49, 74
+turn nor_a_poor_Walker09, 190
+play_anim nor_a_poor_Walker09, misc_37
+# Block: "Курильщик:"Group006":"015209250"", ActionNumber: 9
+move_to nor_a_poor_Walker09, 46, 66
+turn nor_a_poor_Walker09, 300
+popup_clothes nor_a_poor_Walker09
+none nor_a_poor_Walker09, 4
+play_anim nor_a_poor_Walker09, idle_23
+# Block: "Обкуренный:"Group006":"015209283"", ActionNumber: 14
+move_to nor_a_poor_Walker09, 58, 61
+turn nor_a_poor_Walker09, 300
+popup_clothes nor_a_poor_Walker09
+none nor_a_poor_Walker09, 4
+play_anim nor_a_poor_Walker09, idle_08
+popup_clothes nor_a_poor_Walker09
+none nor_a_poor_Walker09, 2
+play_anim nor_a_poor_Walker09, misc_62
+# Block: "Переход на Станок кран:"Group006":"015209076"", ActionNumber: 22
+switch_action nor_a_poor_Walker09, 0
+# Разговор "Group006":"015209283"-"Group013":"015217305" (nor_a_poor_Walker09 с nor_a_walker12), ActionNumber: 23
+turn_to nor_a_poor_Walker09, nor_a_walker12
+none nor_a_poor_Walker09, 3
+play_anim nor_a_poor_Walker09, idle_21
+none nor_a_poor_Walker09, 2
+play_anim nor_a_poor_Walker09, misc_43
+none nor_a_poor_Walker09, 4
+play_anim nor_a_poor_Walker09, misc_44
+none nor_a_poor_Walker09, 5
+play_anim nor_a_poor_Walker09, misc_71
+switch_action nor_a_poor_Walker09, 22
+enddef
+################################################################################################################################
+define_actions nor_a_Walker10
+# Block: "Стучать:"Group008":"015210264"", ActionNumber: 0
+move_to nor_a_Walker10, 69, 42
+turn nor_a_Walker10, 220
+wear_item nor_a_Walker10, AXE2H
+play_anim nor_a_Walker10, idle_85
+unwear_item nor_a_Walker10, AXE2H
+# Block: "Обжора:"Group008":"015210288"", ActionNumber: 5
+move_to nor_a_Walker10, 82, 52
+turn nor_a_Walker10, 240
+popup_clothes nor_a_Walker10
+none nor_a_Walker10, 6
+play_anim nor_a_Walker10, misc_77
+popup_clothes nor_a_Walker10
+none nor_a_Walker10, 2
+play_anim nor_a_Walker10, misc_77
+popup_clothes nor_a_Walker10
+none nor_a_Walker10, 5
+play_anim nor_a_Walker10, idle_06
+popup_clothes nor_a_Walker10
+none nor_a_Walker10, 2
+play_anim nor_a_Walker10, misc_77
+# Block: "Стучать:"Group008":"015210993"", ActionNumber: 19
+move_to nor_a_Walker10, 75, 43
+turn nor_a_Walker10, 250
+wear_item nor_a_Walker10, AXE2H
+play_anim nor_a_Walker10, idle_85
+play_anim nor_a_Walker10, idle_85
+unwear_item nor_a_Walker10, AXE2H
+# Block: "Писающий:"Group008":"015211017"", ActionNumber: 25
+move_to nor_a_Walker10, 87, 59
+turn nor_a_Walker10, 60
+play_anim nor_a_Walker10, misc_100
+# Block: "Переход на Стучать:"Group008":"015210264"", ActionNumber: 28
+switch_action nor_a_Walker10, 0
+enddef
+################################################################################################################################
+define_actions nor_a_Walker15
+# Block: "Станок кран:"Group009":"015211545"", ActionNumber: 0
+move_to nor_a_Walker15, 55, 34
+turn nor_a_Walker15, 160
+play_anim nor_a_Walker15, misc_37
+play_anim nor_a_Walker15, misc_37
+# Block: "Станок кран:"Group009":"015211572"", ActionNumber: 4
+move_to nor_a_Walker15, 63, 36
+turn nor_a_Walker15, 50
+play_anim nor_a_Walker15, misc_37
+play_anim nor_a_Walker15, misc_37
+# Block: "Отдыхающий:"Group009":"015211695"", ActionNumber: 8
+move_to nor_a_Walker15, 41, 52
+turn nor_a_Walker15, 300
+popup_clothes nor_a_Walker15
+none nor_a_Walker15, 1
+play_anim nor_a_Walker15, misc_77
+popup_clothes nor_a_Walker15
+none nor_a_Walker15, 2
+play_anim nor_a_Walker15, misc_79
+popup_clothes nor_a_Walker15
+none nor_a_Walker15, 3
+play_anim nor_a_Walker15, idle_06
+popup_clothes nor_a_Walker15
+none nor_a_Walker15, 6
+# Block: "Станок кран:"Group009":"015211758"", ActionNumber: 21
+move_to nor_a_Walker15, 32, 29
+turn nor_a_Walker15, 110
+play_anim nor_a_Walker15, misc_37
+play_anim nor_a_Walker15, misc_37
+# Block: "Пьяница:"Group009":"015211839"", ActionNumber: 25
+move_to nor_a_Walker15, 24, 46
+turn nor_a_Walker15, 200
+popup_clothes nor_a_Walker15
+none nor_a_Walker15, 4
+play_anim nor_a_Walker15, idle_21
+popup_clothes nor_a_Walker15
+none nor_a_Walker15, 2
+play_anim nor_a_Walker15, misc_78
+popup_clothes nor_a_Walker15
+none nor_a_Walker15, 1
+play_anim nor_a_Walker15, idle_06
+popup_clothes nor_a_Walker15
+none nor_a_Walker15, 3
+# Block: "Переход на Станок кран:"Group009":"015211545"", ActionNumber: 38
+switch_action nor_a_Walker15, 0
+# Драка nor_a_Walker15 с nor_a_Walker17, ActionNumber: 39
+come_to_distance nor_a_Walker15, nor_a_Walker17, 1
+turn_to nor_a_Walker15, nor_a_Walker17
+play_anim nor_a_Walker15, misc_50
+return_smart nor_a_Walker15
+# Драка nor_a_Walker15 с nor_a_Walker12, ActionNumber: 43
+come_to_distance nor_a_Walker15, nor_a_Walker12, 1
+turn_to nor_a_Walker15, nor_a_Walker12
+play_anim nor_a_Walker15, misc_49
+return_smart nor_a_Walker15
+enddef
+################################################################################################################################
+define_actions nor_a_Broom01
+# Block: "Подметание:"Group000":"015204891"", ActionNumber: 0
+move_to nor_a_Broom01, 59, 44
+turn nor_a_Broom01, 70
+play_anim nor_a_Broom01, misc_39
+play_anim nor_a_Broom01, misc_39
+play_anim nor_a_Broom01, misc_39
+# Block: "Подметание:"Group000":"015204918"", ActionNumber: 5
+move_to nor_a_Broom01, 63, 47
+turn nor_a_Broom01, 290
+play_anim nor_a_Broom01, misc_39
+play_anim nor_a_Broom01, misc_39
+play_anim nor_a_Broom01, misc_39
+# Block: "Подметание:"Group000":"015204981"", ActionNumber: 10
+move_to nor_a_Broom01, 57, 46
+turn nor_a_Broom01, 330
+play_anim nor_a_Broom01, misc_39
+play_anim nor_a_Broom01, misc_39
+# Block: "Подметание:"Group000":"015205020"", ActionNumber: 14
+move_to nor_a_Broom01, 56, 49
+turn nor_a_Broom01, 260
+play_anim nor_a_Broom01, misc_39
+# Block: "Курильщик:"Group000":"015205050"", ActionNumber: 17
+move_to nor_a_Broom01, 62, 52
+turn nor_a_Broom01, 150
+unwear_item nor_a_Broom01, BROOM
+popup_clothes nor_a_Broom01
+none nor_a_Broom01, 3
+play_anim nor_a_Broom01, idle_21
+popup_clothes nor_a_Broom01
+none nor_a_Broom01, 2
+play_anim nor_a_Broom01, idle_08
+popup_clothes nor_a_Broom01
+none nor_a_Broom01, 2
+play_anim nor_a_Broom01, idle_10
+popup_clothes nor_a_Broom01
+none nor_a_Broom01, 1
+play_anim nor_a_Broom01, idle_06
+popup_clothes nor_a_Broom01
+none nor_a_Broom01, 2
+play_anim nor_a_Broom01, idle_06
+popup_clothes nor_a_Broom01
+none nor_a_Broom01, 1
+play_anim nor_a_Broom01, idle_23
+wear_item nor_a_Broom01, BROOM
+# Block: "Переход на Подметание:"Group000":"015204891"", ActionNumber: 39
+switch_action nor_a_Broom01, 0
+# Разговор "Group000":"015205050"-"Group004":"015206010" (nor_a_Broom01 с nor_f_overseer05), ActionNumber: 40
+turn_to nor_a_Broom01, nor_f_overseer05
+none nor_a_Broom01, 4
+play_anim nor_a_Broom01, misc_26
+none nor_a_Broom01, 5
+play_anim nor_a_Broom01, misc_27
+none nor_a_Broom01, 3
+play_anim nor_a_Broom01, misc_71
+none nor_a_Broom01, 4
+switch_action nor_a_Broom01, 38
+enddef
+################################################################################################################################
+define_actions nor_a_Broom03
+# Block: "Подметание:"Group002":"015205335"", ActionNumber: 0
+move_to nor_a_Broom03, 34, 53
+turn nor_a_Broom03, 250
+play_anim nor_a_Broom03, misc_39
+# Block: "Подметание:"Group002":"015205362"", ActionNumber: 3
+move_to nor_a_Broom03, 36, 56
+turn nor_a_Broom03, 20
+play_anim nor_a_Broom03, misc_39
+play_anim nor_a_Broom03, misc_39
+# Block: "Подметание:"Group002":"015205416"", ActionNumber: 7
+move_to nor_a_Broom03, 34, 59
+turn nor_a_Broom03, 70
+play_anim nor_a_Broom03, misc_39
+play_anim nor_a_Broom03, misc_39
+# Block: "Подметание:"Group002":"015205449"", ActionNumber: 11
+move_to nor_a_Broom03, 32, 48
+turn nor_a_Broom03, 150
+play_anim nor_a_Broom03, misc_39
+play_anim nor_a_Broom03, misc_39
+# Block: "Переход на Подметание:"Group002":"015205335"", ActionNumber: 15
+switch_action nor_a_Broom03, 0
+enddef
+################################################################################################################################
+define_actions nor_a_Walker17
+# Block: "Ничего не делать:"Group012":"015216687"", ActionNumber: 0
+move_to nor_a_Walker17, 38, 53
+turn nor_a_Walker17, 140
+popup_clothes nor_a_Walker17
+none nor_a_Walker17, 19
+# Block: "Обжора:"Group012":"015216714"", ActionNumber: 4
+move_to nor_a_Walker17, 37, 41
+turn nor_a_Walker17, 140
+popup_clothes nor_a_Walker17
+none nor_a_Walker17, 1
+play_anim nor_a_Walker17, idle_04
+popup_clothes nor_a_Walker17
+none nor_a_Walker17, 5
+play_anim nor_a_Walker17, misc_77
+popup_clothes nor_a_Walker17
+none nor_a_Walker17, 3
+play_anim nor_a_Walker17, idle_10
+popup_clothes nor_a_Walker17
+none nor_a_Walker17, 2
+# Block: "Курильщик:"Group012":"015216759"", ActionNumber: 17
+move_to nor_a_Walker17, 54, 43
+turn nor_a_Walker17, 60
+popup_clothes nor_a_Walker17
+none nor_a_Walker17, 2
+play_anim nor_a_Walker17, idle_23
+# Block: "Отдыхающий:"Group012":"015216804"", ActionNumber: 22
+move_to nor_a_Walker17, 65, 54
+turn nor_a_Walker17, 150
+popup_clothes nor_a_Walker17
+none nor_a_Walker17, 2
+play_anim nor_a_Walker17, misc_79
+popup_clothes nor_a_Walker17
+none nor_a_Walker17, 4
+play_anim nor_a_Walker17, misc_77
+popup_clothes nor_a_Walker17
+none nor_a_Walker17, 1
+# Block: "Нищий:"Group012":"015216888"", ActionNumber: 32
+move_to nor_a_Walker17, 80, 41
+turn nor_a_Walker17, 30
+play_anim nor_a_Walker17, misc_42
+# Block: "Переход на Ничего не делать:"Group012":"015216687"", ActionNumber: 35
+switch_action nor_a_Walker17, 0
+# Разговор "Group012":"015216759"-"Group010":"015215955" (nor_a_Walker17 с nor_a_poor_walker08), ActionNumber: 36
+turn_to nor_a_Walker17, nor_a_poor_walker08
+none nor_a_Walker17, 5
+play_anim nor_a_Walker17, idle_08
+none nor_a_Walker17, 6
+play_anim nor_a_Walker17, misc_44
+none nor_a_Walker17, 3
+switch_action nor_a_Walker17, 22
+# Драка nor_a_Walker17 с nor_a_Walker15, ActionNumber: 43
+come_to_distance nor_a_Walker17, nor_a_Walker15, 1
+turn_to nor_a_Walker17, nor_a_Walker15
+play_anim nor_a_Walker17, misc_49
+return_smart nor_a_Walker17
+# Драка nor_a_Walker17 с nor_a_Walker05, ActionNumber: 47
+come_to_distance nor_a_Walker17, nor_a_Walker05, 1
+turn_to nor_a_Walker17, nor_a_Walker05
+play_anim nor_a_Walker17, misc_49
+return_smart nor_a_Walker17
+enddef
+################################################################################################################################
+define_actions Setlem_q_white_falshohrana5
+# Block: "Ничего не делать:"Group014":"054409128"", ActionNumber: 0
+move_to Setlem_q_white_falshohrana5, 49, 9
+turn Setlem_q_white_falshohrana5, 40
+play_anim Setlem_q_white_falshohrana5, idle_12
+# Block: "wait 1", ActionNumber: 3
+popup_clothes Setlem_q_white_falshohrana5
+none Setlem_q_white_falshohrana5, 1
+switch_action Setlem_q_white_falshohrana5, 3
+# Block: "Ничего не делать:"Group014":"054410121"", ActionNumber: 6
+move_to Setlem_q_white_falshohrana5, 48, 3
+turn Setlem_q_white_falshohrana5, 220
+popup_clothes Setlem_q_white_falshohrana5
+none Setlem_q_white_falshohrana5, 3
+# Block: "wait 2", ActionNumber: 10
+popup_clothes Setlem_q_white_falshohrana5
+none Setlem_q_white_falshohrana5, 1
+switch_action Setlem_q_white_falshohrana5, 10
+# Block: "Ничего не делать:"Group014":"054410157"", ActionNumber: 13
+move_to Setlem_q_white_falshohrana5, 44, 18
+turn Setlem_q_white_falshohrana5, 150
+play_anim Setlem_q_white_falshohrana5, idle_14
+play_anim Setlem_q_white_falshohrana5, idle_17
+# Block: "wait 3", ActionNumber: 17
+popup_clothes Setlem_q_white_falshohrana5
+none Setlem_q_white_falshohrana5, 1
+switch_action Setlem_q_white_falshohrana5, 17
+# Block: "Переход на Ничего не делать:"Group014":"054409128"", ActionNumber: 20
+switch_action Setlem_q_white_falshohrana5, 0
+enddef
+################################################################################################################################
+define_actions Setlem_q_white_falshohrana6
+# Block: "Ничего не делать:"Group015":"054410352"", ActionNumber: 0
+move_to Setlem_q_white_falshohrana6, 48, 10
+turn Setlem_q_white_falshohrana6, 240
+play_anim Setlem_q_white_falshohrana6, idle_17
+# Block: "wait 1", ActionNumber: 3
+popup_clothes Setlem_q_white_falshohrana6
+none Setlem_q_white_falshohrana6, 1
+switch_action Setlem_q_white_falshohrana6, 3
+# Block: "Ничего не делать:"Group015":"054410436"", ActionNumber: 6
+move_to Setlem_q_white_falshohrana6, 45, 1
+turn Setlem_q_white_falshohrana6, 180
+play_anim Setlem_q_white_falshohrana6, idle_17
+play_anim Setlem_q_white_falshohrana6, idle_14
+# Block: "wait 2", ActionNumber: 10
+popup_clothes Setlem_q_white_falshohrana6
+none Setlem_q_white_falshohrana6, 1
+switch_action Setlem_q_white_falshohrana6, 10
+# Block: "Ничего не делать:"Group015":"054410511"", ActionNumber: 13
+move_to Setlem_q_white_falshohrana6, 47, 17
+turn Setlem_q_white_falshohrana6, 160
+play_anim Setlem_q_white_falshohrana6, idle_10
+play_anim Setlem_q_white_falshohrana6, idle_21
+# Block: "wait 3", ActionNumber: 17
+popup_clothes Setlem_q_white_falshohrana6
+none Setlem_q_white_falshohrana6, 1
+switch_action Setlem_q_white_falshohrana6, 17
+# Block: "Переход на Ничего не делать:"Group015":"054410352"", ActionNumber: 20
+switch_action Setlem_q_white_falshohrana6, 0
+enddef
+################################################################################################################################
+define_actions settlem_trader
+# Block: "Торговец", ActionNumber: 0
+popup_clothes settlem_trader
+none settlem_trader, 3
+play_anim settlem_trader, idle_17
+popup_clothes settlem_trader
+none settlem_trader, 2
+play_anim settlem_trader, idle_82
+play_anim settlem_trader, idle_82
+popup_clothes settlem_trader
+none settlem_trader, 3
+play_anim settlem_trader, idle_82
+popup_clothes settlem_trader
+none settlem_trader, 5
+play_anim settlem_trader, idle_06
+popup_clothes settlem_trader
+none settlem_trader, 3
+play_anim settlem_trader, misc_77
+popup_clothes settlem_trader
+none settlem_trader, 2
+play_anim settlem_trader, idle_82
+popup_clothes settlem_trader
+none settlem_trader, 1
+play_anim settlem_trader, idle_06
+popup_clothes settlem_trader
+none settlem_trader, 1
+play_anim settlem_trader, misc_77
+popup_clothes settlem_trader
+none settlem_trader, 2
+play_anim settlem_trader, idle_17
+popup_clothes settlem_trader
+none settlem_trader, 3
+play_anim settlem_trader, idle_82
+switch_action settlem_trader, 0
+enddef
+################################################################################################################################
+# Событие: "patrol1"
+event Setlem_q_white_falshohrana5, 4, 6, Setlem_q_white_falshohrana6, 4, 6
+# Событие: "patrol2"
+event Setlem_q_white_falshohrana5, 11, 13, Setlem_q_white_falshohrana6, 11, 13
+# Событие: "patrol3"
+event Setlem_q_white_falshohrana5, 18, 0, Setlem_q_white_falshohrana6, 18, 0
+################################################################################################################################
+# Событие: Разговор: "Group000":"015205050"-"Group004":"015206010" (nor_a_broom01 с nor_f_overseer05)
+event nor_a_broom01, 21, 40, nor_f_overseer05, 41, 49
+# Событие: Разговор: "Group000":"015205050"-"Group004":"015206010" (nor_a_broom01 с nor_f_overseer05)
+event nor_a_broom01, 21, 40, nor_f_overseer05, 44, 49
+# Событие: Разговор: "Group000":"015205050"-"Group004":"015206010" (nor_a_broom01 с nor_f_overseer05)
+event nor_a_broom01, 21, 40, nor_f_overseer05, 47, 49
+# Событие: Разговор: "Group000":"015205050"-"Group004":"015206010" (nor_a_broom01 с nor_f_overseer05)
+event nor_a_broom01, 24, 40, nor_f_overseer05, 41, 49
+# Событие: Разговор: "Group000":"015205050"-"Group004":"015206010" (nor_a_broom01 с nor_f_overseer05)
+event nor_a_broom01, 24, 40, nor_f_overseer05, 44, 49
+# Событие: Разговор: "Group000":"015205050"-"Group004":"015206010" (nor_a_broom01 с nor_f_overseer05)
+event nor_a_broom01, 24, 40, nor_f_overseer05, 47, 49
+# Событие: Разговор: "Group000":"015205050"-"Group004":"015206010" (nor_a_broom01 с nor_f_overseer05)
+event nor_a_broom01, 27, 40, nor_f_overseer05, 41, 49
+# Событие: Разговор: "Group000":"015205050"-"Group004":"015206010" (nor_a_broom01 с nor_f_overseer05)
+event nor_a_broom01, 27, 40, nor_f_overseer05, 44, 49
+# Событие: Разговор: "Group000":"015205050"-"Group004":"015206010" (nor_a_broom01 с nor_f_overseer05)
+event nor_a_broom01, 27, 40, nor_f_overseer05, 47, 49
+# Событие: Разговор: "Group000":"015205050"-"Group004":"015206010" (nor_a_broom01 с nor_f_overseer05)
+event nor_a_broom01, 30, 40, nor_f_overseer05, 41, 49
+# Событие: Разговор: "Group000":"015205050"-"Group004":"015206010" (nor_a_broom01 с nor_f_overseer05)
+event nor_a_broom01, 30, 40, nor_f_overseer05, 44, 49
+# Событие: Разговор: "Group000":"015205050"-"Group004":"015206010" (nor_a_broom01 с nor_f_overseer05)
+event nor_a_broom01, 30, 40, nor_f_overseer05, 47, 49
+# Событие: Разговор: "Group000":"015205050"-"Group004":"015206010" (nor_a_broom01 с nor_f_overseer05)
+event nor_a_broom01, 33, 40, nor_f_overseer05, 41, 49
+# Событие: Разговор: "Group000":"015205050"-"Group004":"015206010" (nor_a_broom01 с nor_f_overseer05)
+event nor_a_broom01, 33, 40, nor_f_overseer05, 44, 49
+# Событие: Разговор: "Group000":"015205050"-"Group004":"015206010" (nor_a_broom01 с nor_f_overseer05)
+event nor_a_broom01, 33, 40, nor_f_overseer05, 47, 49
+# Событие: Разговор: "Group000":"015205050"-"Group004":"015206010" (nor_a_broom01 с nor_f_overseer05)
+event nor_a_broom01, 36, 40, nor_f_overseer05, 41, 49
+# Событие: Разговор: "Group000":"015205050"-"Group004":"015206010" (nor_a_broom01 с nor_f_overseer05)
+event nor_a_broom01, 36, 40, nor_f_overseer05, 44, 49
+# Событие: Разговор: "Group000":"015205050"-"Group004":"015206010" (nor_a_broom01 с nor_f_overseer05)
+event nor_a_broom01, 36, 40, nor_f_overseer05, 47, 49
+# Событие: Разговор: "Group006":"015209283"-"Group013":"015217305" (nor_a_poor_walker09 с nor_a_walker12)
+event nor_a_poor_walker09, 17, 23, nor_a_walker12, 40, 52
+# Событие: Разговор: "Group006":"015209283"-"Group013":"015217305" (nor_a_poor_walker09 с nor_a_walker12)
+event nor_a_poor_walker09, 17, 23, nor_a_walker12, 43, 52
+# Событие: Разговор: "Group006":"015209283"-"Group013":"015217305" (nor_a_poor_walker09 с nor_a_walker12)
+event nor_a_poor_walker09, 20, 23, nor_a_walker12, 40, 52
+# Событие: Разговор: "Group006":"015209283"-"Group013":"015217305" (nor_a_poor_walker09 с nor_a_walker12)
+event nor_a_poor_walker09, 20, 23, nor_a_walker12, 43, 52
+# Событие: Разговор: "Group010":"015215955"-"Group012":"015216759" (nor_a_poor_walker08 с nor_a_walker17)
+event nor_a_poor_walker08, 22, 41, nor_a_walker17, 20, 36
+# Событие: Разговор: "Group010":"015215955"-"Group012":"015216759" (nor_a_poor_walker08 с nor_a_walker17)
+event nor_a_poor_walker08, 25, 41, nor_a_walker17, 20, 36
+# Событие: Разговор: "Group010":"015215955"-"Group012":"015216759" (nor_a_poor_walker08 с nor_a_walker17)
+event nor_a_poor_walker08, 28, 41, nor_a_walker17, 20, 36
+# Событие: Разговор: "Group010":"015215955"-"Group012":"015216759" (nor_a_poor_walker08 с nor_a_walker17)
+event nor_a_poor_walker08, 31, 41, nor_a_walker17, 20, 36
+# Событие: Разговор: "Group010":"015215955"-"Group012":"015216759" (nor_a_poor_walker08 с nor_a_walker17)
+event nor_a_poor_walker08, 34, 41, nor_a_walker17, 20, 36
+################################################################################################################################
+# События: поведение смотрящих (ведущий: overseer)
+event nor_f_overseer02, 2, 2, nor_f_overseer09, 0, 2, nor_f_overseer07, 0, 2
+event nor_f_overseer09, 2, 6, nor_f_overseer07, 2, 6
+event nor_f_overseer02, 6, 8, nor_f_overseer09, 20, 0, nor_f_overseer07, 23, 0
+event nor_f_overseer02, 10, 10, nor_f_overseer09, 0, 22, nor_f_overseer07, 0, 25
+event nor_f_overseer09, 22, 26, nor_f_overseer07, 25, 29
+event nor_f_overseer02, 22, 24, nor_f_overseer09, 39, 0, nor_f_overseer07, 39, 0
+event nor_f_overseer02, 26, 26, nor_f_overseer09, 0, 41, nor_f_overseer07, 0, 41
+event nor_f_overseer09, 41, 45, nor_f_overseer07, 41, 45
+event nor_f_overseer02, 37, 39, nor_f_overseer09, 61, 0, nor_f_overseer07, 58, 0
+event nor_f_overseer02, 41, 41, nor_f_overseer09, 0, 63, nor_f_overseer07, 0, 60
+event nor_f_overseer09, 63, 67, nor_f_overseer07, 60, 64
+event nor_f_overseer02, 46, 0, nor_f_overseer09, 78, 0, nor_f_overseer07, 76, 0
+################################################################################################################################
+# Событие: Драка nor_a_Walker12 с nor_a_Walker05
+event nor_a_Walker12, 38, 63, nor_a_Walker05, 3, 46
+# Событие: Драка nor_a_Walker12 с nor_a_Walker05
+event nor_a_Walker12, 40, 63, nor_a_Walker05, 7, 46
+# Событие: Драка nor_a_Walker12 с nor_a_Walker05
+event nor_a_Walker12, 43, 63, nor_a_Walker05, 7, 46
+# Событие: Драка nor_a_Walker12 с nor_a_Walker05
+event nor_a_Walker12, 40, 63, nor_a_Walker05, 43, 46
+# Событие: Драка nor_a_Walker12 с nor_a_Walker05
+event nor_a_Walker12, 43, 63, nor_a_Walker05, 43, 46
+# Событие: Драка nor_a_Walker05 с nor_a_Walker20
+event nor_a_Walker05, 7, 50, nor_a_Walker20, 13, 28
+# Событие: Драка nor_a_Walker05 с nor_a_Walker20
+event nor_a_Walker05, 43, 50, nor_a_Walker20, 40, 28
+# Событие: Драка nor_a_Walker05 с nor_a_Walker20
+event nor_a_Walker05, 43, 50, nor_a_Walker20, 22, 28
+# Событие: Драка nor_a_Walker05 с nor_a_Walker20
+event nor_a_Walker05, 43, 50, nor_a_Walker20, 13, 28
+# Событие: Драка nor_a_Walker05 с nor_a_Walker20
+event nor_a_Walker05, 10, 50, nor_a_Walker20, 4, 28
+# Событие: Драка yelvil_a_yellow_poor_Walker08 с yelvil_a_yellow_Walker04
+event yelvil_a_yellow_poor_Walker08, 30, 91, yelvil_a_yellow_Walker04, 3, 57
+# Событие: Драка yelvil_a_yellow_poor_Walker08 с yelvil_a_yellow_Walker04
+event yelvil_a_yellow_poor_Walker08, 30, 91, yelvil_a_yellow_Walker04, 25, 57
+# Событие: Драка yelvil_a_yellow_poor_Walker08 с yelvil_a_yellow_Walker04
+event yelvil_a_yellow_poor_Walker08, 30, 91, yelvil_a_yellow_Walker04, 28, 57
+# Событие: Драка yelvil_a_yellow_poor_Walker08 с yelvil_a_yellow_Walker04
+event yelvil_a_yellow_poor_Walker08, 30, 91, yelvil_a_yellow_Walker04, 14, 57
+# Событие: Драка yelvil_a_yellow_poor_Walker08 с yelvil_a_yellow_Walker04
+event yelvil_a_yellow_poor_Walker08, 30, 91, yelvil_a_yellow_Walker04, 19, 57
+# Событие: Драка nor_a_Walker17 с nor_a_Walker15
+event nor_a_Walker17, 3, 43, nor_a_Walker15, 11, 39
+# Событие: Драка nor_a_Walker17 с nor_a_Walker15
+event nor_a_Walker17, 28, 43, nor_a_Walker15, 20, 39
+# Событие: Драка nor_a_Walker17 с nor_a_Walker15
+event nor_a_Walker17, 16, 43, nor_a_Walker15, 20, 39
+# Событие: Драка nor_a_Walker17 с nor_a_Walker15
+event nor_a_Walker17, 25, 43, nor_a_Walker15, 20, 39
+# Событие: Драка nor_a_Walker17 с nor_a_Walker15
+event nor_a_Walker17, 28, 43, nor_a_Walker15, 28, 39
+# Событие: Драка nor_a_Walker17 с nor_a_Walker05
+event nor_a_Walker17, 3, 47, nor_a_Walker05, 4, 54
+# Событие: Драка nor_a_Walker17 с nor_a_Walker05
+event nor_a_Walker17, 28, 47, nor_a_Walker05, 7, 54
+# Событие: Драка nor_a_Walker17 с nor_a_Walker05
+event nor_a_Walker17, 10, 47, nor_a_Walker05, 4, 54
+# Событие: Драка nor_a_Walker17 с nor_a_Walker05
+event nor_a_Walker17, 28, 47, nor_a_Walker05, 43, 54
+# Событие: Драка nor_a_Walker17 с nor_a_Walker05
+event nor_a_Walker17, 28, 47, nor_a_Walker05, 4, 54
+# Событие: Драка nor_a_Walker15 с nor_a_Walker12
+event nor_a_Walker15, 20, 43, nor_a_Walker12, 43, 67
+# Событие: Драка nor_a_Walker15 с nor_a_Walker12
+event nor_a_Walker15, 20, 43, nor_a_Walker12, 4, 67
+# Событие: Драка nor_a_Walker15 с nor_a_Walker12
+event nor_a_Walker15, 28, 43, nor_a_Walker12, 40, 67
+# Событие: Драка nor_a_Walker15 с nor_a_Walker12
+event nor_a_Walker15, 20, 43, nor_a_Walker12, 50, 67
+# Событие: Драка nor_a_Walker15 с nor_a_Walker12
+event nor_a_Walker15, 28, 43, nor_a_Walker12, 43, 67
+# Событие: Драка yelvil_a_yellow_Walker12 с yelvil_a_yellow_Walker13
+event yelvil_a_yellow_Walker12, 29, 85, yelvil_a_yellow_Walker13, 3, 77
+# Событие: Драка yelvil_a_yellow_Walker12 с yelvil_a_yellow_Walker13
+event yelvil_a_yellow_Walker12, 4, 85, yelvil_a_yellow_Walker13, 3, 77
+# Событие: Драка yelvil_a_yellow_Walker12 с yelvil_a_yellow_Walker13
+event yelvil_a_yellow_Walker12, 7, 85, yelvil_a_yellow_Walker13, 3, 77
+# Событие: Драка yelvil_a_yellow_Walker12 с yelvil_a_yellow_Walker13
+event yelvil_a_yellow_Walker12, 14, 85, yelvil_a_yellow_Walker13, 3, 77
+# Событие: Драка yelvil_a_yellow_Walker12 с yelvil_a_yellow_Walker13
+event yelvil_a_yellow_Walker12, 17, 85, yelvil_a_yellow_Walker13, 3, 77
+# Событие: Драка nor_a_Walker20 с nor_a_Walker12
+event nor_a_Walker20, 22, 32, nor_a_Walker12, 43, 71
+# Событие: Драка nor_a_Walker20 с nor_a_Walker12
+event nor_a_Walker20, 22, 32, nor_a_Walker12, 4, 71
+# Событие: Драка nor_a_Walker20 с nor_a_Walker12
+event nor_a_Walker20, 13, 32, nor_a_Walker12, 43, 71
+# Событие: Драка nor_a_Walker20 с nor_a_Walker12
+event nor_a_Walker20, 22, 32, nor_a_Walker12, 10, 71
+# Событие: Драка nor_a_Walker20 с nor_a_Walker12
+event nor_a_Walker20, 13, 32, nor_a_Walker12, 4, 71
+
+# Кусок из каталога PLAY_ANIM #################################################################################################
+# Персонаж непрервыно играет анимацию (idle_80)
+define_actions andre
+play_anim andre, idle_80
+switch_action andre, 0
+enddef
+
+# Кусок из каталога ON_ATTACK #################################################################################################
+set global_on_attack_andre = "boar_stroibat.ers"
+set global_on_attack_skinny1 = "boar_stroibat.ers"
+# Кусок из каталога SEVA ######################################################################################################
+# Испоганил KOVIT (21.09.06)
+#
+camera_move_float 6.49,42.74,2.10,1.33,0.30,11.11,0
+#
+teleport_to Boar, 3, 45
+change_pose Boar, 0
+#
+if in_party(Kruger)
+teleport_to Kruger, 1, 45
+change_pose Kruger, 0
+endif
+#
+if in_party(Sullen)
+teleport_to Sullen, 2, 45
+change_pose Sullen, 0
+endif
+#
+if in_party(Demon)
+change_pose Demon, 0
+endif
+#
+if in_party(Mammoth)
+teleport_to Mammoth, 4, 45
+change_pose Mammoth, 0
+endif
+#
+change_pose Boar, 0, wait
+turn Boar, 0, wait
+keep_distance Boar, Mammoth, 1
+#
+if in_party(Kruger)
+change_pose Kruger, 0, wait
+turn Kruger, 0, wait
+keep_distance Kruger, Sullen, 2
+endif
+#
+if in_party(Sullen)
+change_pose Sullen, 0, wait
+turn Sullen, 0, wait
+keep_distance Sullen, Boar, 2
+endif
+#
+if in_party(Demon)
+change_pose Demon, 0, wait
+turn Demon, 0, wait
+endif
+#
+if in_party(Mammoth)
+change_pose Mammoth, 0, wait
+turn Mammoth, 0, wait
+move_to Mammoth, 11, 45
+endif
+#
+wait 3
+fade_in
+#
+if in_party(Mammoth)
+move_to Mammoth, 11, 45, wait
+move_to Boar, 10, 45, wait
+camera_move_float 13.37,48.36,0.70,0.72,0.17,6.31,0
+turn_to Mammoth, Boar
+turn_to Boar, Mammoth
+turn_to Mammoth, Boar,wait
+turn_to Boar, Mammoth,wait
+#
+talk Mammoth,done,0,EXPLAIN
+wait_speech 1
+play_anim boar,idle_99,wait
+wait 1
+#
+fade_out
+#
+leave_party Mammoth
+destroy_char Mammoth
+#
+endif
+#
+camera_move_float 9.90,44.99,0.70,0.83,0.79,8.71,0
+#
+wait 0,5
+#
+fade_in
+#
+set quest_goto_andre = "got"
+quest_log Boar,quest_goto_andre
+#
+
+# Кусок из каталога LENA ######################################################################################################
+
+# Кусок из каталога ALEX ######################################################################################################
+
+# Кусок из каталога ON_LIGHT #################################################################################################
+# Зажигание света
+#wait 0, 1
+#fade_in
+
+# Кусок из каталога VIT #######################################################################################################
+
+user_control on

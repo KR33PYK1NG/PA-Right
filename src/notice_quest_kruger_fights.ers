@@ -1,0 +1,12 @@
+set global_on_attack_kruger = ""
+
+set quest_kruger_fights = "got"
+quest_log Boar,quest_kruger_fights
+open_location fight08
+open_location fight09
+open_location fight10
+open_location fight11
+open_location monster08
+open_location monster09
+open_location monster10
+open_location monster11

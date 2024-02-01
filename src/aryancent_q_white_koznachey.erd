@@ -1,0 +1,136 @@
+BEGN 0
+LABL Loop limit,"init"
+LINK Decision
+TEST Decision,"quest_aryancent_falsh=\"completed\""
+LINK Terminator.15
+LINK Decision.3
+TEST Decision.3,"quest_aryancent_falsh=\"got\""
+LINK Terminator.14
+LINK Decision.4
+TEST Decision.4,"done_aryancent_q_white_koznachey=1"
+LINK Terminator.11
+LINK Terminator
+OPTN Loop limit,,Decision
+OPTN Decision,0,Decision.3
+OPTN Decision.3,0,Decision.4
+OPTN Decision.4,0,Terminator
+TERM Terminator,"dialog 1"
+OPTN Decision.4,1,Terminator.11
+TERM Terminator.11,"goto reenter1"
+OPTN Decision.3,1,Terminator.14
+OPTN Decision,1,Terminator.15
+TERM Terminator.14,"dialog 1got"
+TERM Terminator.15,"dialog 1compl"
+BEGN 1
+LABL Loop limit,"init"
+LINK Decision
+OPTN Loop limit,,Decision
+NODE Process,4
+LINK Process.4
+LINK Process.5
+NODE Process.4,0
+LINK Terminator
+NODE Process.5,0
+LINK Preparation
+NODE Process.6,4
+LINK Process.5
+LINK Process.19
+LINK Process.4
+OPTN Process,,Process.5
+OPTN Process.6,,Process.5
+OPTN Process,,Process.4
+OPTN Process.6,,Process.4
+OPTN Process.4,,Terminator
+TERM Terminator,"end"
+ADDQ Preparation
+LINK Terminator.16
+OPTN Process.5,,Preparation
+OPTN Preparation,,Terminator.16
+TERM Terminator.16,"set quest_aryancent_falsh =\"got\"
+end"
+LABL Loop limit.17,"reenter1"
+LINK Process.6
+OPTN Loop limit.17,,Process.6
+NODE Process.19,0
+LINK Process.22
+OPTN Process.6,,Process.19
+NODE Process.21,4
+NODE Process.22,4
+LINK Process.5
+LINK Process.24
+OPTN Process.19,,Process.22
+NODE Process.24,0
+LINK Terminator.27
+OPTN Process.22,,Process.24
+OPTN Process.24,,Terminator.27
+TERM Terminator.27,"end"
+OPTN Process.22,,Process.5
+TEST Decision,"done_hans5c_going_to_forest=1"
+LINK Process.31
+LINK Process
+OPTN Decision,1,Process
+NODE Process.31,4
+LINK Process.8
+OPTN Process.31,,Process.8
+NODE Process.8,0
+LINK Terminator.35
+OPTN Process.8,,Terminator.35
+TERM Terminator.35,"end"
+OPTN Decision,0,Process.31
+BEGN 1got
+LABL Loop limit,"init"
+LINK Process
+OPTN Process,,Decision.18
+TEST Decision,"quest_aryancent_falsh_1 =\"completed\""
+LINK Process.8
+LINK Process.11
+OPTN Decision,1,Process.11
+NODE Process,4
+LINK Decision.18
+OPTN Decision,0,Process.8
+NODE Process.8,0
+LINK Terminator
+OPTN Process.8,,Terminator
+TERM Terminator,"end"
+NODE Process.11,0
+LINK Process.13
+OPTN Loop limit,,Process
+OPTN Process.11,,Process.13
+NODE Process.13,4
+LINK Process.15
+OPTN Process.13,,Process.15
+NODE Process.15,0
+LINK Terminator.17
+OPTN Process.15,,Terminator.17
+TERM Terminator.17,"set quest_aryancent_falsh_2 =\"completed\"
+set quest_aryancent_falsh =\"completed\"
+add_money Boar,10000
+end"
+TEST Decision.18,"quest_aryancent_falsh_1 =\"failed\""
+LINK Process.21
+LINK Decision
+OPTN Decision.18,0,Decision
+OPTN Decision.18,1,Process.21
+NODE Process.21,0
+LINK Process.23
+OPTN Process.21,1,Process.23
+NODE Process.23,4
+LINK Process.26
+TERM Terminator.24,"set quest_aryancent_falsh_2 =\"completed\"
+set quest_aryancent_falsh =\"completed\"
+end"
+OPTN Process.23,,Process.26
+NODE Process.26,0
+LINK Terminator.24
+OPTN Process.26,,Terminator.24
+BEGN 1compl
+LABL Loop limit,"init"
+LINK Process
+NODE Process,4
+LINK Process.8
+OPTN Process,,Process.8
+NODE Process.8,0
+LINK Terminator
+OPTN Process.8,,Terminator
+TERM Terminator,"end"
+OPTN Loop limit,,Process

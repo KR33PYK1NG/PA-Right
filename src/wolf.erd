@@ -1,0 +1,1059 @@
+BEGN 0
+LABL Loop limit.32,"init"
+LINK Decision.32
+TEST Decision.12,"Done_guver8_become_wolf_security"
+LINK Terminator.15
+LINK Terminator
+OPTN Decision.12,1,Terminator
+OPTN Decision.12,0,Terminator.15
+TERM Terminator.15,"Dialog 8"
+TERM Terminator,"Dialog 1a"
+TEST Decision.20,"done_wolf4"
+LINK Decision.24
+LINK Decision.16
+OPTN Decision.20,1,Decision.24
+OPTN Decision.20,0,Decision.16
+TERM Terminator.23,"Dialog 4a"
+TEST Decision.24,"quest_secure_perimeter = \"got\" || quest_secure_perimeter = \"completed\""
+LINK Terminator.23
+LINK Decision
+OPTN Decision.24,1,Decision
+OPTN Decision.24,0,Terminator.23
+TEST Decision.16,"done_wolf2"
+LINK Terminator.18
+LINK Decision.12
+OPTN Decision.16,1,Terminator.18
+TERM Terminator.18,"Dialog 1b"
+OPTN Decision.16,0,Decision.12
+TERM Terminator.28,"Dialog 7"
+TEST Decision,"quest_steal_ammo = \"got\""
+LINK Terminator.27
+LINK Terminator.28
+OPTN Decision,0,Terminator.27
+OPTN Decision,1,Terminator.28
+TERM Terminator.27,"Dialog 4b"
+TEST Decision.32,"quest_secure_ammo = \"got\""
+LINK Terminator.35
+LINK Decision.20
+NODE Sheet.33,0
+OPTN Decision.32,1,Terminator.35
+TERM Terminator.35,"Dialog 7a"
+BEGN 1
+NODE Process.4,0
+LINK Process.5
+NODE Process.5,4
+LINK Terminator.199
+NODE Process.8,0
+LINK Process.9
+NODE Process.9,4
+LINK Terminator.212
+NODE Process.12,0
+LINK Process.13
+NODE Process.13,4
+LINK Terminator.127
+NODE Process.16,0
+LINK Process.18
+NODE Process.18,4
+LINK Process.19
+NODE Process.19,0
+LINK Terminator.21
+NODE Sheet.23,0
+NODE Process.34,0
+LINK Terminator.287
+TEST Decision,"Reaction > 8"
+LINK Loop limit.82
+LINK Process.123
+OPTN Decision,0,Process.123
+OPTN Decision,1,Loop limit.82
+LABL Loop limit,"z500mon1"
+LINK Process.34
+NODE Process.41,4
+LINK Decision.85
+TEST Decision.48,"global_money_wolf1 = 500"
+LINK Loop limit.80
+LINK Decision.52
+OPTN Decision.48,0,Decision.52
+OPTN Decision.48,1,Loop limit.80
+TEST Decision.52,"global_money_wolf1 = 400"
+LINK Decision.73
+LINK Decision.55
+OPTN Decision.52,0,Decision.55
+OPTN Decision.52,1,Decision.73
+TEST Decision.55,"global_money_wolf1 = 300"
+LINK Decision.102
+LINK Decision.58
+OPTN Decision.55,0,Decision.58
+OPTN Decision.55,1,Decision.102
+TEST Decision.58,"global_money_wolf1 = 200"
+LINK Decision.109
+LINK Decision.116
+OPTN Decision.58,0,Decision.116
+OPTN Decision.58,1,Decision.109
+NODE Process.42,0
+LINK Terminator.46
+OPTN Loop limit.62,,Process.42
+OPTN Loop limit.62,,Process.45
+NODE Process.45,0
+LINK Loop limit.71
+TERM Terminator.46,"set from_Continue1 = 0
+set from_Continue2_1 = 0
+set from_Continue3_1 = 0
+set from_Continue4_1 = 0
+Goto quest1"
+LABL Loop limit.62,"haggle1"
+LINK Process.45
+LINK Process.42
+LINK Loop limit.165
+TERM Terminator.70,"Goto haggle1"
+NODE Process.61,4
+LINK Terminator.70
+TEST Decision.73,"Reaction > 8"
+LINK Process.74
+LINK Terminator.79
+NODE Process.74,4
+LINK Terminator.113
+OPTN Decision.73,1,Process.74
+OPTN Decision.73,0,Terminator.79
+TERM Terminator.79,"Goto refusal1"
+LABL Loop limit.80,"refusal1"
+LINK Process.61
+TEST Decision.65,"Reaction > 6"
+LINK Terminator.84
+LINK Process.135
+OPTN Decision.65,0,Process.135
+OPTN Decision.65,1,Terminator.84
+LABL Loop limit.66,"z400mon1"
+LINK Process.158
+LABL Loop limit.82,"Give_mon1_1"
+LINK Process.41
+TERM Terminator.84,"Goto Give_mon1_1"
+TEST Decision.85,"global_money_wolf1 = 500"
+LINK Terminator.97
+LINK Decision.88
+OPTN Decision.85,0,Decision.88
+OPTN Decision.85,1,Terminator.97
+TEST Decision.88,"global_money_wolf1 = 400"
+LINK Terminator.98
+LINK Decision.91
+OPTN Decision.88,0,Decision.91
+OPTN Decision.88,1,Terminator.98
+TEST Decision.91,"global_money_wolf1 = 300"
+LINK Terminator.99
+LINK Decision.94
+OPTN Decision.91,0,Decision.94
+OPTN Decision.91,1,Terminator.99
+TEST Decision.94,"global_money_wolf1 = 200"
+LINK Terminator.100
+LINK Terminator.101
+OPTN Decision.94,0,Terminator.101
+OPTN Decision.94,1,Terminator.100
+TERM Terminator.97,"add_money boar,500
+Goto haggle1"
+TERM Terminator.98,"add_money boar,400
+Goto haggle1"
+TERM Terminator.99,"add_money boar,300
+Goto haggle1"
+TERM Terminator.100,"add_money boar,200
+Goto haggle1"
+TERM Terminator.101,"add_money boar,100
+Goto haggle1"
+LABL Loop limit.71,"Give_mon2_1"
+LINK Decision.48
+TEST Decision.102,"Reaction > 6"
+LINK Process.103
+LINK Terminator.108
+NODE Process.103,4
+LINK Terminator.106
+OPTN Decision.102,1,Process.103
+OPTN Decision.102,0,Terminator.108
+TERM Terminator.108,"Goto refusal1"
+TEST Decision.109,"Reaction > 4"
+LINK Process.110
+LINK Terminator.115
+NODE Process.110,4
+LINK Terminator.77
+OPTN Decision.109,1,Process.110
+OPTN Decision.109,0,Terminator.115
+TERM Terminator.115,"Goto refusal1"
+TEST Decision.116,"Reaction > 2"
+LINK Process.117
+LINK Terminator.122
+NODE Process.117,4
+LINK Terminator.120
+OPTN Decision.116,1,Process.117
+TERM Terminator.120,"Goto money_up"
+OPTN Decision.116,0,Terminator.122
+TERM Terminator.122,"Goto refusal1"
+NODE Process.123,4
+LINK Loop limit.132
+LABL Loop limit.124,"Continue4_1"
+LINK Terminator.269
+LINK Terminator.272
+LINK Terminator.263
+LINK Terminator.264
+LINK Terminator.267
+LINK Process.16
+TERM Terminator.127,"set from_Continue3_1 = 0
+set from_Continue4_1 = 1
+Goto Continue4_1"
+TEST Decision.128,"From_Continue4_1"
+LINK Terminator.131
+LINK Decision.213
+OPTN Decision.128,0,Decision.213
+OPTN Decision.128,1,Terminator.131
+TERM Terminator.131,"Goto Continue4_1"
+LABL Loop limit.132,"return1"
+LINK Decision.128
+TERM Terminator.134,"Goto return1"
+NODE Process.135,4
+LINK Terminator.134
+LABL Loop limit.137,"quest1"
+LINK Process.139
+NODE Process.139,4
+LINK Process.140
+NODE Process.140,0
+LINK Process.143
+NODE Process.143,4
+LINK Process.144
+NODE Process.144,0
+LINK Process.151
+NODE Process.151,4
+LINK Document
+ADDI Document
+LINK Process.155
+LINK Terminator.149
+NODE Process.155,0
+LINK Terminator.245
+LABL Loop limit.165,"reflection1"
+LINK Process.157
+NODE Process.167,4
+LINK Process.168
+LINK Process.173
+NODE Process.168,0
+LINK Terminator.170
+TERM Terminator.170,"save_game save0027,boar_die_by_wolf
+run boar_die_by_wolf"
+NODE Sheet.172,0
+TEST Decision.175,"global_money_wolf1 = 100"
+LINK Terminator.185
+LINK Decision.179
+OPTN Decision.175,0,Decision.179
+OPTN Decision.175,1,Terminator.185
+TEST Decision.179,"global_money_wolf1 = 200"
+LINK Terminator.186
+LINK Decision.182
+OPTN Decision.179,0,Decision.182
+OPTN Decision.179,1,Terminator.186
+TEST Decision.182,"global_money_wolf1 = 300"
+LINK Terminator.187
+LINK Decision.188
+OPTN Decision.182,0,Decision.188
+OPTN Decision.182,1,Terminator.187
+TERM Terminator.185,"Give_money boar,100,wolf
+set global_money_wolf1 = 0
+Goto exit1"
+TERM Terminator.186,"Give_money boar,200,wolf
+set global_money_wolf1 = 0
+Goto exit1"
+TERM Terminator.187,"Give_money boar,300,wolf
+set global_money_wolf1 = 0
+Goto exit1"
+TEST Decision.188,"global_money_wolf1 = 400"
+LINK Terminator.194
+LINK Terminator.195
+OPTN Decision.188,0,Terminator.195
+OPTN Decision.188,1,Terminator.194
+TERM Terminator.194,"Give_money boar,400,wolf
+set global_money_wolf1 = 0
+Goto exit1"
+TERM Terminator.195,"Give_money boar,500,wolf
+set global_money_wolf1 = 0
+Goto exit1"
+TERM Terminator.149,"Goto reflection1"
+LABL Loop limit.198,"Continue2_1"
+LINK Terminator.191
+LINK Terminator.192
+LINK Terminator.161
+LINK Terminator.162
+LINK Terminator.196
+LINK Process.8
+TERM Terminator.199,"set from_Continue2_1 = 1
+Goto Continue2_1"
+LABL Loop limit.211,"Continue3_1"
+LINK Terminator.207
+LINK Terminator.209
+LINK Terminator.202
+LINK Terminator.203
+LINK Terminator.206
+LINK Process.12
+TERM Terminator.212,"set from_Continue2_1 = 0
+set from_Continue3_1 = 1
+Goto Continue3_1"
+TEST Decision.213,"From_Continue3_1"
+LINK Terminator.216
+LINK Decision.238
+OPTN Decision.213,0,Decision.238
+OPTN Decision.213,1,Terminator.216
+TERM Terminator.216,"Goto Continue3_1"
+TEST Decision.218,"Reaction > 4"
+LINK Terminator.223
+LINK Process.225
+OPTN Decision.218,0,Process.225
+OPTN Decision.218,1,Terminator.223
+TERM Terminator.223,"Goto Give_mon1_1"
+TERM Terminator.224,"Goto return1"
+NODE Process.225,4
+LINK Terminator.224
+TEST Decision.227,"Reaction > 2"
+LINK Terminator.232
+LINK Process.234
+OPTN Decision.227,0,Process.234
+OPTN Decision.227,1,Terminator.232
+LABL Loop limit.230,"z200mon1"
+LINK Process.251
+TERM Terminator.232,"Goto Give_mon1_1"
+TERM Terminator.233,"Goto return1"
+NODE Process.234,4
+LINK Terminator.233
+TERM Terminator.217,"Goto Continue2_1"
+TEST Decision.238,"From_Continue2_1"
+LINK Terminator.217
+LINK Terminator.276
+OPTN Decision.238,0,Terminator.276
+OPTN Decision.238,1,Terminator.217
+TERM Terminator.245,"Dialog 2"
+NODE Process.157,0
+LINK Process.167
+NODE Process.158,0
+LINK Terminator.291
+NODE Process.251,0
+LINK Terminator.297
+LABL Loop limit.253,"z100mon1"
+LINK Process.260
+TERM Terminator.255,"Goto Give_mon1_1"
+NODE Process.260,0
+LINK Terminator.300
+NODE Process.249,0
+LINK Process.252
+NODE Process.252,4
+LINK Terminator.258
+OPTN Loop limit.244,,Process.249
+OPTN Loop limit.244,,Loop limit.273
+TERM Terminator.258,"Goto Continue1"
+LABL Loop limit.271,"Continue1"
+LINK Terminator.30
+LINK Terminator.302
+LINK Terminator.25
+LINK Terminator.26
+LINK Terminator.29
+LINK Terminator.275
+LABL Loop limit.273,"begin1"
+LINK Process.4
+TERM Terminator.275,"Goto begin1"
+TERM Terminator.276,"Goto Continue1"
+NODE Process.173,0
+LINK Decision.175
+OPTN Process.167,,Process.168
+OPTN Process.167,,Process.173
+LABL Loop limit.284,"exit1"
+LINK Terminator.286
+TERM Terminator.286,"end"
+TERM Terminator.287,"Set global_money_wolf1 = 500
+Goto z500mon2_1"
+LABL Loop limit.288,"z500mon2_1"
+LINK Decision
+TERM Terminator.291,"Set global_money_wolf1 = 400
+Goto z400mon2_1"
+LABL Loop limit.292,"z400mon2_1"
+LINK Decision.65
+TERM Terminator.294,"Set global_money_wolf1 = 300
+Goto z300mon2_1"
+LABL Loop limit.295,"z300mon2_1"
+LINK Decision.218
+LABL Loop limit.221,"z300mon1"
+LINK Process.247
+NODE Process.247,0
+LINK Terminator.294
+TERM Terminator.297,"Set global_money_wolf1 = 200
+Goto z200mon2_1"
+LABL Loop limit.298,"z200mon2_1"
+LINK Decision.227
+TERM Terminator.300,"Set global_money_wolf1 = 100
+Goto z100mon2_1"
+LABL Loop limit.301,"z100mon2_1"
+LINK Terminator.255
+TERM Terminator.161,"Goto z300mon1"
+TERM Terminator.162,"Goto z400mon1"
+TERM Terminator.196,"Goto z500mon1"
+TERM Terminator.191,"Goto z100mon1"
+TERM Terminator.192,"Goto z200mon1"
+TERM Terminator.25,"Goto z300mon1"
+TERM Terminator.26,"Goto z400mon1"
+TERM Terminator.29,"Goto z500mon1"
+TERM Terminator.30,"Goto z100mon1"
+TERM Terminator.202,"Goto z300mon1"
+TERM Terminator.203,"Goto z400mon1"
+TERM Terminator.206,"Goto z500mon1"
+TERM Terminator.207,"Goto z100mon1"
+TERM Terminator.209,"Goto z200mon1"
+TERM Terminator.263,"Goto z300mon1"
+TERM Terminator.264,"Goto z400mon1"
+TERM Terminator.267,"Goto z500mon1"
+TERM Terminator.269,"Goto z100mon1"
+TERM Terminator.272,"Goto z200mon1"
+TERM Terminator.302,"Goto z200mon1"
+LABL Loop limit.283,"money_up"
+LINK Terminator.303
+TERM Terminator.303,"add_money boar,100
+set global_money_wolf1 = global_money_wolf1+100
+Goto haggle1"
+TERM Terminator.77,"Goto money_up"
+TERM Terminator.106,"Goto money_up"
+TERM Terminator.113,"Goto money_up"
+TERM Terminator.21,"save_game save0027,boar_die_by_wolf
+run boar_die_by_wolf"
+TERM Terminator.32,"become_wolf_security"
+LABL Loop limit.244,"start1"
+LINK Loop limit.273
+LINK Process.249
+NODE Process.306,4
+LINK Terminator.312
+NODE Process,4
+LINK Terminator
+TERM Terminator,"Goto start1"
+TEST Decision.308,"Done_wolf8"
+LINK Process
+LINK Process.306
+OPTN Decision.308,0,Process
+OPTN Decision.308,1,Process.306
+TERM Terminator.312,"Goto start1"
+LABL Loop limit.32,"init"
+LINK Decision.308
+BEGN 1a
+NODE Process,4
+LINK Terminator.258
+LINK Process.2
+NODE Process.2,0
+LINK Terminator.22
+OPTN Process,,Process.2
+OPTN Process,,Terminator.258
+TERM Terminator.22,"end"
+TERM Terminator.258,"set from_Continue1 = 1
+Goto Continue1"
+LABL Loop limit.32,"init"
+LINK Process
+BEGN 1b
+NODE Process,4
+LINK Loop limit
+LABL Loop limit.32,"init"
+LINK Process
+NODE Process.5,0
+LINK Terminator
+LABL Loop limit,"Begin 1b"
+LINK Process.5
+LINK Process.11
+TERM Terminator,"end"
+NODE Process.11,0
+LINK Terminator.13
+TERM Terminator.13,"Run going_to_fur"
+BEGN 2
+NODE Process,4
+LINK Process.2
+LINK Process.23
+NODE Process.2,0
+LINK Loop limit
+NODE Process.5,4
+LINK Process.8
+LINK Process.11
+OPTN Process,,Process.2
+OPTN Process,,Process.23
+NODE Process.8,0
+LINK Terminator.170
+OPTN Process.5,,Process.8
+OPTN Process.5,,Process.11
+NODE Sheet.14,0
+NODE Process.11,0
+LINK Process.15
+NODE Process.15,4
+LINK Process.18
+LINK Process.17
+NODE Process.17,0
+LINK Process.24
+NODE Process.18,0
+LINK Terminator.21
+OPTN Process.15,,Process.18
+OPTN Process.15,,Process.17
+NODE Process.23,0
+LINK Process.24
+NODE Process.24,4
+LINK Process.30
+LINK Process.33
+OPTN Process.17,,Process.24
+LABL Loop limit,"refusal2"
+LINK Process.5
+NODE Process.30,0
+LINK Terminator.32
+TERM Terminator.32,"Goto refusal2"
+NODE Process.33,0
+LINK Preparation
+TERM Terminator.36,"create_item boar,poison_guver
+Set quest_poison_guver = \"got\"
+End"
+ADDQ Preparation
+LINK Terminator.36
+NODE Sheet.4,0
+LABL Loop limit.32,"init"
+LINK Process
+TERM Terminator.170,"save_game save0027,boar_die_by_wolf
+run boar_die_by_wolf"
+TERM Terminator.21,"save_game save0027,boar_die_by_wolf
+run boar_die_by_wolf"
+BEGN 3
+NODE Process,4
+LINK Terminator.25
+NODE Sheet.2,0
+NODE Process.4,0
+LINK Process.5
+NODE Process.5,4
+LINK Process.8
+LINK Process.19
+OPTN Process.5,,Process.8
+NODE Process.8,0
+LINK Process.9
+NODE Process.9,4
+LINK Process.11
+LINK Process.19
+NODE Process.11,0
+LINK Process.13
+OPTN Process.9,,Process.11
+NODE Process.13,4
+LINK Process.19
+LINK Process.16
+OPTN Process.11,,Process.13
+OPTN Process.13,,Process.16
+NODE Process.16,0
+LINK Terminator.170
+OPTN Process.13,,Process.19
+OPTN Process.9,,Process.19
+NODE Process.19,0
+LINK Process.28
+OPTN Process.5,,Process.19
+OPTN Process.16,,Terminator.170
+OPTN Process.19,,Process.28
+TERM Terminator.24,"create_item boar,pistol_stupid
+save_game save0028,going_to_jim
+Run going_to_jim"
+TERM Terminator.25,"Set quest_poison_guver = \"completed\"
+Set quest_kompromat_on_wolf = \"failed\"
+goto begin3"
+LABL Loop limit,"begin3"
+LINK Process.4
+NODE Process.28,4
+LINK Process.29
+NODE Process.29,0
+LINK Terminator.24
+OPTN Process.28,,Process.29
+OPTN Process.29,,Terminator.24
+LABL Loop limit.32,"init"
+LINK Process
+TERM Terminator.170,"save_game save0027,boar_die_by_wolf
+run boar_die_by_wolf"
+BEGN 4
+NODE Process.72,0
+LINK Preparation
+TERM Terminator.76,"Set quest_secure_perimeter = \"got\"
+create_item boar,robe_black.g 
+create_item boar,robe_trousers.b
+create_item boar,SMG_RAT_PROMZONE
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+End"
+ADDQ Preparation
+LINK Document
+ADDI Document
+LINK Terminator.76
+NODE Process,4
+LINK Loop limit
+NODE Sheet.10,0
+LABL Loop limit,"begin4"
+LINK Process.13
+LINK Process.72
+NODE Process.13,0
+LINK Process.15
+NODE Process.15,4
+LINK Process.17
+NODE Process.17,0
+LINK Terminator
+TERM Terminator,"End"
+LABL Loop limit.32,"init"
+LINK Process
+BEGN 4a
+NODE Process,4
+LINK Terminator
+TERM Terminator,"Goto begin4"
+LABL Loop limit.32,"init"
+LINK Process
+BEGN 4b
+NODE Process,4
+LINK Decision.14
+TERM Terminator,"End"
+NODE Process.4,0
+LINK Terminator
+TEST Decision.14,"Done_rusk2"
+LINK Process.4
+LINK Terminator.21
+OPTN Decision.14,1,Terminator.21
+TERM Terminator.21,"Dialog 6"
+LABL Loop limit.51,"init"
+LINK Process
+OPTN Decision.14,0,Process.4
+NODE Sheet.10,0
+BEGN 5
+NODE Process,4
+LINK Loop limit.5
+LABL Loop limit,"init"
+LINK Process
+LABL Loop limit.5,"begin5"
+LINK Loop limit.29
+LINK Process.11
+LINK Loop limit.100
+NODE Process.11,0
+LINK Process.13
+NODE Process.13,4
+LINK Loop limit.20
+NODE Process.15,0
+LINK Process.27
+LABL Loop limit.100,"offer5"
+LINK Process.15
+TERM Terminator.19,"Goto offer5"
+LABL Loop limit.20,""
+LINK Terminator.19
+LINK Terminator.24
+TERM Terminator.24,"Goto fight5"
+NODE Process.27,4
+LINK Loop limit.84
+LABL Loop limit.29,""
+LINK Loop limit.34
+LINK Loop limit.22
+NODE Process.8,0
+LINK Terminator
+TERM Terminator,"set global_on_attack_wolf = \"\"
+attack_target $195,$0
+declare_war $195
+end"
+LABL Loop limit.22,"fight5"
+LINK Process.8
+NODE Process.32,0
+LINK Decision
+LABL Loop limit.34,"blackmail5"
+LINK Process.32
+TEST Decision,"reaction > 7"
+LINK Process.64
+LINK Process.38
+OPTN Decision,1,Process.38
+NODE Process.38,4
+LINK Loop limit.40
+LABL Loop limit.40,""
+LINK Process.42
+LINK Process.61
+NODE Process.42,0
+LINK Decision.44
+TEST Decision.44,"reaction > 8"
+LINK Process.57
+LINK Process.48
+OPTN Decision.44,1,Process.48
+OPTN Decision.44,0,Process.57
+OPTN Decision,0,Process.64
+NODE Process.48,4
+LINK Loop limit.50
+LABL Loop limit.50,""
+LINK Process.55
+LINK Terminator.53
+TERM Terminator.53,"Goto fight5"
+TERM Terminator.54,"run wolf_otkup"
+NODE Process.55,0
+LINK Terminator.54
+NODE Process.57,4
+LINK Terminator.59
+TERM Terminator.59,"Goto fight5"
+NODE Process.61,0
+LINK Terminator.31
+NODE Process.64,4
+LINK Terminator.66
+TERM Terminator.66,"Goto fight5"
+LABL Loop limit.128,""
+LINK Decision.209
+LINK Decision.199
+LINK Loop limit.137
+LABL Loop limit.137,""
+LINK Decision.207
+LINK Decision.201
+LINK Loop limit.173
+TERM Terminator.209,"Goto ok5"
+LABL Loop limit.173,""
+LINK Terminator.209
+LINK Decision.203
+LINK Terminator.198
+LABL Loop limit.84,"haggle5"
+LINK Loop limit.87
+LABL Loop limit.87,""
+LINK Decision.213
+LINK Decision.91
+LINK Loop limit.128
+NODE Process.186,0
+LINK Decision.188
+OPTN Process.186,,Decision.188
+TEST Decision.188,"Reaction > 8"
+LINK Process.191
+LINK Process.192
+OPTN Decision.188,0,Process.191
+OPTN Decision.188,1,Process.192
+NODE Process.191,4
+LINK Terminator.194
+NODE Process.192,4
+LINK Terminator.207
+OPTN Process.191,,Terminator.194
+TERM Terminator.194,"Goto haggle5"
+OPTN Process.192,,Terminator.207
+LABL Loop limit.205,"z5_5"
+LINK Process.186
+OPTN Loop limit.205,,Process.186
+TERM Terminator.207,"Set global_5000_wolf = 1
+Set global_6000_wolf = 0
+Set global_7000_wolf = 0
+Set global_8000_wolf = 0
+Set global_9000_wolf = 0
+Goto haggle5"
+NODE Process.106,0
+LINK Decision.108
+OPTN Process.106,,Decision.108
+TEST Decision.108,"Reaction > 7"
+LINK Process.111
+LINK Process.112
+OPTN Decision.108,0,Process.111
+OPTN Decision.108,1,Process.112
+NODE Process.111,4
+LINK Terminator.114
+NODE Process.112,4
+LINK Terminator.118
+OPTN Process.111,,Terminator.114
+TERM Terminator.114,"Goto haggle5"
+OPTN Process.112,,Terminator.118
+LABL Loop limit.116,"z6_5"
+LINK Process.106
+OPTN Loop limit.116,,Process.106
+TERM Terminator.118,"Set global_5000_wolf = 0
+Set global_6000_wolf = 1
+Set global_7000_wolf = 0
+Set global_8000_wolf = 0
+Set global_9000_wolf = 0
+Goto haggle5"
+NODE Process.119,0
+LINK Decision.121
+OPTN Process.119,,Decision.121
+TEST Decision.121,"Reaction > 6"
+LINK Process.166
+LINK Process.125
+OPTN Decision.121,0,Process.166
+OPTN Decision.121,1,Process.125
+NODE Process.125,4
+LINK Terminator.131
+OPTN Process.166,,Terminator.127
+TERM Terminator.127,"Goto haggle5"
+OPTN Process.125,,Terminator.131
+LABL Loop limit.129,"z7_5"
+LINK Process.119
+OPTN Loop limit.129,,Process.119
+TERM Terminator.131,"Set global_5000_wolf = 0
+Set global_6000_wolf = 0
+Set global_7000_wolf = 1
+Set global_8000_wolf = 0
+Set global_9000_wolf = 0
+Goto haggle5"
+NODE Process.132,0
+LINK Decision.134
+OPTN Process.132,,Decision.134
+TEST Decision.134,"Reaction > 5"
+LINK Process.137
+LINK Process.138
+OPTN Decision.134,0,Process.137
+OPTN Decision.134,1,Process.138
+NODE Process.137,4
+LINK Terminator.140
+NODE Process.138,4
+LINK Terminator.144
+OPTN Process.137,,Terminator.140
+TERM Terminator.140,"Goto haggle5"
+OPTN Process.138,,Terminator.144
+LABL Loop limit.142,"z8_5"
+LINK Process.132
+OPTN Loop limit.142,,Process.132
+TERM Terminator.144,"Set global_5000_wolf = 0
+Set global_6000_wolf = 0
+Set global_7000_wolf = 0
+Set global_8000_wolf = 1
+Set global_9000_wolf = 0
+Goto haggle5"
+NODE Process.145,0
+LINK Decision.147
+OPTN Process.145,,Decision.147
+TEST Decision.147,"Reaction > 4"
+LINK Process.150
+LINK Process.151
+OPTN Decision.147,0,Process.150
+OPTN Decision.147,1,Process.151
+NODE Process.150,4
+LINK Terminator.153
+NODE Process.151,4
+LINK Terminator.157
+OPTN Process.150,,Terminator.153
+TERM Terminator.153,"Goto haggle5"
+OPTN Process.151,,Terminator.157
+LABL Loop limit.155,"z9_5"
+LINK Process.145
+OPTN Loop limit.155,,Process.145
+TERM Terminator.157,"Set global_5000_wolf = 0
+Set global_6000_wolf = 0
+Set global_7000_wolf = 0
+Set global_8000_wolf = 0
+Set global_9000_wolf = 1
+Goto haggle5"
+LABL Loop limit.27,"ok5"
+LINK Process.160
+NODE Process.160,0
+LINK Decision.176
+NODE Process.124,4
+LINK Terminator.165
+LABL Loop limit.162,"z3_5"
+LINK Process.167
+OPTN Process.167,,Process.124
+OPTN Process.124,,Terminator.165
+TERM Terminator.165,"Goto haggle5"
+NODE Process.166,4
+LINK Terminator.127
+NODE Process.167,0
+LINK Process.124
+OPTN Loop limit.162,,Process.167
+LABL Loop limit.169,"z4_5"
+LINK Process.171
+OPTN Process.171,,Process.173
+NODE Process.171,0
+LINK Process.173
+OPTN Loop limit.169,,Process.171
+NODE Process.173,4
+LINK Terminator.175
+OPTN Process.173,,Terminator.175
+TERM Terminator.175,"Goto haggle5"
+TEST Decision.176,"global_5000_wolf"
+LINK Terminator.179
+LINK Decision.180
+OPTN Decision.176,1,Terminator.179
+OPTN Decision.176,0,Decision.180
+TEST Decision.180,"global_6000_wolf"
+LINK Terminator.183
+LINK Decision.184
+OPTN Decision.180,1,Terminator.183
+OPTN Decision.180,0,Decision.184
+TERM Terminator.183,"Give_money boar, 6000, wolf
+run wolf_otkup"
+TEST Decision.184,"global_7000_wolf"
+LINK Terminator.187
+LINK Sheet.188
+OPTN Decision.184,1,Terminator.187
+OPTN Decision.184,0,Sheet.188
+TERM Terminator.187,"Give_money boar, 7000, wolf
+run wolf_otkup"
+NODE Sheet.188,0
+LINK Terminator.191
+LINK Decision.192
+NODE Sheet.189,0
+NODE Sheet.190,0
+TERM Terminator.191,"Give_money boar, 8000, wolf
+run wolf_otkup"
+TEST Decision.192,"global_9000_wolf"
+LINK Terminator.195
+LINK Decision.205
+NODE Sheet.193,0
+OPTN Decision.192,0,Decision.205
+TERM Terminator.195,"Give_money boar, 9000, wolf
+run wolf_otkup"
+TERM Terminator.196,"Give_money boar, 10000, wolf
+run wolf_otkup"
+TERM Terminator.198,"Goto fight5"
+TERM Terminator.179,"Give_money boar, 5000, wolf
+run wolf_otkup"
+TEST Decision.199,"Has_money(boar,5000)"
+LINK Terminator.135
+TERM Terminator.135,"Goto z5_5"
+OPTN Decision.199,1,Terminator.135
+TERM Terminator.141,"Goto z7_5"
+TEST Decision.201,"Has_money(boar,7000)"
+LINK Terminator.141
+NODE Sheet.202,0
+TERM Terminator.38,"Goto z9_5"
+TEST Decision.203,"Has_money(boar,9000)"
+LINK Terminator.38
+OPTN Decision.203,1,Terminator.38
+TEST Decision.205,"Has_money(boar,10000)"
+LINK Terminator.196
+NODE Sheet.206,0
+TERM Terminator.77,"Goto z8_5"
+TEST Decision.207,"Has_money(boar,8000)"
+LINK Terminator.77
+OPTN Decision.207,1,Terminator.77
+TERM Terminator.134,"Goto z6_5"
+TEST Decision.209,"Has_money(boar,6000)"
+LINK Terminator.134
+OPTN Decision.209,1,Terminator.134
+TEST Decision.91,"Has_money(boar,3000)"
+LINK Terminator.211
+TERM Terminator.211,"Goto z3_5"
+OPTN Decision.91,1,Terminator.211
+TERM Terminator.90,"Goto z4_5"
+TEST Decision.213,"Has_money(boar,4000)"
+LINK Terminator.90
+OPTN Decision.213,1,Terminator.90
+NODE Sheet.215,0
+TERM Terminator.31,"give_money boar,100,wolf
+run wolf_otkup"
+BEGN 6
+LABL Loop limit,"init"
+LINK Process
+NODE Process,0
+LINK Process.6
+NODE Process.6,4
+LINK Loop limit.9
+NODE Process.8,0
+LINK Preparation
+LABL Loop limit.9,""
+LINK Process.15
+LINK Loop limit.12
+LABL Loop limit.12,"ok6"
+LINK Process.8
+NODE Process.15,0
+LINK Process.59
+NODE Process.59,4
+LINK Loop limit.19
+LABL Loop limit.19,""
+LINK Process.22
+LINK Terminator.26
+NODE Process.22,0
+LINK Terminator
+TERM Terminator,"run boar_the_gay"
+TERM Terminator.26,"Goto ok6"
+ADDQ Preparation
+LINK Terminator.29
+TERM Terminator.29,"Set quest_steal_ammo = \"got\"
+end"
+NODE Sheet.29,0
+BEGN 7
+NODE Process.35,0
+LINK Terminator.37
+TERM Terminator.37,"End"
+TEST Decision,"Dead_pimple"
+LINK Process.31
+LINK Process.20
+OPTN Decision,0,Process.20
+NODE Process.20,4
+LINK Process.35
+NODE Process.31,4
+LINK Loop limit.34
+NODE Process.43,4
+LINK Process.46
+TERM Terminator.29,"Set quest_steal_ammo = \"completed\"
+Set quest_steal_ammo_2 = \"completed\"
+goto begin7"
+NODE Process.46,0
+LINK Document
+OPTN Decision,1,Process.31
+NODE Process.19,0
+LINK Process.43
+LABL Loop limit.34,""
+LINK Process.37
+LINK Loop limit.44
+NODE Process.37,0
+LINK Process.39
+NODE Process.39,4
+LINK Loop limit.40
+LABL Loop limit.40,""
+LINK Process.47
+LINK Terminator.46
+LABL Loop limit.44,"ready4b"
+LINK Process.19
+TERM Terminator.46,"Goto ready4b"
+NODE Process.47,0
+LINK Terminator.49
+TERM Terminator.49,"end"
+NODE Sheet.36,0
+LABL Loop limit,"init"
+LINK Decision
+NODE Sheet.39,0
+ADDI Document
+LINK Terminator.29
+LABL Loop limit.8,"begin7"
+LINK Process.11
+NODE Process.11,4
+LINK Process.13
+NODE Process.13,0
+LINK Document.46
+TERM Terminator.34,"Set quest_secure_ammo = \"got\"
+Set global_info_parovoz = 1
+end"
+ADDQ Preparation
+LINK Terminator.34
+ADDI Document.46
+LINK Preparation
+BEGN 7a
+LABL Loop limit.8,"init"
+LINK Process
+NODE Process,4
+LINK Process.5
+NODE Process.5,0
+LINK Terminator
+TERM Terminator,"end"
+BEGN 8
+NODE Process.306,4
+LINK Process.14
+NODE Process,4
+LINK Process.1
+TERM Terminator,"end"
+TEST Decision.308,"Done_wolf8"
+LINK Process
+LINK Process.306
+OPTN Decision.308,0,Process
+OPTN Decision.308,1,Process.306
+LABL Loop limit.32,"init"
+LINK Decision.308
+NODE Process.1,0
+LINK Terminator
+TERM Terminator.11,"end"
+NODE Process.14,0
+LINK Terminator.11

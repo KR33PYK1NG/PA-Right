@@ -1,0 +1,127 @@
+BEGN 0
+LABL Loop limit,"init"
+LINK Process
+NODE Process,4
+LINK Loop limit.5
+OPTN Loop limit,,Process
+OPTN Process,,Loop limit.5
+LABL Loop limit.5,""
+LINK Process.7
+LINK Process.10
+OPTN Loop limit.5,,Process.7
+NODE Process.7,0
+LINK Terminator
+TERM Terminator,"end"
+OPTN Process.7,,Terminator
+NODE Process.10,0
+LINK Process.16
+OPTN Loop limit.5,,Process.10
+NODE Process.16,4
+LINK Process.22
+LINK Loop limit.119
+OPTN Process.10,,Process.16
+TEST Decision,"in_party(Sullen)"
+LINK Process.37
+TEST Decision.25,"in_party(Kruger)"
+LINK Process.38
+TEST Decision.26,"in_party(Demon)"
+LINK Process.39
+LABL Loop limit.24,""
+LINK Process.60
+LINK Decision
+LINK Loop limit.28
+OPTN Loop limit.24,,Loop limit.28
+LABL Loop limit.28,""
+LINK Decision.121
+LINK Loop limit.30
+OPTN Loop limit.28,,Loop limit.30
+LABL Loop limit.30,""
+LINK Decision.26
+LINK Process.41
+OPTN Loop limit.24,,Decision
+OPTN Decision.121,0,Decision.25
+OPTN Loop limit.30,,Decision.26
+OPTN Decision,1,Process.37
+OPTN Decision.25,1,Process.38
+OPTN Decision.26,1,Process.39
+NODE Process.37,0
+LINK Terminator.30
+NODE Process.38,0
+LINK Decision.70
+NODE Process.39,0
+LINK Terminator.15
+OPTN Loop limit.30,,Process.41
+NODE Process.41,0
+LINK Terminator.63
+OPTN Process.37,,Terminator.30
+OPTN Process.38,,Decision.70
+OPTN Process.39,,Terminator.15
+OPTN Process.41,,Terminator.63
+OPTN Decision.113,1,Loop limit.24
+NODE Process.22,0
+LINK Process.56
+OPTN Process.16,,Process.22
+NODE Process.56,4
+LINK Terminator.59
+OPTN Process.22,,Process.56
+OPTN Process.56,,Terminator.59
+TERM Terminator.59,"goto hu"
+NODE Process.60,0
+LINK Terminator
+OPTN Loop limit.24,,Process.60
+OPTN Process.60,,Terminator
+TERM Terminator.63,"add_money Boar, -1000
+run sex_boar_and_bich_k_01"
+TERM Terminator.15,"add_money Boar, -1000
+run sex_Demon_and_bich_k_01"
+TERM Terminator.30,"add_money Boar, -1000
+run sex_Sullen_and_bich_k_01"
+LABL Loop limit.106,"compl_chek0"
+LINK Decision.107
+TEST Decision.107,"global_kruger_sex_chek = 1"
+LINK Terminator.111
+LINK Terminator.110
+OPTN Loop limit.106,,Decision.107
+OPTN Decision.107,0,Terminator.110
+TERM Terminator.110,"run sex_kruger_and_bich_k_01"
+TERM Terminator.111,"set quest_kruger_fuck_all=\"completed\"
+run sex_kruger_and_bich_k_01"
+OPTN Decision.107,1,Terminator.111
+TERM Terminator.46,"add_money Boar, -1000
+run sex_kruger_and_bich_k_01"
+TEST Decision.70,"quest_kruger_fuck_all=\"got\""
+LINK Loop limit.75
+LINK Preparation
+OPTN Decision.70,0,Preparation
+ADDQ Preparation
+LINK Terminator.74
+OPTN Preparation,,Terminator.74
+TERM Terminator.74,"set quest_kruger_fuck_all=\"got\"
+goto 1_1"
+LABL Loop limit.75,"1_1"
+LINK Decision.78
+OPTN Decision.70,1,Loop limit.75
+OPTN Loop limit.75,,Decision.78
+TEST Decision.78,"run_sex_kruger_and_and_bich_k_01=1"
+LINK Terminator.46
+LINK Terminator.28
+OPTN Decision.78,1,Terminator.46
+TERM Terminator.28,"add_money Boar, -1000
+set global_Kruger_sex_chek = global_kruger_sex_chek+1
+goto compl_chek0"
+OPTN Decision.78,0,Terminator.28
+OPTN Process.16,,Loop limit.119
+TEST Decision.113,"has_money(Boar,1000)"
+LINK Process.116
+LINK Loop limit.24
+OPTN Decision.113,0,Process.116
+NODE Process.116,0
+LINK Terminator.117
+TERM Terminator.117,"end"
+OPTN Process.116,,Terminator.117
+LABL Loop limit.119,"hu"
+LINK Decision.113
+OPTN Loop limit.119,,Decision.113
+TEST Decision.121,"quest_kruger_fuck_all=\"completed\""
+LINK Decision.25
+OPTN Loop limit.28,,Decision.121

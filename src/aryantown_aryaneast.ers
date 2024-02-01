@@ -1,0 +1,262 @@
+
+# Кусок из каталога SEVA ######################################################################################################
+if in_war(Validol) = 1 && global_validol_attack = 0
+set global_validol_attack = 1
+endif
+
+if global_talk_with_validol = "got" && quest_demon_fights = "completed" && door_state(17,85,0) = -1
+close_door 0,17,85
+endif
+
+if global_talk_with_validol = 0 && door_state(17,85,0) = -1
+close_door 0,17,85
+endif
+# Кусок из каталога LENA ######################################################################################################
+
+# Кусок из каталога ALEX ######################################################################################################
+	#NA кидаются на игрока если атаковать одного из них. 
+if  in_war($45) && global_aryaneast_inwar_check=0
+set global_aryaneast_inwar_check=1
+attack_target($45,$0)
+endif
+	#охрана двери (61,8) кидается на игрока, ели он открывает ее
+if door_state( 61, 8, 0 )=1 &&  global_areaneast_42=0 
+set global_areaneast_42 =1
+declare_war $42
+attack_target $42,$0
+attack_target $0,$42
+endif
+
+if dead_aryaneast_q_black_NA_glavae_adolf= 1 && quest_aryancent_killNA = "got"
+set quest_aryancent_killNA_1 = "completed"
+endif
+
+if dead_aryaneast_q_black_NA_glavae_adolf= 1 && quest_aryaneast_NA_podstava = "got"
+set quest_aryaneast_NA_podstava = 0
+endif
+
+# Кусок из каталога VIT #######################################################################################################
+#
+# aryane. Основной скрипт, запускается каждую секунду.
+#
+#####################################################################################################################################################
+#
+#     Сценарные события.
+#
+#####################################################################################################################################################
+#
+# Надо вызвать рефлектор.
+if global_aryane_ReflectorRun
+set global_aryane_ReflectorRun = 0
+run aryantown_aryaneast_reflector
+endif
+# Кабан выжил еще одну секунду.
+set global_aryane_time_from_start = global_aryane_time_from_start + 1
+#
+#####################################################################################################################################################
+#
+# Бой на aryaneast. Друзья Валидола нападают на игрока. Шесть волн. Первая волна - группа $10, последняя - гуппа $15.
+# Все волны (враги) выбегают из изначально запертых домов. Первая волна после global_validol_attack = 1.
+# Враги атакуют после уничтожения предыдущей группы по истечению 30-40 секунд или при заходе игрока в маркеры. 
+#
+# Считаем время
+if global_aryaneast_Attack = 1
+set global_aryaneast_Attack_time = global_aryaneast_Attack_time - 1
+endif
+# Месть друзей Валидола.
+if global_validol_attack  = 1 && !global_aryaneast_Attack
+set global_aryaneast_Attack = 1
+set global_disabled_global_map = 1
+set global_disabled_map_movement = 1
+run aryantown_aryaneast_validol_attack_final
+endif
+# Группа $10 атакована, открываем двери.
+if (door_state(8, 60, 0) != 1 || door_state(34, 53, 0) != 1) && in_war($10)
+open_door 0, 8, 60
+open_door 0, 34, 53
+endif
+# Первая волна атакующих (группа $10).
+if global_aryaneast_Attack = 1 && !in_war($10)
+set global_aryaneast_Attack_time = -1
+open_door 0, 8, 60
+open_door 0, 34, 53
+force_scan $10, 1
+declare_war $10
+attack_target $10, $0
+endif
+# Первая волна атакующих убита (группа $10).
+if global_aryaneast_Attack  = 1 && in_war($10) && distance($10, $0) > 150 && !global_aryaneast_G10_dead
+set global_aryaneast_G10_dead = 1
+set global_aryaneast_Attack_time = 30
+endif
+# Группа $11 атакована, открываем двери.
+if door_state(44, 72, 0) != 1 && in_war($11)
+open_door 0, 44, 72
+endif
+# Вторая волна атакующих (группа $11).
+if global_aryaneast_Attack = 1 && !in_war($11) && (in_marker($0, aryaneast_G11) || !global_aryaneast_Attack_time)
+set global_aryaneast_Attack_time = -1
+open_door 0, 44, 72
+force_scan $11, 1
+declare_war $11
+attack_target $11, $0
+endif
+# Вторая волна атакующих убита (группа $11).
+if global_aryaneast_Attack  = 1 && in_war($11) && distance($11, $0) > 150 && !global_aryaneast_G11_dead
+set global_aryaneast_G11_dead = 1
+set global_aryaneast_Attack_time = 35
+endif
+# Группа $12 атакована, открываем двери.
+if (door_state(50, 81, 0) != 1 || door_state(61, 59, 0) != 1) && in_war($12)
+open_door 0, 50, 81
+open_door 0, 61, 59
+endif
+# Третья волна атакующих (группа $12).
+if global_aryaneast_Attack = 1 && !in_war($12) && (in_marker($0, aryaneast_G12) || !global_aryaneast_Attack_time)
+set global_aryaneast_Attack_time = -1
+open_door 0, 50, 81
+open_door 0, 61, 59
+force_scan $12, 1
+declare_war $12
+attack_target $12, $0
+endif
+# Третья волна атакующих убита (группа $12).
+if global_aryaneast_Attack  = 1 && in_war($12) && distance($12, $0) > 150 && !global_aryaneast_G12_dead
+set global_aryaneast_G12_dead = 1
+set global_aryaneast_Attack_time = 35
+endif
+# Группа $13 атакована, открываем двери.
+if door_state(71, 49, 0) != 1 && in_war($13)
+open_door 0, 71, 49
+endif
+# Четвертая волна атакующих (группа $13).
+if global_aryaneast_Attack = 1 && !in_war($13) && (in_marker($0, aryaneast_G13) || !global_aryaneast_Attack_time)
+set global_aryaneast_Attack_time = -1
+open_door 0, 71, 49
+force_scan $13, 1
+declare_war $13
+attack_target $13, $0
+endif
+# Четвертая волна атакующих убита (группа $13).
+if global_aryaneast_Attack  = 1 && in_war($13) && distance($13, $0) > 150 && !global_aryaneast_G13_dead
+set global_aryaneast_G13_dead = 1
+set global_aryaneast_Attack_time = 35
+endif
+# Группа $14 атакована, открываем двери.
+if (door_state(64, 16, 0) != 1 || door_state(48, 37, 0) != 1) && in_war($14)
+open_door 0, 64, 16
+open_door 0, 48, 37
+endif
+# Пятая волна атакующих (группа $14).
+if global_aryaneast_Attack = 1 && !in_war($14) && (in_marker($0, aryaneast_G14) || !global_aryaneast_Attack_time)
+set global_aryaneast_Attack_time = -1
+open_door 0, 64, 16
+open_door 0, 48, 37
+force_scan $14, 1
+declare_war $14
+attack_target $14, $0
+endif
+# Пятая волна атакующих убита (группа $14).
+if global_aryaneast_Attack  = 1 && in_war($14) && distance($14, $0) > 150 && !global_aryaneast_G14_dead
+set global_aryaneast_G14_dead = 1
+set global_aryaneast_Attack_time = 40
+endif
+# Группа $15 атакована, открываем двери.
+if (door_state(31, 29, 0) != 1 || door_state(23, 44, 0) != 1 || door_state(5, 44, 0) != 1) && in_war($15)
+open_door 0, 31, 29
+open_door 0, 23, 44
+open_door 0, 5, 44
+endif
+# Шестая волна атакующих (группа $15).
+if global_aryaneast_Attack = 1 && !in_war($15) && (in_marker($0, aryaneast_G15) || !global_aryaneast_Attack_time)
+set global_aryaneast_Attack_time = -1
+open_door 0, 31, 29
+open_door 0, 23, 44
+open_door 0, 5, 44
+declare_war $15
+attack_target $15, $0
+endif
+# Шестая волна атакующих убита (группа $15).
+if global_aryaneast_Attack  = 1 && in_war($15) && distance($15, $0) > 150 && !global_aryaneast_G15_dead
+set global_aryaneast_G15_dead = 1
+set global_aryaneast_Attack_time = 40
+endif
+# Все враги убиты.
+if global_aryaneast_Attack  = 1 && global_aryaneast_G10_dead && global_aryaneast_G11_dead && global_aryaneast_G12_dead && global_aryaneast_G13_dead && global_aryaneast_G14_dead && global_aryaneast_G15_dead
+set global_validol_attack  = -1
+endif
+# Игрок добрался до маркера.
+if quest_validol_attack_final = "got" && global_validol_attack = -1 && in_marker($0, drop_west)
+set global_disabled_global_map = 0
+set global_disabled_map_movement = 0
+set quest_validol_attack_final = "completed"
+endif
+#####################################################################################################################################################
+#
+#     Боевое поведение.
+#
+###############################################################################################################################
+# Отслеживание смертей смотрящих NPC aryan_f_overseer05.
+if distance(aryan_f_overseer05, $0) > 150
+set dead_aryan_f_overseer05 = 1
+else
+set dead_aryan_f_overseer05 = 0
+endif
+# Отслеживание смертей смотрящих NPC aryan_f_overseer07.
+if distance(aryan_f_overseer07, $0) > 150
+set dead_aryan_f_overseer07 = 1
+else
+set dead_aryan_f_overseer07 = 0
+endif
+# Отслеживание смертей смотрящих NPC aryan_f_overseer08.
+if distance(aryan_f_overseer08, $0) > 150
+set dead_aryan_f_overseer08 = 1
+else
+set dead_aryan_f_overseer08 = 0
+endif
+# Группа смотрящих $5 увидела "правонарушение" игрока и атакует его.
+if !global_aryane_G5 && (in_war($5) || ((is_aryan($0) || is_terrorist($0) || is_violator($0)) && is_group_visible($5, $0)))
+set global_aryane_G5 = 1
+set global_aryane_ReflectorRun = 1
+endif
+# Группа $5 мертва.
+if global_aryane_G5 = -1
+elseif distance($5, $0) > 150
+set global_aryane_G5 = -1
+endif
+# Группа $5 больше не воюет.
+if global_aryane_G5 = 2 && !map_in_war
+set global_aryane_G5 = 0
+change_pose aryan_f_overseer05, 0
+change_pose aryan_f_overseer07, 0
+change_pose aryan_f_overseer08, 0
+set global_aryane_I5_1 = 0
+set global_aryane_I5_2 = 0
+set global_aryane_I5_3 = 0
+switch_action aryan_f_overseer05, 0
+switch_action aryan_f_overseer07, 0
+switch_action aryan_f_overseer08, 0
+clear_offenders $5
+endif
+# Предварительные вычисления. Слежение за смертями в группе.
+set DeadCounter = dead_aryan_f_overseer05 + dead_aryan_f_overseer07 + dead_aryan_f_overseer08
+# В группе $5 есть один или несколько новых погибших.
+if !global_aryane_I5 && global_aryane_I5_Dead != DeadCounter
+set global_aryane_I5_Dead = DeadCounter
+set global_aryane_I5 = 1
+set global_aryane_ReflectorRun = 1
+endif
+#####################################################################################################################################################
+#
+#     Коррекция боевого поведения.
+#
+#####################################################################################################################################################
+#####################################################################################################################################################
+#
+# Надо вызвать рефлектор.
+if global_aryane_ReflectorRun
+set global_aryane_ReflectorRun = 0
+run aryantown_aryaneast_reflector
+endif
+#
+# Конец aryane

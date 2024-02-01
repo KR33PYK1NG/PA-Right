@@ -1,0 +1,82 @@
+
+# Кусок из каталога SEVA ######################################################################################################
+if distance(boar,10,43) < 2 && global_prodzone_entry_1 = 0
+run prodzone_entry_1
+endif
+
+#quest secure perimeter
+if distance(boar,64,74)<3 && quest_secure_perimeter_1 = "got"
+set quest_secure_perimeter_1 = "completed"
+endif
+
+if quest_secure_perimeter_1 = "completed" && quest_secure_perimeter_2 = "completed" && quest_secure_perimeter_3 = "completed" && quest_secure_perimeter_4 = "completed" && quest_secure_perimeter = "got"
+set quest_secure_perimeter = "completed"
+endif
+
+if quest_steal_ammo_1 = "got" && dead_pimple = 1 && dead_buba = 1
+set quest_steal_ammo_1 = "completed"
+endif
+
+if run_going_with_pimple = 0 && done_pimple4_going_with_pimple0 = 1
+set run_going_with_pimple = 1
+run going_with_pimple
+endif
+# Кусок из каталога LENA ######################################################################################################
+
+# Кусок из каталога ALEX ######################################################################################################
+
+# Кусок из каталога VIT #######################################################################################################
+#
+# entry. Основной скрипт, запускается каждую секунду.
+#
+#####################################################################################################################################################
+#
+#     Сценарные события.
+#
+#####################################################################################################################################################
+#
+# Надо вызвать рефлектор.
+if global_entry_ReflectorRun
+set global_entry_ReflectorRun = 0
+run prodzone_entry_reflector
+endif
+# Кабан выжил еще одну секунду.
+set global_entry_time_from_start = global_entry_time_from_start + 1
+#
+#####################################################################################################################################################
+#
+#####################################################################################################################################################
+#
+#     Боевое поведение.
+#
+###############################################################################################################################
+# Пора произносить фразу.
+if !global_entry_prasehernia && global_entry_prasehernia_time < global_entry_time_from_start
+set  global_entry_prasehernia = 1
+set global_entry_ReflectorRun = 1
+endif
+#####################################################################################################################################################
+#
+#     Коррекция боевого поведения.
+#
+#####################################################################################################################################################
+#####################################################################################################################################################
+#
+# Надо вызвать рефлектор.
+if global_entry_ReflectorRun
+set global_entry_ReflectorRun = 0
+run prodzone_entry_reflector
+endif
+#
+# Конец entry
+
+#отнять у кабана оружие из квеста варгана
+if (quest_wargun = "completed" || quest_wargun = "failed" ) && ( has_item(boar,rifle_knacker) || item_weared(boar,rifle_knacker) )
+run boar_die_by_guver
+endif
+if (quest_wargun = "completed" || quest_wargun = "failed" ) && ( has_item(boar,revolver_butcher) || item_weared(boar,revolver_butcher) )
+run boar_die_by_guver
+endif
+if (quest_wargun = "completed" || quest_wargun = "failed" ) && ( has_item(boar,shotgun_pencil) || item_weared(boar,shotgun_pencil) )
+run boar_die_by_guver
+endif

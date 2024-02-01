@@ -1,0 +1,486 @@
+STRID,EPISODE,DESCRIPTION,got1,got2,completed1,completed2,null1,null2,failed,XP,NAME1,NAME2,BUILDINGS,HUMANS,MARKERS,SUB
+quest_game_target_find,,,goblin,,shipcave_consgrou_start.ers,,,,,0,,Цель игры: найти строящийся космический челнок.,,,,0
+quest_game_target_destroy,,,shipcave_consgrou_start.ers,blackskin9,shipcave_consgrou_destroy_4elnok.ers,,,,,1000000,,Цель игры: уничтожить строящийся космический челнок.,,,,0
+quest_escape_from_prodzone,,,goblin,,,,,,,300,,Найти возможность совершить побег с промзоны.,,,,0
+quest_meet_blackskin,,,goblin,,,,,,,350,,Встретиться с резидентом в городе Северном.,,,,1
+quest_meet_blackskin_1,,,,,,,,,,0,,Найти священника на городском рынке и сказать ему пароль.,,fatheralexander,,-1
+quest_talk_with_blackskin,,,blackskin1,,blackskin0,,,,,,Вернуться к Чернышу и получить от него дальнейшие указания.,Вернуться к Чернышу и получить от него дальнейшие указания.,,blackskin,,0
+quest_kill_man_without_trousers,crashsite,,,,,,,,,10,Kill man without trousers.,Спасти негра без штанов от мучений.,,blackworker2,,0
+quest_crash_revenge,crashsite,,,,,,,,,50,Revenge for killed comrades.,Отомстить неграм за убитых товарищей.,,"blackfighter2,blackfighter3,blackfighter4,blackfighter5,blackfighter8",-,0
+quest_crash_get_out,crashsite,,,,,,,,,30,Find the way out.,Найти выход из горного лабиринта.,,,"crashsite,70,80",0
+quest_crash_potato,crashsite,,,,,,,,,10,Find potato and pick it up.,Найти картофель и собрать его.,,,"crashsite,89,26",0
+quest_become_electrician,стать электриком,,Fur1,,toljan3,,Guver2a,,,200,Добиться перевода на техническую должность.,Добиться перевода на техническую должность.,"fact_ent,office",guver,-,0
+quest_become_electrician2,,,toljan3,,Fur2,,,,,200,Получить от Шубы дальнейшие указания о побеге.,Получить от Шубы дальнейшие указания о побеге.,"fact_bck_2,roughwshop",fur,-,0
+quest_recover_fur,,,prod_a_fur_ghoust0,,guver2a,,,,,,Сдать Шубу Гуверу.,Сдать Шубу Гуверу.,"fact_ent,office",guver,,0
+quest_give_ammo,стать электриком,,Fur2,Fur2c,Fur3,,Guver2a,,,100,Выловить патроны из сортира поварёшкой.,Выловить патроны из сортира поварёшкой.,,,-,3
+quest_give_ammo_1,стать электриком,,Fur2,Fur2c,Fur3,,Guver2a,,,50,Найти поварешку на кухне.,Найти поварешку на кухне.,"fact_bck_1,kitchen",,-,-1
+quest_give_ammo_2,стать электриком,,Fur2,Fur2c,Fur3,,Guver2a,,,50,Выловить патроны из сортира поварёшкой.,Выловить патроны из сортира поварёшкой.,"fact_bck_1,toilet",,-,-1
+quest_give_ammo_3,стать электриком,,Fur2,Fur2c,Fur3,,Guver2a,,,0,Отнести патроны Шубе.,Отнести патроны Шубе.,"fact_bck_2,roughwshop",fur,-,-1
+quest_give_electroscheme,стать электриком,,Fur3,,,,Guver2a,,,0,Заполучить электросхему предприятия.,Заполучить электросхему предприятия.,,,-,2
+quest_give_electroscheme_1,стать электриком,,Fur3,,,,Guver2a,,,200,Получить у Толяна электросхему предприятия.,Получить у Толяна электросхему предприятия.,"fact_ent,office",toljan,-,-1
+quest_give_electroscheme_2,стать электриком,,Fur3,,,,Guver2a,,,0,Отнести электросхему Шубе.,Отнести электросхему Шубе.,"fact_bck_2,roughwshop",fur,-,-1
+quest_find_wolf,конфликт начальников,,Guver10,,Guver5,,,,,100,Найти и обезвредить Волка.,Найти и обезвредить Волка.,,,-,2
+quest_find_wolf_1,конфликт начальников,,,,,,,,,50,"Получить ключ от барака, где укрылся Волк.","Получить ключ от барака, где укрылся Волк.",,powerst_f_Fight10,-,-1
+quest_find_wolf_2,конфликт начальников,,,,,,,,,50,Проникнуть в барак и уничтожить Волка.,Проникнуть в барак и уничтожить Волка.,,Wolf,-,-1
+quest_going_to_rough_workshop,стать электриком,,toljan1,,toljan6,,,,,200,Принести Толяну Чёрный Квадрат.,Принести Толяну Чёрный Квадрат.,,,,2
+quest_going_to_rough_workshop_1,,,,,,,,,,,Достать Чёрный Квадрат из ящика.,Достать Чёрный Квадрат из ящика.,"fact_bck_2,roughwshop",,"fact_bck_2,19,26",-1
+quest_going_to_rough_workshop_2,,,,,toljan6,,,,,,Доставить Чёрный Квадрат Толяну.,Доставить Чёрный Квадрат Толяну.,"fact_ent,office",toljan,,-1
+quest_delivery_rooster,стать внутр.охранником,,Gibbous4,,boyl2,,,,,100,Доставить Викки фигурку петуха.,Доставить Викки фигурку петуха.,"sod_sou,daffodishop",,-,0
+quest_rats,стать внутр.охранником,,Guver1,,Guver1b,,,,,100,Истребить всех крыс на складе рядом с литейкой.,Истребить всех крыс на складе рядом с литейкой.,,,-,2
+quest_rats_1,стать внутр.охранником,,Guver1,,Guver1b,,,,,0,Истребить крыс на складе.,Истребить крыс на складе.,"fact_bck_1,foundware",,-,-1
+quest_rats_2,стать внутр.охранником,,Guver1,,Guver1b,,,,,0,Доложить Гуверу.,Доложить Гуверу.,"fact_ent,office",guver,-,-1
+quest_register,стать внутр.охранником,,Guver1b,,Guver4,,,,,0,Получить подписи руководителей цехов и предъявить Гуверу.,Получить подписи руководителей цехов и предъявить Гуверу.,"fact_ent,office",guver,-,0
+quest_register_smoked,стать внутр.охранником,,Guver1b,,Smoked2,,,,,200,Получить подпись начальника литейки Копчёного.,Получить подпись начальника литейки Копчёного.,"fact_bck_1,foundry",smoked,-,0
+quest_register_billybob,стать внутр.охранником,,Guver1b,,BillyBob2,,,,,150,Получить подпись начальника цеха грубой обработки Билли-боба.,Получить подпись начальника цеха грубой обработки Билли-боба.,"fact_bck_2,roughwshop",billybob,-,0
+quest_register_tcatckes,стать внутр.охранником,,Guver1b,,,,,,,200,Получить подпись начальника склада Цацкеса.,Получить подпись начальника склада Цацкеса.,"fact_bck_2,warehouse",tcatckes,-,0
+quest_register_kurt,стать внутр.охранником,,Guver1b,,,,,,,150,Получить подпись начальника цеха окончательной обработки Курта.,Получить подпись начальника цеха окончательной обработки Курта.,"fact_bck_2,finworkshop",kurt,-,0
+quest_register_homemade,стать внутр.охранником,,Guver1b,,BillyBob4,Homemade1,,,,150,Получить подпись начальника сборочного цеха Самоделкина.,Получить подпись начальника сборочного цеха Самоделкина.,"fact_bck_1,assembly",homemade,-,0
+quest_bring_otto,стать внутр.охранником,,Smoked1,Guver2c,Smoked2,,,,,0,Привести нового работника в литейку из карцера.,Привести нового работника в литейку из карцера.,"fact_bck_1,foundry",otto,-,0
+quest_otto,стать внутр.охранником,,Otto2,,,,,,,20000,Передать Гюнтеру Кляйну пароль Отто.,Передать Гюнтеру Кляйну пароль Отто.,,,-,0
+quest_fight_with_horse,стать внутр.охранником,,BillyBob1,Guver2c,BillyBob2,BillyBob5,,,,50,Приструнить работягу Коня.,Приструнить работягу Коня.,,,-,2
+quest_fight_with_horse_1,стать внутр.охранником,,BillyBob1,Guver2c,BillyBob2,BillyBob5,,,,0,Приструнить работягу Коня.,Приструнить работягу Коня.,,horse,-,-1
+quest_fight_with_horse_2,стать внутр.охранником,,BillyBob1,Guver2c,BillyBob2,BillyBob5,,,,0,Доложить Билли-бобу.,Доложить Билли-бобу.,"fact_bck_2,roughwshop",billybob,-,-1
+quest_bring_vodka,стать внутр.охранником,,Tcatckes1,Guver2c,Guver3,,,,,50,"Отнести Гуверу бутылку водки, которую дал Цацкес.","Отнести Гуверу бутылку водки, которую дал Цацкес.","fact_ent,office","guver,tcatckes",-,0
+quest_find_bottle_vodka_for_guver,стать внутр.охранником,,Tcatckes2,,,,Tcatckes2,,,0,"Найти бутылку с водкой, которую давал Цацкес.","Найти бутылку с водкой, которую давал Цацкес.",,,-,0
+quest_bring_transmission,стать внутр.охранником,,Kurt1,,Kurt1,,,,,0,Принести Курту со склада ведро жидкой трансмиссии.,Принести Курту со склада ведро жидкой трансмиссии.,"fact_bck_2,warehouse","kurt,tcatckes",-,0
+quest_get_promzone_finger,стать внутр.охранником,,Homemade1,Guver2c,Homemade4,,,,,50,"Порыться в сортире, принести найденное Генеральному.","Порыться в сортире, принести найденное Генеральному.","fact_bck_1,toilet","homemade,wc",-,0
+quest_get_back_components,стать внутр.охранником,,Homemade4,Guver2c,Homemade3,,,,,0,Пообщаться с Фофаном насчёт украденных деталей.,Пообщаться с Фофаном насчёт украденных деталей.,,,-,2
+quest_get_back_components_1,стать внутр.охранником,,Homemade4,Guver2c,Homemade3,,,,,50,Найти Фофана и пообщаться с ним.,Найти Фофана и пообщаться с ним.,,,"fact_bck_1,50,76",-1
+quest_get_back_components_2,стать внутр.охранником,,Homemade4,Guver2c,Homemade3,,,,,0,Вернуть детали Генеральному.,Вернуть детали Генеральному.,"fact_bck_1,assembly",homemade,-,-1
+quest_fight_with_homemade,стать внутр.охранником,,BillyBob3,,BillyBob4,,,,,0,"Разыскать на складе автомат, принести его Билли-Бобу.","Разыскать на складе автомат, принести его Билли-Бобу.",,,-,2
+quest_fight_with_homemade_1,стать внутр.охранником,,BillyBob3,,BillyBob4,,,,,50,Разыскать автомат.,Разыскать автомат.,"fact_ent,store",,"fact_ent,16,69",-1
+quest_fight_with_homemade_2,стать внутр.охранником,,BillyBob3,,BillyBob4,,,,,0,Принести автомат Билли-бобу.,Принести автомат Билли-бобу.,"fact_bck_2,roughwshop",billybob,-,-1
+quest_bluehelmet,стать внутр.охранником,,Guver4,,,,,,"Guver5,prodzone_coalmine_attack_miners.ers",400,Разрешить конфликт между неграми-шахтёрами. Доложить Гуверу.,Разрешить конфликт между неграми-шахтёрами. Доложить Гуверу.,,"zvongendaba,snowball",-,0
+quest_discover_coalmine,,,prodzone_coalmine_negot_failed.ers,,goodwin1,,,,,,Тщательно обыскать шахты.,Тщательно обыскать шахты.,,,,0
+quest_find_goodwin,стать внутр.охранником,,Guver4,,Guver5,,,,Guver5,300,"Вернуть Гуверу его любимого, Гудвина.","Вернуть Гуверу его любимого, Гудвина.",,,-,0
+quest_coalmine_exit,,,zvongendaba3,,prodzone_coalmine,,goodwin2,,,0,Выйти из шахт.,Выйти из шахт.,,,"coalmine,30,2",0
+quest_check_exit_goodwin,,,goodwin2,,prodzone_coalmine_goodwin_coming.ers,,,,,0,Проверить безопасность выхода из шахт.,Проверить безопасность выхода из шахт.,,,"coalmine,30,2",0
+quest_kompromat_on_wolf,конфликт начальников,,Guver8,,Guver9,,alert_about_murder_fofan,,Wolf3,300,Добыть компромат на Волка.,Добыть компромат на Волка.,"fact_ent,office",wolf,-,0
+quest_talk_with_billybob,,,Billybob3,,,,Billybob3,,,,Поговорить с Билли-Бобом.,Поговорить с Билли-Бобом.,"fact_bck_2,roughwshop",billybob,,0
+quest_poison_guver,конфликт начальников,,Wolf2,,Wolf3,,,,Guver9,250,Отравить Гувера.,Отравить Гувера.,"fact_ent,office",,-,6
+quest_poison_guver_1,конфликт начальников,,Wolf2,,Wolf3,,,,Guver9,50,Спросить у Шубы о продаже славянского шкафа.,Спросить у Шубы о продаже славянского шкафа.,"fact_bck_2,roughwshop",fur,-,-1
+quest_poison_guver_2,конфликт начальников,,Wolf2,,Wolf3,,,,Guver9,50,"Пробраться в кабинет Гувера, когда Гувер уйдёт.","Пробраться в кабинет Гувера, когда Гувер уйдёт.",,,-,-1
+quest_poison_guver_3,конфликт начальников,,Wolf2,,Wolf3,,,,Guver9,50,"Отпереть тумбочку, в котором Гувер хранит водку.","Отпереть тумбочку, в котором Гувер хранит водку.",,,-,-1
+quest_poison_guver_4,конфликт начальников,,Wolf2,,Wolf3,,,,Guver9,50,Засыпать в водку яд.,Засыпать в водку яд.,,,-,-1
+quest_poison_guver_5,конфликт начальников,,Wolf2,,Wolf3,,,,Guver9,50,Закрыть и запереть тумбочку.,Закрыть и запереть тумбочку.,,,-,-1
+quest_poison_guver_6,конфликт начальников,,Wolf2,,Wolf3,,,,Guver9,0,Незаметно выйти и запереть кабинет.,Незаметно выйти и запереть кабинет.,,,-,-1
+quest_secure_perimeter,внешний охранник,,Guver5,Wolf4,Guver14,Wolf7,,,,0,Охранять периметр промзоны.,Охранять периметр промзоны.,,,,4
+quest_keep_horn,,,prodzone_farm_mine_leva.ers,,prodzone_farm_mine_tutu.ers,,,,prodzone_farm_mine_dead_horn.ers,,Уничтожить нападающих охранников. Гудок должен выжить.,Уничтожить нападающих охранников. Гудок должен выжить.,,horn,,0
+quest_secure_perimeter_1,внешний охранник,,Guver5,Wolf4,Guver14,Wolf7,,,,30,Посетить главный вход на промзону.,Посетить главный вход на промзону.,,,"entry,64,74",-1
+quest_secure_perimeter_2,внешний охранник,,Guver5,Wolf4,Guver14,Wolf7,,,,30,Посетить окрестности патронного завода.,Посетить окрестности патронного завода.,,,"dep_ammo,58,39",-1
+quest_secure_perimeter_4,внешний охранник,,Guver5,Wolf4,Guver14,Wolf7,,,,30,Посетить патронный завод.,Посетить патронный завод.,"dep_ammo,guardbarracks",,"dep_ammo,85,72",-1
+quest_secure_perimeter_3,внешний охранник,,Guver5,Wolf4,Guver14,Wolf7,,,,30,Посетить вход в угольный карьер.,Посетить вход в угольный карьер.,,,"farm_mine,16,64",-1
+quest_chucha,prodzone-mini,,chucha2,,chucha3,,,,,50,Добыть гриб-синяк для Чучи.,Добыть гриб-синяк для Чучи.,,,,2
+quest_chucha_1,,,,,,,,,,,Сорвать гриб-синяк.,Сорвать гриб-синяк.,,,"farm_mine,76,16",-1
+quest_chucha_2,,,,,,,,,,,Принести гриб-синяк Чуче.,Принести гриб-синяк Чуче.,,chucha,,-1
+quest_wargun,prodzone-mini,,wargun1,,wargun3,,,,wargun3,,"Испытать образцы оружия, изготовленного на промзоне.","Испытать образцы оружия, изготовленного на промзоне.",,wargun,,0
+quest_steal_ammo,Контрабанда патронов,,Guver13,Wolf6,Guver14,Wolf7,,,,200,Расследовать хищения патронов.,Расследовать хищения патронов.,,,-,2
+quest_steal_ammo_1,Контрабанда патронов,,Guver13,Wolf6,pimple4,,,,,0,Допросить Пупыря.,Допросить Пупыря.,"dep_ammo,guardbarracks",pimple,-,-1
+quest_steal_ammo_2,Контрабанда патронов,,Guver13,Wolf6,Guver14,Wolf7,,,,0,Доложить о результатах.,Доложить о результатах.,"fact_ent,office","guver,wolf",-,-1
+quest_secure_ammo,Контрабанда патронов,,Guver14,Wolf7,,,prodzone_farm_mine_leva.ers,,,30,Расследовать факты побегов людей с промзоны.,Расследовать факты побегов людей с промзоны.,,horn,,0
+quest_trainstop,Побег с промзоны,,trainstop,,trainstop,,,,,30,Идти пешком в направлении города Северный.,Идти пешком в направлении города Северный.,,,"trainstop,2,52",0
+quest_talk_with_gibbous,,,norcity_rubbish_lazarus_destroy.ers,,norcity_rubbish.ers,,,,,150,Добыть приличную одежду у человека по имени Горбатый.,Добыть приличную одежду у человека по имени Горбатый.,,gibbous,,0
+quest_enter_norcity,,,norcity_rubbish_start.ers,,norcity_rubbish.ers,,,,,100,Пройти внутрь Северного города.,Пройти внутрь Северного города.,,,"rubbish,2,72",0
+quest_find_zanach,prodzone-mini,,testp1,,testp3,,,,,25,Принести внешнему охраннику его заначку.,Принести внешнему охраннику его заначку.,,testp,"fact_bck_1,46,82",0
+quest_find_water,prodzone-mini,,indorguard0,,indorguard1,,,,,30,"Принести охраннику питье, чтобы его не мучил сушняк.","Принести охраннику питье, чтобы его не мучил сушняк.",,q_prodzone_indorguard,,0
+quest_naezd,prodzone-mini,,,,,,,,,30,Разобраться с охранником-хамом.,Разобраться с охранником-хамом.,,q_prodzone_badguard,,0
+quest_Sandy,prodzone-mini,,,,,,,,,50,Помочь рабочему Сэнди.,Помочь рабочему Сэнди.,,"q_prodzone_sandyworker,q_prodzone_guads",,0
+quest_prodzone_grab,prodzone-mini,,,,,,,,,30,Принести картошку злому рабочему.,Принести картошку злому рабочему.,,q_prodzone_workerOU,,0
+quest_prodzone_Durik,prodzone-mini,,,,,,,,,25,"Работяга обещает съем с планеты, если найти ему морковь.","Работяга обещает съем с планеты, если найти ему морковь.",,q_prodzone_workerAU,,0
+quest_bossn_killbs,,,,,,,,,,500,Убить человека по имени Роджер и доложить Клайду.,Убить человека по имени Роджер и доложить Клайду.,,,,2
+quest_bossn_killbs_1,,,,,,,,,,100,Убить Роджера.,Убить Роджера.,,norcity_q_BossS,,-1
+quest_bossn_killbs_2,,,,,,,,,,100,Получить награду. ,Получить награду. ,,norcity_q_BossN,,-1
+quest_bosss_killbn,,,,,,,,,,500,Убить человека по имени Клайд и доложить Роджеру.,Убить человека по имени Клайд и доложить Роджеру.,,,,2
+quest_bosss_killbn_1,,,,,,,,,,100,Убить Клайда.,Убить Клайда.,,norcity_q_BossN,,-1
+quest_bosss_killbn_2,,,,,,,,,,100,Получить награду. ,Получить награду. ,,norcity_q_BossS,,-1
+quest_helpers_abc,,,,,,,,,,300,Передать на словах кодовую фразу адресату.,Передать на словах кодовую фразу адресату.,,"norcity_q_helperS,norcity_q_Svyaznoy",,0
+quest_helpern_weapon,,,,,,,,,,1200,Добыть оружие для человека по имени Веник.,Добыть оружие для человека по имени Веник.,,norcity_q_helperN,,0
+quest_frenk_killall,,,,,,,,,,500,"Убить Роджера и Клайда, которых заказал человек по имени Френк.","Убить Роджера и Клайда, которых заказал человек по имени Френк.",,norcity_q_frenk,,3
+quest_frenk_killall_1,,,,,,,,,,,Убить Роджера.,Убить Роджера.,,norcity_q_BossS,,-1
+quest_frenk_killall_2,,,,,,,,,,,Убить Клайда.,Убить Клайда.,,norcity_q_BossN,,-1
+quest_frenk_killall_3,,,,,,,,,,,Доложить о результатах.,Доложить о результатах.,,,,-1
+quest_black_Aungar_killboss,,,,,,,,,,500,Аунгар просит убить босса Лумбаса.,Аунгар просит убить босса Лумбаса.,,norcity_q_black_aungar,,0
+quest_oldman_razvod,,,,,,,,,,600,Перебазарить собеседника.,Перебазарить собеседника.,,,,0
+quest_aryaneast_NA_podstava,,,,,,,,,,5000,Подложить листья кумар травы в сундук в доме Люптке Вайнера.,Подложить листья кумар травы в сундук в доме Люптке Вайнера.,,aryaneast_q_black_NA_glavae_adolf,"aryancent,56,14",0
+quest_aryaneast_alkash ,,,,,,,,,,3000,Принести 10 бутылок водки.,Принести 10 бутылок водки.,,aryaneast_q_black_alkash,,0
+quest_aryannor_NA_dostavka,aryancity_mini,,,,,,,,,3000,Разграбить склад Валидола.,Разграбить склад Валидола.,,aryannor_q_black_na_glavan,"aryaneast,60,9",0
+quest_aryaneast_find_aryan_odegda,,,,,,,,,,5000,Принести арийскуюю одежду.,Принести арийскуюю одежду.,,aryaneast_q_white_noaryan,,0
+quest_aryanwest_NA_trader,,,,,,,,,,5000,Уговорить арийца работать с неграми.,Уговорить арийца работать с неграми.,,"aryanwest_q_black_na_glavaw,aryancent_q_white_conrabandist",,0
+quest_aryancent_ytrader_isDEAD,,,,,,,,,,1500,Убить китайского торговца.,Убить китайского торговца.,,aryanwest_q_yellow_torgash,,0
+quest_aryancent_podstava,,,,,,,,,,5000,Найти способ опозорить Йогана Штрауса перед Рейхом.,Найти способ опозорить Йогана Штрауса перед Рейхом.,,"aryancent_q_white_officer_zagovor,aryancent_q_white_sekretar",,0
+quest_aryancent_findNA,,,,,,,,,,5000,Собрать информацию о неграх-арийцах.,Собрать информацию о неграх-арийцах.,,aryancent_q_white_officer_outOHR,,3
+quest_aryancent_findNA_1,,,,,,,,,,1000,Выйти на контакт со связным арийцев за пределами города.,Выйти на контакт со связным арийцев за пределами города.,,aryanwest_q_yellow_messenger,,-1
+quest_aryancent_findNA_2,,,,,,,,,,1000,Собрать информацию о неграх-арийцах.,Собрать информацию о неграх-арийцах.,,,,-1
+quest_aryancent_findNA_3,,,,,,,,,,1000,Доложить о результатах Виктору Бернау.,Доложить о результатах Виктору Бернау.,,aryancent_q_white_officer_outOHR,,-1
+quest_aryanwest_Nashpick,,,,,,,,,,1000,"Сообщить Адольфу, что ты перекрасившийся негр.","Сообщить Адольфу, что ты перекрасившийся негр.",,aryaneast_q_black_NA_glavae_adolf,,0
+quest_aryancent_killNA,,,,,,,,,,5000,Уничтожить глав негро-арийского подполья.,Уничтожить глав негро-арийского подполья.,,aryancent_q_white_officer_outOHR,,4
+quest_aryancent_killNA_1,,,,,,,,,,1000,Убить главу восточного офиса - Адольфа фон Билдера.,Убить главу восточного офиса - Адольфа фон Билдера.,,aryaneast_q_black_NA_glavaE_Adolf,,-1
+quest_aryancent_killNA_2,,,,,,,,,,1000,Убить главу западного офиса - Вагнера.,Убить главу западного офиса - Вагнера.,,aryanwest_q_black_NA_glavaW,,-1
+quest_aryancent_killNA_3,,,,,,,,,,1000,Убить главу северного офиса - Карла.,Убить главу северного офиса - Карла.,,aryannor_q_black_NA_glavaN,,-1
+quest_aryancent_killNA_4,,,,,,,,,,1000,Доложить о выполнении задания.,Доложить о выполнении задания.,,aryancent_q_white_officer_outOHR,,-1
+quest_aryanwest_yellow_vs_black,,,,,,,,,,5000,Желтые торговцы хотят получить контроль над рынком.,Желтые торговцы хотят получить контроль над рынком.,,aryanwest_q_yellow_Hi_torgash,,2
+quest_aryanwest_yellow_vs_black_1,,,,,,,,,,1000,Сообщить полученную информацию офицеру внешней разведки.,Сообщить информацию офицеру внешней разведки.,,aryancent_q_white_officer_outOHR,,-1
+quest_aryanwest_yellow_vs_black_2,,,,,,,,,,1000,Вернуться за вознагражднием.,Вернуться за вознагражднием.,,,,-1
+quest_aryancent_killBlack,,,,,,,,,,5000,Виктор Бернау просит убить всех черных торговцев.,Виктор Бернау просит убить всех черных торговцев.,,aryancent_q_white_officer_outOHR,,2
+quest_aryancent_killBlack_1,,,,,,,,,,1000,Убить всех черных торговцев.,Убить всех черных торговцев.,,"aryanwest_black_torgash1, aryanwest_black_torgash2, aryanwest_black_torgash3, aryanwest_q_black_Hi_torgash",,-1
+quest_aryancent_killBlack_2,,,,,,,,,,1000,Вернуться за вознагражднием к Виктору Бернау.,Вернуться за вознагражднием к Виктору Бернау.,,,,-1
+quest_aryanwest_black_vs_yellow,,,,,,,,,,5000,Черные торговцы хотят получить контроль над рынком.,Черные торговцы хотят получить контроль над рынком.,,aryanwest_q_black_Hi_torgash,,2
+quest_aryanwest_black_vs_yellow_1,,,,,,,,,,1000,Сообщить информацию офицеру внешней разведки.,Сообщить информацию офицеру внешней разведки.,,aryancent_q_white_officer_outOHR,,-1
+quest_aryanwest_black_vs_yellow_2,,,,,,,,,,1000,Вернуться за вознаграждением.,Вернуться за вознаграждением.,,,,-1
+quest_aryancent_killyellow,,,,,,,,,,5000,Виктор Бернау просит убить всех желтых торговцев.,Виктор Бернау просит убить всех желтых торговцев.,,aryancent_q_white_officer_outOHR,,2
+quest_aryancent_killyellow_1,,,,,,,,,,1000,Убить всех желтых торговцев.,Убить всех желтых торговцев.,,"aryanwest_yellow_torgash1, aryanwest_yellow_torgash2, aryanwest_yellow_torgash3, aryanwest_q_yellow_Hi_torgash",,-1
+quest_aryancent_killyellow_2,,,,,,,,,,1000,Вернуться за вознагражднием к Виктору Бернау.,Вернуться за вознагражднием к Виктору Бернау.,,,,-1
+quest_goto_skinny,,,Andre1,,skinny10,,,,,,Поговорить с Тощим.,Поговорить с Тощим.,,Skinny1,,0
+quest_buy_vanka_p,,,Andre2,,,,Academic2,,,5000,"Добыть снадобье ""Ванька-Встанька"" для Андрэ.","Добыть снадобье ""Ванька-Встанька"" для Андрэ.",,"academic,andre",-,0
+quest_find_baodzhi_p,,,Academic2,,,,U_u1,,,1000,Найти Бяо-Джи.,Найти Бяо-Джи.,"yelvill,peasant_house2",,,0
+quest_get_stuffedostrich_p,,,U_u1,,,,legbajunior1,,,1500,Вернуть Ю-Ю чучело страуса.,Вернуть Ю-Ю чучело страуса.,,LegbaJunior,,0
+quest_get_stuffedostrich_p2,,,legbajunior2,,u_u2,,,,,,Отправиться на охоту с Ю-Ю.,Отправиться на охоту с Ю-Ю.,,u_u,,0
+quest_bring_vanka_to_andre,,,Academic3,,andre4,,,,,,"Принести ""Ваньку-Встаньку"" Андре.","Принести ""Ваньку-Встаньку"" Андре.",,andre,,0
+quest_pickup_ostrich_gland,,,osthunt_osthunt.ers,,osthunt_osthunt.ers,,,,,1500,Вырезать из страуса ядовитую железу.,Вырезать из страуса ядовитую железу.,,,,0
+quest_return_to_academic,,,hunt_for_ostrich_fin.ers,,Academic2,,,,,1500,Принести ядовитую железу страуса Академику.,Принести ядовитую железу страуса Академику.,,academic,"osthunt,63,34",0
+quest_mass_fight,,,Blackskin1,,,,,,Blackskin2,800,"Добраться до повара Хо в ресторане ""Золотой петух"".","Добраться до повара Хо в ресторане ""Золотой петух"".",,,-,0
+quest_mass_fight_final,,,,,,,,,,100,Дололжить Чернышу о выполнении задания.,Дололжить Чернышу о выполнении задания.,,,"ynorth,44,4",0
+quest_earring_gibbous_fight,,,Blackskin3,,Blackskin3b,,,,,800,"Добыть серьги у Горбатого, принести их Чернышу.","Добыть серьги у Горбатого, принести их Чернышу.",,"gibbous,blackskin",-,0
+quest_cavern_depth,,,Blackskin9,,,,,,,50000,Добраться до пещеры с челноком.,Добраться до пещеры с челноком.,,,-,0
+quest_pickup_package,,,Blackskin9,Blackskin11,mildrop_mildrop.ers,,,,,20000,"Подобрать оружие и обмундирование, направленные с орбиты.","Подобрать оружие и обмундирование, направленные с орбиты.",,,"mildrop,51,48",0
+quest_final_doklad,,,shipcave_consgrou_destroy_4elnok_rezid.ers,shipcave_consgrou_destroy_4elnok_cannib.ers,Blackskin10,,,,,50000,Доложить Чернышу об успехе операции.,Доложить Чернышу об успехе операции.,,blackskin,,0
+quest_evacuation,,,Blackskin10,,,,,,,1000000,Обнаружить челнок и покинуть планету.,Обнаружить челнок и покинуть планету.,,,,0
+quest_demon_find,,,aryantown_aryanwest_start.ers,,Demon1,,,,,,Отыскать Демона.,Отыскать Демона.,,demon,,
+quest_demon_escape,,,Demon1,,karloster2,,,,"dead_FatherEvlampiy = 1, quest_demon_escape = ""got""",3000,"Привести Демону священника, лучше всего - батюшку Евлампия.","Привести Демону священника, лучше всего - батюшку Евлампия.",,"fatherevlampiy,demon",-,0
+quest_capture_jackson,,,FatherWindigo4,,,,FatherWindigo5,,,3000,Пленить Джексона-старшего.,Пленить Джексона-старшего.,,,-,0
+quest_report_fatherwindigo,,,norcity_ungan.ers,,FatherWindigo5,,,,,1000,Побеседовать о Джексоне Старшем с отцом Виндиго.,Побеседовать о Джексоне Старшем с отцом Виндиго.,,fatherwindigo,,0
+quest_find_jacksonjr,,,FatherWindigo5,,Fondenitc1,,,,,5000,Найти Джексона-младшего.,Найти Джексона-младшего.,,,,0
+quest_imper_weapon,,,Fondenitc1,,Fondenitc2,,,,,20000,Добыть имперское оружие.,Добыть имперское оружие.,,fondenitc,,0
+quest_pedalistbl,,,Fondenitc4,,Fondenitc5,,,,,20000,Добыть рабов у горных душманов.,Добыть рабов у горных душманов.,,,,0
+quest_islelab_isle_win,,,Fondenitc7,,islelab_isle.ers,,,,,20000,Уничтожить всех арийцев рядом с подводной лодкой.,Уничтожить всех арийцев рядом с подводной лодкой.,,,-,0
+quest_islelab_isle_goto_gprs,,,islelab_isle.ers,,islelab_gprs.ers,,,,,20000,Проследовать к тектоническому реактору.,Проследовать к тектоническому реактору.,,,"isle,3,42",
+quest_charge_railgun_ammo,,,islelab_gprs.ers,,islelab_gprs.ers,,,,,20000,Зарядить батареи имперского оружия.,Зарядить батареи имперского оружия.,,,"gprs,48,35",0
+quest_islelab_isle_need_weapon,,,islelab_isle.ers,,islelab_isle.ers,,,,,0,"Собрать всё имперское оружие, с которым я прибыл на остров.","Собрать всё имперское оружие, с которым я прибыл на остров.",,,,
+quest_islelab_isle_need_satan,,,islelab_isle_need_satan.ers,islelab_isle_need_satan2.ers,islelab_isle.ers,,,,,,"Подобрать бомбу ""Сатана"".","Подобрать бомбу ""Сатана"".",,,,
+quest_islelab_gprs_need_satan,,,islelab_gprs_need_satan.ers,,islelab_isle.ers,,,,,,"Подобрать бомбу ""Сатана"".","Подобрать бомбу ""Сатана"".",,,,
+quest_return_to_submarine,,,islelab_gprs_return.ers,,islelab_isle.ers,,,,,10000,Вернуться к подводной лодке Фонденица.,Вернуться к подводной лодке Фонденица.,,fondenitc,"gprs,93,39,isle,75,41",
+quest_get150for_Gibbous,,,Gibbous9,Gibbous10,Gibbous9a,,Gibbous11,Gibbous12,,15,Отдать Горбатому сто пятьдесят монет.,Отдать Горбатому сто пятьдесят монет.,,gibbous,-,0
+quest_get100for_Gibbous,,,Gibbous9,Gibbous10,Gibbous9a,,Gibbous11,Gibbous12,,10,Отдать Горбатому сто монет.,Отдать Горбатому сто монет.,,gibbous,-,0
+quest_return_alisa,,,Gibbous11,,Gibbous12,,,,,1500,Добыть механическую бабу Алису для Горбатого.,Добыть механическую бабу Алису для Горбатого.,,"alice,gibbous",-,0
+quest_blackskin_jerboa,,,Blackskin1,,Blackskin1,,,,,200,Принести Чернышу 21 шкурку тушканчика.,Принести Чернышу 21 шкурку тушканчика.,,blackskin,"monster01,1024,1024,monster02,1024,1024,monster03,1024,1024",0
+quest_return_marta,,,Hans1,,Hans11,release_marta_and_kruger.ers,,,fatherwindigo1b,5000,Вернуть Гансу его приёмную дочь Марту.,Вернуть Гансу его приёмную дочь Марту.,,,"can_entr,31,47",0
+quest_arrive_at_cannibals,,,Hans2,,,,,,,200,Добраться вместе с Гансом до каннибалов.,Добраться вместе с Гансом до каннибалов.,,,-,0
+quest_arrive_at_can_vill,,,cannibals_can_entr.ers,,kruger1,,,,,,Пройти в деревню людоедов.,Пройти в деревню людоедов.,,,,2
+quest_arrive_at_can_vill_1,,,,,chief1,,,,,,Миновать охранников.,Миновать охранников.,,chief,,-1
+quest_arrive_at_can_vill_2,,,,,kruger1,,,,,,Зайти в деревню.,Зайти в деревню.,,kruger,,-1
+quest_buy_marta,,,Hans2b,,Hans11,release_marta_and_kruger.ers,,,"hans12,fatherwindigo1b",500,Выкупить Марту.,Выкупить Марту.,,marta,-,0
+quest_buy_kruger,,,Kruger1,,Arbi1a,release_marta_and_kruger.ers,,,hans12,500,Выкупить Крюгера.,Выкупить Крюгера.,,kruger,-,0
+quest_investigation_steal_marta,,,Hans7a2,,Hans8b,,Hans11,Hans8a,,500,"Узнать, кто похитил Марту у Ганса.","Узнать, кто похитил Марту у Ганса.",,,-,0
+quest_kill_mamed,,,Hans8b,,Hans9,,,,,2500,Принести голову Мамеда Гансу.,Принести голову Мамеда Гансу.,,"hans,mamed",-,0
+quest_explore_sewerage,,,norcity_sewerage_start.ers,,norcity_sewerage.ers,,,,,1500,Исследовать канализацию.,Исследовать канализацию.,,,"sewerage,28,86",
+quest_book_yozef,,,LegbaJunior1,,iceman1,,,,,2000,"Добыть ""Будильники"" для Легбы-Джуниора.","Добыть ""Будильники"" для Легбы-Джуниора.",,,-,0
+quest_book_yozef2,,,notice_quest_demon_fights_completed.csv,,LegbaJunior2,,,,,2000,"Принести ""Будильники"" Легбе-Джуниору.","Принести ""Будильники"" Легбе-Джуниору.",,LegbaJunior,-,0
+quest_get_bounty,,,Mirza2,,Mirza4,,Mirza1,,,1000,Привести Мирзе бабу по имени Баунти.,Привести Мирзе бабу по имени Баунти.,,"mirza,rodriges",-,0
+quest_buy_sullen,,,Mirza1,,Mirza1,,Mirza2,,,400,Освободить Угрюмого из рабства.,Освободить Угрюмого из рабства.,,mirza,,2
+quest_buy_sullen_1,,,,,join_ibragim.ers,,,,,200,Приобрести негра у торговца Абу-Бакара.,Приобрести негра у торговца Абу-Бакара.,,abubakar,,-1
+quest_buy_sullen_2,,,,,join_mahmud.ers,,,,,200,Приобрести негра у торговца Саида.,Приобрести негра у торговца Саида.,,said,,-1
+quest_talk_with_validol,,,before_goto_validol.ers,,,,aryantown_aryanwest_start.ers,,,5000,Поговорить с Валидолом о чернящих таблетках.,Поговорить с Валидолом о чернящих таблетках.,,,,0
+quest_talk_with_validol2,,,notice_quest_demon_fights_completed.ers,,validol1,,,,,5000,Поговорить с Валидолом о чернящих таблетках.,Поговорить с Валидолом о чернящих таблетках.,,validol,,0
+quest_talk_with_hans,,,before_goto_hans.ers,,going_to_forest.ers,,,,,5000,Вернуться в Северный город и поговорить с Гансом.,Вернуться в Северный город и поговорить с Гансом.,,hans,,0
+quest_execution_traitor,,,execution_traitor.ers,,aryantown_aryancent_after_execution_traitor.ers,,,,aryantown_aryancent.ers,5000,Расстрелять Сяо Цуаньфу и Ломпо Мбанза.,Расстрелять Сяо Цуаньфу и Ломпо Мбанза.,,,,0
+quest_find_police,,,UlrichBek4,,OttoGuttenberg3,,,,,3000,Найти логово полицейской банды.,Найти логово полицейской банды.,,,-,0
+quest_valkyrie_map,,,OttoGuttenberg5,,,,,,aryantown_aryancent.ers,100,"Принести Гуттенбергу карту подземелий с ""Валькирией"".","Принести Гуттенбергу карту подземелий с ""Валькирией"".",,,,0
+quest_kill_harryramrod,"Убийство начальника пакгауза, известного как Гарри",,Blackskin3e,,Blackskin3c,,,,,2000,"Убить Гарри Шомпола, доложить Чернышу.","Убить Гарри Шомпола, доложить Чернышу.",,,-,2
+quest_kill_harryramrod_1,,,,,norcity_packhou.ers,,,,,,Убить Гарри Шомпола.,Убить Гарри Шомпола.,,harryramrod,,-1
+quest_kill_harryramrod_2,,,,,Blackskin3c,,,,,,Доложить Чернышу.,Доложить Чернышу.,,blackskin,,-1
+quest_kill_hiroichijo,Убийство начальника порта,,Blackskin3d,,Blackskin3c,,,,,2000,"Убить Хиро Ичиджо, доложить Чернышу.","Убить Хиро Ичиджо, доложить Чернышу.",,,,2
+quest_kill_hiroichijo_1,,,,,norcity_whharbor.ers,,,,,,Убить Хиро Ичиджо.,Убить Хиро Ичиджо.,,hiroichijo,,-1
+quest_kill_hiroichijo_2,,,,,Blackskin3c,,,,,,Доложить Чернышу.,Доложить Чернышу.,,blackskin,,-1
+quest_liberate_stepanliu,Золотой унитаз,,Lucyliu1,,stpanliu1,,,,,2000,Освободить Степана Лю.,Освободить Степана Лю.,,"lucyliu,chansingo",-,0
+quest_goto_stepanliu,,,yelvill_yelvill.ers,,yelvill_yelvill.ers,,,,,,"Найти ключ от тюрьмы, где сидит Степан Лю, освободить Степана.","Найти ключ от тюрьмы, где сидит Степан Лю, освободить Степана.",,stepanlu,,0
+quest_deliver_stepanliu,,,"yelvill_yelvill.ers, stpanliu1",,Lucyliu3,,,,,,Доставить Степана Лю к супруге.,Доставить Степана Лю к супруге.,,lucyliu,,0
+quest_potatoes,Картофан,,Kazbek1,,,,,,,50,Принести картошки Казбеку.,Принести картошки Казбеку.,,,-,0
+quest_mpua,Замануха,,Akibombo1,,Akibombo1,,,,,500,Освободить Мпуа.,Освободить Мпуа.,,,-,0
+quest_holdup,Ограбление банка «Конкретный»,,Crust2,,,,,,,2000,"Вынести деньги из банка ""Конкретный"".","Вынести деньги из банка ""Конкретный"".",,,-,0
+quest_condoms,Добыча гондонов,,Spicecake2,,Spicecake3,,,,,2000,Добыть презервативы для Пряника.,Добыть презервативы для Пряника.,,,-,0
+quest_otto_docs,Засада в Южном городе,,GunterKlein1,,GunterKlein2,,,,,10000,Принести записи Отто Гюнтеру Кляйну.,Принести записи Отто Гюнтеру Кляйну.,,,,2
+quest_otto_docs_1,,,,,burnvill_burnvill.ers,,,,,3000,Добыть записи Отто.,Добыть записи Отто.,,,"burnvill,58,20",-1
+quest_otto_docs_2,,,,,GunterKlein2,,,,,,Доставить записи Гюнтеру Кляйну.,Доставить записи Гюнтеру Кляйну.,,gunterklein,,-1
+quest_dormidont_to_jamshet,Дормидонт,,Blackskin12,,Jamshet1,Jamshet2,,,Sardanapal5,1000,Доставить Дормидонта к Джамшету.,Доставить Дормидонта к Джамшету.,,,-,0
+quest_gain_loaf,Дормидонт,,sardanapal2,,crutch1,,,,,1500,Добыть Батона у Костыля.,Добыть Батона у Костыля.,,,-,0
+quest_deliver_loaf,Дормидонт,,crutch1,,sardanapal0,crowbar1,,,,500,Доставить Батона в Северный город.,Доставить Батона в Северный город.,,,-,0
+quest_kill_ugos,Дормидонт,,crutch1,,crutch2,,,,,1000,Убить бандита Угоса.,Убить бандита Угоса.,,,-,0
+quest_capture_dormidont,Дормидонт,,crowbar1,,,,,,,1000,Отбить Дормидонта силой.,Отбить Дормидонта силой.,,,-,0
+quest_interchange_dormidont,Дормидонт,,sardanapal3,,crowbar1,,,,,100,Привести Батона к Лому.,Привести Батона к Лому.,,,-,0
+quest_going_to_uluk_home,"Добыча ""Урагана""",,gorja2,,uluk1,,,,,500,"Встретиться с Улуком, имея в партии Горю.","Встретиться с Улуком, имея в партии Горю.",,,-,0
+quest_find_bb,"Добыча ""Урагана""",,uluk1,,,,,,,5000,"Найти затвор ""Урагана"" внутри склада.","Найти затвор ""Урагана"" внутри склада.",,,-,0
+quest_find_haim,Денежная машина,,gershelvatman5,,gershelvatman6,,,,dead_gershelvatman,3000,Найти Хаима и вытрясти из него деньги.,Найти Хаима и вытрясти из него деньги.,,,-,0
+quest_gold_tooth,Золотые зубы Грызуна,,rodent2,,rodent2b,,,,,3500,Отбить золотой зуб Грызуна у негров.,Отбить золотой зуб Грызуна у негров.,,,-,0
+quest_lupulu_amulet,,,lupulu1a,,lupulu1c,,,,,1000,Отобрать у Тато и Лалобомпо амулет Лупулу.,Отобрать у Тато и Лалобомпо амулет Лупулу.,,"lupulu,lalobompo,tato",-,0
+quest_upa_name,,,notice_quest_upa_name.ers,,upa1,,,,,1500,Вернуть имя Упа безымянному негру.,Вернуть имя Упа безымянному негру.,,"mupalopoponipalar,man,upa",-,2
+quest_upa_name_1,,,notice_quest_upa_name.ers,,,,,,,0,Найти ключ к Мупалопопо Нипалару.,Найти ключ к Мупалопопо Нипалару.,,,,-1
+quest_upa_name_2,,,notice_quest_upa_name.ers,,,,,,,0,Разобраться с Мупалопопо Нипаларом.,Разобраться с Мупалопопо Нипаларом.,,,,-1
+quest_barabulkin_message,,,makaron3,,killer_coming.csv,,,,,500,Позвать Барабулькина к Макарону.,Позвать Барабулькина к Макарону.,,"barabulkin,makaron",-,0
+quest_ret_to_makaron,,,killer_coming.csv,,makaron4,,,,,,Вернуться к Макарону и поведать о случившемся.,Вернуться к Макарону и поведать о случившемся.,,makaron,,
+quest_gonduras_trousers,,,norcity_rubbish.ers,,gonduras3,,,,,150,Получить у Агронома штаны Гондураса и вернуть их хозяину.,Получить у Агронома штаны Гондураса и вернуть их хозяину.,,"agronom,gonduras",-,0
+quest_fantik,,,fantik1,,fantik2,,,,,600,Получить у Круглого маечку Фантика.,Получить у Круглого маечку Фантика.,,"round,fantik",-,0
+quest_kill_lodanap,,,omopo3,,omopo3b,,,,,2000,Принести Омопо мозг Лоданапа.,Принести Омопо мозг Лоданапа.,,"omopo,lodanap",-,0
+quest_liberate_anjamagical,,,bucket2,,bucket2b,,,,,800,Вызволить проститутку Аню Волшебную.,Вызволить проститутку Аню Волшебную.,,"anjamagical,bucket",-,0
+quest_cricket,,,professor2,,professor2a,,,,,500,"Получить у Гангрены сверчка, принадлежащего Профессору.","Получить у Гангрены сверчка, принадлежащего Профессору.","whitecenter,ghouse","professor,gangrene",-,0
+quest_jamaguto_sword,,,jamaguto2,,jamaguto2a,,,,,1500,Вернуть Ямагуто его меч.,Вернуть Ямагуто его меч.,,jamaguto,-,0
+quest_ilin_rats,,,ilin2,,ilin3,,,,,1500,Истребить крыс на складах И Линя.,Истребить крыс на складах И Линя.,,ilin,-,2
+quest_ilin_rats_1,,,ilin2,,norcity_yharbor.ers,,,,,100,Истребить крыс на северном складе И Линя.,Истребить крыс на северном складе И Линя.,"yharbor,yharborbarn",,-,-1
+quest_ilin_rats_2,,,ilin2,,norcity_yharbor.ers,,,,,100,Истребить крыс на южном складе И Линя.,Истребить крыс на южном складе И Линя.,"yharbor,yharborbarn2",,-,-1
+quest_mombasa_nark,,,blackskinq,,blvill_blvill.ers,,,,,200,Пообщаться с поставщиками дури в негритянской деревне Момбаса.,Пообщаться с поставщиками дури в негритянской деревне Момбаса.,,"blvill_ganjatrader1,blvill_ganjatrader2,blvill_ganjatrader3,blvill_ganjatrader4",,0
+quest_nyamba_cherries,,,blackskinq,,,,norcity_sod_nor.ers,,,100,Рассказать о промзоне человеку по имени Ньямба.,Рассказать о промзоне человеку по имени Ньямба.,,,"sod_nor,65,8",0
+quest_nyamba_cherries2,,,norcity_sod_nor.ers,,nyamba2,,nyamba2,,,100,Рассказать о промзоне человеку по имени Ньямба.,Рассказать о промзоне человеку по имени Ньямба.,,nyamba,,0
+quest_think_about_blackskin,,,think_about_blackskin.ers,,blackskin5a,,,,,1000,Посоветоваться с Чернышом относительно Джексона Старшего.,Посоветоваться с Чернышом относительно Джексона Старшего.,,blackskin,,0
+quest_think_about_blackskin2,,,think_about_blackskin2.ers,validol3,blackskin5b,,,,,1000,Пообщаться с Чернышом относительно унгана и чернящих таблеток.,Пообщаться с Чернышом относительно унгана и чернящих таблеток.,,blackskin,,0
+quest_think_about_blackskin3,,,think_about_blackskin3.ers,,blackskin11,,,,,1000,Обсудить с Чернышом вопрос получения имперского оружия.,Обсудить с Чернышом вопрос получения имперского оружия.,,blackskin,,0
+quest_think_about_blackskin4,,,think_about_blackskin4.ers,,blackskin5,,,,,1000,Сходить к Чернышу за советом касательно Ганса.,Сходить к Чернышу за советом касательно Ганса.,,blackskin,,
+quest_goto_ungan,,,blackskin5b,,norcity_ungan.ers,,,,,1000,Сходить к унгану и расспросить его о чернящих таблетках.,Сходить к унгану и расспросить его о чернящих таблетках.,,jacksonsr,,0
+quest_check_sullen,,,blackskin3b,,Mirza1,,,,,100,"Убедиться, что на рынке продают Угрюмого.","Убедиться, что на рынке продают Угрюмого.",,sullen,,0
+quest_talk_hans,,,blackskin3b,,hans1,,,,,300,Поговорить с Гансом о стройке в лесу.,Поговорить с Гансом о стройке в лесу.,,hans,,0
+quest_talk_hans2,,,blackskin5,,hans2,,,,,300,"Поговорить с Гансом, используя новую информацию.","Поговорить с Гансом, используя новую информацию.",,hans,,
+quest_escape_maze,,,shipcave_consgrou_destroy_4elnok.ers,,shipcave_maze.ers,,,,,10000,Выйти из пещеры.,Выйти из пещеры.,,,"maze,41,5",
+quest_consgrou_win,,,sailing_off_from_steller.ers,,shipcave_consgrou.ers,,,,,10000,Уничтожить оборону челнока.,Уничтожить оборону челнока.,,,,
+quest_arrive_shuttle,,,shipcave_consgrou.ers,,shipcave_consgrou.ers,,,,,10000,Проверить челнок.,Проверить челнок.,,,"consgrou,49,55",
+quest_leave_shuttle,,,,,shipcave_consgrou_destroy_4elnok.ers,,,,,10000,"Установить взрывное устройство ""Сатана"".","Установить взрывное устройство ""Сатана"".",,,"consgrou,35,55",
+quest_find_skovorodkas_torch,,,rodriges2,,norcity_packhou.ers,,,,,,Приступить к поискам чудо-фонарика Сковородки.,Приступить к поискам чудо-фонарика Сковородки.,,,"packhou,57,24",
+quest_discover_skovorodkas_torch,,,norcity_packhou.ers,,norcity_packhou.ers,,,,,,"Обыскать ближайшие дома, найти фонарик Сковородки.","Обыскать ближайшие дома, найти фонарик Сковородки.",,,,
+quest_bring_skovorodkas_torch,,,norcity_packhou.ers,,rodriges3,,,,,,Отнести чудо-фонарик Сковородки Родригесу.,Отнести чудо-фонарик Сковородки Родригесу.,,rodriges,,
+quest_sullen_fights,,,notice_quest_sullen_fights.ers,,before_goto_bl_w_sull.ers,,,,,,"Проверить богатые полезными вещами места, указанные Угрюмым.","Проверить богатые полезными вещами места, указанные Угрюмым.",,,,4
+quest_sullen_fights_1,,,notice_quest_sullen_fights.ers,,fight04_fight04.ers,,,,,,Проверить посадочный полигон.,Проверить посадочный полигон.,,,"fight04,1024,1024",-1
+quest_sullen_fights_2,,,notice_quest_sullen_fights.ers,,fight05_fight05.ers,,,,,,Проверить бандитский посёлок.,Проверить бандитский посёлок.,,,"fight05,1024,1024",-1
+quest_sullen_fights_3,,,notice_quest_sullen_fights.ers,,fight06_fight06.ers,,,,,,Проверить большой каньон.,Проверить большой каньон.,,,"fight06,1024,1024",-1
+quest_sullen_fights_4,,,notice_quest_sullen_fights.ers,,fight07_fight07.ers,,,,,,Проверить ущелье.,Проверить ущелье.,,,"fight07,1024,1024",-1
+quest_goto_bl_w_sull,,,before_goto_bl_w_sull.ers,,blackskin3c,,,,,,Вернуться к Чернышу и получить от него дальнейшие указания.,Вернуться к Чернышу и получить от него дальнейшие указания.,,blackskin,,
+quest_hidimba,,,hidimba2,,hidimba3,,,,,500,Найти негра Оло и передать ему сообщение Хидимбы.,Найти негра Оло и передать ему сообщение Хидимбы.,,hidimba,,
+quest_destroy_dushmans,,,highland_kishlak.ers,,highland_kishlak.ers,,,,,5000,Убить всех душманов. Рабы должны выжить.,Убить всех душманов. Рабы должны выжить.,,,,
+quest_take_out_slaves,,,highland_kishlak.ers,,highland_kishlak_slaves_rel.ers,,,,,1000,Вывести рабов из клеток и зинданов.,Вывести рабов из клеток и зинданов.,,,,10
+quest_take_out_slaves_1,,,,,highland_kishlak_slave1_rel.ers,,,,,500,Освободить раба из зиндана.,Освободить раба из зиндана.,,,"kishlak,76,51",-1
+quest_take_out_slaves_2,,,,,highland_kishlak_slave2_rel.ers,,,,,500,Освободить раба из клетки.,Освободить раба из клетки.,,kishlak_slave2,,-1
+quest_take_out_slaves_3,,,,,highland_kishlak_slave3_rel.ers,,,,,500,Освободить раба из клетки.,Освободить раба из клетки.,,kishlak_slave3,,-1
+quest_take_out_slaves_4,,,,,highland_kishlak_slave4_rel.ers,,,,,500,Освободить раба из клетки.,Освободить раба из клетки.,,kishlak_slave4,,-1
+quest_take_out_slaves_5,,,,,highland_kishlak_slave5_rel.ers,,,,,500,Освободить раба из клетки.,Освободить раба из клетки.,,kishlak_slave5,,-1
+quest_take_out_slaves_6,,,,,highland_kishlak_slave6_rel.ers,,,,,500,Освободить раба из клетки.,Освободить раба из клетки.,,kishlak_slave6,,-1
+quest_take_out_slaves_7,,,,,highland_kishlak_slave7_rel.ers,,,,,500,Освободить раба из клетки.,Освободить раба из клетки.,,kishlak_slave7,,-1
+quest_take_out_slaves_8,,,,,highland_kishlak_slave8_rel.ers,,,,,500,Освободить раба из зиндана.,Освободить раба из зиндана.,,,"kishlak,77,61",-1
+quest_take_out_slaves_9,,,,,highland_kishlak_slave9_rel.ers,,,,,500,Освободить раба из зиндана.,Освободить раба из зиндана.,,,"kishlak,54,21",-1
+quest_take_out_slaves_10,,,,,highland_kishlak_slave10_rel.ers,,,,,500,Освободить раба из зиндана.,Освободить раба из зиндана.,,,"kishlak,22,21",-1
+quest_kruger_fights,,,notice_quest_kruger_fights.ers,,before_goto_bl_w_sull.ers,,,,,,"Проверить богатые полезными вещами места, указанные Крюгером.","Проверить богатые полезными вещами места, указанные Крюгером.",,,,4
+quest_kruger_fights_1,,,notice_quest_kruger_fights.ers,,fight08_fight08.ers,,,,,,Проверить посёлок в джунглях.,Проверить посёлок в джунглях.,,,"fight08,1024,1024",-1
+quest_kruger_fights_2,,,notice_quest_kruger_fights.ers,,fight09_fight09.ers,,,,,,Проверить степной монастырь.,Проверить степной монастырь.,,,"fight09,1024,1024",-1
+quest_kruger_fights_3,,,notice_quest_kruger_fights.ers,,fight10_fight10.ers,,,,,,Проверить бандитское ущелье.,Проверить бандитское ущелье.,,,"fight10,1024,1024",-1
+quest_kruger_fights_4,,,notice_quest_kruger_fights.ers,,fight11_fight11.ers,,,,,,Проверить торговый путь.,Проверить торговый путь.,,,"fight11,1024,1024",-1
+quest_lester_chet,,,lester1,,lester2,,,,,500,Вернуть Лестеру поводыря Чета.,Вернуть Лестеру поводыря Чета.,,"chet,lester",,
+quest_goto_aryancent,,,aryantown_aryanwest_aryanguardpierced.ers,,aryantown_aryanwest.ers,,,,,,Добраться до арийской крепости.,Добраться до арийской крепости.,,,"aryanwest,88,49",
+quest_demon_fights,,,notice_quest_demon_fights.ers,,notice_quest_demon_fights_completed.ers,,,,,,"Проверить богатые полезными вещами места, указанные Демоном.","Проверить богатые полезными вещами места, указанные Демоном.",,,,4
+quest_demon_fights_1,,,notice_quest_demon_fights.ers,,fight12_fight12.ers,,,,,,Проверить лагерь с женщинами.,Проверить лагерь с женщинами.,,,"fight12,1024,1024",-1
+quest_demon_fights_2,,,notice_quest_demon_fights.ers,,fight12_fight12.ers,,,,,,Проверить кладбище негров.,Проверить кладбище негров.,,,"fight13,1024,1024",-1
+quest_demon_fights_3,,,notice_quest_demon_fights.ers,,fight14_fight14.ers,,,,,,Проверить табачную плантацию.,Проверить табачную плантацию.,,,"fight14,1024,1024",-1
+quest_demon_fights_4,,,notice_quest_demon_fights.ers,,fight15_fight15.ers,,,,,,Проверить заброшенную шахту.,Проверить заброшенную шахту.,,,"fight15,1024,1024",-1
+quest_goto_yoganvayce,,,blackskin8,,yoganvayce0,,,,,1000,Добраться до Йогана Вайса.,Добраться до Йогана Вайса.,,yoganvayce,,
+quest_can_entr_za4istka_rezid,,,cannibals_can_entr.ers,,cannibals_can_entr.ers,,,,,5000,Выйти к селению людоедов.,Выйти к селению людоедов.,,,"can_entr,93,44",
+quest_can_vill_za4istka_rezid,,,cannibals_can_entr.ers,,cannibals_can_vill.ers,,,,,5000,Проникнуть в пещеру с челноком.,Проникнуть в пещеру с челноком.,,,"can_vill,86,59",
+quest_shipcave_maze_rezid,,,cannibals_can_vill.ers,,shipcave_maze.ers,,,,,5000,Обнаружить путь к челноку в пещере.,Обнаружить путь к челноку в пещере.,,,"maze,75,92",
+quest_goto_andre,,,settlem_settlem_start.ers,,andre99,,,,,,"Пообщаться с Андре, отдать ему письмо Ганса.","Пообщаться с Андре, отдать ему письмо Ганса.",,andre,,
+quest_destroy_ostriches,,,,,,,,,,2000,Отбить страусиную атаку. Ю-Ю должен выжить.,Отбить страусиную атаку. Ю-Ю должен выжить.,,,,
+quest_bring_map_to_blackskin,,,ottoguttenberg6,,blackskin9,,,,,5000,Доставить Чернышу карту Гуттенберга.,Доставить Чернышу карту Гуттенберга.,,blackskin,,
+quest_got_goldentoilet,,,norcity_ycenter.ers,,norcity_ycenter.ers,,,,,500,Подобрать золотой унитаз.,Подобрать золотой унитаз.,,,"ycenter,41,82",
+quest_show_goldentoilet_to_lucyliu,,,norcity_ycenter.ers,,lucyliu2,,,,,500,Показать золотой унитаз Люси Лю.,Показать золотой унитаз Люси Лю.,,,,2
+quest_show_goldentoilet_to_lucyliu_1,,,,,,,,,,,Выбраться из дома тайпена.,Выбраться из дома тайпена.,,,"ycenter,43,52",-1
+quest_show_goldentoilet_to_lucyliu_2,,,,,,,,,,,Добраться до Люси Лю.,Добраться до Люси Лю.,,lucyliu,,-1
+quest_goto_lucyliu_sortir,,,lucyliu1,,norcity_ynorth.ers,,,,,100,Посетить сортир Люси Лю.,Посетить сортир Люси Лю.,,,"ynorth,12,70",
+quest_aryannor_ambush,,,going_with_gunterklein2.ers,,aryantown_aryannor.ers,,,,,1000,Вырваться из засады.,Вырваться из засады.,,,"aryannor,82,4",
+quest_descriptions,,,edge1,,norcity_mar_car.ers,,,,,500,Выяснить приметы грабителя.,Выяснить приметы грабителя.,,,,3
+quest_descriptions_1,,,,,,,,,,100,Расспросить сторожа северного склада.,Расспросить сторожа северного склада.,,shraga,,-1
+quest_descriptions_2,,,,,,,,,,100,Расспросить сторожа восточного склада.,Расспросить сторожа восточного склада.,,tulup,,-1
+quest_descriptions_3,,,,,,,,,,100,Расспросить сторожа южного склада.,Расспросить сторожа южного склада.,,dried,,-1
+quest_goto_edge,,,norcity_mar_car.ers,,edge1b,,,,,200,Поделиться с Кантом результатами расследования.,Поделиться с Кантом результатами расследования.,,edge,,0
+quest_clausschultz_dress,,,clausschultz1,,clausschultz2,,,,aryantown_aryancent.ers,1000,Найти украденную форму Клауса Шульца.,Найти украденную форму Клауса Шульца.,,clausschultz,,0
+quest_jimbob_oblom,,,jimbob3,,jimbob3,,,,,0,Принести Джим-Бобу cпиртное в ящиках на реализацию.,Принести Джим-Бобу cпиртное в ящиках на реализацию.,,jimbob,,0
+quest_jimbob_zubr,,,jimbob3,,jimbob3,,,,,0,Принести Джим-Бобу cпиртное в ящиках на реализацию.,Принести Джим-Бобу cпиртное в ящиках на реализацию.,,jimbob,,0
+quest_jimbob_klopomor,,,jimbob3,,jimbob3,,,,,0,Принести Джим-Бобу cпиртное в ящиках на реализацию.,Принести Джим-Бобу cпиртное в ящиках на реализацию.,,jimbob,,0
+quest_jimbob_termo9d,,,jimbob3,,jimbob3,,,,,0,Принести Джим-Бобу cпиртное в ящиках на реализацию.,Принести Джим-Бобу cпиртное в ящиках на реализацию.,,jimbob,,0
+quest_get_quest_capture_jackson,,,join_kruger.ers,,fatherwindigo4,,,,,1000,Пообщаться с отцом Виндиго.,Пообщаться с отцом Виндиго.,,fatherwindigo,,0
+quest_lebedimba,,,gerasimba_coming.ers,,lebedimba4,,,,,500,Спасти Ле Бедимбу от банды лодочников.,Спасти Ле Бедимбу от банды лодочников.,,,,2
+quest_lebedimba_1,,,,,norcity_bldance.ers,,,,,100,Справиться с лодочниками.,Справиться с лодочниками.,,"gerasimba,gerasimba_man2,gerasimba_man3,gerasimba_man5,gerasimba_man6,gerasimba_man7",,-1
+quest_lebedimba_2,,,,,lebedimba4,,,,,100,Получить награду у Ле Бедимбы.,Получить награду у Ле Бедимбы.,,lebedimba,,-1
+quest_kill_vaha,,,mamba2,,mamba4,,,,,600,Победить Ваху и его банду.,Победить Ваху и его банду.,,"vaha,mamba,vaha_man1,vaha_man2",,0
+quest_kidala_weaponfind,,,,,,,,,,500,"Принести ""Лобзик+"" негру Ламбаябе.","Принести ""Лобзик+"" негру Ламбаябе.",,norcity_q_black_kidala,,0
+quest_norcity_killmaster1a,,,,,,,,,,900,Мастер ниндзя просит разобраться с Лу Вун Йаном.,Убить Лу Вун Йана.,,norcity_q_yellow_killmaster,,2
+quest_norcity_killmaster1a_1,,,,,,,,,,,Убить Лу Вун Йана.,Убить Лу Вун Йана.,,norcity_yellow_kill1,,-1
+quest_norcity_killmaster1a_2,,,,,,,,,,,Доложить о выполнении задания.,Доложить о выполнении задания.,,,,-1
+quest_norcity_killmaster2a,,,,,,,,,,900,Мастер ниндзя просит разобраться с Юни Яном.,Мастер ниндзя просит разобраться с Юни Яном.,,norcity_q_yellow_killmaster,,2
+quest_norcity_killmaster2a_1,,,,,,,,,,,Убить Юни Яна.,Убить Юни Яна.,,norcity_yellow_kill2,,-1
+quest_norcity_killmaster2a_2,,,,,,,,,,,Доложить о выполнении задания.,Доложить о выполнении задания.,,,,-1
+quest_norcity_killmaster3a,,,,,,,,,,900,Мастер ниндзя просит разобраться с Ван Сэй Даном.,Мастер ниндзя просит разобраться с Ван Сэй Даном.,,norcity_q_yellow_killmaster,,2
+quest_norcity_killmaster3a_1,,,,,,,,,,,Убить Ван Сэй Дана.,Убить Ван Сэй Дана.,,norcity_yellow_kill3,,-1
+quest_norcity_killmaster3a_2,,,,,,,,,,,Доложить о выполнении задания.,Доложить о выполнении задания.,,,,-1
+quest_norcity_steal1a,,,,,,,,,,700,Украсть китайский меч.,Украсть китайский меч.,,norcity_q_yellow_stealmaster,"ycenter,80,43",
+quest_norcity_steal2a,,,,,,,,,,900,Украсть ПП Лобзик+.,Украсть ПП Лобзик+.,"yharbor,YELLOW_BROTHEL_02",norcity_q_yellow_stealmaster,,
+quest_norcity_steal3a,,,,,,,,,,700,Подбросить в сундук арийский китель.,Подбросить в сундук арийский китель.,,norcity_q_yellow_stealmaster,"ynorth,15,66",
+quest_norcity_steal4a,,,,,,,,,,800,Украсть у Васай Бо амулет.,Украсть у Васай Бо амулет.,,"norcity_q_yellow_stealmaster,norcity_yellow_steal4",,
+quest_fight01_cleanup,,,,,,,,,,100,Помочь Лосю зачистить деревню и освободить Лохматого.,Помочь Лосю зачистить деревню и освободить Лохматого.,,,-,0
+quest_fight01_chest,,,,,,,,,,100,Забрать вознаграждение из сундука на кладбище.,Забрать вознаграждение из сундука на кладбище.,,,"fight01,11,42",0
+quest_fight02_cleanup,,,,,,,,,,200,Разведать обстановку на старом тракте.,Разведать обстановку на старом тракте.,,,-,2
+quest_fight02_cleanup_1,,,,,,,,,,150,Отбить обоз у бандитов.,Отбить обоз у бандитов.,,,-,-1
+quest_fight02_cleanup_2,,,,,,,,,,150,Уничтожить бандитов в лагере.,Уничтожить бандитов в лагере.,,,"fight02,23,66",-1
+quest_fight03_cleanup,,,,,,,,,,300,Востановить справедливость в логове работорговцев.,Востановить справедливость в логове работорговцев.,,,-,3
+quest_fight03_cleanup_1,,,,,,,,,,200,Помочь Мартину.,Помочь Мартину.,,rafi03_Marten,-,-1
+quest_fight03_cleanup_2,,,,,,,,,,200,Помочь Лютеру.,Помочь Лютеру.,,rafi03_Luter,-,-1
+quest_fight03_cleanup_3,,,,,,,,,,200,Помочь Кингу.,Помочь Кингу.,,rafi03_King,-,-1
+quest_fight03_chest,,,,,,,,,,200,Обыскать сундук неподалёку от логова работорговцев.,Обыскать сундук неподалёку от логова работорговцев.,,,"fight03,52,31",0
+quest_fight04_cleanup,,,,,,,,,,500,Уничтожить всех мародеров.,Уничтожить всех мародеров.,,,-,4
+quest_fight04_cleanup_1,,,,,,,,,,300,Найти место крушения посадочной капсулы.,Найти место крушения посадочной капсулы.,,,"fight04,24,54",-1
+quest_fight04_cleanup_2,,,,,,,,,,300,Найти место падения шара с ботинками.,Найти место падения шара с ботинками.,,,"fight04,74,63",-1
+quest_fight04_cleanup_3,,,,,,,,,,300,Найти место падения шара с презервативами.,Найти место падения шара с презервативами.,,,"fight04,67,17",-1
+quest_fight04_cleanup_4,,,,,,,,,,300,Найти стоянку мародеров.,Найти стоянку мародеров.,,,"fight04,49,62",-1
+quest_fight05_cleanup,,,,,,,,,,600,Зачистить бандитскую деревню.,Зачистить бандитскую деревню.,,,-,4
+quest_fight05_cleanup_1,,,,,,,,,,400,Ликвидировать патрули.,Ликвидировать патрули.,,"rafi05_FightLev8_Patrol1,rafi05_FightLev8_Patrol4",-,-1
+quest_fight05_cleanup_2,,,,,,,,,,400,Проникнуть во вражеский лагерь.,Проникнуть во вражеский лагерь.,,,-,-1
+quest_fight05_cleanup_3,,,,,,,,,,400,Убить главаря.,Убить главаря.,,rafi05_SaboteurLev12_BanditLeader,-,-1
+quest_fight05_cleanup_4,,,,,,,,,,400,Обыскать все дома.,Обыскать все дома.,,,-,-1
+quest_fight05_secret,,,,,,,,,,400,Проникнуть в дом главаря не поднимая шума в лагере.,Проникнуть в дом главаря не поднимая шума в лагере.,,,"fight05,48,51",0
+quest_fight06_robbing,,,,,,,,,,800,Помочь уголовнику ограбить барыгу.,Помочь уголовнику ограбить барыгу.,,,-,4
+quest_fight06_robbing_1,,,,,,,,,,500,Найти мертвых проституток.,Найти мертвых проституток.,,"rafi06_Mashenka,rafi06_Mashenka2",-,-1
+quest_fight06_robbing_2,,,,,,,,,,500,Переодеться в женскую одежду и проникнуть в лагерь бандитов.,Переодеться в женскую одежду и проникнуть в лагерь бандитов.,,,-,-1
+quest_fight06_robbing_3,,,,,,,,,,500,Убить главаря.,Убить главаря.,,rafi06_BanditLeader,-,-1
+quest_fight06_robbing_4,,,,,,,,,,500,Вернуть наводчику процент.,Вернуть наводчику процент.,,rafi06_Mad,-,-1
+quest_fight06_cleanup,,,,,,,,,,500,Уничтожить всех бандитов.,Уничтожить всех бандитов.,,,-,0
+quest_fight08_message,,,,,,,,,,1000,Доставить послание главарю полицейских Шерстню.,Доставить послание главарю полицейских Шерстню.,,,-,2
+quest_fight08_message_1,,,,,,,,,,600,Пройти в деревню полицейских.,Пройти в деревню полицейских.,,,-,-1
+quest_fight08_message_2,,,,,,,,,,600,Передать послание Шерстню.,Передать послание Шерстню.,,rafi08_BanditLeader,-,-1
+quest_fight08_escape,,,,,,,,,,600,Найти выход из сложившейся ситуации.,Найти выход из сложившейся ситуации.,,,-,2
+quest_fight08_escape_1,,,,,,,,,,600,Убить Шерстня.,Убить Шерстня.,,rafi08_BanditLeader,-,-1
+quest_fight08_escape_2,,,,,,,,,,600,Покинуть деревню полицейских.,Покинуть деревню полицейских.,,,"fight08,59,27",-1
+quest_fight08_cleanup,,,,,,,,,,600,Зачистить местность.,Зачистить местность.,,,-,3
+quest_fight08_cleanup_1,,,,,,,,,,600,Уничтожить полицейских в деревне.,Уничтожить полицейских в деревне.,,,-,-1
+quest_fight08_cleanup_2,,,,,,,,,,600,Ликвидировать патрули.,Ликвидировать патрули.,,"rafi08_Fight_Patrol1,rafi08_Fight_Patrol4,rafi08_Fight_Patrol7",-,-1
+quest_fight08_cleanup_3,,,,,,,,,,600,Разгромить лагерь полицейских в джунглях.,Разгромить лагерь полицейских в джунглях.,,,"fight08,68,71",-1
+quest_fight11_cleanup,,,,,,,,,,2000,Помочь китайцам отбить атаку бандитов.,Помочь китайцам отбить атаку бандитов.,,,-,4
+quest_fight11_cleanup_1,,,,,,,,,,1000,Уничтожить первую волну атакующих .,Уничтожить первую волну атакующих .,,,-,-1
+quest_fight11_cleanup_2,,,,,,,,,,1000,Уничтожить вторую волну атакующих.,Уничтожить вторую волну атакующих.,,,-,-1
+quest_fight11_cleanup_3,,,,,,,,,,1000,Уничтожить третью волну атакующих.,Уничтожить третью волну атакующих.,,,-,-1
+quest_fight11_cleanup_4,,,,,,,,,,1000,Уничтожить четвертую волну атакующих.,Уничтожить четвертую волну атакующих.,,,-,-1
+quest_fight11_key,,,,,,,,,,1000,Обшарить трупы китайцев и найти ключ от сундука.,Обшарить трупы китайцев и найти ключ от сундука.,,"rafi11_Chinese01,rafi11_Chinese02,rafi11_Chinese03,rafi11_Chinese04,rafi11_Chinese05","fight11,44,46",0
+quest_fight11_chest,,,,,,,,,,1000,Забрать награду из сундука китайцев.,Забрать награду из сундука китайцев.,,,"fight11,44,46",0
+quest_fight11_chinese,,,,,,,,,,1000,Разобраться с оборзевшими китайцами.,Разобраться с оборзевшими китайцами.,,,-,3
+quest_fight11_chinese_1,,,,,,,,,,1000,Убить всех китайцев.,Убить всех китайцев.,,,-,-1
+quest_fight11_chinese_2,,,,,,,,,,1000,Обыскать трупы и найти ключ.,Обыскать трупы и найти ключ.,,"rafi11_Chinese01,rafi11_Chinese02,rafi11_Chinese03,rafi11_Chinese04,rafi11_Chinese05",-,-1
+quest_fight11_chinese_3,,,,,,,,,,1000,Забрать китайское добро из сундука.,Забрать китайское добро из сундука.,,,"fight11,44,46",-1
+quest_fight13_cleanup,,,,,,,,,,15000,"Истребить зомби - тайное оружие арийцев, ставшее неуправляемым.","Истребить зомби - тайное оружие арийцев, ставшее неуправляемым.",,,-,0
+quest_fight12_cleanup,,,,,,,,,,3000,"Освободить бойцов РДГ ""Клумба"".","Освободить бойцов РДГ ""Клумба"".",,,-,2
+quest_fight12_cleanup_1,,,,,,,,,,2000,Добраться до арийского лагеря.,Добраться до арийского лагеря.,,,"fight12,71,35",-1
+quest_fight12_cleanup_2,,,,,,,,,,2000,Подавить сопротивление и найти пленных диверсанток.,Подавить сопротивление и найти пленных диверсанток.,,,-,-1
+quest_fight07_cleanup,,,,,,,,,,400,"Помочь работорговцам сохранить ""живой товар"".","Помочь работорговцам сохранить ""живой товар"".",,,-,4
+quest_fight07_cleanup_1,,,,,,,,,,100,Спасти проституток из первой капсулы.,Спасти проституток из первой капсулы.,,,-,-1
+quest_fight07_cleanup_2,,,,,,,,,,100,Спасти проституток из второй капсулы.,Спасти проституток из второй капсулы.,,,-,-1
+quest_fight07_cleanup_3,,,,,,,,,,100,Спасти проституток из третьей капсулы.,Спасти проституток из третьей капсулы.,,,-,-1
+quest_fight07_cleanup_4,,,,,,,,,,100,Доставить проституток в лагерь работорговцев.,Доставить проституток в лагерь работорговцев.,,,"fight07,64,32",-1
+quest_fight15_penetration,,,,,,,,,,5000,Найти способ проникнуть на охраняемую территорию.,Найти способ проникнуть на охраняемую территорию.,,,"fight15,46,69",0
+quest_fight15_scout,,,,,,,,,,5000,Разведать местность.,Разведать местность.,,,-,2
+quest_fight15_scout_1,,,,,,,,,,5000,Уничтожить патруль.,Уничтожить патруль.,,"rafi15_shot10,rafi15_fight01,rafi15_shot01",-,-1
+quest_fight15_scout_2,,,,,,,,,,5000,Уничтожить охрану поселка.,Уничтожить охрану поселка.,,"rafi15_fight02,rafi15_eliteshot01,rafi15_fight03,rafi15_shot02,rafi15_shot08",-,-1
+quest_fight15_laboratory,,,,,,,,,,5000,"Нейтрализовать роботов, созданных в секретной лаборатории.","Нейтрализовать роботов, созданных в секретной лаборатории.",,,-,4
+quest_fight15_laboratory_1,,,,,,,,,,5000,Отбить атаку.,Отбить атаку.,,,-,-1
+quest_fight15_laboratory_2,,,,,,,,,,5000,Сопроводить электрика к трансформатору.,Сопроводить электрика к трансформатору.,,rafi15_aryan_electrician,"fight15,84,77",-1
+quest_fight15_laboratory_3,,,,,,,,,,5000,Уничтожить всех врагов.,Уничтожить всех врагов.,,,-,-1
+quest_fight15_laboratory_4,,,,,,,,,,5000,Уничтожить роботов.,Уничтожить роботов.,,,-,-1
+quest_fight15_cleanup,,,,,,,,,,5000,Зачистить местность.,Зачистить местность.,,,-,0
+quest_fight10_cleanup,,,,,,,,,,1500,Прочесать ущелье.,Прочесать ущелье.,,,-,5
+quest_fight10_cleanup_1,,,,,,,,,,1000,Уничтожить гориллоидов.,Уничтожить гориллоидов.,,,-,-1
+quest_fight10_cleanup_2,,,,,,,,,,1000,Уничтожить патрули.,Уничтожить патрули.,,"rafi10_fight01,rafi10_fight02",-,-1
+quest_fight10_cleanup_3,,,,,,,,,,1000,Зачистить западный лагерь бандитов.,Зачистить западный лагерь бандитов.,,,-,-1
+quest_fight10_cleanup_4,,,,,,,,,,1000,Зачистить северный лагерь бандитов.,Зачистить северный лагерь бандитов.,,,-,-1
+quest_fight10_cleanup_5,,,,,,,,,,1000,Зачистить южный лагерь лагерь бандитов.,Зачистить южный лагерь лагерь бандитов.,,,-,-1
+quest_fight09_cleanup,,,,,,,,,,1000,Захватить монастырь.,Захватить монастырь.,,,-,2
+quest_fight09_cleanup_1,,,,,,,,,,800,Уничтожить сектантов.,Уничтожить сектантов.,,,-,-1
+quest_fight09_cleanup_2,,,,,,,,,,800,Уничтожить отца-основателя.,Уничтожить отца-основателя.,,rafi09_father,-,-1
+quest_fight09_attack,,,,,,,,,,800,Отбить атаку.,Отбить атаку.,,,-,0
+quest_fight09_search,,,,,,,,,,800,Найти отца-основателя.,Найти отца-основателя.,,,-,0
+quest_fight14_minefield,,,,,,,,,,10000,Обезвредить минное поле из блеватонтонов.,Обезвредить минное поле из блеватонтонов.,,,-,2
+quest_fight14_minefield_1,,,,,,,,,,4000,"Найти и надеть ""Полный Пэ"".","Найти и надеть ""Полный Пэ"".",,rafi14_assaultslave_pp01,-,-1
+quest_fight14_minefield_2,,,,,,,,,,4000,Собрать блевантоны.,Собрать блевантоны.,,,-,-1
+quest_fight14_cleanup,,,,,,,,,,4000,Убить китайцев.,Убить китайцев.,,,-,0
+quest_fight14_policemen,,,,,,,,,,4000,Убить полицейских.,Убить полицейских.,,"rafi14_assault01,rafi14_assault02,rafi14_assault03,rafi14_assault04,rafi14_assault05,rafi14_assaultleader",-,0
+quest_final_killall,final_final,,,,,,,,,1000000,Уничтожить всех врагов и монстров.,Уничтожить всех врагов и монстров.,,,-,0
+quest_final_find_outro,final_final,,,,,,,,,1000000,Добраться до эвакуационного челнока.,Добраться до эвакуационного челнока.,,,"final,64,32",0
+quest_blvill_kirpikli_find_lover,,,,,,,,,,800,Найти сожителя негра Кирпикли по имени Ивар.,Найти сожителя негра Кирпикли по имени Ивар.,,"blvill_q_black_Kirpikli,blnorth_q_black_Ivar",,0
+quest_blnorth_killKirpikli,,,,,,,,,,800,Убить голубка Кирпикли и доложить об этом Ивару.,Убить голубка Кирпикли и доложить об этом Ивару.,,,,2
+quest_blnorth_killKirpikli_1,,,,,,,,,,0,Убить Кирпикли.,Убить Кирпикли.,,blvill_q_black_Kirpikli,,-1
+quest_blnorth_killKirpikli_2,,,,,,,,,,0,Доложить Ивару.,Доложить Ивару.,,blnorth_q_black_Ivar,,-1
+quest_blvill_kirpikli_aliment,,,,,,,,,,800,"Выбить алименты из Ивара на содержание ""ребенка"".","Выбить алименты из Ивара на содержание ""ребенка"".",,,,2
+quest_blvill_kirpikli_aliment_1,,,,,,,,,,0,Выбить алименты с Ивара.,Выбить алименты с Ивара.,,blnorth_q_black_Ivar,,-1
+quest_blvill_kirpikli_aliment_2,,,,,,,,,,0,Вернутся за вознаграждением к Кирпикли.,Вернутся за вознаграждением к Кирпикли.,,blvill_q_black_Kirpikli,,-1
+quest_blvill_nigers_spor,,,,,,,,,,300,Разрешить конфликт между двумя неграми из-за женщины.,Разрешить конфликт между двумя неграми из-за женщины.,,"blvill_q_black_spor1, blvill_q_black_spor2",,0
+quest_academ_killmonsters,,,,,,,,,,1000,"Уничтожить монстров, окруживших хижину Академика.","Уничтожить монстров, окруживших хижину Академика.",,,,0
+quest_monster01_killall,,,,,,,,,,100,Убить всех монстров крысиной рощи.,Убить всех монстров крысиной рощи.,,,,0
+quest_monster02_killall,,,,,,,,,,100,Уничтожить всех диких животных.,Уничтожить всех диких животных.,,,,0
+quest_monster03_killall,,,,,,,,,,100,Убить всех монстров.,Убить всех монстров.,,,,0
+quest_monster04_killall,,,,,,,,,,100,Прочесать горный район.,Прочесать горный район.,,,,0
+quest_monster05_killall,,,,,,,,,,100,Убить всех опасных лесных обитателей.,Убить всех опасных лесных обитателей.,,,,0
+quest_monster06_killall,,,,,,,,,,100,Уничтожить всех монстров.,Уничтожить всех монстров.,,,,0
+quest_monster07_killall,,,,,,,,,,100,Очистить степь от диких животных.,Очистить степь от диких животных.,,,,0
+quest_monster08_killall,,,,,,,,,,100,Уничтожить всех монстров.,Уничтожить всех монстров.,,,,0
+quest_monster09_killall,,,,,,,,,,100,Зачистить территорию.,Зачистить территорию.,,,,0
+quest_monster10_killall,,,,,,,,,,100,Зачистить местность.,Зачистить местность.,,,,0
+quest_monster11_killall,,,,,,,,,,100,Убить всех ночных обитателей дубравы.,Убить всех ночных обитателей дубравы.,,,,0
+quest_monster12_killall,,,,,,,,,,100,Убить всех монстров.,Убить всех монстров.,,,,0
+quest_monster13_killall,,,,,,,,,,100,Уничтожить всех опасных животных.,Уничтожить всех опасных животных.,,,,0
+quest_monster14_killall,,,,,,,,,,100,Прочесать заросли.,Прочесать заросли.,,,,0
+quest_monster15_killall,,,,,,,,,,100,Зачистить территорию заброшенной деревни.,Зачистить территорию заброшенной деревни.,,,,0
+quest_monster01_killjerboa,,,,,,,,,,100,Убить тушканчиков и собрать 7 шкурок.,Убить тушканчиков и собрать 7 шкурок.,,,,0
+quest_monster02_killjerboa,,,,,,,,,,100,Убить тушканчиков и собрать 7 шкурок.,Убить тушканчиков и собрать 7 шкурок.,,,,0
+quest_monster03_killjerboa,,,,,,,,,,100,Убить тушканчиков и собрать 7 шкурок.,Убить тушканчиков и собрать 7 шкурок.,,,,0
+quest_keep_hans,,,,,,,,,,100,Ганс должен выжить.,Ганс должен выжить.,,,,
+quest_yelvill_addkuzbich,,,,,,,,,,1000,Добыть Кузнецу проститутку по имени Лили из северного города.,Добыть Кузнецу проститутку по имени Лили из северного города.,,"yelvill_q_yellow_kuznes, yharbor_q_yellow_kuzbich",,0
+quest_yelvill_find_hammer,,,,,,,,,,1500,"Выяснить, куда делась кувалда со смещенным центром тяжести.","Выяснить, куда делась кувалда со смещенным центром тяжести.",,yelvill_q_yellow_kuznes,,5
+quest_yelvill_find_hammer_1,,,,,,,,,,100,Допросить подсастерье по имени Лин.,Допросить подсастерье по имени Лин.,,yelvill_q_yellow_podmas,,-1
+quest_yelvill_find_hammer_2,,,,,,,,,,100,Допросить соседа завистника по имени Сунь Джоу.,Допросить соседа завистника по имени Сунь Джоу.,,yelvill_q_yellow_sosed,,-1
+quest_yelvill_find_hammer_3,,,,,,,,,,100,Допросить мастера Дан-до из Южного города.,Допросить мастера Дан-до из Южного города.,,aryannor_q_yellow_klient,,-1
+quest_yelvill_find_hammer_4,,,,,,,,,,100,Найти кувалду.,Найти кувалду.,,,,-1
+quest_yelvill_find_hammer_5,,,,,,,,,,100,Вернуть кувалду Кузнецу.,Вернуть кувалду Кузнецу.,,,,-1
+quest_yharbor_otkup,,,,,,,,,,1500,Выкупить Лили из публичного дома.,Выкупить Лили из публичного дома.,,"yelvill_q_yellow_kuzbich,norcity_yellow_steal4",,0
+quest_yelvill_kill_kondrat,,,,,,,,,,200,Убить желтозадого монаха в Северном городе.,Убить желтозадого монаха в Северном городе.,,yelvill_q_yellow_pofig,,2
+quest_yelvill_kill_kondrat_1,,,,,,,,,,100,Убить желтозадого.,Убить желтозадого.,,norcity_q_yellow_kondrat,,-1
+quest_yelvill_kill_kondrat_2,,,,,,,,,,,Вернуться за вознаграждением.,Вернуться за вознаграждением.,,yelvill_q_yellow_pofig,,-1
+quest_norcity_kill_pofig,,,,,,,,,,200,Убить мастера Дзен из деревни Цзиньту.,Убить мастера Дзен из деревни Цзиньту.,,norcity_q_yellow_kondrat,,2
+quest_norcity_kill_pofig_1,,,,,,,,,,100,Убить мастера Дзен.,Убить мастера Дзен.,,yelvill_q_yellow_pofig,,-1
+quest_norcity_kill_pofig_2,,,,,,,,,,,Вернуться за вознаграждением.,Вернуться за вознаграждением.,,norcity_q_yellow_kondrat,,-1
+quest_clothes_entry_nude,,,,,,,,,,50,Принести голому человеку одежду.,Принести голому человеку одежду.,,entry_q_black_nude,,0
+quest_item_fact_bck_1_carrot,,,,,,,,,,50,Принести Шнырьку морковку.,Принести Шнырьку морковку.,,fact_bck_1_q_yellow_carrot,,0
+quest_item_fact_bck_2_boots,,,,,,,,,,50,Принести Серене ботинки.,Принести Серене ботинки.,,fact_bck_2_q_boots,,0
+quest_item_fact_ent_cigarette,,,,,,,,,,50,Добыть сигарету для Бычка.,Добыть сигарету для Бычка.,,fact_ent_q_cigarette,,0
+quest_item_farm_mine_supper,,,,,,,,,,50,Ваха просит найти продукты для коллективной жрачки.,Ваха просит найти продукты для коллективной жрачки.,,farm_mine_q_supper,,0
+quest_item_dep_ammo_medikit,,,,,,,,,,50,Принести больному рабочему аптечку.,Принести больному рабочему аптечку.,,dep_ammo_q_medikit,,
+quest_aryancent_falsh,,,,,,,,,,1000,Проверить информацию о фальшивомонетчиках.,Проверить информацию о фальшивомонетчиках.,,,,2
+quest_aryancent_falsh_1,,,,,,,,,,500,Осуществить контрольную закупку.,Осуществить контрольную закупку.,,Setlem_q_white_falshmaster,,-1
+quest_aryancent_falsh_2,,,,,,,,,,500,Доложить о результатах контрольной закупки.,Доложить о результатах контрольной закупки.,,aryancent_q_white_koznachey,,-1
+quest_setlem_addbich,,,,,,,,,,500,Найти женщин для озабоченного лесоруба.,Найти женщин для озабоченного лесоруба.,,setlem_q_white_sexolog,,2
+quest_setlem_addbich_1,,,,,,,,,,500,Договориться об экскурсиях в поселок Помпасово.,Договориться об экскурсиях в поселок Помпасово.,,norcity_yellow_steal4,,-1
+quest_setlem_addbich_2,,,,,,,,,,500,Вернуться за вознаграждением.,Вернуться за вознаграждением.,,setlem_q_white_sexolog,,-1
+quest_setlem_destroy,,,,,,,,,,1000,Освободить проституток.,Освободить проституток.,,"setlem_q_white_sexolog,setlem_white_sexolog_frend1,setlem_white_sexolog_frend2,setlem_white_sexolog_frend3,",,0
+quest_aryanp_cleanup,,,,,,,,,,5000,"Уничтожить каннибалов, занявших арийскую промзону.","Уничтожить каннибалов, занявших арийскую промзону.",,,-,0
+quest_aryanp_go_away,,,,,,,,,,5000,Пройти в подземелья за Джексоном-младшим.,Пройти в подземелья за Джексоном-младшим.,,,"aryanprodzone,13,34",0
+quest_Boar_fuck_all,,,,,,,,,,3000,Поиметь всех проституток в Северном Городе.,Поиметь всех проституток в Северном Городе.,,,,0
+quest_Sullen_fuck_all,,,,,,,,,,3000,Угрюмый хочет поиметь всех проституток в севреном городе.,Угрюмый хочет поиметь всех проституток в севреном городе.,,,,0
+quest_Demon_fuck_all,,,,,,,,,,3000,Демон хочет поиметь всех проституток в Северном Городе.,Демон хочет поиметь всех проституток в Северном Городе.,,,,0
+quest_Kruger_fuck_all,,,,,,,,,,3000,Крюгер хочет поиметь всех проституток в Севрном городе.,Крюгер хочет поиметь всех проституток в Севрном городе.,,,,0
+quest_polcamp_talk_to_otto,,,,,,,,,,500,Поговорить с Отто Гуттенбергом.,Поговорить с Отто Гуттенбергом.,,OttoGuttenberg,,0
+quest_polcamp_cleanup,,,,,,,,,,1000,Отбить атаки банды полицейских. Гуттенберг должен выжить.,Отбить атаки банды полицейских. Гуттенберг должен выжить.,,OttoGuttenberg,,0
+quest_test_MZ,,,,,,,,,,100000,Тестовый квест +100000 Эксп.,Тестовый квест +100000 Эксп.,,,,0
+quest_BANK_gopstop,,,,,,,,,,700,Провернуть дельце в банке конкретный.,Провернуть дельце в банке конкретный.,,,,2
+quest_BANK_gopstop_1,,,,,,,,,,150,Ограбить Косаря.,Ограбить Косаря.,,Squint,,-1
+quest_BANK_gopstop_2,,,,,,,,,,100,Отдать процент наводчику.,Отдать процент наводчику.,,sod_sou_q_navod,,-1
+quest_prodzone_powerst_final,,,,,,,,,,100,Доложить Гуверу о смерти Волка.,Доложить Гуверу о смерти Волка.,,,"powerst,48,16",0
+quest_aryancent_kill_inOHR,,,,,,,,,,5000,Йоган Штраус предлагает 15000 монет за голову Люптке Вайнера.,Йоган Штраус предлагает 15000 монет за голову Люптке Вайнера.,,"aryancent_q_white_officer_zagovor,aryancent_q_white_officer_inOHR",,0
+quest_ayanwest_roma,,,,,,,,,,600,Убить всех Монте-Ки и освободить Джулю.,Убить всех Монте-Ки и освободить Джулю.,,"aryanwest_f_yellow_montek01,aryanwest_f_yellow_montek02,aryanwest_f_yellow_montek03,aryanwest_f_yellow_montek04,aryanwest_f_yellow_montek05,aryanwest_f_yellow_montek06,aryanwest_f_yellow_montek07,aryanwest_f_yellow_Julia",,0
+quest_ayanwest_roma_cleanup,,,,,,,,,,400,Убить всех Капулянов.,Убить всех Капулянов.,,"aryanwest_f_black_Kapulane01,aryanwest_f_black_Kapulane02,aryanwest_f_black_Kapulane03,aryanwest_f_black_Kapulane04,aryanwest_f_black_Kapulane05",,0
+quest_settlem_skinny,,,,,,,,,,200,Поиск алмаза для Усатого.,Поиск алмаза для Усатого.,,Skinny,,2
+quest_settlem_skinny_1,,,,,,,,,,200,Обыскать свинобыков.,Обыскать свинобыков.,,,"settlem,22,73,settlem,42,56,settlem,18,26,settlem,65,21",-1
+quest_settlem_skinny_2,,,,,,,,,,100,Доложить о результатах поисков.,Доложить о результатах поисков.,,,,-1
+quest_blnorth_find_porno,,,,,,,,,,1500,Найти и принести рисунки порнушного содержания.,Найти и принести рисунки порнушного содержания.,,norcity_black_oldman,,0
+quest_validol_attack_final,,,,,,,,,,1000,"Выбраться из трущоб, преодолев сопротивление.","Выбраться из трущоб, преодолев сопротивление.",,,"aryaneast,4,39",0
+quest_albertgunner,,,albertgunner1,,aryantown_aryancent.ers,,,,,,Заступить на должность уборщика туалета.,Заступить на должность уборщика туалета.,,wc1,,0
+quest_aryancent_ytrader_isDEAD_say,,,,,,,,,,1500,Рассказать про убийство Ли Бо.,Рассказать про убийство Ли Бо.,,aryancent_q_white_conrabandist,,0
+quest_return_alisa_penetration,,,,,,,,,,500,Незаметно проникнуть в дом смотрящего и найти Алису.,Незаметно проникнуть в дом смотрящего и найти Алису.,"whitecenter,overseer",,-,0
+quest_return_alisa_escape,,,,,,,,,,1000,Незаметно выйти с Алисой из дома смотрящего.,Незаметно выйти с Алисой из дома смотрящего.,,,"whitecenter,6,53",0
+quest_escape_can_vill,,,,,,,,,,,Выбраться из людоедского посёлка.,Выбраться из людоедского посёлка.,,,"can_vill,2,51",0
+quest_escape_can_entr,,,,,,,,,,,Выйти на дорогу к г. Северный.,Выйти на дорогу к г. Северный.,,,"can_entr,6,43",0

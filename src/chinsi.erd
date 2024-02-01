@@ -1,0 +1,83 @@
+BEGN 0
+BEGN 1
+LABL Loop limit,"init"
+LINK Decision
+NODE Process,4
+LINK Terminator
+TEST Decision,"done_chinsi1"
+LINK Process
+LINK Process.8
+OPTN Decision,0,Process
+NODE Sheet.6,0
+OPTN Decision,1,Process.8
+NODE Process.8,4
+LINK Terminator.12
+TERM Terminator,"goto begin1"
+TERM Terminator.12,"goto begin1"
+LABL Loop limit.13,"begin1"
+LINK Process.16
+LINK Decision.20
+LINK Loop limit.39
+NODE Process.16,0
+LINK Terminator.18
+TERM Terminator.18,"declare_war $49
+attack_target $49,boar
+
+end"
+NODE Process.19,0
+LINK Terminator.23
+TEST Decision.20,"has_money(boar,100)"
+LINK Process.19
+OPTN Decision.20,1,Process.19
+TERM Terminator.23,"give_money boar,100,chinsi
+teleport_to boar,23,87
+end"
+NODE Process.25,0
+LINK Process.27
+NODE Process.27,4
+LINK Loop limit.29
+LABL Loop limit.29,""
+LINK Process.31
+LINK Decision.35
+NODE Process.31,0
+LINK Terminator.33
+TERM Terminator.33,"declare_war $49
+attack_target $49,boar
+
+end"
+TEST Decision.35,"has_money(boar,3100)"
+LINK Process.45
+OPTN Decision.35,1,Process.45
+LABL Loop limit.39,""
+LINK Process.25
+LINK Process.42
+NODE Process.42,0
+LINK Terminator.44
+TERM Terminator.44,"declare_war $49
+attack_target $49,boar
+
+end"
+NODE Process.45,0
+LINK Decision.48
+TERM Terminator.47,"give_money boar,100,chinsi
+give_item chinsi,jamaguto_sword,boar
+end"
+TEST Decision.48,"reaction > 6"
+LINK Terminator.47
+LINK Process.51
+OPTN Decision.48,1,Terminator.47
+OPTN Decision.48,0,Process.51
+NODE Process.51,4
+LINK Loop limit.53
+LABL Loop limit.53,""
+LINK Process.55
+LINK Process.59
+NODE Process.55,0
+LINK Terminator.57
+TERM Terminator.57,"end"
+NODE Process.59,0
+LINK Terminator.61
+TERM Terminator.61,"declare_war $49
+attack_target $49,boar
+
+end"

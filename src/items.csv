@@ -1,0 +1,382 @@
+STRID,SLOT,SKILL,BARRELS,CALIBER,BULLETS,RELOAD_AP,STR,PRICE,DUR,COMPL,MIN_LEVEL,GREN,TELESCOPE,RNG,POI,DMG,ATTACKS,BONUS,REACTION,NAZI_ITEM,FEMALE_ITEM,POLICE_ITEM,POOR_ITEM,RESPECTABLE_ITEM,WIDTH,HEIGHT,PERK,STACKABLE,QUEST,PARTID,SHOT_OFFSET,NAME1,NAME2,DESC1,DESC2
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Кастеты,,
+ROCK,HAND,MELEE,0,0,0,0,1,-1,100,,999,,,0.49,,1-3,BLOW: 10,,0,,,,,,2,2,99,,,,,Rock,Камень,,
+PB,HAND,MELEE,0,0,0,0,1,5,100,,999,,,0.49,,2-4,BLOW: 10,,0,,,,,,2,2,99,,,,,Pb,Свинчатка,,Вариант простейшего кастета.
+KNUCKLES,HAND,MELEE,0,0,0,0,1,7,100,,999,,,0.49,,3-5,BLOW: 8,,0,,,,,,1,1,99,,,,,Knuckles,Кастет,,
+SPIKED_KNUCKLES,HAND,MELEE,0,0,0,0,1,12,100,,,,,0.49,,4-6,BLOW: 8,,1,,,,,,1,1,99,,,,,Spiked Knuckles,Шипованный кастет,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Ножи,,
+ROSE_KNIFE,HAND,MELEE,0,0,0,0,3,5,100,,999,,,0.49,1,3-7,"THRUST: 12, SWING: 14",,0,,,,,,3,2,2,,,,,Rose Knife,"""Розочка""",,Наполовину разбитая бутылка с целым горлышком и острыми краями.
+STONE_KNIFE,HAND,MELEE,0,0,0,0,1,7,100,,,,,0.49,1,5-8,"THRUST: 12, SWING: 14",,0,,,,,,3,1,2,,,,,Stone Knife,Костяной кинжал,,"Кинжал с острым лезвием и грубой ручкой, целиком сделанный из куска кости."
+AWL,HAND,MELEE,0,0,0,0,1,10,100,,,,,0.49,1,4-7,"THRUST: 12, SWING: 14",,0,,,,,,3,1,2,,,,,Awl,Заточка,,Остро отточенный кусок железа.
+FINNISH_KNIFE,HAND,MELEE,0,0,0,0,3,30,100,,,,,0.49,1,6-10,"THRUST: 12, SWING: 14",,1,,,,,,3,1,2,,,,,Finnish Combat Knife,Финка,,Качественный универсальный нож.
+HATCHET,HAND,MELEE,0,0,0,0,4,60,100,,,,,0.49,1,7-14,"THRUST: 14, SWING: 16",,1,,,,,,5,2,2,,,,,Hatchet,Тесак,,Нож-топор для разделки мяса.
+STILETTO,HAND,MELEE,0,0,0,0,2,70,100,,,,,0.49,1,6-12,"THRUST: 13, SWING: 15",,1,,,,,,4,1,2,,,,,Stiletto,Стилет,,
+SAJ,HAND,MELEE,0,0,0,0,4,100,100,,11,,,0.49,1,8-20,"THRUST: 14, SWING: 16",,1,,,,,,5,2,2,,,,,Saj,Сай,,Китайское оружие. Остро отточенный металлический штырь с большой заостренной гардой.
+WEREWOLF,HAND,MELEE,0,0,0,0,4,,100,,999,,,0.49,1,20-40,"THRUST: 14, SWING: 16",CRIT_CHANCE: 99,1,,,,,,4,2,2,,,,,Space Marine Combat Knife,"""Оборотень""",,Боевой нож десантника имперского производства. Почти всегда наносит критические ранения.
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"Мечи,копья,bludgeons",,
+KATANA,HAND,MELEE,0,0,0,0,4,15000,100,,20,,,0.49,1,20-50,"THRUST: 18, SWING: 18",CRIT_CHANCE: 10,2,,,,,,10,2,25,,,,,Katana,Катана,,Двуручный меч местного производства в японском стиле.
+KATANA_CHINEZE,HAND,MELEE,0,0,0,0,4,1000,100,,12,,,0.49,1,10-35,"THRUST: 18, SWING: 18",CRIT_CHANCE: 5,2,,,,,,10,2,25,,,,,Chinese sword,Китайский меч,,Двуручный меч местного производства в китайском стиле.
+IRON_SPEAR,HAND,MELEE,0,0,0,0,3,30,100,,,,,0.49,1,6-12,"THRUST: 18, THROW: 22",,1,,,,,,15,1,16,,,,,Iron Spear,Железное копьё,,Копье с деревянной ручкой и железным наконечником.
+STONE_SPEAR,HAND,MELEE,0,0,0,0,3,10,100,,999,,,0.49,1,5-10,"THRUST: 18, THROW: 22",,1,,,,,,15,1,16,,,,,Stone Spear,Копьё,,Копье с бамбуковой ручной и каменным наконечником.
+CROWBAR,HAND,MELEE,0,0,0,0,5,200,100,,,,,0.49,,8-15,CRUSH: 22,,2,,,,,,10,1,1,,,,,Crowbar,Лом,,Этим ломом можно серьезно вломить кому-нибудь.
+HAMMER,HAND,MELEE,0,0,0,0,5,80,100,,,,,0.49,,9-18,CRUSH: 22,CRIT_CHANCE: 10,1,,,,,,8,3,1,,,,,Hammer,"Кувалда ""Трифоныч""",,Кувалда весом 10кг.
+CLUB,HAND,MELEE,0,0,0,0,4,60,100,,,,,0.49,,4-12,CRUSH: 18,,0,,,,,,8,1,,,,,,Club,Дубинка,,"Дубинка, используемая охранниками."
+WHIP,HAND,MELEE,0,0,0,0,4,60,100,,,,,0.49,,4-12,CRUSH: 22,,0,,,,,,8,1,,,,,,Whip,Хлыст,,Изящный модный хлыстик. Популярен среди арийских женщин.
+PICK,HAND,MELEE,0,0,0,0,5,23,100,,,,,0.49,,8-14,CRUSH: 22,,0,,,,,,5,4,,,,,,Pick,Кирка,,Кирка для добычи угля ручным способом. Годится и для самооброны.
+BROOM,HAND,MELEE,0,0,0,0,0,12,100,,999,,,0.49,,1-3,CRUSH: 22,,-1,,,,,,10,2,,,,,,Broom,Метла,,"Метла для уборки помещений, но можно ей и по морде съездить."
+SHOVEL,HAND,MELEE,0,0,0,0,2,18,100,,999,,,0.49,,1-6,CRUSH: 22,,0,,,,,,10,2,,,,,,Shovel,Лопата,,Большая совковая лопата. Звонко отскакивает от темечка.
+PITCHFORK_SPEAR,HAND,MELEE,0,0,0,0,2,18,100,,999,,,0.49,,1-6,CRUSH: 22,,0,,,,,,10,2,,,,,,Pitchfork,Вилы,,
+AXE2H,HAND,MELEE,0,0,0,0,3,50,100,,999,,,0.49,,2-8,CRUSH: 22,,0,,,,,,8,3,,,,,,Axe,Топор,,Топор. Оружие плотников и бандитов с большой дороги.
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+THROWING_DAGGER,HAND,THROW,0,0,0,0,2,10,100,,,,,10,1,5-10,THROW: 15,,1,,,,,,3,1,12,,,,,Throwing Dagger,Метательный нож,,"Нож, сбалансированный для метания."
+THROWING_ARROW,HAND,THROW,0,0,0,0,2,6,100,,999,,,10,1,6-8,THROW: 13,,1,,,,,,1,1,12,,,,,,Метательная стрелка,,
+SUIRIKEN,HAND,THROW,0,0,0,0,2,8,100,,,,,10,,7-9,THROW: 12,,1,,,,,,1,1,12,,,,,Suiriken,Сюрикен,Japanese Throwing Weapon,Японское метательное оружие.
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Гранаты,,
+MOLOTOV_GRENADE,HAND,THROW,0,0,0,0,3,5000,95,,15,,,11,,35-50,THROW: 20,"POISON: 13, EXPL_RAD: 2, TIME: 1, EXPL_PIECES: 10, POISON_DMG: 7",1,,,,,,2,4,11,,,,,Incendiary Grenade,Зажигательная граната,,"Граната с зажигательной смесью, которая разбрызгивается и вспыхивает при взрыве."
+STEW_GRENADE,HAND,THROW,0,0,0,0,4,2000,97,,,,,9,,25-45,THROW: 10,"EXPL_PIECES: 30, PIECE_DMG: 10, EXPL_RAD: 2, CRIT_CHANCE: 15",1,,,,,,2,2,11,,,,,Spam Grenade,"Граната ""Тушёнка""",,"Довольно слабая осколочная граната, похожая на банку тушенки."
+HANDMADE_GRENADE,HAND,THROW,0,0,0,0,3,250,70,,,,,9,,10-40,THROW: 10,"EXPL_PIECES: 20, PIECE_DMG: 5, EXPL_RAD: 2",1,,,,,,2,2,11,,,,,Handmade Grenade,Клёпаная граната,,"Жуткий самопальный девайс. Надежность крайне низкая, наносимый урон тоже. Но если нет ничего другого…"
+LEMON_GRENADE,HAND,THROW,0,0,0,0,3,3000,97,,15,,,11,,25-35,THROW: 10,"EXPL_PIECES: 40, PIECE_DMG: 13, EXPL_RAD: 3, CRIT_CHANCE: 20",1,,,,,,2,2,11,,,,,Pineapple Grenade,"Граната ""Лимонка""",Medium grenade.,Классическая осколочная граната. Средний урон.
+CRACKER_GRENADE,HAND,THROW,0,0,0,0,4,900,96,,,,,12,,15-30,THROW: 10,"EXPL_PIECES: 30, PIECE_DMG: 8, EXPL_RAD: 2, CRIT_CHANCE: 10",1,,,,,,2,3,11,,,,,Cracker Grenade,"Граната ""Хлопушка""",Light grenade.,Легкая граната. Невысокий урон.
+BIG_HAND_GRENADE,HAND,THROW,0,0,0,0,5,6000,96,,25,,,13,,50-90,THROW: 15,"EXPL_PIECES: 50, PIECE_DMG: 20, EXPL_RAD: 4, CRIT_CHANCE: 40",1,,,,,,2,3,11,,,,,Big Grenade,Граната на ручке,Heavy greander.,"Тяжелая граната, наносящая серьезный урон."
+POISON_GRENADE,HAND,THROW,0,0,0,0,4,4000,95,,20,,,12,,10-25,THROW: 20,"POISON: 4, EXPL_RAD: 3, TIME: 5, POISON_DMG: 2",1,,,,,,2,2,11,,,,,Asphyxiating Grenade,Газовая граната,,Граната с ядовитым газом из пятнистого блевантона.
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Огнестрельное оружие,,
+HUNTING_RIFLE,HAND,BIGG,1,4,1,,4,160,80,30,,,,8,,4-12,SINGLE: 15,CRIT_CHANCE: 1,,,,,,,9,2,,,,,,Hunting Rifle,Кремневое ружье,,Охотничье ружье с запальным кремневым механизмом. Перезарядка в бою невозможна из-за длительности процедуры.
+HANDMADE_6MM,HAND,SMG,1,4,1,,2,100,70,30,,,,3.5,,2-7,SINGLE: 15,,,,,,,,4,2,,,,,,Small Handmade Gun,Самопал,Handmade weapon with extremely long reload time. You can shot it only once per combat.,Самодельное оружие на 1 выстрел. Перезарядка в бою невозможна из-за длительности процедуры. Низкая надежность.
+HANDMADE_12MM,HAND,BIGG,1,4,1,,2,130,70,30,,,,4,,3-10,SINGLE: 15,,,,,,,,7,2,,,,,,Big Handmade Gun,Самопал большой,Handmade weapon with extremely long reload time. You can shot it only once per combat.,Самодельное оружие на 1 выстрел. Перезарядка в бою невозможна из-за длительности процедуры. Низкая надежность.
+HANDMADE_12_DOUBLE,HAND,SMG,2,4,1,,3,180,70,30,,,,4,,3-10,SINGLE: 15,,,,,,,,4,2,,,,,,Dbl Barrelled Handmade Gun,Самопал двуствольный,Handmade weapon with extremely long reload time. You can shot it only twice per combat.,Самодельное оружие на 2 выстрела. Перезарядка в бою невозможна из-за длительности процедуры. Низкая надежность.
+SHOTGUN_JUDA,HAND,SMG,1,16,1,,3,500,95,40,,,,3.5,,2-4,SINGLE: 12,,1,,,,,,5,2,5,,,,,Juda Sawn-off Gun,"Обрез ""Иуда""",,Обрез дробовика одноствольный 16 калибра.
+SHOTGUN_HELLO,HAND,SMG,1,12,1,,3,800,96,40,,,,3.5,,2-5,SINGLE: 12,,1,,,,,,5,2,5,,,,,Greetings Sawn-off Gun,"Обрез ""Превед""",,Обрез дробовика одноствольный 12 калибра.
+SHOTGUN_FRIEND,HAND,SMG,2,16,2,,4,1200,94,40,,,,3.5,,2-5,"SINGLE: 13, DOUBLE: 15",,1,,,,,,5,2,5,,,,,Friend Sawn-off Gun,"Обрез ""Друг""",,Обрез дробовика двуствольный 16 калибра.
+SHOTGUN_BEST_FRIEND,HAND,SMG,2,12,2,,4,1800,95,40,,,,4,,2-6,"SINGLE: 13, DOUBLE: 15",,1,,,,,,5,2,5,,,,,Best Friend Sawn-off Gun,"Обрез ""Лучший друг""",,Обрез дробовика двуствольный 12 калибра.
+SHOTGUN_ST_TRINITY,HAND,BIGG,3,12,3,,5,100000,88,40,999,,,6,,4-7,"SINGLE: 16, TRIPLE: 20",,1,,,,,,8,2,9,,,,,St. Trinity Shotgun,"Дробовик ""Святая троица""",,Уникальный трехствольный дробовик 12 калибра!
+SHOTGUN_OBLOMOV,HAND,BIGG,4,12,4,,5,150000,85,40,999,,,6,,4-7,"SINGLE: 16, QUAD: 20",,1,,,,,,7,3,9,,,,,Oblomov Shotgun,"Дробовик ""Обломов""",,Уникальный четырехствольный дробовик 12 калибра!
+SHOTGUN_PENCIL,HAND,BIGG,1,16,1,,4,10000,96,40,10,,,5,,2-7,SINGLE: 13,,1,,,,,,10,2,9,,,,,Pencil Shotgun,"Дробовик ""Карандаш""",,Дробовик одноствольный 16 калибра.
+SHOTGUN_BROTHER,HAND,BIGG,1,12,1,,4,12000,97,40,13,,,5,,4-7,SINGLE: 15,,1,,,,,,10,2,9,,,,,Brother Shotgun,"Дробовик ""Брат""",,Дробовик одноствольный 12 калибра.
+SHOTGUN_OLDER_BROTHER,HAND,BIGG,1,12,5,,4,18000,94,40,15,,,5,,4-7,SINGLE: 16,,2,,,,,,7,3,9,,,,,Big Brother Shotgun,"Дробовик ""Старший Брат""",,"Дробовик помповый одноствольный 12 калибра, с магазином на 5 патронов."
+SHOTGUN_DRUMMER,HAND,BIGG,1,16,8,,4,50000,92,40,23,,,6,,3-8,SINGLE: 16,,2,,,,,,9,2,9,,,,,Drummer Shotgun,"Дробовик ""Барабанщик""",,Дробовик одноствольный с барабанным механизмом. Емкость магазина 8 патронов.
+SHOTGUN_PREDATOR,HAND,BIGG,2,16,2,,5,25000,95,40,16,,,5,,3-8,"SINGLE: 15, DOUBLE: 17",,1,,,,,,9,2,9,,,,,Predator Shotgun,"Дробовик ""Хищник""",Double-barrelled 16ga shotgun.,Дробовик двуствольный 16 калибра.
+SHOTGUN_OGRE,HAND,BIGG,2,12,2,,5,35000,96,40,20,,,5,,5-8,"SINGLE: 15, DOUBLE: 17",,1,,,,,,8,3,9,,,,,Ogre Shotgun,"Дробовик ""Людоед""",Double-barrelled 12ga shotgun.,Дробовик двуствольный 12 калибра.
+SHOTGUN_CHUCHUNDRA,HAND,BIGG,1,12,6,,6,75000,92,40,27,,,5,,5-8,"SINGLE: 15, BURST: 24",,2,,,,,,9,2,9,,,,,Chuchundra Shotgun,"Дробовик ""Чучундра""",Double-barrelled 12ga automatic shotgun/,Дробовик автоматический 12 калибра.
+REVOLVER_FELIX_D,HAND,SMG,1,6,6,,3,900,98,50,,,,4,,4-10,SINGLE: 10,,1,,,,,,3,2,4,,,,,Felix D. Revolver,"Револьвер ""Феликс Дэ""",Small 6mm revolver.,Небольшой револьвер калибра 6мм.
+REVOLVER_LAVRENTIY_B,HAND,SMG,1,9,6,,4,2500,98,50,15,,,5,,5-12,SINGLE: 10,,1,,,,,,3,2,4,,,,,Lavrentiy B. Revolver,"Револьвер ""Лаврений Бэ""",Medum 9mm revolver.,Средний револьвер калибра 9мм.
+REVOLVER_BUTCHER,HAND,SMG,1,12,4,,4,3500,95,50,17,,,3,,2-4,SINGLE: 10,,1,,,,,,3,2,4,,,,,Butcher Revolver,"Револьвер ""Мясник""",Powerful 12ga revolver.,Револьвер-дробовик под патрон 12 калибра.
+REVOLVER_IOSIF_S,HAND,SMG,1,9,7,,5,5000,98,55,18,,,6,,13-18,SINGLE: 10,,1,,,,,,5,3,4,,,,,Iosif S. Revolver,"Револьвер ""Иосиф Эс""",Heavy 9mm revolver.,Тяжелый револьвер калибра 9мм.
+PISTOL_STUPID,HAND,SMG,1,6,8,,3,600,93,50,,,,5,,5-10,SINGLE: 12,,1,,,,,,3,2,3,,,,,Stupid Pistol,"Пистолет ""Дурак""",Small 6mm pistol.,Небольшой пистолет калибра 6мм.
+PISTOL_BEAST,HAND,SMG,1,9,8,,4,1200,94,50,,,,6,,6-12,SINGLE: 14,,1,,,,,,3,2,3,,,,,Beast Pistol,"Пистолет ""Зверь""",Medium 9mm pistol.,Средний пистолет калибра 9мм.
+PISTOL_BULL,HAND,SMG,1,6,10,,3,2000,97,50,,,,6,,7-12,SINGLE: 12,,1,,,,,,3,2,3,,,,,Bull Pistol,"Пистолет ""Бык""",Small 6mm aryan-made pistol.,"Компактный пистолет арийского производства, калибр 6мм."
+PISTOL_MAD_BULL,HAND,SMG,1,9,12,,4,3000,97,50,15,,,6,,8-13,SINGLE: 14,,1,,,,,,3,2,3,,,,,Mad Bull Pistol,"Пистолет ""Бешеный Бык""",Medium 9mm aryan-made pistol.,"Пистолет арийского производства, калибр 9мм."
+PISTOL_GUARD,HAND,SMG,1,9,20,,4,6000,95,50,20,,,6,,14-19,SINGLE: 14,,2,,,,,,5,3,3,,,,,Guard Pistol,"Пистолет ""Сторож""",Heavy 9mm aryan-made pistol.,"Тяжелый пистолет арийского производства, калибр 9мм."
+SMG_RAT,HAND,BIGG,1,6,30,,4,7000,92,60,18,,,5,,5-11,"SINGLE: 12, BURST: 20",,1,,,,,,5,2,14,,,,,Rat SMG,"ПП ""Крыса""",6mm submachinegun,Короткоствольный пистолет-пулемет калибра 6мм.
+SMG_RAT_PROMZONE,HAND,BIGG,1,6,30,,4,100,80,200,,,,5,,5-11,"SINGLE: 12, BURST: 20",,1,,,,,,5,2,14,,,,,Rat SMG,"ПП ""Крыса""",6mm submachinegun with special paint. Used by Industrial Zone guards.,"Короткоствольный пистолет-пулемет калибра 6мм со специальной раскраской, используется охраной промзоны."
+SMG_RAT_PROMZONE_GUARD,HAND,BIGG,1,6,30,,4,500,92,60,,,,5,,5-11,"SINGLE: 12, BURST: 20",,1,,,,,,5,2,14,,,,,Rat SMG,"ПП ""Крыса""",6mm submachinegun with special paint. Used by Industrial Zone guards.,"Короткоствольный пистолет-пулемет калибра 6мм со специальной раскраской, используется охраной промзоны."
+SMG_WOODPECKER,HAND,SMG,1,9,18,,4,14000,93,60,22,,,6,,8-14,"SINGLE: 12, BURST: 20",,1,,,,,,3,3,14,,,,,Woodpecker SMG,"ПП ""Дятел""",Small 9mm submachinegun.,Автоматический пистолет калибра 9мм.
+SMG_FRET_SAW1,HAND,SMG,1,6,25,,4,7000,91,70,999,,,6,,6-12,"SINGLE: 10, BURST: 18",,1,,,,,,4,3,14,,,,,Fret Saw SMG,"ПП ""Лобзик""",Small 6mm submachinеgun.,Автоматический пистолет калибра 6мм.
+SMG_FRET_SAW2,HAND,SMG,1,6,50,,4,9000,90,70,999,,,6,,6-12,"SINGLE: 10, BURST: 18",,1,,,,,,4,3,14,,,,,Fret Saw Plus SMG,"ПП ""Лобзик+""",Small 6mm submachinеgun with double magazine.,Автоматический пистолет калибра 6мм с двумя магазинами.
+SMG_SQUALL,HAND,BIGG,1,9,40,,4,65000,95,70,29,,,9,,13-21,"SINGLE: 14, BURST: 23",,2,,,,,,7,4,26,,,,,Squall SMG,"ПП ""Шквал"" ",Big 9mm aryan-made submachinegun.,"Пистолет-пулемет арийского производства, калибр 9мм."
+SMG_PERFORATOR1,HAND,BIGG,1,6,30,,4,20000,92,70,999,,,10,,9-17,"SINGLE: 14, BURST: 25",,2,,,,,,7,3,26,,,,,Perforator SMG,"ПП ""Перфоратор"" ",Medium 6mm submachinegun.,Пистолет-пулемет калибра 6мм.
+SMG_PERFORATOR2,HAND,BIGG,1,6,60,,4,25000,91,70,999,,,10,,9-17,"SINGLE: 14, BURST: 25",,2,,,,,,7,3,26,,,,,Perforator Plus SMG,"ПП ""Перфоратор+"" ",Medium 6mm submachinegun with double magazine.,Пистолет-пулемет калибра 6мм c двумя магазинами.
+RIFLE_PIPE,HAND,BIGG,1,6,1,,5,10000,97,45,12,,1,16,,10-20,SINGLE: 18,CRIT_CHANCE: 15,1,,,,,,10,3,17,,,,,Pipe Rifle,"Винтовка ""Труба""",Light non-automatic 6mm rifle. Telescope installation is possible.,Легкая однозарядная винтовка калибра 6мм. Возможна установка оптического прицела.
+RIFLE_BOLT,HAND,BIGG,1,6,1,,5,4500,93,45,999,,,16,,9-14,SINGLE: 18,CRIT_CHANCE: 5,1,,,,,,10,3,17,,,,,Bolt Rifle,"Винтовка ""Болт""",Light non-automatic 6mm rifle.,"Легкая однозарядная винтовка, калибр 6мм."
+RIFLE_HANA,HAND,BIGG,1,6,1,,5,30000,94,45,17,,,20,,12-22,SINGLE: 16,CRIT_CHANCE: 10,1,,,,,,12,3,17,,,,,Hana Rifle,"Карабин ""Хана""",Light non-automatic 6mm rifle.,Однозарядный карабин калибра 6мм.
+RIFLE_KNACKER,HAND,BIGG,1,6,20,,5,60000,95,70,28,,,9,,10-20,"SINGLE: 16, BURST: 25",,2,,,,,,8,3,26,,,,,Knacker SMG,"Автомат ""Живодёр""",Medium 6mm submachinegun.,Автомат калибра 6мм.
+RIFLE_FULL_PIPE,HAND,BIGG,1,9,1,,6,90000,97,45,30,,1,18,,25-37,SINGLE: 16,CRIT_CHANCE: 20,1,,,,,,12,3,17,,,,,Heavy Pipe Rifle,"Винтовка ""Полная Труба""",Medium non-automatic 9mm rifle. Telescope installation is possible.,Средняя однозарядная винтовка калибра 9мм. Возможна установка оптического прицела.
+RIFLE_VAMPIRE,HAND,BIGG,1,9,50,,5,130000,95,70,35,1,,12,,15-25,"SINGLE: 14, BURST: 22",,2,,,,,,9,4,26,,,,,Vampire Assault Rifle,"Винтовка ""Вампир""",9mm assault rifle. Underbarrel launcher installation is possible.,Автоматическая винтовка калибра 9мм с возможностью установки подствольного гранатомета.
+RIFLE_ATAS,HAND,BIGG,1,9,30,,5,200000,97,70,38,1,1,14,,16-32,"SINGLE: 10, BURST: 16",,2,,,,,,8,3,30,,,,,Atas Assault Rifle,"Винтовка ""Атас""",Heavy 9mm assault rifle. Underbarrel launcher and telescope installation is possible.,Штурмовая винтовка калибра 9мм с возможностью установки подствольного гранатомета и оптического прицела.
+RIFLE_TORNADO,HAND,BIGG,1,9,30,,5,250000,97,80,40,,1,14,,19-36,"SINGLE: 10, BURST: 16",CRIT_CHANCE: 25,2,,,,,,9,4,30,,,,,Tornado Assault Rifle,"Винтовка ""Ураган""",Heavy 9mm aryan-made assault rifle. Telescope installation is possible.,Штурмовая винтовка калибра 9мм арийского производства с возможностью установки оптического прицела.
+RIFLE_MAMA,HAND,BIGG,1,14,5,,7,500000,97,45,999,,1,22,,38-51,SINGLE: 10,CRIT_CHANCE: 30,2,,,,,,12,4,17,,,,,Mama Rifle,"Винтовка ""Мама""",Heavy semi-automatic 14mm rifle. Telescope installation is possible.,"Тяжелая полуавтоматическая винтовка, калибр 14мм. Возможна установка оптического прицела."
+MG_KAIN,HAND,BIGG,1,9,100,,7,700000,97,80,42,,,10,,23-40,"BURST: 14, LONG_BURST: 19",CRIT_CHANCE: 20,3,,,,,,12,4,31,,,,,Kain Machine Gun,"Пулемет ""Каин""",Medium 9mm machine gun.,Ручной пулемет калибра 9мм с дисковым магазином.
+MG_ACHTUNG,HAND,BIGG,1,14,100,,8,1000000,97,90,999,,,14,,30-46,"BURST: 14, LONG_BURST: 20",CRIT_CHANCE: 20,3,,,,,,12,4,31,,,,,Achtung Machine Gun,"Пулемет ""Ахтунг""",Heavy 14mm machine gun.,Тяжелый ручной пулемет калибра 14мм.
+LAUNCHER_PRESENT,,BIGG,1,30,1,,1,120000,99,80,35,,,14,,50-70,LAUNCH: 10,,0,,,,,,3,2,33,,,,,Underbarrel Grenade Launcher ,"Гранатомёт подствольный ""Подарок""",30mm underbarrel grenade launcher sutable to Atas and Vampire assault rifles.,"Подствольный гранатомет для установки на винтовки ""Вампир"" и ""Атас""."
+LAUNCHER_TERMINATOR,HAND,BIGG,1,30,6,,5,350000,96,80,40,,,14,,60-80,LAUNCH: 14,,3,,,,,,8,4,32,,,,,Grenade Launcher,"Гранатомет ""Терминатор""",Revolver-type 30mm grenade launcher.,"Гранатомет калибра 30мм, с барабанным магазином."
+LAUNCHER_SHAITAN,HAND,BIGG,1,80,1,,7,500000,95,80,43,,,15,,160-300,LAUNCH: 10,,3,,,,,,13,3,32,,,,,Shaitan Bazooka,"Базука ""Шайтан-труба""",80mm bazooka is the most powerful weapon on this planet.,Базука однозарядная калибра 80мм.
+BLASTER_B7,HAND,NRG,1,5,20,,3,,100,200,999,,,12,,39-47,"SINGLE: 7, BURST: 14",,5,,,,,,3,2,36,,,,,B7 Blaster,"Бластер Б-7 ""Козырь""",Standard Space Marine weapon.,Одноручный бластер имперского производства.
+BLASTER_E95,HAND,NRG,1,5,50,,4,,100,200,999,,,20,,49-57,"BURST: 10, LONG_BURST: 24",,5,,,,,,10,3,37,,,,,E95 Assault Blaster,"Бластер Е-95 ""Тузик""",Standard Space Marine assault weapon.,Штурмовой бластер имперского производства.
+RAILGUN,HAND,NRG,1,10,16,,5,,100,200,999,,,50,,200-260,SINGLE: 10,CRIT_CHANCE: 30,5,,,,,,12,4,38,,,,,EMIR61 Railgun,"Рэйлган ЭМИР-61 ""Шило"" ",Heavy Space Marine weapon with high piercing ability.,Рэйлган имперского производства. Обладает уникальной пробивной способностью.
+HANDCUFFS,HAND,,,,,,,,100,200,999,,,,,,,,,,,,,,3,2,,,,,,Handcuffs,Наручники,,
+TELESCOPE,,,1,,,,,50000,100,200,30,,,,,,,,,,,,,,3,2,34,,,,,Telescope,Оптический прицел,"Telescope sutable to standard rifles and Tornado, Atas assault rifles","Оптический прицел для установки на обычные винтовки, а также на штурмовые винтовки ""Ураган"" и ""Атас""."
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Боеприпасы,,
+AMMO_6MM,,,,6,1,,,15,100,,,,,,,,,,,,,,,,2,2,,100,,,,6mm Ammo,Патроны 6мм,Ammo for small pistols and submachineguns.,Патроны для небольших пистолетов и автоматов.
+AMMO_9MM,,,,9,1,,,35,100,,,,,,,,,,,,,,,,2,2,,100,,,,9mm Ammo,Патроны 9мм,Ammo for medium and heavy weapons.,Патроны для тяжелых пистолетов и винтовок.
+AMMO_14MM_AP,,,,14,1,,,55,100,,999,,,,,,,ARMOR_PIERCE: 25,,,,,,,3,2,,100,,,,14mm AP Ammo,Патроны 14мм ББ,Armor piercing ammo for heavy rifles and machineguns.,Бронебойные патроны для тяжелых винтовок и пулеметов.
+AMMO_6MM_AP,,,,6,1,,,25,100,,20,,,,,,,ARMOR_PIERCE: 12,,,,,,,2,2,,100,,,,6mm AP Ammo,Патроны 6мм ББ,Armor piercing ammo for small pistols and submachineguns.,Бронебойные патроны для небольших пистолетов и автоматов.
+AMMO_9MM_AP,,,,9,1,,,50,100,,20,,,,,,,ARMOR_PIERCE: 16,,,,,,,2,2,,100,,,,9mm AP Ammo,Патроны 9мм ББ,Armor piercing ammo for medium and heavy weapons.,Бронебойные патроны для тяжелых пистолетов и винтовок.
+AMMO_12GA,,,,12,1,,,12,100,,,,,,,,,EXPL_PIECES: 7,,,,,,,2,2,,100,,,,12Ga Ammo,Патроны к дробовику 12 калибра,Ammo for heavy shotguns,Патроны для тяжелых дробовиков.
+AMMO_16GA,,,,16,1,,,7,100,,,,,,,,,EXPL_PIECES: 5,,,,,,,2,2,,100,,,,16Ga Ammo,Патроны к дробовику 16 калибра,Ammo for light shotguns,Патроны для легких дробовиков.
+AMMO_BLASTER,,,,5,1,,,,100,,999,,,,,,,,,,,,,,2,2,,100,,,,5mm Blaster Ammo,Патроны к бластеру 5мм,,Патроны к бластеру имперского производства.
+AMMO_RAILGUN,,,,10,1,,,,100,,999,,,,,,,,,,,,,,2,2,,100,,,,10mm Railgun Ammo,Патроны к рэйлгану 10мм,,Патроны к рэйлгану имперского производства.
+GRENADE_30MM,,,,30,1,,,2000,100,,35,,,,,70-100,,"EXPL_PIECES: 30, PIECE_DMG: 15, EXPL_RAD: 3, CRIT_CHANCE: 40",,,,,,,2,2,,6,,,,30mm Grenade,Граната 30мм,Ammo for underbarrel and revolver-type grenade launchers.,"Граната для легких гранатометов ""Подарок"" и ""Терминатор""."
+GRENADE_80MM,,,,80,1,,,7000,100,,43,,,,,150-250,,"EXPL_PIECES: 50, PIECE_DMG: 20, EXPL_RAD: 4, CRIT_CHANCE: 65",,,,,,,4,1,,,,,,80mm Bazooka Ammo,Граната 80мм,,"Реактивная граната для базуки ""Шайтан-труба""."
+GUNPOWDER,,,,4,1,,,1,100,,,,,,,,,,,,,,,,2,2,,100,,,,Gunpowder,Порох для самопала,A pack includes gunpowder and some other components needed for reloading handmade guns and hunting rifles.,Порох для зарядки самопалов и кремневых ружей.
+HEALING,,,,2,1,,,30,100,,999,,,,,,,,,,,,,,,,,1900,,,,,,,
+SURGEON,,,,3,1,,,90,100,,999,,,,,,,,,,,,,,,,,10,,,,,,,
+REPAIR,,,,1,1,,,10,100,,999,,,,,,,,,,,,,,,,,50,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Пластины для бронежилетов,,
+IRON_PLATE,,,,100,10,,,1000,100,200,,,,,,,,D_RES: +4,,,,,,,2,2,,,,,,Iron Plates,Железные пластины,Plates pack for light and medium body armors.,Комплект железных пластин для бронежилета. При сильном износе заменяются на новые.
+STEEL_PLATE,,,,100,15,,,5000,100,200,20,,,,,,,D_RES: +7,,,,,,,2,2,,,,,,Steel Plates,Стальные пластины,Plates pack for light and medium body armors.,Комплект стальных пластин для бронежилета. При сильном износе заменяются на новые.
+TITANIUM_PLATE,,,,100,40,,,12000,100,200,999,,,,,,,D_RES: +15,,,,,,,2,2,,,,,,Titanium Plates,Титановые пластины,Plates pack for light and medium body armors.,Комплект титановых пластин для бронежилета. При сильном износе заменяются на новые.
+HYENA_PLATE,,,,100,8,,,3500,100,200,999,,,,,,,D_RES: +6,,,,,,,2,2,,,,,,Hyena Scales Plates,Пластины из чешуи,Plates pack for light and medium body armors.,Комплект пластин для бронежилета из чешуи гиены. При сильном износе заменяются на новые.
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Броня,,
+STUDDED_LEATHER_JACKET,BODY,,,,,,4,1800,100,40,,,,,,,,"AC:+5, D_RES: +3",1,,,,,,5,6,,,,STUDDED_LEATHER_JACKET,,Studded Leather Jacket,Жилет из толстой кожи,Studded leather jacket provides light torso protection,"Бронежилет из толстой кожи, обеспечивающий легкую защиту туловища."
+STUDDED_LEATHER_TROUSERS,LEGS,,,,,,4,1200,100,35,,,,,,,,"AC: +5, D_RES: +3",1,,,,,,3,7,,,,TROUSERS,,Studded Leather Trousers,Штаны из толстой кожи,Studded leather trousers provides light legs protection.,"Штаны из толстой кожи, обеспечивающие легкую защиту ног."
+IRON_CHAINMAIL,SHIRT,,,,,,5,8000,100,50,19,,,,,,,"AC:+4, D_RES: +4",1,,,,,,5,7,,,,,,Iron Chain Mail,Кольчуга железная,,"Рубашка, сплетенная из железных колец. Обеспечивает неплохую защиту, не стесняя движений."
+STEEL_CHAINMAIL,SHIRT,,,,,,4,25000,100,65,24,,,,,,,"AC:+7, D_RES: +7, CRIT_DEFENCE: 10",1,,,,,,4,7,,,,,,Steel Chain Mail,Кольчуга стальная,,"Рубашка, сплетенная из стальных колец. Обеспечивает среднюю защиту, не стесняя движений."
+CUIRASS,BODY,,,,,,6,100000,100,90,28,,,,,,,"AC:+15, D_RES: +13, THIEF: -30, CRIT_DEFENCE: 20",1,,,,,1,6,7,,,,CUIRASS,,Cuirass,Кираса,"Cuirass provides excellent torso protection. But, due to it's weight, you lose a lot of agility.","Кираса, подобная тем, что использовали средневековые рыцари. Обеспечивает хорошую защиту, но ухудшает подвижность."
+FULL_P,BODY,,,,,,7,200000,100,100,999,,,,,15-25,,"AC:+30, D_RES: +20, PER: -3, AGI: -3, CRIT_DEFENCE: 60",3,,,,,1,13,7,,,,FULL_P,,Full P. Suit,"Бронекостюм ""Полный Пэ""","This suit provides you with full body protection and heavy melee damage, but you lose much in agility, perception and stealth.","Непробиваемый из большинства оружия костюм, в то же время сильно ограничивающий свободу действий."
+COMMANDO_SUIT,BODY,,,,,,1,,100,200,999,,,,,,,"AC: +100,D_RES: +28, STR: +3, AGI: +3, CRIT_DEFENCE: 60, NRG: 35",5,,,,,1,7,6,,,,COMMANDO_SUIT,,Space Marine Combat Suit,Имперский боевой костюм десантника,The Space Marine Combat Suit provides you with full body protection from most local-made weapons. Suit exoskeleton greatly increases soldier's strength and agility.,"Обеспечивает самый высокий в галактике уровень защиты, при этом снабжен внешней мускулатурой, увеличивающей силу и ловкость бойца."
+LIGHT_BODYARMOR,BODY,,,100,1,,4,7000,100,50,,,,,,,,AC:+5,1,,,,,,5,6,,,,LIGHT_BODYARMOR,,Light Body Armor,Бронежилет лёгкий,"A jacket with pockets for metal plates. It provides only front and back torso protection, your sides will be open for an enemy strike.",Бронежилет представляет собой куртку с карманами для защитных пластин. Эта модель защищает только спереди и сзади.
+MEDIUM_BODYARMOR,BODY,,,100,1,,6,12000,100,60,22,,,,,,,AC:+5,1,,,,,,5,6,,,,LIGHT_BODYARMOR,,Medium Body Armor,Бронежилет,A jacket with pockets for metal plates. It provides torso protection from all sides.,Бронежилет представляет собой куртку с карманами для защитных пластин. Эта модель защищает со всех сторон.
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Медицинские товары,,
+MEDIKIT_1,HAND,,,,,,,550,100,,,,,,,,HEAL: 20,HP: +25,,,,,,,3,3,,5,,,,Small Medikit,Аптечка,Restores hit points. The healing power depends on character's medic skill.,Восстанавливает здоровье. Сила действия лекарств зависит от навыка медицины персонажа.
+MEDIKIT_2,HAND,,,,,,,3000,100,,24,,,,,,HEAL: 20,HP: +60,,,,,,,3,3,,5,,,,Big Medikit,Большая аптечка,Restores hit points. The healing power depends on character's medic skill.,Восстанавливает здоровье. Сила действия лекарств зависит от навыка медицины персонажа.
+ANTIDOT_MOMENT,HAND,,,,,,,150,100,,,,,,,,USE: 20,POISON_REMOVE: 1,,,,,,,2,2,,5,,,,Antidote for Moment Poison,"Противоядие от ""Момента"".",Antidote for Moment Poison produced from Acid Mushroom.,"Противоядие, изготавливаемое из зеленого гриба-кисляка. Снимает действие яда ""Момент""."
+ANTIDOT_PIG,HAND,,,,,,,200,100,,,,,,,,USE: 20,POISON_REMOVE: 2,,,,,,,2,2,,5,,,,Antidote for Pig Poison,"Противоядие от ""Хрюши""",,"Противоядие, снимающее действие яда ""Хрюша""."
+BUDILNIK,,,,,,,,,100,,,,,,,,,,,,,,,,5,1,,5,,,,The Alarm Clock Antidote,Будильник,Antidote for Battle Ostrich Poison,Средство против парализующего яда боевых страусов.
+MEDIKIT_RU_7,HAND,,,2,1900,,,1,100,,28,,,,,,HEAL: 20,"POISON_REMOVE: 100, HP: +1900",,,,,,,4,3,,,,,,RU7 Universal Healing Kit,Регенератор РУ-7,"The kit can heal any wounds, including critical.","Универсальный регенератор имперского производства. Лечит любые раны, сращивает кости и снимает действия ядов. Критические ранения лечатся автоматически в режиме отдыха. Сила действия лекарств зависит от навыка медицины персонажа."
+SURGEON_KIT,,,,3,10,,,1,100,,,,,,,,,,,,,,,,5,4,,,,,,Surgeon Kit,Ящик хирурга,You need this to heal critical wounds in the outdoors environments.,Набор инструментов для хирургических операций. Полезен для лечения критических ранений в полевых условиях. Используется автоматически в режиме отдыха.
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Яды,,
+POISON_MOMENT,,,,,,,,100,100,,,,,,,,,"POISON: 1, STR: -2, AGI: -2, TIME: 10, POISON_DMG: 1",,,,,,,2,2,,5,,,,Moment Poison,"Яд ""Момент""",,"Яд обессиливающий, замедляющий реакцию и ослабляющий защиту противника в ближнем бою. Применяется для отравления холодного оружия."
+POISON_PIG,,,,,,,,150,100,,,,,,,,,"POISON: 2, AGI: -3, TIME: 10, POISON_DMG: 2",,,,,,,2,2,,5,,,,Pig Poison,"Яд ""Хрюша""",,"Яд, замедляющий реакцию и ослабляющий защиту противника в ближнем бою. Применяется для отравления холодного оружия."
+POISON_OSTRICH,,,,,,,,180,100,,,,,,,,,"POISON: 3, PER: -3, AGI: -3, STR: -3, TIME: 10, POISON_DMG: 5",,,,,,,1,1,,,,,,Battle Ostrich Poison,Яд боевого страуса,,Парализующий яд боевого страуса.
+POISON_LIZARD_1,,,,,,,,150,100,,,,,,,,,"POISON: 2, PER: -2, AGI: -2, TIME: 10, POISON_DMG: 2",,,,,,,2,2,,,,,,,Яд летающего ящера,,"Яд, замедляющий движение и реакцию."
+POISON_LIZARD_2,,,,,,,,150,100,,,,,,,,,"POISON: 2, PER: -2, AGI: -2, TIME: 10, POISON_DMG: 2",,,,,,,2,2,,,,,,,Яд летающего ящера,,"Яд, замедляющий движение и реакцию."
+POISON_LIZARD_3,,,,,,,,150,100,,,,,,,,,"POISON: 2, PER: -2, AGI: -2, TIME: 10, POISON_DMG: 2",,,,,,,2,2,,,,,,,Яд летающего ящера,,"Яд, замедляющий движение и реакцию."
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Наркотики,,
+FAST_DIVING,HAND,,,,,,,35,100,,,,,,,,USE: 20,"POISON: 5, TIME: 3600, P_RES: +50",,,,,,,2,2,,5,,,,Fast Diving Drug,"""Срочное погружение""",,Наркотическое средство местного производства. Повышает устойчивость к ядам.
+DOWNHILL,HAND,,,,,,,25,100,,,,,,,,USE: 20,"POISON: 6, TIME: 1800",,,,,,,2,2,,5,,,,Downhill Drug,"""Скоростной спуск""",,Наркотическое средство местного производства. Действует не на всех людей.
+KVAS,HAND,,,,,,,40,100,,,,,,,,USE: 20,"POISON: 7, TIME: 1800, HP: +10",,,,,,,1,3,,,,,,Karaul Kvas,"Веселящий Квас ""Караул""",,Веселящий квас местного производства.
+VODKA,HAND,,,,,,,100,100,,,,,,,,USE: 20,"POISON: 8, TIME: 3600, HP: +15, AGI: -5, PER: -5",,,,,,,1,3,,,,,,Oblom Vodka,"Бутылка водки ""Облом""",,"Водка местного производства. Приняв на грудь, персонаж становится практически неуязвим к критическому урону. Водка обладает некоторым лечебным эффектом, правда, с негативными последствиями."
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Стимуляторы,,
+DODGER,HAND,,,,,,,500,100,,,,,,,,USE: 20,"AGI: +1, AC: 15, TIME: 7200, POISON: 10",,,,,,,2,2,,5,,,,Dodger Stimulator,"""Ловкач""",,"Порошок, временно увеличивающий ловкость, скорость бега и защиту в ближнем бою."
+DODGER_BIG,HAND,,,,,,,2000,100,,,,,,,,USE: 21,"AGI: +2, AC: 25, TIME: 7200, POISON: 15",,,,,,,3,3,,3,,,,Dodger Stimulator Big Portion,"""Ловкач"", большая порция",,"Порошок, временно увеличивающий ловкость, скорость бега и защиту в ближнем бою."
+ACCELERATOR,HAND,,,,,,,3000,100,,,,,,,,USE: 20,"PER: +2, INT: +2, CON: +2, TIME: 7200, POISON: 11",,,,,,,4,4,,5,,,,Accelerator Stimulator,"""Акселератор""",,"Ингалятор, временно улучшающий интеллект, восприятие и иммунитет организма."
+LIFTING_JACK,HAND,,,,,,,2400,100,,,,,,,,USE: 20,"STR: +2, TIME: 7200, POISON: 12",,,,,,,1,1,,5,,,,Lifting Jack Stimulator,"""Домкрат""",,"Таблетки, временно увеличивающие силу. Позволяют слабому персонажу носить тяжелую броню и вооружение. Также полезны для компенсации потери силы при критическом ранении."
+CIGARETTE,HAND,,,,,,,10,100,,,,,,,,USE: 20,"POISON: 9, TIME: 1800, AGI: -2, PER: -2",,,,,,,2,1,,,,,,Cigarette,Самокрутка,,Самокрутка с кумар-травой.
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Инструменты,,
+LOCKPICKS1,,,,,,,,100,100,,,,,,,,,,,,,,,,2,2,8,,,,,Small Lockpick Set,Набор отмычек,,"Набор отмычек, позволяющий открывать несложные замки."
+LOCKPICKS2,,,,,,,,2000,100,,24,,,,,,,,,,,,,,3,3,8,,,,,Medium Lockpick Set,Набор отмычек универсальный,,"Набор отмычек, позволяющий открывать замки средней сложности."
+LOCKPICKS3,,,,,,,,10000,100,,35,,,,,,,,,,,,,,4,3,8,,,,,Large Lockpick Set,"Набор отмычек ""Эксперт""",,"Набор отмычек, позволяющий открывать практически любые замки"
+REPAIR_KIT,,,,1,50,,,1,100,,,,,,,,,,,,,,,,5,4,7,,,,,Repair Kit,Оружейный ремнабор,"The kit contains tools and replacement parts for repairing any local-made weapons, clothes and armor. To use, click ""Repair"" button at the top of the screen.","Набор для чистки и ремонта оружия в полевых условиях. Набор применяется при помощи меню ""Ремонт"" вверху экрана."
+RAMROD,,,,,,,,50,100,,999,,,,,,,,,,,,,,5,1,7,,,,,Ramrod,Шомпол,,Шомпол для чистки оружия.
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Каски-шапки,,
+HELMET,HAT,,,,,,3,3000,100,50,,,,,,,,D_RES: +3,,,,,,,3,2,,,,HELMET,,Helmet,Пехотная каска,,"Обыкновенная пехотная каска, обеспечивающая легкую защиту головы."
+ARYAN_HELMET,HAT,,,,,,3,10000,100,55,10,,,,,,,"D_RES: +6, CRIT_DEFENCE: 5",,,,,,,3,2,,,,ARYAN_HELMET,,Aryan Helmet,Арийская каска,,"Каска арийского производства, обеспечивающая среднюю защиту головы."
+VADER_HELMET,HAT,,,,,,4,30000,100,70,38,,,,,,,"D_RES: +9, CRIT_DEFENCE: 20",1,,,,,,3,3,,,,VADER_HELMET,,Full Helmet,"Шлем ""Вейдер""",,"Закрытый шлем, обеспечивающий хорошую защиту головы."
+ARYAN_UNIFORM_CAP,HAT,,,,,,,500,100,35,,,,,,,,,,1,,,,,3,2,,,,ARYAN_UNIFORM_CAP,,Aryan Uniform Cap,Фуражка арийская,,Форменная фуражка арийских военных.
+ARYAN_FIELD_CAP,HAT,,,,,,,300,100,35,,,,,,,,,,1,,,,,2,2,,,,FIELD_CAP,,Aryan Field Cap,Пилотка арийская,,Пилотка арийских военных.
+ARYAN_CAP,HAT,,,,,,,400,100,35,,,,,,,,,,1,,,,,3,2,,,,ARYAN_CAP,,Aryan Cap,Кепка арийская,,Кепка арийских военных.
+KAMELAUKION,HAT,,,,,,,250,100,35,,,,,,,,,,,,,,,3,3,,,,KAMELAUKION,,Kamelaukion,Камилавка,,
+TERRORIST,MASK,,,,,,,350,100,35,,,,,,,,,1,,,,,,3,3,,,,,,Terrorist Mask,"Маска ""Террорист""",The mask allows you to stay unrecognizable if you want to do something bad.,"Маска, целиком закрывающая лицо. Часто используется при ограблениях и убийствах."
+ROUND,HAT,,,,,,,50,100,35,,,,,,,,D_RES: +1,,,,,,,3,2,,,,ROUND,,Round Cap,"Круглая шапка ""Плевок""",,Немного защищает голову от урона.
+BANDANA,HAT,,,,,,,30,100,35,,,,,,,,,,,,,,,3,3,,,,,,Bandana,Бандана,,
+BASEBALL_CAP,HAT,,,,,,,15,100,35,,,,,,,,,,,,,,,3,2,,,,BASEBALL_CAP,,Baseball Cap,Бейсболка,,
+CAP,HAT,,,,,,,10,100,35,,,,,,,,,,,,,,,3,2,,,,CAP,,Cap,Кепка,,
+SKULL_MASK,HAT,,,,,,,70,100,35,,,,,,,,,,,,,,,3,2,,,,SKULL_MASK,,Skull Mask,Маска-череп,,Ритуальная маска-череп из кости.
+BERET,HAT,,,,,,,20,100,35,,,,,,,,,,,,,,,3,2,,,,BERET,,Beret,Берет,,
+SKULL_CAP,HAT,,,,,,,18,100,35,,,,,,,,,,,,,,,3,2,,,,SKULL_CAP,,Skull Cap,Тюбетейка,,
+PANAMA,HAT,,,,,,,12,100,35,,,,,,,,,,,,,,,3,2,,,,PANAMA,,Panama,Круглая панама от солнца,,
+EAR_FLAPS,HAT,,,,,,,150,100,35,,,,,,,,D_RES: +2,,,,,,,3,3,,,,EAR_FLAPS,,Ear Flaps,Шапка-ушанка,,"Хорошо защищает от холода, и немножко от урона."
+FIELD_CAP,HAT,,,,,,,100,100,35,,,,,,,,,,,,,,,2,2,,,,FIELD_CAP,,Field Cap,Пилотка,,Военная пилотка.
+TURBAN,HAT,,,,,,,60,100,35,,,,,,,,,,,,,,,3,3,,,,TURBAN,,Turban,Чалма,,
+KINDZADZA,HAT,,,,,,,10,100,35,,,,,,,,,-2,,,,1,,3,2,,,,KINDZADZA,,Kindzadza Cap,"Шапка ""Кин-дза-дза""",,
+ROUND_PUMPON,HAT,,,,,,,30,100,35,,,,,,,,D_RES: +1,-1,,,,,,3,2,,,,ROUND_PUMPON,,Round Cap With Pumpon,Вязаная шапка,Low prestige cap.,Круглая вязаная шапка с пумпоном. Немного защищает голову от урона. Непрестижная.
+CHINEZIAN,HAT,,,,,,,15,100,35,,,,,,,,,,,,,,,4,2,,,,CHINEZIAN,,Chinese Cap,Китайская шляпа,,
+HAIR1,HAT,,,,,,,0,100,5,,,,,,,,,,,,,,,3,2,,,,HAIR1,,Hair,С хвостиком,,
+HAIR2,HAT,,,,,,,0,100,5,,,,,,,,,,,,,,,3,2,,,,HAIR2,,Hair,С длинным хвостиком,,
+HAIR3,HAT,,,,,,,0,100,5,,,,,,,,,,,,,,,3,2,,,,HAIR3,,Hair,Каре за уши,,
+HAIR4,HAT,,,,,,,0,100,5,,,,,,,,,,,,,,,3,2,,,,HAIR4,,Hair,Каре,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"Цепи, амулеты на шею",,
+GOLD_CHAIN,AMULET,,,,,,,250,100,,,,,,,,,,,,,,,,3,3,,,,,,Gold Chain,Золотая цепочка тонкая,,
+BIG_GOLD_CHAIN,AMULET,,,,,,,500,100,,,,,,,,,,1,,,,,,3,3,,,,,,Big Gold Chain,Цепь в палец толщиной,Prestige thing.,Внушает уважение к ее владельцу.
+CROSS_KONDRATOMAN,AMULET,,,,,,,80,100,,,,,,,,,,,,,,,,2,3,,,,,,Kondratoman Cross,Крест кондратоманский,,
+CROSS_CANNIBAL,AMULET,,,,,,,45,100,,,,,,,,,,,,,,,,2,3,,,,,,Cannibal Cross,Крест людоедский,,
+PACIFIC,AMULET,,,,,,,70,100,,,,,,,,,,,,,,,,2,3,,,,,,Pacific,Пацифик негрильный,,
+EURO,AMULET,,,,,,,120,100,,,,,,,,,,,,,,,,2,3,,,,,,Euro,Евра негрильная,,
+DOLLAR,AMULET,,,,,,,100,100,,,,,,,,,,,,,,,,2,3,,,,,,Dollar,Доллар негрильный,,
+JERBOA,AMULET,,,,,,,10,100,,,,,,,,,,,,,,,,2,3,,,,,,Jerboa Leg,Лапка тушканчика на веревочке,,
+IRON_HEART,AMULET,,,,,,,20,100,,,,,,,,,,,,,,,,2,3,,,,,,Iron Heart,Железное сердечко на железной цепочке,,
+SILVER_HAMMER,AMULET,,,,,,,100,100,,,,,,,,,,,,,,,,2,3,,,,,,Silver Hammer,Молоточек серебряный на серебряной же цепочке,,
+BEADS,AMULET,,,,,,,8,100,,,,,,,,,,,,,,,,2,3,,,,,,Beads,"Бусы деревянные, круглые, простые",,
+SILVER_CHAIN,AMULET,,,,,,,80,100,,,,,,,,,,,,,,,,2,3,,,,,,Silver Chain,Серебряная цепочка,,
+STEEL_BALLS,AMULET,,,,,,,300,100,,,,,,,,,,,,,,,,2,3,,,,,,Steel Balls,Основа жизни господина Уэфа,,
+PHALLUS,AMULET,,,,,,,160,100,,,,,,,,,,,,,,,,2,3,,,,,,Phallus,Фаллический деревянный амулет,,
+INYAN,AMULET,,,,,,,130,100,,,,,,,,,,,,,,,,2,3,,,,,,Inyan,"""Инь-янь"" серебряный",,
+COIN,AMULET,,,,,,,40,100,,,,,,,,,,,,,,,,2,3,,,,,,Coin,Пробитая монетка на веревочке,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Майки,,
+FIGHTING_SHIRT,SHIRT,,,,,,,70,100,30,,,,,,,,,,,,,,,4,7,,,,,,Fighting Shirt,Борцовка,,
+SPORTS_SHIRT,SHIRT,,,,,,,75,100,30,,,,,,,,,,,,,,,4,7,,,,,,Sports Shirt,Футболка,,
+ROLL_NECK,SHIRT,,,,,,,85,100,30,,,,,,,,,,,,,,,4,7,,,,,,Roll Neck,Водолазка,,
+FIVE_ELEMENT,SHIRT,,,,,,,100,100,30,,,,,,,,,,,1,,,,4,6,,,,,,Miltiple Hole Shirt,"Майка ""Пятый элемент""",Gay/whore wear. It's shameful for Space Marine to wear this.,Одежда гомосексуалистов и проституток. Десантнику стыдно надевать это.
+SLEEVELESS_SHIRT,SHIRT,,,,,,,60,100,30,,,,,,,,,,,,,,,4,7,,,,,,Sleeveless Shirt,Безрукавка,,
+TOPIC,SHIRT,,,,,,,40,100,30,,,,,,,,,,,1,,,,4,6,,,,,,Topic,Топик,Gay/whore wear. It's shameful for Space Marine to wear this.,Одежда гомосексуалистов и проституток. Десантнику стыдно надевать это.
+WHORE_SHIRT,SHIRT,,,,,,,50,100,30,,,,,,,,,,,1,,,,4,7,,,,,,Whore Shirt,"Майка с ""чашечками"" и кисточками",Gay/whore wear. It's shameful for Space Marine to wear this.,Одежда гомосексуалистов и проституток. Десантнику стыдно надевать это.
+GRID_SHIRT,SHIRT,,,,,,,50,100,30,,,,,,,,,,,1,,,,4,7,,,,,,Grid Shirt,Майка-сеточка,Gay/whore wear. It's shameful for Space Marine to wear this.,Одежда гомосексуалистов и проституток. Десантнику стыдно надевать это.
+FUR_JACKET,BODY,,,,,,,30,100,30,,,,,,,,,-1,,,,1,,6,6,,,,FUR_JACKET,,Fur Jacket,Меховая майка из крысиных шкурок,,
+LEATHER_SHIRT,SHIRT,,,,,,,100,100,30,,,,,,,,,,,,,,,2,6,,,,,,Leather Jacket,Кожаная майка,,
+KNOT_SHIRT,SHIRT,,,,,,,55,100,30,,,,,,,,,,,,,,,4,7,,,,,,Knot Shirt,"Майка, завязанная узлом",,
+KHAKI_SHIRT,SHIRT,,,,,,,80,100,30,,,,,,,,,,,,,,,4,7,,,,,,Khaki Shirt,Военная рубашка,,
+CAMOUFLAGE_SHIRT,SHIRT,,,,,,,90,100,30,,,,,,,,,,,,,,,4,7,,,,,,Camouflage Shirt,Камуфляжная рубашка,,
+BLOUSE,SHIRT,,,,,,,40,100,30,,,,,,,,,,,,,,,4,6,,,,,,Blouse,Блузка светлая,,
+SHIRT,SHIRT,,,,,,,35,100,30,,,,,,,,,,,,,,,4,6,,,,,,Shirt,Некогда цивильная майка,,
+COWBOY_SHIRT,SHIRT,,,,,,,70,100,30,,,,,,,,,,,,,,,4,7,,,,,,Cowboy Shirt,Ковбойка,,
+KIMONO_SHIRT,BODY,,,,,,,80,100,30,,,,,,,,,,,,,,,4,7,,,,SACKCLOTH,,Kimono Shirt,Рубашка кимоно,,
+STRIPPED_SHIRT,SHIRT,,,,,,,76,100,30,,,,,,,,,,,,,,,6,6,,,,,,Stripped Shirt,Рубашка из кусочков кожи,,
+ARYAN_SHIRT,SHIRT,,,,,,,130,100,30,,,,,,,,,,1,,,,,4,7,,,,,,Aryan Shirt,Арийская рубашка,,
+ROBE,BODY,,,,,,,10,100,30,,,,,,,,"D_RES: 1, AC: 1",,,,,,,5,7,,,,ROBE,,Gray Condemned's Shirt,Серая роба,,Роба заключенного промзоны.
+ROBE_BLACK,BODY,,,,,,,10,100,30,,,,,,,,"D_RES: 1, AC: 1",,,,,,,5,7,,,,ROBE,,Black Guard's Shirt,Чёрная роба,,Роба охранника промзоны.
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"Пиджаки,куртки",,
+SMOKING,BODY,,,,,,,1500,100,30,16,,,,,,,"D_RES: 1, AC: 1",,,,,,1,5,7,,,,SMOKING,,Smoking,Пиджак,,
+CAGED_SMOKING,BODY,,,,,,,1200,100,30,12,,,,,,,"D_RES: 1, AC: 1",,,,,,1,5,7,,,,SMOKING,,Caged Smoking,Клетчатый жакет,,
+SACKCLOTH,BODY,,,,,,,20,100,30,,,,,,,,,-1,,,,1,,5,7,,,,SACKCLOTH,,Sackcloth,Дерюжная куртка,Beggar's wear.,Одежда бомжей и бедняков.
+QUILTED_JACKET,BODY,,,,,,,300,100,30,,,,,,,,"D_RES: 2, AC: 3",,,,,,,5,7,,,,QUILTED_JACKET,,Quilted Jacket,Стеганая телогрейка,,"Хорошо защищает от холода, и немножко от урона."
+PONCHO,BODY,,,,,,,15,100,30,,,,,,,,"D_RES: 1, AC: 2",,,,,1,,6,7,,,,PONCHO,,Poncho,Пончо короткое,,
+CAMOUFLAGE_JACKET,BODY,,,,,,,300,100,30,,,,,,,,"D_RES: 1, AC: 2",,,,,,,5,7,,,,OFFICER_JACKET,,Camouflage Jacket,Камуфляжная куртка,,
+OFFICER_JACKET,BODY,,,,,,,700,100,30,,,,,,,,"D_RES: 1, AC: 1",,1,,,,,5,7,,,,OFFICER_JACKET,,Aryan Officer's Jacket,Арийский китель,,Китель арийского офицера. Носить арийскую форму где-либо кроме Кройцвайзбурга опасно для жизни - у арийцев достаточно врагов на этой планете.
+SOLDIER_JACKET,BODY,,,,,,,500,100,30,,,,,,,,"D_RES: 1, AC: 1",,1,,,,,5,7,,,,OFFICER_JACKET,,Aryan Soldier's Jacket,Арийский китель,,Китель арийского солдата. Носить арийскую форму где-либо кроме Кройцвайзбурга опасно для жизни - у арийцев достаточно врагов на этой планете.
+CASSOCK,BODY,,,,,,,120,100,30,,,,,,,,,,,,,,,5,7,,,,CASSOCK,,Cassock,Ряса чёрная,,
+OVERALL,BODY,,,,,,,150,100,30,,,,,,,,,,,,,,,4,7,,,,OVERALL,,Overall,Балахон монашеский,,
+BURNOUS,BODY,,,,,,,130,100,30,,,,,,,,,,,,,,,5,7,,,,BURNOUS,,Burnous,Бурнус,,
+POLICE_JACKET,BODY,,,100,1,,3,2000,100,50,999,,,,,,,"AC:+5, D_RES: +1",,,,1,,,5,7,,,,OFFICER_JACKET,,Policeman's Jacket,Куртка полицейского,"Body armor jacked weared by member's of police gangs. Policemans is disgusted on this planet, so you should not wear this.","Куртка-бронежилет члена полицейской банды. Приходить в ней в города - опасно для жизни, полицейских на этой планете очень не любят."
+RAGS_JACKET,BODY,,,,,,,10,100,30,,,,,,,,"D_RES: 1, AC: 1",-1,,,,1,,5,6,,,,RAGS_JACKET,,Rags Jacket,Драная куртка,,
+,,,,,,,,,,,,,,,,,,,,,,,,, , ,,,,,,,Штаны,,
+TROUSERS,LEGS,,,,,,,600,100,30,12,,,,,,,"D_RES: 1, AC: 1",,,,,,,3,7,,,,TROUSERS,,Trousers,Цивильные штаны,,
+RAGS_TROUSERS,LEGS,,,,,,,7,100,30,,,,,,,,"D_RES: 1, AC: 1",-1,,,,1,,3,7,,,,RAGS_TROUSERS,,Rags Trousers,Драные штаны,,
+LEATHER_TROUSERS,LEGS,,,,,,,200,100,30,,,,,,,,"D_RES: 1, AC: 1",,,1,,,,3,7,,,,,,Sexy Leather Trousers,Сексапильные кожаные штаны,Gay/whore wear. It's shameful for Space Marine to wear this.,Одежда гомосексуалистов и проституток. Десантнику стыдно надевать это.
+MILITARY_TROUSERS,LEGS,,,,,,,300,100,30,,,,,,,,"D_RES: 1, AC: 2",,,,,,,3,7,,,,CAMOUFLAGE_TROUSERS,,Military Trousers,Военные штаны,,
+RAPPER_TROUSERS,LEGS,,,,,,,150,100,30,,,,,,,,,-1,,,,,,3,7,,,,RAPPER_TROUSERS,,Hip Hop Trousers,Рэпперские штаны,,Рэпперские свободные штаны.
+RAPPER_TROUSERS_1,LEGS,,,,,,,220,100,30,,,,,,,,,,,,,,,3,7,,,,CAMOUFLAGE_TROUSERS,,Hip Hop Trousers,Рэпперские штаны,,Рэпперские заправленные штаны.
+CAMOUFLAGE_TROUSERS,LEGS,,,,,,,250,100,30,,,,,,,,"D_RES: 1, AC: 2",,,,,,,3,7,,,,CAMOUFLAGE_TROUSERS,,Camouflage Trousers,Камуфляжные штаны,,
+JEANS,LEGS,,,,,,,150,100,30,,,,,,,,"D_RES: 1, AC: 1",,,,,,,3,7,,,,,,Jeans,Джинсы в обтяг,,
+STRETCH_JEANS,LEGS,,,,,,,180,100,30,,,,,,,,"D_RES: 1, AC: 1",,,,,,,3,7,,,,TROUSERS,,Stretch Jeans,Джинсы свободные,,
+KIMONO,LEGS,,,,,,,120,100,30,,,,,,,,,,,,,,,3,7,,,,RAPPER_TROUSERS,,Kimono,Штаны кимоно,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ROBE_TROUSERS,LEGS,,,,,,,70,100,30,,,,,,,,"D_RES: 1, AC: 1",,,,,,,3,7,,,,TROUSERS,,Condemned's Trousers,Штаны к робе,,Штаны к промзоновской робе.
+OFFICER_BREECHES,LEGS,,,,,,,450,100,30,,,,,,,,"D_RES: 1, AC: 1",,1,,,,,3,7,,,,OFFICER_BREECHES,,Aryan Officer's Breeches,Галифэ арийские,,Форменные галифэ арийского офицера. Носить арийскую форму где-либо кроме Кройцвайзбурга опасно для жизни - у арийцев достаточно врагов на этой планете.
+SOLDIER_BREECHES,LEGS,,,,,,,350,100,30,,,,,,,,"D_RES: 1, AC: 1",,1,,,,,3,7,,,,OFFICER_BREECHES,,Aryan Soldier's Breeches,Штаны арийские,,Форменные штаны арийского солдата. Носить арийскую форму где-либо кроме Кройцвайзбурга опасно для жизни - у арийцев достаточно врагов на этой планете.
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Шорты,,
+SHORTS,LEGS,,,,,,,39,100,30,,,,,,,,,,,,,,,2,4,,,,SHORTS,,Shorts,Обрезанные штаны,,
+BRIDGES,LEGS,,,,,,,70,100,30,,,,,,,,,,,,,,,3,6,,,,BRIDGES,,Bridges,Бриджи,,
+LEATHER_SHORTS,LEGS,,,,,,,81,100,30,,,,,,,,,,,1,,,,4,3,,,,,,Sexy Leather Shorts,Сексапильные кожаные шорты,Gay/whore wear. It's shameful for Space Marine to wear this.,Одежда гомосексуалистов и проституток. Десантнику стыдно надевать это.
+WORKING_SHORTS,LEGS,,,,,,,49,100,30,,,,,,,,,,,,,,,2,4,,,,SHORTS,,Working Shorts,Рабочие шорты,,
+GOLF_SHORTS,LEGS,,,,,,,60,100,30,,,,,,,,,,,,,,,2,4,,,,SHORTS,,Golf Shorts,"Шорты ""Гольф-клуб""",,
+PANTS,LEGS,,,,,,,30,100,30,,,,,,,,,,,,,,,2,4,,,,SHORTS,,Pants,Трусы,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Юбки,,
+MEDIUM_SKIRT,LEGS,,,,,,,41,100,30,,,,,,,,,0,,1,,,,4,4,,,,MEDIUM_SKIRT,,Medium Skirt,Джинсовая юбка,Female wear. It's shameful for Space Marine to wear this.,Женская юбка. Десантнику стыдно надевать это.
+LONG_SKIRT,LEGS,,,,,,,72,100,30,,,,,,,,,0,,1,,,,4,7,,,,LONG_SKIRT,,Long Skirt,Длинная юбка,Female wear. It's shameful for Space Marine to wear this.,Женская юбка. Десантнику стыдно надевать это.
+MINI_SKIRT,LEGS,,,,,,,50,100,30,,,,,,,,,0,,1,,,,4,2,,,,MINI_SKIRT,,Mini Skirt,Мини-юбка,Female wear. It's shameful for Space Marine to wear this.,Женская юбка. Десантнику стыдно надевать это.
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Ботинки,,
+BOOTS_FOOTMAN,FEET,,,,,,,240,100,30,,,,,,,,,,,,,,,4,3,,,,BOOTS_FOOTMAN,,Footman Boots,"Ботинки ""Скороход""",,Высокие армейские ботинки.
+BOOTS_LANDROVER,FEET,,,,,,,80,100,30,,,,,,,,,,,,,,,4,3,,,,BOOTS_FOOTMAN,,Landrover Boots,"Ботинки ""Вездеход""",,Невысокие армейские ботинки.
+BOOTS_COLONIST,FEET,,,,,,,10,100,30,,,,,,,,,-1,,,,,,4,3,,,,BOOTS_FOOTMAN,,Colonist Boots,"Ботинки ""Колонист""",Low prestige boots.,"Непрестижные ботинки для тех, кто не может позволить себе лучшее. Сбрасываются с орбиты в качестве гумманитарной помощи."
+BOOTS_LEADER,FEET,,,,,,,1000,100,30,16,,,,,,,,1,,,,,,4,3,,,,BOOTS_FOOTMAN,,Leader Boots,"Ботинки ""Авторитет""",Prestige boots.,Ботинки авторитета. Внушают уважение к их обладателю.
+BOOTS_HIGH,FEET,,,,,,,400,100,30,,,,,,,,,,,,,,,4,4,,,,BOOTS_HIGH,,High Boots,Сапоги высокие,,
+PUTTEES,FEET,,,,,,,10,100,30,,,,,,,,,-1,,,,,,4,3,,,,,,Puttees,Обмотки,,
+GETA,FEET,,,,,,,20,100,30,,,,,,,,,-1,,,,,,4,2,,,,GETA,,Geta,Гэта,,Деревянные туфли с тряпочными лямками для ног.
+SHOES,FEET,,,,,,,14,100,30,,,,,,,,,-1,,,,,,4,2,,,,,,Shoes,Тапки,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Quest items,,
+BLACK_SQUARE_PICTURE,,,,,,,,,100,,,,,,,,,,,,,,,,3,3,,,1,,,Black Square Picture,Рисунок чёрного квадрата,,
+BLACK_SQUARE,,,,,,,,,100,,,,,,,,,,,,,,,,2,4,,,1,,,The Black Square,Чёрный квадрат,,
+WORLDMAP,,,,,,,,,100,,,,,,,,,,,,,,,,2,2,,,1,,,World Map,Карта мира,,
+NAKED_WOMEN_PICTURE,,,,,,,,,100,,,,,,,,,,,,,,,,3,3,,,1,,,Naked Woman Picture,Рисунок голой бабы,,
+CYAN,,,,,,,,,100,,,,,,,,,,,,,,,,2,1,,,1,,,Cyan,Цианистый калий,,Бутылочка с цианистым калием
+FINGER,,,,,,,,,100,,,,,,,,,,,,,,,,2,1,,,1,,,Finger,Палец,,
+REGISTER,,,,,,,,,100,,,,,,,,,,,,,,,,3,2,,,1,,,Register,Бегунок,,
+ROOSTER,,,,,,,,,100,,,,,,,,,,,,,,,,2,4,,,1,,,Rooster,Фигурка петуха,,
+ELECTROSCHEME,,,,,,,,,100,,,,,,,,,,,,,,,,6,4,,,1,,,Electroscheme,Электросхема,Electrical sheme of entire Industrial Zone.,Электросхема промзоны.
+SERV_SPOON,,,,,,,,,100,,,,,,,,,,,,,,,,5,2,,,1,,,Serving Spoon,Поварёшка,,
+BOTTLE_VODKA_FOR_GUVER,,,,,,,,,100,,,,,,1,,,,,,,,,,1,3,,,1,,,Vodka for Guver,Бутылка водки для Гувера,,
+GOLD_TOOTH,,,,,,,,,100,,,,,,,,,,,,,,,,2,2,,,1,,,Golden Tooth,Золотой зуб,,
+GOLD_TOOTH2,,,,,,,,,100,,,,,,,,,,,,,,,,2,2,,,1,,,Golden Tooth,Золотой зуб,,
+BINOCLE,,,,,,,,,100,,,,,,,,,,,,,,,,3,3,,,1,,,Binocle,Бинокль,,Бинокль
+MEGA_EGG,,,,,,,,,100,,,,,,,,,,,,,,,,3,3,,,1,,,Mega Egg,Яйцо слизня,,
+PASSWORD,,,,,,,,,100,,,,,,,,,,,,,,,,2,2,,,1,,,Password,"Стимулятор ""Пароль""",,
+HOMEMADE_COMPONENTS,,,,,,,,,100,,,,,,,,,,,,,,,,4,6,,,1,,,Stolen Components,Украденные детали,"Components, stolen by Fofan from assembly.","Мешок с деталями оружия, украденными Фофаном из сборочного цеха."
+GIBBOUS_EAR_RINGS,,,,,,,,,100,,,,,,,,,,,,,,,,2,2,,,1,,,Ear Rings,Мега-серьги Горбатого,,
+PHALLUS_CHINESE,,,,,,,,,100,,,,,,,,,,,,,,,,1,3,,,1,,,Chinese Phallus,Член желтый,,
+PHALLUS_BLACK,,,,,,,,,100,,,,,,,,,,,,,,,,1,3,,,1,,,Black Phallus,Член черный,,
+BAG_FAKEMONEY,,,,,,,,,100,,,,,,,,,,,,,,,,2,3,,,1,,,Bag with Money,Мешок с деньгами,,
+BAG_POTATOES,,,,,,,,,100,,,,,,,,,,,,,,,,5,4,,,1,,,Bag with Potato,Мешок с картошкой,,
+GLASS_KONDRATIJ,,,,,,,,,100,,,,,,,,,,,,,,,,2,2,,,1,,,Kondratoman Drink,Стакан с красной жидкостью,,
+TOBACCO_CIGARETTE,,,,,,,,1000,100,,,,,,,,,,,,,,,,2,1,,10,1,,,Tobacco Cigarette,Сигарета с табаком,,
+CARDS,,,,,,,,,100,,,,,,,,,,,,,,,,2,2,,,1,,,Cards,Карты,,
+SATAN,,,,,,,,,100,,,,,,,,,,,,,,,,3,4,,,1,,,"""The Satan"" Device","""Сатана"" ",Compact and powerful annihilation device. You need this to complete your primary misson.,Аннигиляционное устройство имперского производства. Предназначено для выполнения основной миссии.
+OSTRICH_GLAND,,,,,,,,,100,,,,,,,,,,,,,,,,2,2,,,1,,,Ostrich Gland,Ядовитая железа страуса,,
+YELLOWING_TABLET,,,,,,,,,100,,,,,,,,,,,,,,,,2,2,,,1,,,Yellowing Tablet,Таблетка желтящая,,
+JACKSONSR_TABLET,,,,,,,,,100,,,,,,,,,,,,,,,,2,2,,,1,,,Blacken Tablet,Таблетка чернящая,,
+TILTING_DOLL,,,,,,,,,100,,,,,,,,,,,,,,,,2,2,,,1,,,Tilting Doll,Ванька-Встанька,,
+GOLDENTOILET,,,,,,,,,100,,,,,,,,,,,,,,,,4,5,,,1,,,Golden Pan,Золотой унитаз,,
+BOOK_YOZEF,,,,,,,,,100,,,,,,,,,,,,,,,,3,3,,,1,,,Yozef Notebook,Записная книжка Йозефа,,
+ZUBR,,,,,,,,10,100,,,,,,,,,,,,,,,,1,3,,,1,,,Zubr Vodka,"Бутылка водки ""Зубр""",,"Водка местного производства. Выглядит и пахнет так, что пить её совсем не хочется."
+KLOPOMOR,,,,,,,,30,100,,,,,,,,,,,,,,,,1,3,,,1,,,"Cognac ""Klopomor""","Коньяк ""Клопомор""",,Коньяк местного производства. Облик и аромат полностью соответствует названию. Употреблять внутрь желания не возникает.
+TERMO9D,,,,,,,,50,100,,,,,,,,,,,,,,,,1,3,,,1,,,"Whisky ""Clear Thermonuclear""","Виски ""Чистый Термояд""",,"Виски местного производства. Интуиция подсказывает тебе, что лучше его не пробовать."
+OBLOM_BOX,,,,,,,,1000,100,,,,,,,,,,,,,,,,4,3,,,1,,,"Box of Vodka ""Oblom""","Ящик водки ""Облом""",,Ящик дешёвой водки местного производства. Шанс почувствовать себя счастливым есть у каждого.
+ZUBR_BOX,,,,,,,,2000,100,,,,,,,,,,,,,,,,3,3,,,1,,,"Box of Vodka ""Zubr""","Ящик водки ""Зубр""",,Ящик дорогой водки местного производства. Самая твёрдая валюта на планете.
+KLOPOMOR_BOX,,,,,,,,4000,100,,,,,,,,,,,,,,,,4,2,,,1,,,"Box of Cognac ""Klopomor""","Ящик коньяка ""Клопомор""",,Ящик коньяка местного производства. Клопихи пугают клопят этим напитком.
+TERMO9D_BOX,,,,,,,,7000,100,,,,,,,,,,,,,,,,3,2,,,1,,,"Box of Whisky ""Clear Thermonuclear""","Ящик виски ""Чистый Термояд""",,"Ящик виски местного производства. Судя по названию и этикетке, напиток просто атомный."
+OTTO_NOTES,,,,,,,,,100,,,,,,,,,,,,,,,,2,2,,,1,,,Otto Notes,Дневник Отто,,
+ZKEY,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,Zkey,Ключ от заначки,,
+KEY_GUVER,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,Guver Key,Ключ Гувера,,
+KEY_WOLF,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,Wolf Key,Ключ Волка,,
+KEY_SKLAD,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,Warehouse Key,Ключ от склада,,
+KEY_SMOKED,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,Smoked Key,Ключ Копчёного,,
+KEY_PLAGUE,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,Plague Key,Ключ Чумы
+KEY_SNOWBALL,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,Snowball Key,Ключ Снежка
+KEY_BARRACK,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,Slave Barrack Key,Ключ от барака
+KEY_DISHEVELLED,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,Dishevelled Key,Ключ от сундука Лохматого
+KEY_CHINESE,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,Chinese Key,Ключ от сундука китайцев
+KEY_CM_SECRET,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,Key,Ключ углерубов
+KEY_HEADLIGHT,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,Headlight Key,Ключ Фары
+KEY_OTTOGUTTENBERG,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,Otto Guttenberg Key,Ключ Отто Гуттенберга
+KEY_ELISTRAT,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,Elistrat Key,Ключ Елистрата
+KEY_DIOXINE,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,Orange Box Key,Ключ от ящика с апельсинами
+KEY_KARLOSTER,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,Karl Oster Key,Ключ Карла Остера
+KEY_RAFI08,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,Leader's Key,Ключ главаря
+KEY_LODANAP,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,Lodanap Home Key,Ключ от дома Лоданапа
+KEY_BUCKET,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,Bucket Key,Ключ Черпака
+KEY_MUPALOPOPONIPALAR,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,Mupalopoponipalar's Key,Ключ Мупалопопо Нипалара
+KEY_VALIDOL,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,Validol's Key,Ключ Валидола
+KEY_BARBAROSSA_SORTIR,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,Sortir Key,Ключ от сортира,,
+KEY_BLACKSQUARE,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,Black Square key,Ключ от ящика с Чёрным Квадратом,,
+KEY_CHANSINGO,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,Mandarin prison key,Ключ от тюрьмы мандарина,,
+SMG_RAT_DETAILS,,,,,,,,,100,,,,,,,,,,,,,,,,5,2,,,1,,,Smg details,"Детали ПП ""Крыса""",,
+POISON_GUVER,,,,,,,,,100,,,,,,,,,POISON: 1,,,,,,,2,3,,,1,,,Poison for Guver,Яд для Гувера,,
+SKOVORODKAS_TORCH,,,,,,,,,100,,,,,,,,,,,,,,,,3,2,,,1,,,Skovorodka's Torch,Фонарик Сковородки,,Этот фонарик может быть полезен некоторым авторитетным людям. Лучше его не выбрасывать.
+VALKYRIE_MAP,,,,,,,,,100,,,,,,,,,,,,,,,,2,2,,,1,,,Map of Dungeons with Valkyrie,Карта подземелий с Валькирией,,
+MAMED_HEAD,,,,,,,,,100,,,,,,,,,,,,,,,,3,3,,,1,,,Mamed Head,Голова Мамеда,,
+HANS_LETTER,,,,,,,,,100,,,,,,,,,,,,,,,,3,2,,,1,,,Hans Letter,Письмо Ганса,,
+LUPULU_EURO,AMULET,,,,,,,,100,,,,,,,,,,,,,,,,2,3,,,,,,Euro,Амулет Лупулу,,
+GONDURAS_TROUSERS,LEGS,,,,,,,,100,,,,,,,,,"D_RES: 1, AC: 1",,,,,1,,3,7,,,,,,Gonduras Sexy Leather Trousers,Сексапильные кожаные штаны Гондураса,Gay/whore wear. It's shameful for Space Marine to wear this.,Одежда гомосексуалистов и проституток. Десантнику стыдно надевать это.
+FANTIK_SHIRT,SHIRT,,,,,,,,100,,,,,,,,,,,,1,,,,4,6,,,,,,Fantik's Shirt,Майка Фантика,Gay/whore wear. It's shameful for Space Marine to wear this.,Одежда гомосексуалистов и проституток. Десантнику стыдно надевать это.
+LODANAP_HEAD,,,,,,,,,100,,,,,,,,,,,,,,,,3,3,,,1,,,Lodanap's Head,Голова Лоданапа,,
+CRICKET_CELL,,,,,,,,,100,,,,,,,,,,,,,,,,2,3,,,1,,,Cricket Cell,Клетка с дрессированным сверчком,,
+JAMAGUTO_SWORD,HAND,MELEE,0,0,0,0,4,100,100,70,12,,,0.49,1,8-20,"THRUST: 18, SWING: 22",,2,,,,,,10,2,25,,,,,Jamaguto's Sword,Меч Ямагуто,,
+KEY_ILIN,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,I Lin Key,Ключ И Линя,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Еда,,
+ACID,,,,,,,,5,100,,999,,,,,,,,,,,,,,2,2,,5,,,,Acid Mushroom,Гриб-кисляк,,
+BRUISE,,,,,,,,5,100,,999,,,,,,,,,,,,,,2,2,,5,,,,Blue Mushroom,Гриб-синяк,,
+MUSHROOM,,,,,,,,10,100,,999,,,,,,,,,,,,,,2,2,,5,,,,Mushroom,"Гриб ""Шляпник""",,
+BLEVANTON,,,,,,,,15,100,,999,,,,,,,,,,,,,,2,2,,5,,,,Blevanton,"Гриб ""Блевантон""",,
+SPOTTEDBLEVANTON,,,,,,,,40,100,,999,,,,,,,,,,,,,,2,2,,5,,,,Spotted Blevanton,"Гриб ""Пятнистый блевантон""",,
+GANJA,,,,,,,,80,100,,999,,,,,,,,,,,,,,2,2,,5,,,,High Grass,Листья кумар-травы,,
+WILDGANJA,,,,,,,,50,100,,999,,,,,,,,,,,,,,2,2,,5,,,,Wild High Grass,Листья дикой кумар-травы,,
+TOADSTOOL,,,,,,,,30,100,,999,,,,,,,,,,,,,,2,2,,5,,,,Toadstool,Козырная поганка,,
+TOADSTOOLBLUE,,,,,,,,35,100,,999,,,,,,,,,,,,,,2,2,,5,,,,Blue Toadstool,Поганка-синюха,,
+CARROT,,,,,,,,18,100,,,,,,,,HEAL: 20,HP: +5,,,,,,,1,2,,3,,,,Carrot,"""Кошачья морковка""",Food.,Еда.
+POTATOES,,,,,,,,25,100,,,,,,,,HEAL: 20,HP: +7,,,,,,,3,2,,3,,,,Potatoes,Картофель,Food.,Еда.
+RAT_FUR,,,,,,,,60,100,,999,,,,,,,,,,,,,,2,2,,5,,,,Rat Furs,Крысиные шкурки,,
+DOG_FUR,,,,,,,,90,100,,999,,,,,,,,,,,,,,4,3,,5,,,,Dog Furs,Собачьи шкуры,,
+BREAD,,,,,,,,10,100,,,,,,,,HEAL: 20,HP: +3,,,,,,,3,2,,3,,,,Bread,Хлеб,Food.,Еда.
+JERBOA_FUR,,,,,,,,150,100,,999,,,,,,,,,,,,,,2,2,,5,,,,Jerboa Furs,Шкурки тушканчиков,,
+MEAT,,,,,,,,75,100,,,,,,,,HEAL: 20,HP: +10,,,,,,,2,2,,3,,,,Meat,Мясо,Food.,Еда.
+WOOL_CORN,,,,,,,,50,100,,,,,,,,HEAL: 20,HP: +8,,,,,,,2,3,,3,,,,Corn,Шерстяная кукуруза,Food.,Еда.
+BLASTER_E95_NC,,,,,,,,,100,,,,,,,,,,,,,,,,10,3,,,1,,,E95 Assault Blaster,"Бластер Е-95 ""Тузик""",Standard Space Marine assault weapon. Accumulator is not charged.,Штурмовой бластер имперского производства. Аккумулятор разряжен.
+RAILGUN_NC,,,,,,,,,100,,,,,,,,,,,,,,,,12,4,,,1,,,EMIR61 Railgun,"Рэйлган ЭМИР-61 ""Шило"" ",Heavy Space Marine weapon with high piercing ability. Accumulator is not charged.,Рэйлган имперского производства. Обладает уникальной пробивной способностью. Аккумулятор разряжен.
+BLASTER_B7_NC,,,,,,,,,100,,,,,,,,,,,,,,,,3,2,,,1,,,B7 Blaster,"Бластер Б-7 ""Козырь""",Standard Space Marine weapon. Accumulator is not charged.,Одноручный бластер имперского производства. Аккумулятор разряжен.
+KEY_YELVILL_20_61_KUZNEC,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,key,Ключ от сундука,,Ключ от сундука Кузнеца из деревни Цзиньту.
+HAMMER_KUZNEC,,,,,,,,,100,,,,,,,,,,,,,,,,8,3,,,1,,,Hammer,Кувалда со смещённым центром тяжести,,Кувалда со смещенным центром тяжести. Абсолютно не пригодна для применения в бою.
+KEY_BANK_1,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,key,Ключ банковский.,,"Ключ, дающий право пройти в сейфовую комнату банка ""Конкретный"""
+KEY_BANK_PLAY,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,key,Твой ключ,,"Ключ от арендованного тобой сейфа в банке ""Конкретный"""
+KEY_BANK_S01,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,key,Ключ от сейфа,,"Ключ от одного из сейфов банка ""Конкретный"""
+KEY_BANK_S02,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,key,Ключ от сейфа,,"Ключ от одного из сейфов банка ""Конкретный"""
+KEY_BANK_S03,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,key,Ключ от сейфа,,"Ключ от одного из сейфов банка ""Конкретный"""
+KEY_BANK_SSS,,,,,,,,,100,,,,,,,,,,,,,,,,1,2,,,1,,,key,Ключ от сейфа на втором этаже,,"Ключ от с личного сейфа хозяина банка ""Конкретный"", Косаря. "
+KATANA_CHINEZE_HOLY,HAND,MELEE,0,0,0,0,4,1000,100,,12,,,0.49,1,15-45,"THRUST: 20, SWING: 28",,2,,,,,,10,2,25,,,,,Holy сhinese sword,Священный китайский меч,,Китайский двуручный меч ручной работы. Лезвие покрыто причудливыми узорами в виде древних иероглифов.

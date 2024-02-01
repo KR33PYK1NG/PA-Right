@@ -1,0 +1,39 @@
+
+# Кусок из каталога SEVA ######################################################################################################
+if distance(Boar,headlight) < 7 && done_headlight1 = 0 && done_headlight1_boar_coming_headlight = 0 && has_item(Boar,SMG_RAT_PROMZONE) = 1
+# run prodzone_dep_ammo_headlight
+endif
+
+if distance(Boar,headlight) < 7 && done_headlight1 = 0 && done_headlight1_boar_coming_headlight = 0 && item_weared(Boar,SMG_RAT_PROMZONE) = 1
+# run prodzone_dep_ammo_headlight
+endif
+
+
+#quest secure perimeter
+if distance(boar,57,39)<7 && quest_secure_perimeter_2 = "got"
+set quest_secure_perimeter_2 = "completed"
+endif
+
+if distance(boar,85,72)<7 && quest_secure_perimeter_4 = "got"
+set quest_secure_perimeter_4 = "completed"
+endif
+
+if quest_secure_perimeter_1 = "completed" && quest_secure_perimeter_2 = "completed" && quest_secure_perimeter_3 = "completed" && quest_secure_perimeter_4 = "completed" && quest_secure_perimeter = "got"
+set quest_secure_perimeter = "completed"
+endif
+# Кусок из каталога LENA ######################################################################################################
+
+# Кусок из каталога ALEX ######################################################################################################
+
+# Кусок из каталога VIT #######################################################################################################
+
+#отнять у кабана оружие из квеста варгана
+if (quest_wargun = "completed" || quest_wargun = "failed" ) && ( has_item(boar,rifle_knacker) || item_weared(boar,rifle_knacker) )
+run boar_die_by_guver
+endif
+if (quest_wargun = "completed" || quest_wargun = "failed" ) && ( has_item(boar,revolver_butcher) || item_weared(boar,revolver_butcher) )
+run boar_die_by_guver
+endif
+if (quest_wargun = "completed" || quest_wargun = "failed" ) && ( has_item(boar,shotgun_pencil) || item_weared(boar,shotgun_pencil) )
+run boar_die_by_guver
+endif

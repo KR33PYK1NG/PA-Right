@@ -1,0 +1,54 @@
+BEGN 0
+LABL Loop limit,"init"
+LINK Decision
+TERM Terminator,"Dialog 1"
+TEST Decision,"done_horn2"
+LINK Terminator.7
+LINK Terminator
+OPTN Decision,0,Terminator
+OPTN Decision,1,Terminator.7
+TERM Terminator.7,"Dialog 3"
+BEGN 1
+LABL Loop limit,"init"
+LINK Manual operation
+NODE Process,4
+LINK Terminator
+TEST Decision,"done_horn1"
+LINK Process
+LINK Process.9
+OPTN Decision,0,Process
+TERM Terminator,"Goto begin1"
+OPTN Decision,1,Process.9
+NODE Process.9,4
+LINK Terminator.14
+CHAR Manual operation,2,"leva"
+LINK Decision
+TERM Terminator.14,"Goto begin1"
+LABL Loop limit.15,"begin1"
+LINK Process.28
+LINK Terminator.10
+NODE Process.28,0
+LINK Terminator.30
+TERM Terminator.30,"end"
+TERM Terminator.10,"Dialog 2"
+BEGN 2
+NODE Process.17,0
+LINK Process.31
+TERM Terminator.26,"end"
+NODE Process.31,4
+LINK Process.33
+NODE Process.33,0
+LINK Terminator.26
+LABL Loop limit,"init"
+LINK Manual operation
+NODE Sheet.18,0
+CHAR Manual operation,2,"leva"
+LINK Process.17
+BEGN 3
+LABL Loop limit,"init"
+LINK Process
+NODE Process,4
+LINK Process.5
+NODE Process.5,0
+LINK Terminator.26
+TERM Terminator.26,"end"

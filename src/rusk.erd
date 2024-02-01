@@ -1,0 +1,200 @@
+BEGN 0
+TEST Decision,"Done_rusk2"
+LINK Decision.6
+LINK Terminator.4
+OPTN Decision,1,Decision.6
+TERM Terminator.4,"Dialog 1"
+OPTN Decision,0,Terminator.4
+LABL Loop limit,"init"
+LINK Decision
+TERM Terminator,"Dialog 2a"
+TEST Decision.6,"Done_rusk3"
+LINK Decision.10
+LINK Terminator
+OPTN Decision.6,1,Decision.10
+OPTN Decision.6,0,Terminator
+TERM Terminator.9,"Dialog 3a"
+TEST Decision.10," global_info_parovoz"
+LINK Terminator.15
+LINK Terminator.9
+OPTN Decision.10,1,Terminator.15
+OPTN Decision.10,0,Terminator.9
+TERM Terminator.15,"Dialog 3b"
+BEGN 1
+NODE Process,4
+LINK Loop limit.5
+LABL Loop limit,"init"
+LINK Process
+LABL Loop limit.5,""
+LINK Process.7
+LINK Loop limit.20
+LINK Loop limit.18
+NODE Process.7,0
+LINK Process.15
+NODE Process.9,0
+LINK Decision.54
+NODE Process.11,0
+LINK Terminator
+TERM Terminator,"Declare_war rusk
+Attack_target rusk,boar
+End"
+NODE Process.15,4
+LINK Loop limit.23
+NODE Sheet.16,0
+LABL Loop limit.18,"ham1"
+LINK Process.11
+LABL Loop limit.20,"kultur1"
+LINK Process.9
+LABL Loop limit.23,""
+LINK Terminator.27
+LINK Terminator.25
+LINK Process.29
+TERM Terminator.25,"Goto kultur1"
+TERM Terminator.27,"Goto ham1"
+NODE Process.29,0
+LINK Process.33
+NODE Process.33,4
+LINK Loop limit.32
+NODE Process.31,0
+LINK Loop limit.58
+LABL Loop limit.32,""
+LINK Process.49
+LINK Process.31
+NODE Process.38,4
+LINK Terminator.46
+TEST Decision,"Dead_guver"
+LINK Process.42
+LINK Process.38
+OPTN Decision,1,Process.42
+OPTN Decision,0,Process.38
+NODE Process.42,4
+LINK Loop limit.44
+LABL Loop limit.44,"rasskaz1"
+LINK Process.48
+TERM Terminator.46,"Goto rasskaz1"
+NODE Process.48,0
+LINK Terminator.53
+NODE Process.49,0
+LINK Terminator.51
+TERM Terminator.51,"Dialog 2"
+TERM Terminator.53,"Dialog 2"
+TEST Decision.54,"Reaction > 5"
+LINK Terminator
+LINK Terminator.60
+OPTN Decision.54,0,Terminator
+OPTN Decision.54,1,Terminator.60
+LABL Loop limit.58,"guver1"
+LINK Decision
+TERM Terminator.60,"Goto guver1"
+BEGN 2
+LABL Loop limit.53,"init"
+LINK Process.55
+NODE Process.55,4
+LINK Document
+LABL Loop limit.57,"end2"
+LINK Decision.58
+LINK Decision.6
+LINK Decision
+NODE Process.60,0
+LINK Terminator.64
+ADDI Document
+LINK Loop limit.57
+TERM Terminator.64,"end"
+NODE Sheet.13,0
+NODE Process.14,0
+LINK Process.18
+NODE Process.18,4
+LINK Document.24
+ADDI Document.24
+LINK Terminator.26
+TERM Terminator.26,"Set global_rusk2 = 1
+Set done_rusk2 = 1
+goto fff2"
+TEST Decision,"global_rusk2"
+LINK Process.14
+OPTN Decision,0,Process.14
+TEST Decision.6,"quest_steal_ammo = \"completed\""
+LINK Terminator.14
+LINK Decision.52
+OPTN Decision.6,1,Terminator.14
+TERM Terminator.14,"Dialog 3"
+NODE Process.20,0
+LINK Terminator
+TEST Decision.25,"dead_guver"
+LINK Process.20
+LINK Decision.40
+OPTN Decision.25,0,Process.20
+OPTN Decision.25,1,Decision.40
+TEST Decision.40,"dead_wolf"
+LINK Process
+LINK Process.46
+OPTN Decision.40,1,Process
+LABL Loop limit,"fff2"
+LINK Decision.25
+TERM Terminator,"run going_to_guver_from_rusk"
+OPTN Decision.40,0,Process.46
+NODE Process.46,0
+LINK Terminator.48
+TERM Terminator.48,"run going_to_wolf_from_rusk"
+NODE Process,0
+LINK Terminator.51
+TERM Terminator.51,"end"
+TEST Decision.52,"quest_steal_ammo = \"got\""
+LINK Sheet.55
+OPTN Decision.6,0,Decision.52
+OPTN Decision.52,1,Sheet.55
+NODE Sheet.55,0
+LINK Terminator.57
+TERM Terminator.57,"end"
+TEST Decision.58,"quest_steal_ammo = 0"
+LINK Process.60
+OPTN Decision.58,1,Process.60
+BEGN 2a
+LABL Loop limit,"init"
+LINK Process
+NODE Process,4
+LINK Terminator
+TERM Terminator,"Goto end2"
+BEGN 3
+LABL Loop limit,"init"
+LINK Process
+NODE Process,0
+LINK Process.6
+NODE Process.5,0
+LINK Process.11
+NODE Process.6,4
+LINK Process.23
+LABL Loop limit.8,"begin3"
+LINK Process.5
+LINK Process.19
+NODE Process.11,4
+LINK Process.13
+NODE Process.13,0
+LINK Document
+ADDI Document
+LINK Terminator
+TERM Terminator,"Set global_info_parovoz = 1
+end"
+NODE Process.19,0
+LINK Terminator.21
+TERM Terminator.21,"end"
+NODE Sheet.22,0
+NODE Process.23,0
+LINK Terminator.25
+TERM Terminator.25,"end"
+BEGN 3a
+LABL Loop limit,"init"
+LINK Process
+NODE Process,4
+LINK Process.5
+NODE Process.5,0
+LINK Terminator
+TERM Terminator,"end"
+BEGN 3b
+LABL Loop limit,"init"
+LINK Process
+NODE Process,4
+LINK Process.5
+NODE Process.5,0
+LINK Terminator
+TERM Terminator,"end"
