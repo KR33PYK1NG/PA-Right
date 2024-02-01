@@ -1,4 +1,20 @@
 STRID,EPISODE,DESCRIPTION,got1,got2,completed1,completed2,null1,null2,failed,XP,NAME1,NAME2,BUILDINGS,HUMANS,MARKERS,SUB
+quest_train_search_nearby,,,,,,,,,,,,"Изучить окрестности паровоза.",,,,3
+quest_train_search_nearby_1,,,,,,,,,,,,"Осмотреть вагоны и тачки.",,,"farm_mine,47,37",
+quest_train_search_nearby_2,,,,,,,,,,,,"Осмотреть ящики для оружия.",,,"farm_mine,54,29",
+quest_train_search_nearby_3,,,,,,,,,,,,"Допросить внешнего охранника.",,train_witness,,
+quest_train_notify_leva,,,,,,,,,,150,,"Оповестить Лёву об окончании проверки.",,leva,,
+quest_train_find_leva_scape,,,,,,,,,,,,"Разузнать у Сухаря, где квартируется Лёва.","dep_ammo,ammofactory",rusk,,
+quest_train_search_leva_scape,,,,,,,,,,,,"Обыскать шкафчики охраны паровоза.","dep_ammo,guardbarracks",,"dep_ammo,16,67",
+quest_train_repel_ambush,,,,,,,,,,250,,"Отбиться от охранников и выбраться из здания.","dep_ammo,guardbarracks",,"dep_ammo,33,55",
+quest_train_ask_about_list,,,,,,,,,,,,"Расспросить Сухаря о людях из списка Лёвы.","dep_ammo,ammofactory",rusk,,
+quest_train_find_escapee,,,,,,,,,,,,"Найти Баклажана на складе у ворот.","entry,warehouse2",,,
+quest_train_help_escapee,,,,,,,,,,,,"Помочь Баклажану разобраться с Пиявкой.",,train_bully,,
+quest_train_notify_escapee,,,,,,,,,,100,,"Сообщить Баклажану о решении проблемы.",,train_escapee,,
+quest_train_boss_report,,,,,,,,,,200,,"Вернуться к начальству с докладом.","fact_ent,office","guver,wolf",,
+quest_train_boss_repel_first_wave,,,,,,,,,,100,,"Отбить первую атаку мятежников.",,,,
+quest_train_boss_repel_second_wave,,,,,,,,,,100,,"Отбить вторую атаку мятежников.",,,,
+quest_train_boss_repel_final_wave,,,,,,,,,,100,,"Отбить финальную атаку мятежников.",,,,
 quest_game_target_find,,,goblin,,shipcave_consgrou_start.ers,,,,,0,,Цель игры: найти строящийся космический челнок.,,,,0
 quest_game_target_destroy,,,shipcave_consgrou_start.ers,blackskin9,shipcave_consgrou_destroy_4elnok.ers,,,,,1000000,,Цель игры: уничтожить строящийся космический челнок.,,,,0
 quest_escape_from_prodzone,,,goblin,,,,,,,300,,Найти возможность совершить побег с промзоны.,,,,0
@@ -77,7 +93,7 @@ quest_wargun,prodzone-mini,,wargun1,,wargun3,,,,wargun3,,"Испытать образцы оружи
 quest_steal_ammo,Контрабанда патронов,,Guver13,Wolf6,Guver14,Wolf7,,,,200,Расследовать хищения патронов.,Расследовать хищения патронов.,,,-,2
 quest_steal_ammo_1,Контрабанда патронов,,Guver13,Wolf6,pimple4,,,,,0,Допросить Пупыря.,Допросить Пупыря.,"dep_ammo,guardbarracks",pimple,-,-1
 quest_steal_ammo_2,Контрабанда патронов,,Guver13,Wolf6,Guver14,Wolf7,,,,0,Доложить о результатах.,Доложить о результатах.,"fact_ent,office","guver,wolf",-,-1
-quest_secure_ammo,Контрабанда патронов,,Guver14,Wolf7,,,prodzone_farm_mine_leva.ers,,,30,Расследовать факты побегов людей с промзоны.,Расследовать факты побегов людей с промзоны.,,horn,,0
+quest_secure_ammo,Контрабанда патронов,,Guver14,Wolf7,,,prodzone_farm_mine_leva.ers,,,30,Расследовать факты побегов людей с промзоны.,Расследовать факты побегов людей с промзоны.,,,,0
 quest_trainstop,Побег с промзоны,,trainstop,,trainstop,,,,,30,Идти пешком в направлении города Северный.,Идти пешком в направлении города Северный.,,,"trainstop,2,52",0
 quest_talk_with_gibbous,,,norcity_rubbish_lazarus_destroy.ers,,norcity_rubbish.ers,,,,,150,Добыть приличную одежду у человека по имени Горбатый.,Добыть приличную одежду у человека по имени Горбатый.,,gibbous,,0
 quest_enter_norcity,,,norcity_rubbish_start.ers,,norcity_rubbish.ers,,,,,100,Пройти внутрь Северного города.,Пройти внутрь Северного города.,,,"rubbish,2,72",0

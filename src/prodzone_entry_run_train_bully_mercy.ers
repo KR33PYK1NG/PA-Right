@@ -1,0 +1,4 @@
+set quest_train_help_escapee = "completed"
+set quest_train_notify_escapee = "got"
+
+quest_log boar,quest_train_notify_escapee

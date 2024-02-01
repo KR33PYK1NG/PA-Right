@@ -1,0 +1,63 @@
+BEGN 0
+LABL 1____________________,"1____________________"
+LABL l_init,"init"
+LINK l_info
+TERM t_exit,"end"
+LABL 2____________________,"2____________________"
+LABL l_info,"info"
+LINK p_info_0_desc_a
+NODE p_info_0_desc_a,4
+LINK p_info_1_tower_q
+NODE p_info_1_tower_q,0
+LINK p_info_1_tower_a
+NODE p_info_1_tower_a,4
+LINK p_info_2_ask_q
+NODE p_info_2_ask_q,0
+LINK p_info_2_ask_a
+NODE p_info_2_ask_a,4
+LINK l_info_ask
+LABL 3____________________,"3____________________"
+LABL l_info_ask,"info_ask"
+LINK d_info_ask_1_escapee_q
+LINK d_info_ask_1_checks_q
+LINK d_info_ask_1_coal_q
+LINK d_info_ask_1_thanks_q
+NODE p_info_ask_1_escapee_q,0
+LINK p_info_ask_1_escapee_a
+NODE p_info_ask_1_escapee_a,4
+LINK t_info_ask_1_escapee_a
+LINK l_info_ask
+NODE p_info_ask_1_checks_q,0
+LINK p_info_ask_1_checks_a
+NODE p_info_ask_1_checks_a,4
+LINK t_info_ask_1_checks_a
+LINK l_info_ask
+NODE p_info_ask_1_coal_q,0
+LINK p_info_ask_1_coal_a
+NODE p_info_ask_1_coal_a,4
+LINK t_info_ask_1_coal_a
+LINK p_info_ask_2_hide_q
+NODE p_info_ask_2_hide_q,0
+LINK p_info_ask_2_hide_a
+NODE p_info_ask_2_hide_a,4
+LINK l_info_ask
+NODE p_info_ask_1_thanks_q,0
+LINK p_info_ask_1_thanks_a
+NODE p_info_ask_1_thanks_a,4
+LINK p_info_ask_2_done_e
+NODE p_info_ask_2_done_e,0
+LINK t_run_done
+LINK t_exit
+TEST d_info_ask_1_escapee_q,"train_witness_asked_escapee = 0"
+OPTN d_info_ask_1_escapee_q,1,p_info_ask_1_escapee_q
+TEST d_info_ask_1_checks_q,"train_witness_asked_checks = 0"
+OPTN d_info_ask_1_checks_q,1,p_info_ask_1_checks_q
+TEST d_info_ask_1_coal_q,"train_witness_asked_coal = 0"
+OPTN d_info_ask_1_coal_q,1,p_info_ask_1_coal_q
+TEST d_info_ask_1_thanks_q,"train_witness_asked_escapee = 1 & train_witness_asked_checks = 1 && train_witness_asked_coal = 1"
+OPTN d_info_ask_1_thanks_q,1,p_info_ask_1_thanks_q
+TERM t_info_ask_1_escapee_a,"set train_witness_asked_escapee = 1"
+TERM t_info_ask_1_checks_a,"set train_witness_asked_checks = 1"
+TERM t_info_ask_1_coal_a,"set train_witness_asked_coal = 1"
+TERM t_run_done,"run prodzone_farm_mine_run_train_witness_done"
+LABL 4____________________,"4____________________"

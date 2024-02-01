@@ -1,6 +1,41 @@
 BEGN 0
-LABL Loop limit,"init"
+LABL 1____________________,"1____________________"
+LABL l_override,"override"
+LINK d_finale
+LINK d_ambient
 LINK Decision
+TEST d_finale,"quest_train_boss_repel_final_wave = \"completed\""
+OPTN d_finale,1,l_finale
+TEST d_ambient,"quest_train_search_nearby != 0"
+OPTN d_ambient,1,l_ambient
+TERM t_exit,"end"
+LABL 2____________________,"2____________________"
+LABL l_finale,"finale"
+LINK p_finale_0_scared_a
+NODE p_finale_0_scared_a,4
+LINK p_finale_1_prepare_q
+NODE p_finale_1_prepare_q,0
+LINK p_finale_1_prepare_a
+NODE p_finale_1_prepare_a,4
+LINK p_finale_2_doit_q
+NODE p_finale_2_doit_q,0
+LINK p_finale_2_doit_a
+NODE p_finale_2_doit_a,4
+LINK p_finale_3_escape_e
+NODE p_finale_3_escape_e,0
+LINK t_run_escape
+LINK t_exit
+TERM t_run_escape,"run prodzone_farm_mine_run_horn_escape"
+LABL 3____________________,"3____________________"
+LABL l_ambient,"ambient"
+LINK p_ambient_0_afk_a
+NODE p_ambient_0_afk_a,4
+LINK p_ambient_1_exit_e
+NODE p_ambient_1_exit_e,0
+LINK t_exit
+LABL 4____________________,"4____________________"
+LABL Loop limit,"init"
+LINK l_override
 TERM Terminator,"Dialog 1"
 TEST Decision,"done_horn2"
 LINK Terminator.7

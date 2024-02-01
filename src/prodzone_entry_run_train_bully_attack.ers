@@ -1,0 +1,7 @@
+wear_item train_bully,hatchet
+wear_item train_bully_pal_1,club
+wear_item train_bully_pal_2,club
+
+declare_war $100
+
+attack_target $100,boar

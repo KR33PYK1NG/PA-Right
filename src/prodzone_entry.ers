@@ -1,3 +1,13 @@
+if quest_train_find_escapee = "got" && distance(boar,41,56) < 2
+run prodzone_entry_party
+endif
+
+if quest_train_help_escapee = "got" && distance(boar,$100) > 1000
+set quest_train_help_escapee = "completed"
+set quest_train_notify_escapee = "got"
+
+quest_log boar,quest_train_notify_escapee
+endif
 
 # Кусок из каталога SEVA ######################################################################################################
 if distance(boar,10,43) < 2 && global_prodzone_entry_1 = 0

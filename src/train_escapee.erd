@@ -1,0 +1,167 @@
+BEGN 0
+LABL 1____________________,"1____________________"
+LABL l_init,"init"
+LINK d_found
+LINK d_quest
+LINK l_ambient
+TEST d_found,"quest_train_find_escapee = \"got\""
+OPTN d_found,1,l_found
+TEST d_quest,"quest_train_help_escapee = \"got\" || quest_train_notify_escapee = \"got\""
+OPTN d_quest,1,l_quest
+TERM t_exit,"end"
+LABL 2____________________,"2____________________"
+LABL l_found,"found"
+LINK p_found_0_desc_a
+NODE p_found_0_desc_a,4
+LINK p_found_1_off_q
+LINK p_found_1_scare_q
+NODE p_found_1_off_q,0
+LINK p_found_1_off_a
+NODE p_found_1_off_a,4
+LINK l_panic
+NODE p_found_1_scare_q,0
+LINK p_found_1_scare_a
+NODE p_found_1_scare_a,4
+LINK p_found_2_deserve_q
+NODE p_found_2_deserve_q,0
+LINK p_found_2_deserve_a
+NODE p_found_2_deserve_a,4
+LINK l_panic
+LABL 3____________________,"3____________________"
+LABL l_panic,"panic"
+LINK p_panic_1_dontcare_q
+NODE p_panic_1_dontcare_q,0
+LINK p_panic_1_dontcare_a
+NODE p_panic_1_dontcare_a,4
+LINK d_panic_2_threat_q
+LINK p_panic_2_block_q
+NODE p_panic_2_threat_q,0
+LINK d_panic_2_threat_a
+NODE p_panic_2_threat_a,4
+LINK p_panic_3_hurry_q
+NODE p_panic_3_hurry_q,0
+LINK l_trust
+NODE p_panic_2_block_q,0
+LINK p_panic_2_block_a
+NODE p_panic_2_block_a,4
+LINK d_panic_3_music_q
+LINK p_panic_3_help_q
+NODE p_panic_3_music_q_100,0
+LINK t_panic_3_music_q_100
+LINK p_panic_3_music_a
+NODE p_panic_3_music_q_200,0
+LINK t_panic_3_music_q_200
+LINK p_panic_3_music_a
+NODE p_panic_3_music_q_300,0
+LINK t_panic_3_music_q_300
+LINK p_panic_3_music_a
+NODE p_panic_3_music_a,4
+LINK p_panic_4_give_q
+NODE p_panic_4_give_q,0
+LINK l_trust
+NODE p_panic_3_help_q,0
+LINK p_panic_3_help_a
+NODE p_panic_3_help_a,4
+LINK p_panic_4_where_q
+NODE p_panic_4_where_q,0
+LINK p_panic_4_where_a
+NODE p_panic_4_where_a,4
+LINK p_panic_5_bully_e
+NODE p_panic_5_bully_e,0
+LINK t_run_bully
+LINK t_exit
+TEST d_panic_2_threat_q,"reaction - 0 > 7"
+OPTN d_panic_2_threat_q,1,p_panic_2_threat_q
+TEST d_panic_2_threat_a,"reaction > 7"
+OPTN d_panic_2_threat_a,1,p_panic_2_threat_a
+TEST d_panic_3_music_q,"reaction - 0 > 3 && has_money(boar,100)"
+OPTN d_panic_3_music_q,1,p_panic_3_music_q_100
+OPTN d_panic_3_music_q,0,d_panic_3_music_q_200
+TEST d_panic_3_music_q_200,"reaction - 0 > 1 && has_money(boar,200)"
+OPTN d_panic_3_music_q_200,1,p_panic_3_music_q_200
+OPTN d_panic_3_music_q_200,0,d_panic_3_music_q_300
+TEST d_panic_3_music_q_300,"has_money(boar,300)"
+OPTN d_panic_3_music_q_300,1,p_panic_3_music_q_300
+TERM t_panic_3_music_q_100,"give_money boar,-100"
+TERM t_panic_3_music_q_200,"give_money boar,-200"
+TERM t_panic_3_music_q_300,"give_money boar,-300"
+TERM t_run_bully,"run prodzone_entry_run_train_escapee_bully"
+LABL 4____________________,"4____________________"
+LABL l_quest,"quest"
+LINK p_quest_0_hi_a
+NODE p_quest_0_hi_a,4
+LINK d_quest_1_status_q
+NODE p_quest_1_status_q_done_mercy,0
+LINK l_trust
+NODE p_quest_1_status_q_done_kill,0
+LINK l_trust
+NODE p_quest_1_status_e_notyet,0
+LINK t_exit
+TEST d_quest_1_status_q,"quest_train_notify_escapee = \"got\""
+OPTN d_quest_1_status_q,1,d_quest_1_status_q_done
+OPTN d_quest_1_status_q,0,p_quest_1_status_e_notyet
+TEST d_quest_1_status_q_done,"dead_train_bully = 0"
+OPTN d_quest_1_status_q_done,1,p_quest_1_status_q_done_mercy
+OPTN d_quest_1_status_q_done,0,p_quest_1_status_q_done_kill
+LABL 5____________________,"5____________________"
+LABL l_trust,"trust"
+LINK p_trust_0_know_a
+NODE p_trust_0_know_a,4
+LINK p_trust_1_burn_q
+NODE p_trust_1_burn_q,0
+LINK p_trust_1_burn_a
+NODE p_trust_1_burn_a,4
+LINK l_trust_ask
+LABL 6____________________,"6____________________"
+LABL l_trust_ask,"trust_ask"
+LINK d_trust_ask_1_others_q
+LINK d_trust_ask_1_why_q
+LINK d_trust_ask_1_how_q
+LINK d_trust_ask_1_crime_q
+LINK d_trust_ask_1_decide_e
+NODE p_trust_ask_1_others_q,0
+LINK p_trust_ask_1_others_a
+NODE p_trust_ask_1_others_a,4
+LINK t_trust_ask_1_others_a
+LINK l_trust_ask
+NODE p_trust_ask_1_why_q,0
+LINK p_trust_ask_1_why_a
+NODE p_trust_ask_1_why_a,4
+LINK t_trust_ask_1_why_a
+LINK l_trust_ask
+NODE p_trust_ask_1_how_q,0
+LINK p_trust_ask_1_how_a
+NODE p_trust_ask_1_how_a,4
+LINK t_trust_ask_1_how_a
+LINK l_trust_ask
+NODE p_trust_ask_1_crime_q,0
+LINK p_trust_ask_1_crime_a
+NODE p_trust_ask_1_crime_a,4
+LINK t_trust_ask_1_crime_a
+LINK l_trust_ask
+NODE p_trust_ask_1_decide_e,0
+LINK t_run_decide
+LINK t_exit
+TEST d_trust_ask_1_others_q,"train_escapee_asked_others = 0"
+OPTN d_trust_ask_1_others_q,1,p_trust_ask_1_others_q
+TEST d_trust_ask_1_why_q,"train_escapee_asked_why = 0"
+OPTN d_trust_ask_1_why_q,1,p_trust_ask_1_why_q
+TEST d_trust_ask_1_how_q,"train_escapee_asked_how = 0"
+OPTN d_trust_ask_1_how_q,1,p_trust_ask_1_how_q
+TEST d_trust_ask_1_crime_q,"train_escapee_asked_crime = 0"
+OPTN d_trust_ask_1_crime_q,1,p_trust_ask_1_crime_q
+TEST d_trust_ask_1_decide_e,"train_escapee_asked_others = 1 && train_escapee_asked_why = 1 && train_escapee_asked_how = 1 && train_escapee_asked_crime = 1"
+OPTN d_trust_ask_1_decide_e,1,p_trust_ask_1_decide_e
+TERM t_trust_ask_1_others_a,"set train_escapee_asked_others = 1"
+TERM t_trust_ask_1_why_a,"set train_escapee_asked_why = 1"
+TERM t_trust_ask_1_how_a,"set train_escapee_asked_how = 1"
+TERM t_trust_ask_1_crime_a,"set train_escapee_asked_crime = 1"
+TERM t_run_decide,"run prodzone_entry_run_train_escapee_decide"
+LABL 7____________________,"7____________________"
+LABL l_ambient,"ambient"
+LINK p_ambient_0_hiding_a
+NODE p_ambient_0_hiding_a,4
+LINK p_ambient_1_good_e
+NODE p_ambient_1_good_e,0
+LINK t_exit
+LABL 8____________________,"8____________________"

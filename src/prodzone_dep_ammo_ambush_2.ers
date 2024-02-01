@@ -1,0 +1,79 @@
+####################
+user_control off
+fade_out
+####################
+
+create_char train_ambush_wave02_elbrus,28,55,0,102
+create_char train_ambush_wave02_guard02,31,54,0,102
+create_char train_ambush_wave02_guard03,31,56,0,102
+create_char train_ambush_wave02_guard04,25,54,0,102
+
+turn train_ambush_wave02_elbrus,180,wait
+turn train_ambush_wave02_guard02,180,wait
+turn train_ambush_wave02_guard03,180,wait
+turn train_ambush_wave02_guard04,170,wait
+
+change_pose train_ambush_wave02_guard02,1,wait
+change_pose train_ambush_wave02_guard03,1,wait
+change_pose train_ambush_wave02_guard04,2,wait
+
+teleport_to boar,16,61
+
+turn boar,270,wait
+
+change_pose boar,0,wait
+
+camera_move_float 22,60,0,1.55,0.2,10
+camera_move_float 22,55,0,1.55,0.2,10,5
+
+move_to boar,16,55
+
+wait 1
+
+####################
+fade_in
+####################
+
+wait 2,5
+
+turn_to boar,train_ambush_wave02_elbrus
+
+wait 1,5
+
+change_pose boar,1,wait
+
+talk boar,wow,0,surprise
+
+wait_speech 1
+
+camera_move_float 31.4,55,-4,1.55,1,10
+
+talk train_ambush_wave02_elbrus,destroy,0,gest4
+
+wait 1
+
+move_to train_ambush_wave02_guard02,23,54
+
+wait 1
+
+move_to train_ambush_wave02_guard03,23,56
+
+play_anim train_ambush_wave02_elbrus,misc_93,wait
+
+wear_item train_ambush_wave02_elbrus,hammer,wait
+
+move_to train_ambush_wave02_elbrus,26,55,wait
+
+declare_war $100
+declare_war $101
+declare_war $102
+
+attack_target $100,boar
+attack_target $101,boar
+attack_target $102,boar
+
+camera_move_float 16,55,0,1.55,0.8,12
+
+####################
+user_control on
+####################

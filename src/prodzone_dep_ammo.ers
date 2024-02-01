@@ -1,3 +1,34 @@
+if quest_train_search_leva_scape = "got" && has_item(boar,TRAIN_LEVA_PAPER)
+run prodzone_dep_ammo_ambush_1
+endif
+
+if quest_train_repel_ambush = "got" && distance(boar,33,55) < 2
+run prodzone_dep_ammo_ambush_3
+endif
+
+if global_train_ambush_1 = 0 && quest_train_repel_ambush = "got" && distance(boar,16,67) < 2
+set global_train_ambush_1 = 1
+
+wear_item train_ambush_wave01_guard02,club
+wear_item train_ambush_wave01_guard03,club
+wear_item train_ambush_wave01_guard04,pistol_stupid
+
+declare_war $101
+
+attack_target $101,boar
+endif
+
+if global_train_ambush_2 = 0 && quest_train_repel_ambush = "got" && distance(boar,15,59) < 2
+set global_train_ambush_2 = 1
+
+run prodzone_dep_ammo_ambush_2
+endif
+
+if global_train_ambush_door = 0 && global_train_ambush_2 = 1 && distance(boar,$100) > 1000 && distance(boar,$101) > 1000 && distance(boar,$102) > 1000
+set global_train_ambush_door = 1
+
+close_door 0,32,55
+endif
 
 # Кусок из каталога SEVA ######################################################################################################
 if distance(Boar,headlight) < 7 && done_headlight1 = 0 && done_headlight1_boar_coming_headlight = 0 && has_item(Boar,SMG_RAT_PROMZONE) = 1

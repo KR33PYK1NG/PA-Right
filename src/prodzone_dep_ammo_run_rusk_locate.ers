@@ -1,0 +1,12 @@
+close_container 0,20,65
+close_container 0,21,65
+close_container 0,22,65
+close_container 0,23,65
+
+create_item scape_01,TRAIN_LEVA_PAPER
+
+set done_rusk3 = 1
+set quest_train_find_leva_scape = "completed"
+set quest_train_search_leva_scape = "got"
+
+quest_log boar,quest_train_search_leva_scape

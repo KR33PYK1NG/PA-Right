@@ -1,0 +1,50 @@
+####################
+user_control off
+fade_out
+####################
+
+open_door 0,41,57
+
+create_char train_escapee,32,61
+
+turn train_escapee,180,wait
+
+teleport_to boar,41,56
+
+change_pose boar,0,wait
+
+unwear_item boar,weapon,wait
+
+play_anim train_escapee,misc_75
+
+wait 0,3
+
+talk train_escapee,krug
+
+camera_move_float 38,61,0,4.95,0.2,10
+
+####################
+fade_in
+####################
+
+move_to boar,41,59,wait
+
+turn_to boar,train_escapee,wait
+
+play_anim boar,idle_06,wait
+
+camera_move_float 31,57,0,3.5,0.2,10
+
+teleport_to boar,37,61
+
+move_to boar,33,61,wait
+
+turn_to boar,train_escapee,wait
+
+change_pose boar,1,wait
+
+wait_speech 1
+
+camera_move_float 33,61,0,3.5,0.8,12
+
+dialog train_escapee,0

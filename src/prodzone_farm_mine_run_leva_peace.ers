@@ -1,0 +1,11 @@
+create_char train_witness,29,44
+
+turn train_witness,180
+
+unwear_item leva,weapon
+
+set quest_train_search_nearby = "got"
+
+quest_log boar,quest_train_search_nearby
+
+game_log boar,log

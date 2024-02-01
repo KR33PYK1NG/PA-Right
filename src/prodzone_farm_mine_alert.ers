@@ -1,0 +1,50 @@
+####################
+user_control off
+fade_out
+####################
+
+create_char leva,44,25
+
+turn_to leva,horn,wait
+
+camera_move_float 47.23,22.00,0.00,2.32,0.33,6.22
+
+####################
+fade_in
+####################
+
+talk leva,spy,0,gest1
+
+wait_speech 1
+
+####################
+fade_out
+####################
+
+teleport_to leva,43,26
+teleport_to boar,35,33
+
+turn_to leva,boar,wait
+turn_to boar,leva,wait
+turn_to horn,boar,wait
+
+change_pose leva,1,wait
+change_pose boar,1,wait
+
+unwear_item boar,weapon,wait
+
+camera_move_float 36,33,0,0.87,0.8,12
+
+####################
+fade_in
+####################
+
+talk boar,wtf,0,crank
+
+play_anim horn,misc_62
+
+move_to leva,36,32,wait
+
+wait 1
+
+dialog leva,0

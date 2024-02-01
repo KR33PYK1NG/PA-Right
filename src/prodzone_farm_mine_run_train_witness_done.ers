@@ -1,0 +1,32 @@
+####################
+user_control off
+####################
+
+camera_move_float 29,44,0,0.87,0.8,12
+
+create_char guver,50,44
+
+turn_to train_witness,guver,wait
+
+wait 1
+
+####################
+fade_out
+####################
+
+destroy_char guver
+
+teleport_to_level train_witness,31,44,2
+
+turn train_witness,270,wait
+
+create_item train_witness,RIFLE_PIPE
+
+wear_item train_witness,RIFLE_PIPE,wait
+
+set quest_train_search_nearby_3 = "completed"
+
+####################
+fade_in
+user_control on
+####################

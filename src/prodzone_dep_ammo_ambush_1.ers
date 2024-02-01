@@ -1,0 +1,56 @@
+####################
+user_control off
+fade_out
+####################
+
+lock_door 0,32,55
+
+destroy_char prod_a_black_broom01
+destroy_char prod_a_yellow_broom02
+
+create_char train_ambush_wave01_guard01,16,69,0,100
+create_char train_ambush_wave01_guard02,14,71,0,101
+create_char train_ambush_wave01_guard03,15,72,0,101
+create_char train_ambush_wave01_guard04,14,63,0,101
+
+turn_to train_ambush_wave01_guard02,train_ambush_wave01_guard03,wait
+turn_to train_ambush_wave01_guard03,train_ambush_wave01_guard02,wait
+
+teleport_to boar,20,66
+
+turn boar,270,wait
+
+change_pose boar,1,wait
+
+camera_move_float 16,68,0,4.9,0.2,10
+
+####################
+fade_in
+####################
+
+move_to train_ambush_wave01_guard01,18,67,wait
+
+turn_to train_ambush_wave01_guard01,boar,wait
+turn_to boar,train_ambush_wave01_guard01
+
+talk train_ambush_wave01_guard01,ahuel,0,finger
+
+wait_speech 1
+
+wear_item train_ambush_wave01_guard01,hatchet,wait
+
+declare_war $100
+
+attack_target $100,boar
+
+set global_disabled_map_movement = 1
+set quest_train_search_leva_scape = "completed"
+set quest_train_repel_ambush = "got"
+
+quest_log boar,quest_train_repel_ambush
+
+camera_move_float 20,66,0,4.9,0.8,12
+
+####################
+user_control on
+####################

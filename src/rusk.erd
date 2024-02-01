@@ -1,4 +1,76 @@
 BEGN 0
+LABL 1____________________,"1____________________"
+LABL l_override,"override"
+LINK d_scape0
+LINK d_scape1
+LINK d_list
+LINK Decision
+TEST d_scape0,"quest_train_find_leva_scape = \"got\" && done_rusk3 = 0"
+OPTN d_scape0,1,l_scape0
+TEST d_scape1,"quest_train_find_leva_scape = \"got\" && done_rusk3 = 1"
+OPTN d_scape1,1,l_scape1
+TEST d_list,"quest_train_ask_about_list = \"got\""
+OPTN d_list,1,l_list
+TERM t_exit,"end"
+LABL 2____________________,"2____________________"
+LABL l_scape0,"scape0"
+LINK p_scape0_0_hi_a
+NODE p_scape0_0_hi_a,4
+LINK p_scape0_1_replace_q
+NODE p_scape0_1_replace_q,0
+LINK p_scape0_1_replace_a
+NODE p_scape0_1_replace_a,4
+LINK p_scape0_2_task_q
+NODE p_scape0_2_task_q,0
+LINK l_scape
+LABL 3____________________,"3____________________"
+LABL l_scape1,"scape1"
+LINK p_scape1_0_hi_a
+NODE p_scape1_0_hi_a,4
+LINK p_scape1_1_task_q
+NODE p_scape1_1_task_q,0
+LINK l_scape
+LABL 4____________________,"4____________________"
+LABL l_scape,"scape"
+LINK p_scape_0_task_a
+NODE p_scape_0_task_a,4
+LINK p_scape_1_locate_e
+NODE p_scape_1_locate_e,0
+LINK t_run_locate
+LINK t_exit
+TERM t_run_locate,"run prodzone_dep_ammo_run_rusk_locate"
+LABL 5____________________,"5____________________"
+LABL l_list,"list"
+LINK d_list_0_wtf_a
+NODE p_list_0_wtf_a_guver,4
+LINK p_list_1_paper_q
+NODE p_list_0_wtf_a_wolf,4
+LINK p_list_1_paper_q
+NODE p_list_1_paper_q,0
+LINK d_list_1_paper_a
+NODE p_list_1_paper_a_guver,4
+LINK p_list_2_calm_q
+NODE p_list_1_paper_a_wolf,4
+LINK p_list_2_calm_q
+NODE p_list_2_calm_q,0
+LINK p_list_2_calm_a
+NODE p_list_2_calm_a,4
+LINK p_list_3_who_q
+NODE p_list_3_who_q,0
+LINK p_list_3_who_a
+NODE p_list_3_who_a,4
+LINK p_list_4_escapee_e
+NODE p_list_4_escapee_e,0
+LINK t_run_escapee
+LINK t_exit
+TEST d_list_0_wtf_a,"dead_guver = 0"
+OPTN d_list_0_wtf_a,1,p_list_0_wtf_a_guver
+OPTN d_list_0_wtf_a,0,p_list_0_wtf_a_wolf
+TEST d_list_1_paper_a,"dead_guver = 0"
+OPTN d_list_1_paper_a,1,p_list_1_paper_a_guver
+OPTN d_list_1_paper_a,0,p_list_1_paper_a_wolf
+TERM t_run_escapee,"run prodzone_dep_ammo_run_rusk_escapee"
+LABL 6____________________,"6____________________"
 TEST Decision,"Done_rusk2"
 LINK Decision.6
 LINK Terminator.4
@@ -6,7 +78,7 @@ OPTN Decision,1,Decision.6
 TERM Terminator.4,"Dialog 1"
 OPTN Decision,0,Terminator.4
 LABL Loop limit,"init"
-LINK Decision
+LINK l_override
 TERM Terminator,"Dialog 2a"
 TEST Decision.6,"Done_rusk3"
 LINK Decision.10

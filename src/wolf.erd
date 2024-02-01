@@ -1,6 +1,46 @@
 BEGN 0
-LABL Loop limit.32,"init"
+LABL 1____________________,"1____________________"
+LABL l_override,"override"
+LINK d_brief
 LINK Decision.32
+TEST d_brief,"quest_train_boss_report = \"got\""
+OPTN d_brief,1,l_brief
+TERM t_exit,"end"
+LABL 2____________________,"2____________________"
+LABL l_brief,"brief"
+LINK p_brief_0_how_a
+NODE p_brief_0_how_a,4
+LINK p_brief_1_story_q
+NODE p_brief_1_story_q,0
+LINK p_brief_1_story_a
+NODE p_brief_1_story_a,4
+LINK p_brief_2_plan_q
+NODE p_brief_2_plan_q,0
+LINK p_brief_2_plan_a
+NODE p_brief_2_plan_a,4
+LINK p_brief_3_rifle_e
+LINK p_brief_3_shotgun_e
+LINK p_brief_3_sniper_e
+LINK p_brief_3_sword_e
+NODE p_brief_3_rifle_e,0
+LINK t_run_rifle
+LINK t_exit
+NODE p_brief_3_shotgun_e,0
+LINK t_run_shotgun
+LINK t_exit
+NODE p_brief_3_sniper_e,0
+LINK t_run_sniper
+LINK t_exit
+NODE p_brief_3_sword_e,0
+LINK t_run_sword
+LINK t_exit
+TERM t_run_rifle,"run prodzone_fact_ent_run_boss_rifle"
+TERM t_run_shotgun,"run prodzone_fact_ent_run_boss_shotgun"
+TERM t_run_sniper,"run prodzone_fact_ent_run_boss_sniper"
+TERM t_run_sword,"run prodzone_fact_ent_run_boss_sword"
+LABL 3____________________,"3____________________"
+LABL Loop limit.32,"init"
+LINK l_override
 TEST Decision.12,"Done_guver8_become_wolf_security"
 LINK Terminator.15
 LINK Terminator

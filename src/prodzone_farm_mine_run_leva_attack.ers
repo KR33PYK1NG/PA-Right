@@ -1,0 +1,42 @@
+####################
+user_control off
+####################
+
+play_anim boar,attack_15
+
+wait 0,5
+
+take_damage leva,1000
+
+wait 1,5
+
+camera_move_float 37.53,35.30,0.10,0.55,0.28,9.42
+
+turn_to boar,horn
+
+talk horn,steal,0,gest2
+
+wait_speech 1
+
+####################
+fade_out
+####################
+
+create_char locomotive_guard1,48,26,0,4
+
+declare_war $4
+
+attack_target $4,boar
+
+set global_farm_mine_att = 1
+set quest_secure_ammo = 0
+set quest_keep_horn = "got"
+
+quest_log boar,quest_keep_horn
+
+camera_move_float 36,33,0,0.87,0.8,12
+
+####################
+fade_in
+user_control on
+####################

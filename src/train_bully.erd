@@ -1,0 +1,38 @@
+BEGN 0
+LABL 1____________________,"1____________________"
+LABL l_init,"init"
+LINK d_stop
+LINK l_ambient
+TEST d_stop,"quest_train_help_escapee = \"got\""
+OPTN d_stop,1,l_stop
+TERM t_exit,"end"
+LABL 2____________________,"2____________________"
+LABL l_stop,"stop"
+LINK p_stop_0_desc_a
+NODE p_stop_0_desc_a,4
+LINK d_stop_1_fuckoff_q
+LINK p_stop_1_attack_e
+NODE p_stop_1_fuckoff_q,0
+LINK d_stop_1_fuckoff_a
+NODE p_stop_1_fuckoff_a,4
+LINK p_stop_2_mercy_e
+NODE p_stop_2_mercy_e,0
+LINK t_run_mercy
+LINK t_exit
+NODE p_stop_1_attack_e,0
+LINK t_run_attack
+LINK t_exit
+TEST d_stop_1_fuckoff_q,"reaction - 0 > 5"
+OPTN d_stop_1_fuckoff_q,1,p_stop_1_fuckoff_q
+TEST d_stop_1_fuckoff_a,"reaction > 5"
+OPTN d_stop_1_fuckoff_a,1,p_stop_1_fuckoff_a
+TERM t_run_mercy,"run prodzone_entry_run_train_bully_mercy"
+TERM t_run_attack,"run prodzone_entry_run_train_bully_attack"
+LABL 3____________________,"3____________________"
+LABL l_ambient,"ambient"
+LINK p_ambient_0_desc_a
+NODE p_ambient_0_desc_a,4
+LINK p_ambient_1_move_e
+NODE p_ambient_1_move_e,0
+LINK t_exit
+LABL 4____________________,"4____________________"

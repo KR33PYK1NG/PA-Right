@@ -1,0 +1,16 @@
+####################
+user_control off
+####################
+
+change_pose leva,1,wait
+
+move_to leva,22,34,wait
+
+destroy_char leva
+
+join_party gabriel
+join_party hamster
+
+####################
+user_control on
+####################

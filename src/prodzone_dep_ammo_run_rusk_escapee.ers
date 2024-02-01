@@ -1,0 +1,6 @@
+set quest_train_ask_about_list = "completed"
+set quest_train_find_escapee = "got"
+
+quest_log boar,quest_train_find_escapee
+
+game_log boar,log

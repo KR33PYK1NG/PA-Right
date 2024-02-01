@@ -1,0 +1,6 @@
+####################
+user_control off
+fade_out
+####################
+
+run prodzone_farm_mine_destroy_loop

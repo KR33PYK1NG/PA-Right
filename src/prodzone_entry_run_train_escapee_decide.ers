@@ -1,0 +1,15 @@
+turn_to train_escapee,boar
+
+if quest_train_find_escapee = "got"
+set quest_train_find_escapee = "completed"
+endif
+
+if quest_train_notify_escapee = "got"
+set quest_train_notify_escapee = "completed"
+endif
+
+set quest_train_boss_report = "got"
+
+quest_log boar,quest_train_boss_report
+
+game_log boar,log

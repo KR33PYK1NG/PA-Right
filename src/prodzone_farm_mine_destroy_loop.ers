@@ -1,0 +1,261 @@
+set global_train_showdown_items_destroyed = 0
+
+if item_weared(boar,RIFLE_KNACKER)
+unwear_item boar,RIFLE_KNACKER,wait
+endif
+
+if has_item(boar,RIFLE_KNACKER)
+set global_train_showdown_items_destroyed = global_train_showdown_items_destroyed + 1
+
+destroy_item boar,RIFLE_KNACKER
+endif
+
+if item_weared(boar,SHOTGUN_CHUCHUNDRA)
+unwear_item boar,SHOTGUN_CHUCHUNDRA,wait
+endif
+
+if has_item(boar,SHOTGUN_CHUCHUNDRA)
+set global_train_showdown_items_destroyed = global_train_showdown_items_destroyed + 1
+
+destroy_item boar,SHOTGUN_CHUCHUNDRA
+endif
+
+if item_weared(boar,RIFLE_FULL_PIPE)
+unwear_item boar,RIFLE_FULL_PIPE,wait
+endif
+
+if has_item(boar,RIFLE_FULL_PIPE)
+set global_train_showdown_items_destroyed = global_train_showdown_items_destroyed + 1
+
+destroy_item boar,RIFLE_FULL_PIPE
+endif
+
+if item_weared(boar,KATANA_CHINEZE)
+unwear_item boar,KATANA_CHINEZE,wait
+endif
+
+if has_item(boar,KATANA_CHINEZE)
+set global_train_showdown_items_destroyed = global_train_showdown_items_destroyed + 1
+
+destroy_item boar,KATANA_CHINEZE
+endif
+
+if item_weared(boar,SHOTGUN_PENCIL)
+unwear_item boar,SHOTGUN_PENCIL,wait
+endif
+
+if has_item(boar,SHOTGUN_PENCIL)
+set global_train_showdown_items_destroyed = global_train_showdown_items_destroyed + 1
+
+destroy_item boar,SHOTGUN_PENCIL
+endif
+
+if item_weared(boar,SHOTGUN_FRIEND)
+unwear_item boar,SHOTGUN_FRIEND,wait
+endif
+
+if has_item(boar,SHOTGUN_FRIEND)
+set global_train_showdown_items_destroyed = global_train_showdown_items_destroyed + 1
+
+destroy_item boar,SHOTGUN_FRIEND
+endif
+
+if item_weared(boar,RIFLE_PIPE)
+unwear_item boar,RIFLE_PIPE,wait
+endif
+
+if has_item(boar,RIFLE_PIPE)
+set global_train_showdown_items_destroyed = global_train_showdown_items_destroyed + 1
+
+destroy_item boar,RIFLE_PIPE
+endif
+
+if item_weared(boar,REVOLVER_BUTCHER)
+unwear_item boar,REVOLVER_BUTCHER,wait
+endif
+
+if has_item(boar,REVOLVER_BUTCHER)
+set global_train_showdown_items_destroyed = global_train_showdown_items_destroyed + 1
+
+destroy_item boar,REVOLVER_BUTCHER
+endif
+
+if item_weared(boar,SHOTGUN_BEST_FRIEND)
+unwear_item boar,SHOTGUN_BEST_FRIEND,wait
+endif
+
+if has_item(boar,SHOTGUN_BEST_FRIEND)
+set global_train_showdown_items_destroyed = global_train_showdown_items_destroyed + 1
+
+destroy_item boar,SHOTGUN_BEST_FRIEND
+endif
+
+if item_weared(boar,POISON_GRENADE)
+unwear_item boar,POISON_GRENADE,wait
+endif
+
+if has_item(boar,POISON_GRENADE)
+set global_train_showdown_items_destroyed = global_train_showdown_items_destroyed + 1
+
+destroy_item boar,POISON_GRENADE
+endif
+
+if item_weared(boar,SMG_RAT_PROMZONE_GUARD)
+unwear_item boar,SMG_RAT_PROMZONE_GUARD,wait
+endif
+
+if item_count(boar,SMG_RAT_PROMZONE_GUARD) > global_train_showdown_owned_rats
+set global_train_showdown_items_destroyed = global_train_showdown_items_destroyed + 1
+
+destroy_item boar,SMG_RAT_PROMZONE_GUARD
+endif
+
+if item_weared(boar,PISTOL_STUPID)
+unwear_item boar,PISTOL_STUPID,wait
+endif
+
+if item_count(boar,PISTOL_STUPID) > global_train_showdown_owned_stupids
+set global_train_showdown_items_destroyed = global_train_showdown_items_destroyed + 1
+
+destroy_item boar,PISTOL_STUPID
+endif
+
+if item_weared(boar,HELMET)
+unwear_item boar,HELMET,wait
+endif
+
+if has_item(boar,HELMET)
+set global_train_showdown_items_destroyed = global_train_showdown_items_destroyed + 1
+
+destroy_item boar,HELMET
+endif
+
+if item_weared(boar,IRON_CHAINMAIL)
+unwear_item boar,IRON_CHAINMAIL,wait
+endif
+
+if has_item(boar,IRON_CHAINMAIL)
+set global_train_showdown_items_destroyed = global_train_showdown_items_destroyed + 1
+
+destroy_item boar,IRON_CHAINMAIL
+endif
+
+if item_weared(boar,LIGHT_BODYARMOR)
+unwear_item boar,LIGHT_BODYARMOR,wait
+endif
+
+if has_item(boar,LIGHT_BODYARMOR)
+set global_train_showdown_items_destroyed = global_train_showdown_items_destroyed + 1
+
+destroy_item boar,LIGHT_BODYARMOR
+endif
+
+if item_weared(boar,TRAIN_FAKE_HELMET)
+unwear_item boar,TRAIN_FAKE_HELMET,wait
+endif
+
+if has_item(boar,TRAIN_FAKE_HELMET)
+set global_train_showdown_items_destroyed = global_train_showdown_items_destroyed + 1
+
+destroy_item boar,TRAIN_FAKE_HELMET
+endif
+
+if item_weared(boar,TRAIN_FAKE_CUIRASS)
+unwear_item boar,TRAIN_FAKE_CUIRASS,wait
+endif
+
+if has_item(boar,TRAIN_FAKE_CUIRASS)
+set global_train_showdown_items_destroyed = global_train_showdown_items_destroyed + 1
+
+destroy_item boar,TRAIN_FAKE_CUIRASS
+endif
+
+if item_weared(boar,TRAIN_FAKE_IRON_CHAINMAIL)
+unwear_item boar,TRAIN_FAKE_IRON_CHAINMAIL,wait
+endif
+
+if has_item(boar,TRAIN_FAKE_IRON_CHAINMAIL)
+set global_train_showdown_items_destroyed = global_train_showdown_items_destroyed + 1
+
+destroy_item boar,TRAIN_FAKE_IRON_CHAINMAIL
+endif
+
+if item_weared(boar,TRAIN_FAKE_LIGHT_BODYARMOR)
+unwear_item boar,TRAIN_FAKE_LIGHT_BODYARMOR,wait
+endif
+
+if has_item(boar,TRAIN_FAKE_LIGHT_BODYARMOR)
+set global_train_showdown_items_destroyed = global_train_showdown_items_destroyed + 1
+
+destroy_item boar,TRAIN_FAKE_LIGHT_BODYARMOR
+endif
+
+if item_weared(boar,TRAIN_FAKE_STUDDED_LEATHER_JACKET)
+unwear_item boar,TRAIN_FAKE_STUDDED_LEATHER_JACKET,wait
+endif
+
+if has_item(boar,TRAIN_FAKE_STUDDED_LEATHER_JACKET)
+set global_train_showdown_items_destroyed = global_train_showdown_items_destroyed + 1
+
+destroy_item boar,TRAIN_FAKE_STUDDED_LEATHER_JACKET
+endif
+
+if item_weared(boar,TRAIN_FAKE_STUDDED_LEATHER_TROUSERS)
+unwear_item boar,TRAIN_FAKE_STUDDED_LEATHER_TROUSERS,wait
+endif
+
+if has_item(boar,TRAIN_FAKE_STUDDED_LEATHER_TROUSERS)
+set global_train_showdown_items_destroyed = global_train_showdown_items_destroyed + 1
+
+destroy_item boar,TRAIN_FAKE_STUDDED_LEATHER_TROUSERS
+endif
+
+if item_weared(boar,ROBE)
+unwear_item boar,ROBE,wait
+endif
+
+if has_item(boar,ROBE)
+set global_train_showdown_items_destroyed = global_train_showdown_items_destroyed + 1
+
+destroy_item boar,ROBE
+endif
+
+if item_weared(boar,ROBE_BLACK)
+unwear_item boar,ROBE_BLACK,wait
+endif
+
+if has_item(boar,ROBE_BLACK)
+set global_train_showdown_items_destroyed = global_train_showdown_items_destroyed + 1
+
+destroy_item boar,ROBE_BLACK
+endif
+
+if item_weared(boar,ROBE_TROUSERS)
+unwear_item boar,ROBE_TROUSERS,wait
+endif
+
+if has_item(boar,ROBE_TROUSERS)
+set global_train_showdown_items_destroyed = global_train_showdown_items_destroyed + 1
+
+destroy_item boar,ROBE_TROUSERS
+endif
+
+if global_train_showdown_items_destroyed > 0
+run prodzone_farm_mine_destroy_loop
+elseif
+set global_train_showdown_items_destroyed = 999
+
+create_item boar,ROBE_BLACK.G
+create_item boar,ROBE_TROUSERS.B
+
+wear_item boar,ROBE_BLACK,wait
+wear_item boar,ROBE_TROUSERS,wait
+
+####################
+fade_in
+####################
+
+wait 1
+
+dialog train_gabriel,0
+endif

@@ -1,3 +1,142 @@
+set global_train_showdown_seconds = global_train_showdown_seconds + 1
+
+if global_train_showdown_stage = 0 && quest_train_boss_report = "completed"
+set global_train_showdown_stage = 11
+set global_train_showdown_seconds = 0
+
+popup_multi boar,before_first_wave,8
+endif
+
+if global_train_showdown_stage = 11 && global_train_showdown_seconds = 10
+set global_train_showdown_stage = 20
+
+create_char train_showdown_wave01_worker01,21,16,0,100
+create_char train_showdown_wave01_worker02,23,16,0,100
+create_char train_showdown_wave01_worker03,5,50,0,100
+create_char train_showdown_wave01_worker04,5,52,0,100
+create_char train_showdown_wave01_guard01,24,56,0,100
+create_char train_showdown_wave01_guard02,26,56,0,100
+create_char train_showdown_wave01_guard03,49,39,0,100
+create_char train_showdown_wave01_guard04,49,41,0,100
+create_char train_showdown_wave01_guard05,49,25,0,100
+create_char train_showdown_wave01_worker05,49,27,0,100
+
+declare_war $100
+
+attack_target $100,$0
+
+popup_multi boar,start_first_wave,8
+
+set quest_train_boss_repel_first_wave = "got"
+
+quest_log boar,quest_train_boss_repel_first_wave
+endif
+
+if global_train_showdown_stage = 20 && distance(boar,$100) > 1000
+set global_train_showdown_stage = 21
+set global_train_showdown_seconds = 0
+
+popup_multi boar,before_second_wave,8
+
+set quest_train_boss_repel_first_wave = "completed"
+endif
+
+if global_train_showdown_stage = 21 && global_train_showdown_seconds = 10
+set global_train_showdown_stage = 30
+
+create_char train_showdown_wave02_worker01,49,39,0,101
+create_char train_showdown_wave02_worker02,49,41,0,101
+create_char train_showdown_wave02_worker03,49,25,0,101
+create_char train_showdown_wave02_worker04,49,27,0,101
+create_char train_showdown_wave02_guard01,21,16,0,101
+create_char train_showdown_wave02_guard02,23,16,0,101
+create_char train_showdown_wave02_guard03,5,50,0,101
+create_char train_showdown_wave02_guard04,5,52,0,101
+create_char train_showdown_wave02_guard05,24,56,0,101
+create_char train_showdown_wave02_guard06,26,56,0,101
+
+declare_war $101
+
+attack_target $101,$0
+
+popup_multi boar,start_second_wave,8
+
+set quest_train_boss_repel_second_wave = "got"
+
+quest_log boar,quest_train_boss_repel_second_wave
+endif
+
+if global_train_showdown_stage = 30 && distance(boar,$101) > 1000
+set global_train_showdown_stage = 31
+set global_train_showdown_seconds = 0
+
+popup_multi boar,before_final_wave,8
+
+set quest_train_boss_repel_second_wave = "completed"
+endif
+
+if global_train_showdown_stage = 31 && global_train_showdown_seconds = 10 && dead_yoke = 0
+create_char train_showdown_wave03_yoke,25,55,0,102
+endif
+
+if global_train_showdown_stage = 31 && global_train_showdown_seconds = 10
+set global_train_showdown_stage = 40
+
+create_char train_showdown_wave03_worker01,21,16,0,102
+create_char train_showdown_wave03_worker02,23,16,0,102
+create_char train_showdown_wave03_worker03,5,50,0,102
+create_char train_showdown_wave03_guard01,5,52,0,102
+create_char train_showdown_wave03_guard02,24,56,0,102
+create_char train_showdown_wave03_guard03,26,56,0,102
+create_char train_showdown_wave03_guard04,49,39,0,102
+create_char train_showdown_wave03_guard05,49,41,0,102
+create_char train_showdown_wave03_guard06,49,25,0,102
+create_char train_showdown_wave03_leva,49,27,0,102
+
+declare_war $102
+
+attack_target $102,$0
+
+popup_multi boar,start_final_wave,8
+
+set quest_train_boss_repel_final_wave = "got"
+
+quest_log boar,quest_train_boss_repel_final_wave
+endif
+
+if global_train_showdown_stage = 40 && distance(boar,$102) > 1000
+set global_train_showdown_stage = 50
+set quest_train_boss_repel_final_wave = "completed"
+
+run prodzone_farm_mine_cleanup
+endif
+
+if global_farm_mine_att = 0 && quest_secure_ammo = 0 && done_horn2 = 1
+set global_farm_mine_att = 1
+
+run prodzone_farm_mine_leva
+endif
+
+if global_farm_mine_alert = 0 && quest_secure_ammo = "got" && done_horn2 = 1
+set global_farm_mine_alert = 1
+
+run prodzone_farm_mine_alert
+endif
+
+if quest_train_search_nearby_1 = "got" && distance(boar,47,37) < 2
+set quest_train_search_nearby_1 = "completed"
+endif
+
+if quest_train_search_nearby_2 = "got" && distance(boar,54,29) < 2
+set quest_train_search_nearby_2 = "completed"
+endif
+
+if quest_train_search_nearby = "got" && quest_train_search_nearby_1 = "completed" && quest_train_search_nearby_2 = "completed" && quest_train_search_nearby_3 = "completed"
+set quest_train_search_nearby = "completed"
+set quest_train_notify_leva = "got"
+
+quest_log boar,quest_train_notify_leva
+endif
 
 # Кусок из каталога SEVA ######################################################################################################
 #if dead_horn = 1
@@ -14,11 +153,6 @@ endif
 
 if distance(boar,32,35) < 10 && done_yoke1_going_to_locomotive = 0 && dead_yoke = 0 && global_yoke_fight = 0 && global_yoke_pass = 0
 run prodzone_farm_mine_1        
-endif
-
-if done_horn2 = 1 && global_farm_mine_att = 0
-set global_farm_mine_att = 1
-run prodzone_farm_mine_leva
 endif
 
 if global_farm_mine_att = 1 && dead_yoke = 1 && dead_locomotive_Guard1 = 1 && global_farm_mine_att2 = 0 && dead_leva = 1

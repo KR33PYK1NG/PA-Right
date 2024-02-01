@@ -1,0 +1,17 @@
+create_char train_bully,43,82,0,100
+create_char train_bully_pal_1,44,81,0,100
+create_char train_bully_pal_2,45,83,0,100
+
+turn_to train_bully_pal_1,train_bully
+turn_to train_bully_pal_2,train_bully
+
+turn train_bully,10
+turn train_bully_pal_1,10
+turn train_bully_pal_2,10
+
+turn_to train_escapee,boar
+
+set quest_train_find_escapee = "completed"
+set quest_train_help_escapee = "got"
+
+quest_log boar,quest_train_help_escapee

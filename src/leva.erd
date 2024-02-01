@@ -1,0 +1,143 @@
+BEGN 0
+LABL 1____________________,"1____________________"
+LABL l_init,"init"
+LINK d_alert
+LINK d_search
+LINK d_gloat
+LINK d_raid
+LINK l_ambient
+TEST d_alert,"quest_train_search_nearby = 0"
+OPTN d_alert,1,l_alert
+TEST d_search,"quest_train_search_nearby = \"got\""
+OPTN d_search,1,l_search
+TEST d_gloat,"quest_train_notify_leva = \"got\""
+OPTN d_gloat,1,l_gloat
+TEST d_raid,"quest_train_boss_report = \"completed\""
+OPTN d_raid,1,l_raid
+TERM t_exit,"end"
+LABL 2____________________,"2____________________"
+LABL l_alert,"alert"
+LINK p_alert_0_desc_a
+NODE p_alert_0_desc_a,4
+LINK p_alert_1_explain_q
+LINK p_alert_1_attack_e
+NODE p_alert_1_explain_q,0
+LINK d_alert_1_explain_a
+NODE p_alert_1_explain_a_guver,4
+LINK p_alert_2_from_q
+NODE p_alert_1_explain_a_wolf,4
+LINK p_alert_2_from_q
+NODE p_alert_2_from_q,0
+LINK d_alert_2_from_a
+NODE p_alert_2_from_a_guver,4
+LINK l_alert_ask
+NODE p_alert_2_from_a_wolf,4
+LINK l_alert_ask
+NODE p_alert_1_attack_e,0
+LINK t_run_attack
+LINK t_exit
+TEST d_alert_1_explain_a,"dead_guver = 0"
+OPTN d_alert_1_explain_a,1,p_alert_1_explain_a_guver
+OPTN d_alert_1_explain_a,0,p_alert_1_explain_a_wolf
+TEST d_alert_2_from_a,"dead_guver = 0"
+OPTN d_alert_2_from_a,1,p_alert_2_from_a_guver
+OPTN d_alert_2_from_a,0,p_alert_2_from_a_wolf
+TERM t_run_attack,"run prodzone_farm_mine_run_leva_attack"
+LABL 3____________________,"3____________________"
+LABL l_alert_ask,"alert_ask"
+LINK d_alert_ask_1_horn_q
+LINK d_alert_ask_1_rails_q
+LINK d_alert_ask_1_spies_q
+LINK d_alert_ask_1_cargo_q
+LINK d_alert_ask_1_peace_e
+NODE p_alert_ask_1_horn_q,0
+LINK p_alert_ask_1_horn_a
+NODE p_alert_ask_1_horn_a,4
+LINK t_alert_ask_1_horn_a
+LINK l_alert_ask
+NODE p_alert_ask_1_rails_q,0
+LINK p_alert_ask_1_rails_a
+NODE p_alert_ask_1_rails_a,4
+LINK t_alert_ask_1_rails_a
+LINK l_alert_ask
+NODE p_alert_ask_1_spies_q,0
+LINK p_alert_ask_1_spies_a
+NODE p_alert_ask_1_spies_a,4
+LINK t_alert_ask_1_spies_a
+LINK l_alert_ask
+NODE p_alert_ask_1_cargo_q,0
+LINK p_alert_ask_1_cargo_a
+NODE p_alert_ask_1_cargo_a,4
+LINK t_alert_ask_1_cargo_a
+LINK d_alert_ask_2_mine_q
+NODE p_alert_ask_2_mine_q,0
+LINK p_alert_ask_2_mine_a
+NODE p_alert_ask_2_mine_a,4
+LINK l_alert_ask
+NODE p_alert_ask_1_peace_e,0
+LINK t_run_peace
+LINK t_exit
+TEST d_alert_ask_1_horn_q,"leva_asked_horn = 0"
+OPTN d_alert_ask_1_horn_q,1,p_alert_ask_1_horn_q
+TEST d_alert_ask_1_rails_q,"leva_asked_rails = 0"
+OPTN d_alert_ask_1_rails_q,1,p_alert_ask_1_rails_q
+TEST d_alert_ask_1_spies_q,"leva_asked_spies = 0"
+OPTN d_alert_ask_1_spies_q,1,p_alert_ask_1_spies_q
+TEST d_alert_ask_1_cargo_q,"leva_asked_cargo = 0"
+OPTN d_alert_ask_1_cargo_q,1,p_alert_ask_1_cargo_q
+TEST d_alert_ask_1_peace_e,"leva_asked_horn = 1 && leva_asked_rails = 1 && leva_asked_spies = 1 && leva_asked_cargo = 1"
+OPTN d_alert_ask_1_peace_e,1,p_alert_ask_1_peace_e
+TEST d_alert_ask_2_mine_q,"quest_bluehelmet = \"completed\""
+OPTN d_alert_ask_2_mine_q,1,p_alert_ask_2_mine_q
+OPTN d_alert_ask_2_mine_q,0,l_alert_ask
+TERM t_alert_ask_1_horn_a,"set leva_asked_horn = 1"
+TERM t_alert_ask_1_rails_a,"set leva_asked_rails = 1"
+TERM t_alert_ask_1_spies_a,"set leva_asked_spies = 1"
+TERM t_alert_ask_1_cargo_a,"set leva_asked_cargo = 1"
+TERM t_run_peace,"run prodzone_farm_mine_run_leva_peace"
+LABL 4____________________,"4____________________"
+LABL l_search,"search"
+LINK p_search_0_hurry_a
+NODE p_search_0_hurry_a,4
+LINK p_search_1_patience_e
+NODE p_search_1_patience_e,0
+LINK t_exit
+LABL 5____________________,"5____________________"
+LABL l_gloat,"gloat"
+LINK p_gloat_0_sup_a
+NODE p_gloat_0_sup_a,4
+LINK p_gloat_1_suspect_e
+NODE p_gloat_1_suspect_e,0
+LINK t_run_suspect
+LINK t_exit
+TERM t_run_suspect,"run prodzone_farm_mine_run_leva_suspect"
+LABL 6____________________,"6____________________"
+LABL l_ambient,"ambient"
+LINK p_ambient_0_why_a
+NODE p_ambient_0_why_a,4
+LINK p_ambient_1_walk_e
+NODE p_ambient_1_walk_e,0
+LINK t_exit
+LABL 7____________________,"7____________________"
+LABL l_raid,"raid"
+LINK d_raid_0_hello_a
+NODE p_raid_0_hello_a_guver,4
+LINK p_raid_1_wtf_q
+NODE p_raid_0_hello_a_wolf,4
+LINK p_raid_1_wtf_q
+NODE p_raid_1_wtf_q,0
+LINK p_raid_1_wtf_a
+NODE p_raid_1_wtf_a,4
+LINK p_raid_2_who_q
+NODE p_raid_2_who_q,0
+LINK p_raid_2_who_a
+NODE p_raid_2_who_a,4
+LINK p_raid_3_coward_e
+NODE p_raid_3_coward_e,0
+LINK t_run_coward
+LINK t_exit
+TEST d_raid_0_hello_a,"dead_guver = 0"
+OPTN d_raid_0_hello_a,1,p_raid_0_hello_a_guver
+OPTN d_raid_0_hello_a,0,p_raid_0_hello_a_wolf
+TERM t_run_coward,"run prodzone_farm_mine_run_leva_coward"
+LABL 8____________________,"8____________________"

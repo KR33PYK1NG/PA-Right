@@ -1,0 +1,5 @@
+set global_disabled_map_movement = 0
+set quest_train_repel_ambush = "completed"
+set quest_train_ask_about_list = "got"
+
+quest_log boar,quest_train_ask_about_list

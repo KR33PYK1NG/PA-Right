@@ -1,0 +1,644 @@
+####################
+user_control off
+fade_out
+####################
+
+set global_force_fade_out = 1
+set global_train_showdown_owned_rats = item_count(boar,SMG_RAT_PROMZONE_GUARD)
+set global_train_showdown_owned_stupids = item_count(boar,PISTOL_STUPID)
+
+switch_location prodzone_farm_mine
+
+lock_door 0,22,63
+
+time_pass_until 0
+
+destroy_char prod_a_shovel01
+destroy_char prod_a_shovel02
+destroy_char prod_a_walker01
+destroy_char prod_a_walker02
+destroy_char prod_a_walker03
+destroy_char prod_a_walker04
+destroy_char prod_a_walker05
+destroy_char prod_a_handicraft01
+destroy_char prod_a_handicraft02
+destroy_char prod_a_black_pick01
+destroy_char prod_a_black_pick02
+destroy_char prod_a_black_pick03
+destroy_char prod_a_black_pick04
+destroy_char prod_a_black_broom01
+destroy_char prod_a_black_broom02
+destroy_char prod_a_black_shovel01
+destroy_char prod_a_black_shovel02
+destroy_char prod_a_black_shovel03
+destroy_char prod_a_black_hammer01
+destroy_char prod_a_black_hammer02
+destroy_char prod_f_overseer01
+destroy_char prod_f_overseer02
+destroy_char prod_f_overseer05
+destroy_char prod_f_overseer06
+destroy_char q_prodzone_workerou
+destroy_char q_prodzone_indorguard
+destroy_char farm_mine_q_supper
+destroy_char prod_f_toweroverseer01
+destroy_char prod_f_toweroverseer02
+destroy_char prod_f_toweroverseer03
+destroy_char prod_f_toweroverseer04
+destroy_char prod_f_toweroverseer05
+destroy_char prod_f_toweroverseer06
+destroy_char prod_f_toweroverseer07
+destroy_char yoke
+destroy_char horn
+destroy_char chucha
+destroy_char chucha_man1
+destroy_char chucha_man2
+destroy_char chucha_man3
+destroy_char train_witness
+
+create_char train_showdown_dead_guard01,26,35
+
+text_overlay boar,text,6
+
+camera_move_float 23.5,35,-3,1.55,1.2,10
+camera_move_float 27,35,-3,1.55,1.2,10,7
+
+wait 1
+
+####################
+fade_in
+####################
+
+wait 5
+
+####################
+fade_out
+####################
+
+create_char q_prodzone_workerou,35,32
+create_char gabriel,0,34,0,0
+create_char hamster,0,36,0,0
+
+create_item gabriel,MEDIKIT_1
+create_item gabriel,MEDIKIT_1
+create_item gabriel,MEDIKIT_1
+create_item gabriel,MEDIKIT_1
+create_item gabriel,MEDIKIT_1
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,AMMO_6MM
+create_item gabriel,HELMET.R
+create_item gabriel,IRON_CHAINMAIL.R
+create_item gabriel,LIGHT_BODYARMOR.R
+create_item gabriel,RIFLE_KNACKER
+create_item hamster,MEDIKIT_1
+create_item hamster,MEDIKIT_1
+create_item hamster,MEDIKIT_1
+create_item hamster,MEDIKIT_1
+create_item hamster,MEDIKIT_1
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,AMMO_6MM
+create_item hamster,HELMET.R
+create_item hamster,IRON_CHAINMAIL.R
+create_item hamster,LIGHT_BODYARMOR.R
+create_item hamster,RIFLE_KNACKER
+create_item boar,MEDIKIT_1
+create_item boar,MEDIKIT_1
+create_item boar,MEDIKIT_1
+create_item boar,MEDIKIT_1
+create_item boar,MEDIKIT_1
+create_item boar,HELMET.R
+create_item boar,IRON_CHAINMAIL.R
+create_item boar,LIGHT_BODYARMOR.R
+
+wear_item gabriel,HELMET,wait
+wear_item gabriel,IRON_CHAINMAIL,wait
+wear_item gabriel,LIGHT_BODYARMOR,wait
+wear_item gabriel,RIFLE_KNACKER,wait
+wear_item hamster,HELMET,wait
+wear_item hamster,IRON_CHAINMAIL,wait
+wear_item hamster,LIGHT_BODYARMOR,wait
+wear_item hamster,RIFLE_KNACKER,wait
+wear_item boar,HELMET,wait
+wear_item boar,IRON_CHAINMAIL,wait
+wear_item boar,LIGHT_BODYARMOR,wait
+
+destroy_item gabriel,ROBE_BLACK
+destroy_item hamster,ROBE_BLACK
+destroy_item hamster,SMG_RAT_PROMZONE_GUARD
+
+if global_train_showdown_rifle = 1
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,AMMO_6MM
+create_item boar,RIFLE_KNACKER
+
+wear_item boar,RIFLE_KNACKER,wait
+endif
+
+if global_train_showdown_shotgun = 1
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,AMMO_12GA
+create_item boar,SHOTGUN_CHUCHUNDRA
+
+wear_item boar,SHOTGUN_CHUCHUNDRA,wait
+endif
+
+if global_train_showdown_sniper = 1
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,AMMO_9MM
+create_item boar,RIFLE_FULL_PIPE
+
+wear_item boar,RIFLE_FULL_PIPE,wait
+endif
+
+if global_train_showdown_sword = 1
+create_item boar,KATANA
+
+wear_item boar,KATANA,wait
+endif
+
+camera_move_float 27,33,0,2.5,0.2,10
+
+####################
+fade_in
+####################
+
+move_panic q_prodzone_workerou,20,32,wait
+
+destroy_char q_prodzone_workerou
+
+teleport_to boar,0,35
+
+change_pose boar,0,wait
+
+move_to boar,15,35
+move_to gabriel,14,34
+move_to hamster,14,36
+
+wait 1
+
+camera_move_float 7,35,0,4.7,0.2,10
+
+wait 3
+
+camera_move_float 16,35,0,1.55,0.8,10
+
+teleport_to leva,22,35
+teleport_to boar,10,35
+teleport_to gabriel,9,34
+teleport_to hamster,9,36
+
+change_pose leva,0,wait
+
+move_to leva,17,35
+move_to boar,15,35
+move_to gabriel,14,34
+move_to hamster,14,36
+move_to leva,17,35,wait
+move_to boar,15,35,wait
+move_to gabriel,14,34,wait
+move_to hamster,14,36,wait
+
+set global_disabled_map_movement = 1
+set quest_secure_ammo = "completed"
+set quest_train_boss_report = "completed"
+
+dialog leva,0

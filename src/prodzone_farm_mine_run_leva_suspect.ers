@@ -1,0 +1,6 @@
+set quest_train_notify_leva = "completed"
+set quest_train_find_leva_scape = "got"
+
+quest_log boar,quest_train_find_leva_scape
+
+game_log boar,log

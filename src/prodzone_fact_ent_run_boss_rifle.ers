@@ -1,0 +1,3 @@
+set global_train_showdown_rifle = 1
+
+run prodzone_fact_ent_showdown

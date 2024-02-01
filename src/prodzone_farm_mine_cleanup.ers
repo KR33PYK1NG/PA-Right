@@ -1,0 +1,44 @@
+####################
+user_control off
+fade_out
+####################
+
+leave_party gabriel
+leave_party hamster
+
+destroy_char gabriel
+destroy_char hamster
+
+create_char horn,30,33
+create_char train_gabriel,30,32
+
+teleport_to boar,36,32
+
+turn_to boar,train_gabriel,wait
+
+change_pose boar,1,wait
+
+unwear_item boar,weapon,wait
+
+play_anim boar,idle_23
+
+wait 17
+
+text_overlay boar,text,6
+
+camera_move_float 35,37,0,0,0.2,10
+
+wait 1
+
+####################
+fade_in
+####################
+
+move_to horn,33,33
+move_to train_gabriel,34,32
+move_to horn,33,33,wait
+move_to train_gabriel,34,32,wait
+
+wait 2
+
+dialog train_gabriel,0

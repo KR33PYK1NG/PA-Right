@@ -1,0 +1,27 @@
+####################
+user_control off
+####################
+
+move_to train_gabriel,30,32,wait
+
+####################
+fade_out
+####################
+
+destroy_char train_gabriel
+
+teleport_to horn,36,33
+teleport_to boar,36,32
+
+turn_to horn,boar,wait
+turn_to boar,horn,wait
+
+camera_move_float 36,33,0,0.87,0.8,12
+
+####################
+fade_in
+####################
+
+wait 1
+
+dialog horn,0

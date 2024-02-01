@@ -1,1 +1,11 @@
 CHAR;PHRASE;TEXT
+boar;quest_train_notify_leva;Оповестить Лёву об окончании проверки.
+boar;quest_train_boss_repel_first_wave;Отбить первую атаку мятежников.
+boar;quest_train_boss_repel_second_wave;Отбить вторую атаку мятежников.
+boar;quest_train_boss_repel_final_wave;Отбить финальную атаку мятежников.
+boar;before_first_wave;Булки не расслаблять, ща чё-то будет.
+boar;start_first_wave;Пошла жара!!!
+boar;before_second_wave;Земля стекловатой, придурки.
+boar;start_second_wave;Самбисты и каратисты по одному, остальные можно кучей!!!
+boar;before_final_wave;Ну и где виновник торжества?
+boar;start_final_wave;Погнали [censored]!!!

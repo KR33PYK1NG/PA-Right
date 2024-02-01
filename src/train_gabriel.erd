@@ -1,0 +1,36 @@
+BEGN 0
+LABL 1____________________,"1____________________"
+LABL l_init,"init"
+LINK d_cleanup_or_finale
+TEST d_cleanup_or_finale,"global_train_showdown_items_destroyed = 0"
+OPTN d_cleanup_or_finale,1,l_cleanup
+OPTN d_cleanup_or_finale,0,l_finale
+TERM t_exit,"end"
+LABL 2____________________,"2____________________"
+LABL l_cleanup,"cleanup"
+LINK p_cleanup_0_done_a
+NODE p_cleanup_0_done_a,4
+LINK p_cleanup_1_destroy_e
+NODE p_cleanup_1_destroy_e,0
+LINK t_run_destroy
+LINK t_exit
+TERM t_run_destroy,"run prodzone_farm_mine_run_train_gabriel_destroy"
+LABL 3____________________,"3____________________"
+LABL l_finale,"finale"
+LINK d_finale_0_take_a
+NODE p_finale_0_take_a_guver,4
+LINK p_finale_1_gudok_q
+NODE p_finale_0_take_a_wolf,4
+LINK p_finale_1_gudok_q
+NODE p_finale_1_gudok_q,0
+LINK p_finale_1_gudok_a
+NODE p_finale_1_gudok_a,4
+LINK p_finale_2_realize_e
+NODE p_finale_2_realize_e,0
+LINK t_run_realize
+LINK t_exit
+TEST d_finale_0_take_a,"dead_guver = 0"
+OPTN d_finale_0_take_a,1,p_finale_0_take_a_guver
+OPTN d_finale_0_take_a,0,p_finale_0_take_a_wolf
+TERM t_run_realize,"run prodzone_farm_mine_run_train_gabriel_realize"
+LABL 4____________________,"4____________________"
