@@ -47,6 +47,7 @@ LINK Terminator.16
 OPTN Process.5,,Preparation
 OPTN Preparation,,Terminator.16
 TERM Terminator.16,"set quest_aryancent_falsh =\"got\"
+open_location settlem
 end"
 LABL Loop limit.17,"reenter1"
 LINK Process.6
@@ -65,7 +66,7 @@ OPTN Process.22,,Process.24
 OPTN Process.24,,Terminator.27
 TERM Terminator.27,"end"
 OPTN Process.22,,Process.5
-TEST Decision,"done_hans5c_going_to_forest=1"
+TEST Decision,"done_hans5c_going_to_forest<2"
 LINK Process.31
 LINK Process
 OPTN Decision,1,Process

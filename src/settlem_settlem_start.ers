@@ -1241,8 +1241,10 @@ wait 0,5
 #
 fade_in
 #
+if quest_talk_with_hans != 0
 set quest_goto_andre = "got"
 quest_log Boar,quest_goto_andre
+endif
 #
 
 # Кусок из каталога LENA ######################################################################################################
