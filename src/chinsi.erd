@@ -32,6 +32,8 @@ OPTN Decision.20,1,Process.19
 TERM Terminator.23,"give_money boar,100,chinsi
 teleport_to boar,23,87
 end"
+TEST check_for_sword,"item_weared(chinsi,jamaguto_sword)"
+OPTN check_for_sword,1,Process.25
 NODE Process.25,0
 LINK Process.27
 NODE Process.27,4
@@ -49,7 +51,7 @@ TEST Decision.35,"has_money(boar,3100)"
 LINK Process.45
 OPTN Decision.35,1,Process.45
 LABL Loop limit.39,""
-LINK Process.25
+LINK check_for_sword
 LINK Process.42
 NODE Process.42,0
 LINK Terminator.44
@@ -59,7 +61,8 @@ attack_target $49,boar
 end"
 NODE Process.45,0
 LINK Decision.48
-TERM Terminator.47,"give_money boar,100,chinsi
+TERM Terminator.47,"give_money boar,3100,chinsi
+teleport_to boar,23,87
 give_item chinsi,jamaguto_sword,boar
 end"
 TEST Decision.48,"reaction > 6"
@@ -74,7 +77,8 @@ LINK Process.55
 LINK Process.59
 NODE Process.55,0
 LINK Terminator.57
-TERM Terminator.57,"end"
+TERM Terminator.57,"teleport_to boar,23,87
+end"
 NODE Process.59,0
 LINK Terminator.61
 TERM Terminator.61,"declare_war $49
