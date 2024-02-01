@@ -1,8 +1,6 @@
 set global_disabled_aryantown_aryancent = 0
 set global_disabled_aryantown_aryaneast = 0
 #open_location blvill
-popup Boar,a
-set quest_demon_fights = "completed"
 
 if global_talk_with_validol = "got"
 set quest_talk_with_validol2 = "got"

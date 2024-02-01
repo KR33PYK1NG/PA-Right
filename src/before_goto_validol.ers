@@ -1,6 +1,3 @@
-popup_multi Boar, a
-#
-set quest_kruger_fights = "completed"
 open_location aryantown
 set global_talk_with_validol = "got"
 set quest_talk_with_validol = "got"

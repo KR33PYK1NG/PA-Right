@@ -536,7 +536,7 @@ LINK Manual operation
 NODE Process.5,0
 LINK Terminator
 TERM Terminator,"End"
-TEST Decision,"quest_kruger_fights = \"completed\""
+TEST Decision,"quest_kruger_fights != 0"
 LINK Process.2
 OPTN Decision,1,Process.2
 NODE Process.2,0

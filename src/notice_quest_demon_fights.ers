@@ -10,3 +10,5 @@ open_location monster12
 open_location monster13
 open_location monster14
 open_location monster15
+
+run notice_quest_demon_fights_completed

@@ -4,7 +4,7 @@ if in_war(Validol) = 1 && global_validol_attack = 0
 set global_validol_attack = 1
 endif
 
-if global_talk_with_validol = "got" && quest_demon_fights = "completed" && door_state(17,85,0) = -1
+if global_talk_with_validol = "got" && door_state(17,85,0) = -1
 close_door 0,17,85
 endif
 

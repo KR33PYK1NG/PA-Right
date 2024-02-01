@@ -9,3 +9,5 @@ open_location fight07
 open_location monster04
 open_location monster05
 open_location monster07
+
+run before_goto_bl_w_sull

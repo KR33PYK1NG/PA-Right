@@ -10,3 +10,10 @@ open_location monster08
 open_location monster09
 open_location monster10
 open_location monster11
+
+if done_blackskin5a_before_kruger3 = 1
+run before_goto_validol
+endif
+if run_going_to_northtown_with_hans_and_marta2 = 1
+run before_goto_hans
+endif

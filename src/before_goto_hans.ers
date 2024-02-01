@@ -1,4 +1,2 @@
-popup Boar,a
-set quest_kruger_fights = "completed"
 set quest_talk_with_hans = "got"
 quest_log Boar,quest_talk_with_hans

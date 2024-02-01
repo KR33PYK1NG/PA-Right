@@ -76,7 +76,7 @@ if quest_sullen_fights = "got" && (door_state(36,73,0) = 0 || door_state(36,73,0
 lock_door 0,36,73
 endif
 
-if quest_sullen_fights = "completed" && door_state(36,73,0) = -1
+if door_state(36,73,0) = -1
 close_door 0,36,73
 endif
 
