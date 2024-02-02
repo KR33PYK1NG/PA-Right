@@ -1,10 +1,11 @@
 STRID,LOC,STR,AGI,CON,INT,CHA,PER,AGE,SEX,HGT,LEV,PARTY,TAG1,TAG2,TRAIT1,TRAIT2,HP,SP,AC,SMG,BIGG,NRG,THROW,MELEE,SCOUT,REP,MED,THIEF,BAR,TAG1,TAG2,MONEY,ITEMS,HAND,MODEL,RACE,TATOO,HEAD,HEAD_SPECIAL,HEAD_OVERWRITE,CANT_LOOT,NAME1,NAME2
 train_witness,prodzone_farm_mine,8,8,8,8,30,8,8,,180,10,,,,,,,,,20,20,,20,50,,,,200,,,,,"ROBE_BLACK.G,ROBE_TROUSERS.B,BOOTS_LANDROVER.R,CIGARETTE,GANJA",,man,white1,,whiteslave9,,whiteslave9,,,Внешний охранник
-train_escapee,prodzone_entry,8,8,7,8,8,8,8,,170,10,,,,,,,,,20,20,,20,50,,,,,,,,,"ROBE.G,ROBE_TROUSERS.R,BOOTS_COLONIST.R,BREAD,CARROT,BLEVANTON,SPOTTEDBLEVANTON",,man,white1,,lace,,lace,,,Баклажан
+train_escapee,prodzone_entry,8,8,7,8,8,8,8,,170,10,,,,,,,,,20,20,,20,50,,,,0,,,,,"ROBE.G,ROBE_TROUSERS.R,BOOTS_COLONIST.R,BREAD,CARROT,BLEVANTON,SPOTTEDBLEVANTON",,man,white1,,lace,,lace,,,Баклажан
 train_bully,prodzone_entry,8,8,7,8,30,8,8,,175,10,,,,,,,,,20,20,,20,50,,,,200,,,,,"ROBE_BLACK.G,ROBE_TROUSERS.B,BOOTS_COLONIST.R,BREAD,FAST_DIVING,CIGARETTE,HATCHET",,man,white1,,crowbar,,crowbar,,,Пиявка
 train_bully_pal_1,prodzone_entry,8,8,8,8,30,8,8,,180,10,,,,,,,,,20,20,,20,50,,,,200,,,,,"ROBE_BLACK.G,ROBE_TROUSERS.B,BOOTS_COLONIST.R,BREAD,MEAT,BLEVANTON,CLUB",,man,white2,,whiteslave7,,,,,Внешний охранник
 train_bully_pal_2,prodzone_entry,8,8,7,8,30,8,8,,170,10,,,,,,,,,20,20,,20,50,,,,200,,,,,"ROBE_BLACK.G,ROBE_TROUSERS.B,BOOTS_COLONIST.R,VODKA,POTATOES,CLUB",,man,white1,,whiteslave2,,,,,Внешний охранник
 train_gabriel,prodzone_farm_mine,8,8,9,8,30,8,8,,190,10,,,,,,,,,20,20,,20,50,,,,200,,,,,"ROBE_BLACK.G,ROBE_TROUSERS.R,BOOTS_FOOTMAN.R",,man,white1,,gabriel,,gabriel,,,Гаврила
+train_brus,norcity_whharbor,8,8,7,8,8,8,8,,175,10,,,,,,,,,20,20,,20,50,,,,0,,,,,"SPORTS_SHIRT.G,WORKING_SHORTS.G,BOOTS_HIGH.G,REPAIR_KIT,MEAT,BREAD,KVAS,GANJA",,man,white1,cat,cooper,,cooper,,,Брус
 train_ambush_wave01_guard01,prodzone_dep_ammo,8,8,8,8,30,8,8,,180,10,,,,,,,,,20,20,,20,50,,,,200,,,,,"ROBE_BLACK.G,ROBE_TROUSERS.B,BOOTS_LANDROVER.R,MEDIKIT_1,HATCHET",,man,white1,,whiteslave3,,,,,Охранник паровоза
 train_ambush_wave01_guard02,prodzone_dep_ammo,8,8,7,8,30,8,8,,170,10,,,,,,,,,20,20,,20,50,,,,200,,,,,"ROBE_BLACK.G,ROBE_TROUSERS.B,BOOTS_LANDROVER.R,KVAS,VODKA,CLUB",,man,white1,,whiteslave,,,,,Охранник паровоза
 train_ambush_wave01_guard03,prodzone_dep_ammo,8,8,7,8,30,8,8,,175,10,,,,,,,,,20,20,,20,50,,,,200,,,,,"ROBE_BLACK.G,ROBE_TROUSERS.B,BOOTS_LANDROVER.R,BREAD,CLUB",,man,white1,,whiteslave2,,,,,Охранник паровоза

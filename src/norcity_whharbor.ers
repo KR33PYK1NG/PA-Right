@@ -1,0 +1,206 @@
+if global_train_spawn_brus = 0 && quest_train_find_brus = "got"
+set global_train_spawn_brus = 1
+
+create_char train_brus,82,69
+turn train_brus,120
+endif
+
+# Кусок из каталога SEVA ######################################################################################################
+if dead_hiroichijo = 1 && quest_kill_hiroichijo_1 = "got"
+set quest_kill_hiroichijo_1 = "completed"
+endif
+
+if quest_liberate_anjamagical = "got" && !global_norcity_whharbor2 && distance(Boar,$10) > 200 && dead_bucket = 0 && !in_war(bucket) && door_state(40, 10, 0) = 1
+set global_norcity_whharbor2 = 1
+run norcity_whharbor_anjamagical
+endif
+
+if distance($0,$10) > 99 && global_whharbor4010 = 0
+set global_whharbor4010 = 1
+close_door 0, 40, 10
+endif
+
+if quest_liberate_anjamagical = "got" && in_war($40)
+set quest_liberate_anjamagical = "failed"
+attack_target bucket,Boar
+declare_war bucket
+endif
+
+if quest_liberate_anjamagical = "got" && dead_anjamagical = 1
+set quest_liberate_anjamagical = "failed"
+attack_target bucket,Boar
+declare_war bucket
+endif
+
+if quest_liberate_anjamagical = "got" && in_war(bucket)
+set quest_liberate_anjamagical = "failed"
+endif
+
+if quest_liberate_anjamagical = "got" && dead_bucket = 1
+set quest_liberate_anjamagical = "failed"
+endif
+# Кусок из каталога LENA ######################################################################################################
+
+# Кусок из каталога ALEX ######################################################################################################
+
+# Кусок из каталога VIT #######################################################################################################
+#
+# whharb. Основной скрипт, запускается каждую секунду.
+#
+#####################################################################################################################################################
+#
+#     Сценарные события.
+#
+#####################################################################################################################################################
+#
+# Надо вызвать рефлектор.
+if global_whharb_ReflectorRun
+set global_whharb_ReflectorRun = 0
+run norcity_whharbor_reflector
+endif
+# Кабан выжил еще одну секунду.
+set global_whharb_time_from_start = global_whharb_time_from_start + 1
+#
+#####################################################################################################################################################
+#
+# Освобождение Ани Волшебной.
+# Игрок открыл дверь в бордель.
+if !in_war($10) && distance($10, $0) < 150 && door_state(36, 19, 0) = 1
+declare_war $10
+attack_target $10, $0
+endif
+# Убийство начальника порта.
+if quest_kill_hiroichijo = "got" && !global_whharbor_hiroichijo_fight
+set global_whharbor_hiroichijo_fight = 1
+close_door 0, 73, 23
+endif
+# Игрок открыл дверь в дома начальника порта.
+if !in_war($11) &&  distance($11, $0) < 150 && door_state(73, 23, 0) = 1
+declare_war $11
+attack_target $11, $0
+endif
+# Игрок открыл дверь во вторую комнату дома начальника порта.
+if !in_war($12) &&  distance($12, $0) < 150 && door_state(83, 28, 0) = 1
+declare_war $12
+attack_target $12, $0
+endif
+# Игрок поднялся на второй этаж дома начальника порта.
+if !in_war($13) &&  distance($13, $0) < 150 && is_group_visible($13, $0)
+declare_war $13
+attack_target $13, $0
+endif
+# Игрок убил всех эмигрантов. Таможенник благодарит игрока.
+if !run_norcity_whharbor_emigrant_final && run_norcity_whharbor_emigrant && distance($16, $0) > 150 && !in_war($15) && !dead_whharbor_f_CustomsOfficial
+run norcity_whharbor_emigrant_final
+endif
+#####################################################################################################################################################
+#
+#     Боевое поведение.
+#
+###############################################################################################################################
+# Отслеживание смертей смотрящих NPC nor_f_overseer02.
+if distance(nor_f_overseer02, $0) > 150
+set dead_nor_f_overseer02 = 1
+else
+set dead_nor_f_overseer02 = 0
+endif
+# Отслеживание смертей смотрящих NPC nor_f_overseer07.
+if distance(nor_f_overseer07, $0) > 150
+set dead_nor_f_overseer07 = 1
+else
+set dead_nor_f_overseer07 = 0
+endif
+# Отслеживание смертей смотрящих NPC nor_f_overseer01.
+if distance(nor_f_overseer01, $0) > 150
+set dead_nor_f_overseer01 = 1
+else
+set dead_nor_f_overseer01 = 0
+endif
+# Отслеживание смертей смотрящих NPC nor_f_overseer10.
+if distance(nor_f_overseer10, $0) > 150
+set dead_nor_f_overseer10 = 1
+else
+set dead_nor_f_overseer10 = 0
+endif
+# Отслеживание смертей смотрящих NPC nor_f_overseer09.
+if distance(nor_f_overseer09, $0) > 150
+set dead_nor_f_overseer09 = 1
+else
+set dead_nor_f_overseer09 = 0
+endif
+# Отслеживание смертей смотрящих NPC nor_f_overseer03.
+if distance(nor_f_overseer03, $0) > 150
+set dead_nor_f_overseer03 = 1
+else
+set dead_nor_f_overseer03 = 0
+endif
+# Отслеживание смертей смотрящих NPC nor_f_overseer08.
+if distance(nor_f_overseer08, $0) > 150
+set dead_nor_f_overseer08 = 1
+else
+set dead_nor_f_overseer08 = 0
+endif
+# Кабана заметили в промзоновской одежде.
+if !global_whharb_G5 && is_fugitive(Boar) && is_group_visible($5, $0) && !in_war($5)
+set global_whharb_G5 = 5
+set global_whharb_ReflectorRun = 1
+endif
+# Группа смотрящих $5 увидела "правонарушение" игрока и атакует его.
+if !global_whharb_G5 && (in_war($5) || ((is_aryan($0) || is_terrorist($0) || is_violator($0)) && is_group_visible($5, $0)))
+set global_whharb_G5 = 1
+set global_whharb_ReflectorRun = 1
+endif
+# Группа $5 мертва.
+if global_whharb_G5 = -1
+elseif distance($5, $0) > 150
+set global_whharb_G5 = -1
+endif
+# Группа $5 больше не воюет.
+if global_whharb_G5 = 2 && !map_in_war
+set global_whharb_G5 = 0
+change_pose nor_f_overseer02, 0
+change_pose nor_f_overseer07, 0
+change_pose nor_f_overseer01, 0
+change_pose nor_f_overseer10, 0
+change_pose nor_f_overseer09, 0
+change_pose nor_f_overseer03, 0
+change_pose nor_f_overseer08, 0
+set global_whharb_I5_1 = 0
+set global_whharb_I5_2 = 0
+set global_whharb_I5_3 = 0
+set global_whharb_I5_4 = 0
+set global_whharb_I5_5 = 0
+set global_whharb_I5_6 = 0
+set global_whharb_I5_7 = 0
+switch_action nor_f_overseer02, 0
+switch_action nor_f_overseer07, 0
+switch_action nor_f_overseer01, 0
+switch_action nor_f_overseer10, 0
+switch_action nor_f_overseer09, 0
+switch_action nor_f_overseer03, 0
+switch_action nor_f_overseer08, 0
+clear_offenders $5
+endif
+# Предварительные вычисления. Слежение за смертями в группе.
+set DeadCounter = dead_nor_f_overseer02 + dead_nor_f_overseer07 + dead_nor_f_overseer01 + dead_nor_f_overseer10
+set DeadCounter = dead_nor_f_overseer09 + dead_nor_f_overseer03 + dead_nor_f_overseer08 + DeadCounter
+# В группе $5 есть один или несколько новых погибших.
+if !global_whharb_I5 && global_whharb_I5_Dead != DeadCounter
+set global_whharb_I5_Dead = DeadCounter
+set global_whharb_I5 = 1
+set global_whharb_ReflectorRun = 1
+endif
+#####################################################################################################################################################
+#
+#     Коррекция боевого поведения.
+#
+#####################################################################################################################################################
+#####################################################################################################################################################
+#
+# Надо вызвать рефлектор.
+if global_whharb_ReflectorRun
+set global_whharb_ReflectorRun = 0
+run norcity_whharbor_reflector
+endif
+#
+# Конец whharb

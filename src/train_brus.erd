@@ -1,0 +1,42 @@
+BEGN 0
+LABL 1____________________,"1____________________"
+LABL l_init,"init"
+LINK d_found
+LINK l_ambient
+TEST d_found,"quest_train_find_brus = \"got\""
+OPTN d_found,1,l_found
+TERM t_exit,"end"
+LABL 2____________________,"2____________________"
+LABL l_found,"found"
+LINK p_found_0_desc_a
+NODE p_found_0_desc_a,4
+LINK p_found_1_brus_q
+NODE p_found_1_brus_q,0
+LINK p_found_1_brus_a
+NODE p_found_1_brus_a,4
+LINK p_found_2_understand_q
+NODE p_found_2_understand_q,0
+LINK p_found_2_understand_a
+NODE p_found_2_understand_a,4
+LINK d_found_3_explain_q
+NODE p_found_3_explain_q_guver,0
+LINK p_found_3_explain_a
+NODE p_found_3_explain_q_wolf,0
+LINK p_found_3_explain_a
+NODE p_found_3_explain_a,4
+LINK p_found_4_cool_e
+NODE p_found_4_cool_e,0
+LINK t_run_found
+LINK t_exit
+TEST d_found_3_explain_q,"dead_guver = 0"
+OPTN d_found_3_explain_q,1,p_found_3_explain_q_guver
+OPTN d_found_3_explain_q,0,p_found_3_explain_q_wolf
+TERM t_run_found,"run norcity_whharbor_run_train_brus_found"
+LABL 3____________________,"3____________________"
+LABL l_ambient,"ambient"
+LINK p_ambient_0_hi_a
+NODE p_ambient_0_hi_a,4
+LINK p_ambient_1_passby_e
+NODE p_ambient_1_passby_e,0
+LINK t_exit
+LABL 4____________________,"4____________________"
