@@ -1,0 +1,9 @@
+user_control off
+
+fade_out
+
+text_overlay Boar,start,4
+
+wait 4
+
+switch_location polcamp_polcamp
