@@ -1,3 +1,8 @@
+set global_disabled_global_map = 1
+set global_disabled_map_movement = 1
+
+wait 1
+
 user_control off
 
 fade_out
