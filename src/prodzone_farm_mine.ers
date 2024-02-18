@@ -202,12 +202,12 @@ run prodzone_farm_mine_before_tutu
 endif
 
 #отнять у кабана оружие из квеста варгана
-if (quest_wargun = "completed" || quest_wargun = "failed" ) && ( has_item(boar,rifle_knacker) || item_weared(boar,rifle_knacker) )
+if (quest_wargun = "completed" || quest_wargun = "failed" ) && ( has_item(boar,rifle_knacker) || item_weared(boar,rifle_knacker) ) && quest_train_boss_report = 0
 run boar_die_by_guver
 endif
-if (quest_wargun = "completed" || quest_wargun = "failed" ) && ( has_item(boar,revolver_butcher) || item_weared(boar,revolver_butcher) )
+if (quest_wargun = "completed" || quest_wargun = "failed" ) && ( has_item(boar,revolver_butcher) || item_weared(boar,revolver_butcher) ) && quest_train_boss_report = 0
 run boar_die_by_guver
 endif
-if (quest_wargun = "completed" || quest_wargun = "failed" ) && ( has_item(boar,shotgun_pencil) || item_weared(boar,shotgun_pencil) )
+if (quest_wargun = "completed" || quest_wargun = "failed" ) && ( has_item(boar,shotgun_pencil) || item_weared(boar,shotgun_pencil) ) && quest_train_boss_report = 0
 run boar_die_by_guver
 endif
