@@ -1,3 +1,5 @@
+unwear_item boar,weapon,wait
+
 ####################
 user_control off
 fade_out
