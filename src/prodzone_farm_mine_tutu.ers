@@ -1,0 +1,104 @@
+user_control off
+fade_out
+destroy_item boar,ELECTROSCHEME
+set quest_keep_horn = "completed"
+show_names 0
+resurrect horn
+teleport_to boar,36,31
+camera_move_float 36.38,37.77,0.10,0.08,0.23,6.22,0
+fade_in
+
+talk horn,tutu,0,GEST3
+wait_speech 1
+wait 1
+fade_out
+teleport_to boar,12,5
+teleport_to horn,12,6
+camera_move_float 28.80,36.92,0.20,6.27,0.17,6.27,0
+
+fade_in
+
+train_movie 1
+wait 3
+camera_move_float 26.97,36.92,0.20,6.05,0.60,8.42,0
+wait 6
+fade_out
+set global_force_battle_music=1
+set global_force_fade_out = 1
+set global_entry_prasehernia = -1
+switch_location prodzone_entry
+#user_control off
+#camera_move_float 48.26,34.94,-0.40,4.98,0.27,14.66,0
+create_char tambourine,10,43
+turn tambourine,300,wait
+change_pose tambourine,1
+create_char prodzone_worker1,52,34
+create_char prodzone_worker2,54,33
+create_char prodzone_guard_report_wolf,52,35
+###popup prodzone_worker1,shit
+###popup_multi prodzone_guard_report_wolf,shit
+###popup_multi prodzone_worker2,shit
+###camera_move_float 51.65,33.78,0.00,4.70,0.24,8.57,0
+train_movie 2
+
+#bamper
+#camera_move_float 19.65,33.78,0.00,4.70,0.24,8.57,7.6
+camera_move_float 33.57,38.98,-1.70,0.72,0.34,17.33,0
+wait 0,1
+
+
+move_panic prodzone_worker2,26,26
+move_panic prodzone_guard_report_wolf,30,40
+move_panic prodzone_worker1,30,34,wait
+fade_in
+popup_multi prodzone_worker1,bl,3
+play_anim prodzone_worker1,fall_03,wait
+play_anim prodzone_worker1,idle_03
+change_pose prodzone_guard_report_wolf,1,wait
+move_to prodzone_guard_report_wolf,31,52
+wait 1
+teleport_to tambourine,15,40
+talk tambourine,stop,0,GEST3
+camera_move_float 24.59,40.06,-1.70,1.18,0.32,18.65,0
+wait 3
+camera_move_float 7.50,33.90,0.10,1.90,0.37,17.33,0
+wait 3
+fade_out
+#set global_force_fade_out = 1
+switch_location trainstop_trainstop
+#user_control off
+train_movie 3
+camera_move_float 55.10,55.15,0.10,0.69,0.51,19.79,0
+#fade_in
+camera_move_float 44.17,55.08,0.10,0.68,0.51,19.79,10.0
+wait 10
+fade_out
+
+create_char horn_trainstop,45,52
+teleport_to boar,47,52
+camera_move_float 43.93,54.76,0.20,5.72,0.21,8.82,0
+
+turn_to horn_trainstop,boar,wait
+turn_to boar,horn_trainstop,wait
+set quest_escape_from_prodzone = "completed"
+fade_in
+
+talk horn_trainstop,pipec,0,GEST3:GEST4
+
+talk boar,ok,0,EXPLAIN
+wait 1
+create_char ratwolf_1,47,44,0,76
+attack_target $76,horn_trainstop
+wait 2
+turn horn_trainstop,294,wait
+play_anim horn_trainstop,misc_62
+wait 5
+take_damage horn_trainstop,8
+declare_war $76
+attack_target $76,boar
+set quest_trainstop = "got"
+quest_log boar,trainstop
+set global_disabled_map_movement = 1
+set global_disabled_global_map = 1
+camera_move_float 45.80,51.75,0.20,5.73,0.79,8.82,0
+user_control on
