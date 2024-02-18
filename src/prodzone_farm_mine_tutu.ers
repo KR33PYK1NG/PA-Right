@@ -102,3 +102,9 @@ set global_disabled_map_movement = 1
 set global_disabled_global_map = 1
 camera_move_float 45.80,51.75,0.20,5.73,0.79,8.82,0
 user_control on
+
+if quest_train_boss_report != 0
+set quest_train_find_brus = "got"
+
+quest_log boar,quest_train_find_brus
+endif
