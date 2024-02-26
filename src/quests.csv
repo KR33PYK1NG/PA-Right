@@ -11,7 +11,7 @@ quest_train_ask_about_list,,,,,,,,,,,,"Расспросить Сухаря о людях из списка Лёвы
 quest_train_find_escapee,,,,,,,,,,,,"Найти Баклажана на складе у ворот.","entry,warehouse2",,,
 quest_train_help_escapee,,,,,,,,,,,,"Помочь Баклажану разобраться с Пиявкой.",,train_bully,,
 quest_train_notify_escapee,,,,,,,,,,100,,"Сообщить Баклажану о решении проблемы.",,train_escapee,,
-quest_train_find_brus,,,,,,,,,,250,,"Разузнать, удалось ли Брюсу сбежать с промзоны.",,,,
+quest_train_find_brus,,,,,,,,,,250,,"Разузнать, удалось ли Брусу сбежать с промзоны.",,,,
 quest_train_boss_report,,,,,,,,,,200,,"Вернуться к начальству с докладом.","fact_ent,office","guver,wolf",,
 quest_train_boss_repel_first_wave,,,,,,,,,,100,,"Отбить первую атаку мятежников.",,,,
 quest_train_boss_repel_second_wave,,,,,,,,,,100,,"Отбить вторую атаку мятежников.",,,,
