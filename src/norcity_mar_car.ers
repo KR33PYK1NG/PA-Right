@@ -72,10 +72,6 @@ set run_boar_stroibat = 1
 run boar_stroibat
 endif
 
-if quest_sullen_fights = "got" && (door_state(36,73,0) = 0 || door_state(36,73,0) = 1)
-lock_door 0,36,73
-endif
-
 if door_state(36,73,0) = -1
 close_door 0,36,73
 endif
